@@ -1,16 +1,16 @@
 .LandingPage {
     position: relative;
-    height:90em;
+    height:100vh;
 }
 
 .LandingPageName {
     position: absolute;
-    top: 25%;
+    top: 27em;
     left: 50%;
     width: 26em;
     transform: translate(-50%, -50%);
     text-align: center;
-    border: 5px solid white;
+    border: 5px solid #212121;
 }
 
 .LandingPageName > h1 {
@@ -22,4 +22,41 @@
 
 .LandingPageName > p {
     font-size: 2rem;
+}
+
+.CompImg {
+    position: absolute;
+    top: 15em;
+    left: 50%;
+    width: 15em;
+    height: 15em;
+    transform: translate(-50%, -50%);
+}
+
+.BtnInfo {
+    position: absolute;
+    top: 18em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:0;
+    transition-duration: 1s;
+    font-size: 2em
+}
+
+.BtnInfo:hover {
+    text-decoration: underline;
+}
+
+.ArrowDown {
+    position: absolute;
+    top: 39em;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    transform: translate(-50%, -50%);
 }
