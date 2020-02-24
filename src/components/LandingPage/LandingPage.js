@@ -8,9 +8,9 @@ const LandingPage = () => (
     <div className="LandingPageName">
       <h1>Wojciech Kubiak</h1>
       <p>Student</p>
+      <button className="BtnInfo">More</button>
+      <MdKeyboardArrowDown className="ArrowDown"/>
     </div>
-    <button className="BtnInfo">More</button>
-    <MdKeyboardArrowDown className="ArrowDown"/>
   </div>
 );
 

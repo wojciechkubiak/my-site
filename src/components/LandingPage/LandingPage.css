@@ -5,9 +5,9 @@
 
 .LandingPageName {
     position: absolute;
-    top: 46vh;
+    top: 26em;
     left: 50%;
-    width: 54vw;
+    width: 64em;
     transform: translate(-50%, -50%);
     text-align: center;
     border: 3px solid white;
@@ -20,31 +20,21 @@
     margin-top: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 8vh;
+    font-size: 4.5em;
     color: white;
 }
 
 .LandingPageName > p {
-    font-size: 5vh;
+    font-size: 2.4em;
     margin-top: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
     color: white
 }
 
-.CompImg {
-    position: absolute;
-    opacity: 0.7;
-    top: 16em;
-    left: 50%;
-    width: 20em;
-    height: 20em;
-    transform: translate(-50%, -50%);
-}
-
 .BtnInfo {
     position: absolute;
-    top: 62vh;
+    top: 13.5em;
     left: 50%;
     width: 10em;
     transform: translate(-50%, -50%);
@@ -57,7 +47,7 @@
     border: 2px solid white;
     transition-duration: 1s;;
     color:white;
-    font-size: 2.5vh;
+    font-size: 1.3em;
     padding: 0.1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
     font-family: 'Libre Baskerville', sans-serif;
@@ -70,9 +60,48 @@
 .ArrowDown {
     color: white;
     position: absolute;
-    top: 85vh;
+    top: 38em;
     left: 50%;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 1080px) {
+    .LandingPageName {
+        top: 19em;
+        width: 18em;
+        height: 20em;
+        padding: 1em;
+    }
+    
+    .LandingPageName > h1 {
+        margin: 0.5em;
+        font-size: 2.5em;
+    }
+    
+    .LandingPageName > p {
+        font-size: 1.5em;
+    }
+    
+    .BtnInfo {
+        top: 16.5em;
+        width: 10em;
+        font-size: 1.2em;
+        padding: 0.1em;
+    }
+    
+    .BtnInfo:hover {
+        text-decoration: underline;
+    }
+    
+    .ArrowDown {
+        color: white;
+        position: absolute;
+        top: 25em;
+        left: 50%;
+        width: 3em;
+        height: 3em;
+        transform: translate(-50%, -50%);
+    }
+  }

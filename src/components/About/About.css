@@ -29,11 +29,6 @@
   font-size: 1.5em !important;
 }
 
-@media only screen and (max-width: 320px) {
-  .AboutText > p {
-    font-size: 1em;
-  }
-}
 
 .AboutImg {
   position: absolute;
@@ -43,4 +38,16 @@
   width: 20em;
   height: 20em;
   transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .AboutContainer {
+    position: absolute;
+    top: 250em;
+    left: 50%;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
