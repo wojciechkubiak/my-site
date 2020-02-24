@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 
 const About = () => (
-  <div className="About" data-testid="About">
+  <div className="About" data-testid="About" id="about">
     <img className="AboutImg" alt="Writing" src={require('./../../img/writing.png')} ></img>     
       <div className="AboutContainer">
         <h1>About me</h1>

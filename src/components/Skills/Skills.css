@@ -11,6 +11,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     width: 40vw;
     left: 50%;
+    top: 5em;
     transform: translate(-50%, -50%);
     position: absolute;
     padding: 0.5em;
@@ -21,7 +22,7 @@
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
-    top: 26em;
+    top: 38em;
     left: 50%;
     width: 80vw;
     transform: translate(-50%, -50%);

@@ -6,7 +6,7 @@
 
 .AboutContainer {
   position: absolute;
-  top: 30em;
+  top: 35em;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);
@@ -38,7 +38,7 @@
 .AboutImg {
   position: absolute;
   opacity: 0.7;
-  top: 12em;
+  top: 17em;
   left: 50%;
   width: 20em;
   height: 20em;

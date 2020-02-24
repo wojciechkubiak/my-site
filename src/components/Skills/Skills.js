@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.css";
 
 const Skills = () => (
-  <div className="Skills">
+  <div className="Skills" id="skills">
     <h1>Skills</h1>
     <div className="SkillsContainer">
       <span className="SkillsSpan">

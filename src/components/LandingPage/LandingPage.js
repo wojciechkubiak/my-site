@@ -3,7 +3,7 @@ import './LandingPage.css';
 import {MdKeyboardArrowDown} from "react-icons/md"
 
 const LandingPage = () => (
-  <div className="LandingPage" data-testid="LandingPage">
+  <div className="LandingPage" id="landing" data-testid="LandingPage" >
     {/* <img className="CompImg" alt="Computer" src={require('./../../img/comp.png')} ></img> */}
     <div className="LandingPageName">
       <h1>Wojciech Kubiak</h1>
