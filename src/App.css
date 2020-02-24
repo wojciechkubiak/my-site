@@ -7,12 +7,12 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+}
 
+h1, h2, h3, h4 {
   font-family: 'Merriweather', sans-serif;
-  /*
-    background: #000000;  /* fallback for old browsers 
-background: -webkit-linear-gradient(to bottom, #e74c3c, #000000); 
-background: linear-gradient(to bottom, #e74c3c, #000000);
-    */
+}
+
+p {
+  font-family: 'Libre Baskerville', sans-serif;
 }

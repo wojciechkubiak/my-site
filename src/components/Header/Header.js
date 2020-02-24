@@ -7,7 +7,7 @@ const Header = () => (
     <Navbar
       className="shadow p-3 mb-5 rounded"
       collapseOnSelect
-      expand="lg"
+      expand="md"
       fixed="top"     
       variant="light"
     >
