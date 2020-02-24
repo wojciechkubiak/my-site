@@ -1,18 +1,15 @@
 body,
 html {
-  background: #ece9e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ffffff,
-    #ece9e6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #ffffff,
-    #ece9e6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  height:100vh;
+  background-image: url("./img/bg_blur.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 
-  font-family: "Dancing Script", sans-serif;
+  font-family: 'Merriweather', sans-serif;
   /*
     background: #000000;  /* fallback for old browsers 
 background: -webkit-linear-gradient(to bottom, #e74c3c, #000000); 

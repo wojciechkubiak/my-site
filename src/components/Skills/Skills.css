@@ -1,1 +1,4 @@
-.Skills {}
+.Skills {
+    position: relative;
+    height: 100vh;
+}
