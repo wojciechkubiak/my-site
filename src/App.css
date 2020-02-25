@@ -1,12 +1,11 @@
 body,
 html {
-  position: relative;
-  height:100vh;
-  background-image: url("./img/bg_blur.jpg");
+  background: url("./img/bg_blur.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 100%;
 }
 
 h1, h2, h3, h4 {

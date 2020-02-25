@@ -45,7 +45,7 @@
   .About {
     position: relative;
     color: white;
-    height: 60em;
+    height: 35em;
   }
   
   .AboutContainer {
@@ -65,6 +65,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     margin-left: 0;
+    width: 10em
   }
   
   .AboutText {

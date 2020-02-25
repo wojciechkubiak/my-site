@@ -1,85 +1,103 @@
 .Skills {
-    position: relative;
-    color: white;
-    height: 100vh !important;
+  position: relative;
+  color: white;
+  height: 60em;
 }
 
 .Skills > h1 {
-    text-align: center;
-    border: 3px solid white;
-    background-color: rgba(115, 162, 184, 0.61);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-    width: 40vw;
-    left: 50%;
-    top: 5em;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    padding: 0.5em;
+  position: absolute;
+  text-align: center;
+  border: 3px solid white;
+  background-color: rgba(115, 162, 184, 0.61);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  width: 16em;
+  left: 50%;
+  top: 5em;
+  transform: translate(-50%, -50%);
+  padding: 0.5em;
 }
 
 .SkillsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    top: 38em;
-    left: 50%;
-    width: 80vw;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 38em;
+  left: 50%;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .SkillsSpan {
-    width: 15em;
-    height: 15em;
-    margin: 2em;
-    transition: all 1s
+  width: 15em;
+  height: 15em;
+  margin: 2em;
+  transition: all 1s;
 }
 
 .SkillsSpan > p {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 1em;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1em;
 }
 
 .ImageStyle {
-    width: 10em;
-    height: 10em;
-    margin: 1em;
-    opacity: 0.7;
-    transition: all 1s;
+  width: 10em;
+  height: 10em;
+  margin: 1em;
+  opacity: 0.7;
+  transition: all 1s;
 }
 
 .ImageStyle:hover {
-    transform: scale(1.2);
-    opacity: 1;
+  transform: scale(1.2);
+  opacity: 1;
 }
 
-
 @media only screen and (max-width: 1080px) {
-    .Skills > h1 {
-        text-align: center;
-        border: 3px solid white;
-        background-color: rgba(115, 162, 184, 0.61);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-        width: 40vw;
-        left: 50%;
-        top: 335em;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        padding: 0.5em;
-    }
-
-    .SkillsContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        position: absolute;
-        top: 338em;
-        left: 50%;
-        width: 80vw;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    
+  .Skills {
+    position: relative;
+    color: white;
+    height: 100em;
   }
+
+  .Skills > h1 {
+    font-size: 2em;
+    text-align: center;
+    border: 3px solid white;
+    background-color: #da9393;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 0.1em;
+    width: 10em;
+    top: 3.4em;
+  }
+
+  .SkillsContainer {
+    width: 16em;
+    top: 52em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .SkillsSpan {
+    width: 10em;
+    height: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .SkillsSpan > p {
+    font-size: 1.2em;
+    padding: 0.1em;
+  }
+
+  .ImageStyle {
+    width: 9em;
+    height: 9em;
+    margin: 0.5em;
+  }
+}
