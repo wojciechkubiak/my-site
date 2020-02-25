@@ -1,16 +1,26 @@
 .About {
   position: relative;
   color: white;
-  height: 100vh !important;
+  height: 60em;
 }
 
 .AboutContainer {
   position: absolute;
-  top: 35em;
+  top: 26em;
   left: 50%;
-  width: 80vw;
+  width: 90em;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.AboutImg {
+  position: absolute;
+  opacity: 0.7;
+  top: -4em;
+  left: 50%;
+  width: 20em;
+  height: 20em;
+  transform: translate(-50%, -50%);
 }
 
 .AboutContainer > h1 {
@@ -19,35 +29,47 @@
 }
 
 .AboutText {
+  position: absolute;
+  top: 3.5em;
   border: 3px solid white;
   background-color: rgba(115, 162, 184, 0.61);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 2em;
+  padding: 1em;
 }
 
 .AboutText > p {
   font-size: 1.5em !important;
 }
 
-
-.AboutImg {
-  position: absolute;
-  opacity: 0.7;
-  top: 17em;
-  left: 50%;
-  width: 20em;
-  height: 20em;
-  transform: translate(-50%, -50%);
-}
-
-
 @media only screen and (max-width: 1080px) {
+  .About {
+    position: relative;
+    color: white;
+    height: 60em;
+  }
+  
   .AboutContainer {
-    position: absolute;
-    top: 250em;
-    left: 50%;
-    width: 80vw;
-    transform: translate(-50%, -50%);
+    top: 7em;
+    width: 20em;
+  }
+  
+  .AboutImg {
+    display: none;
+  }
+  
+  .AboutContainer > h1 {
+    font-size: 2em;
     text-align: center;
+    border: 3px solid white;
+    background-color: #da9393;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 0.1em;
+    margin-left: 0;
+  }
+  
+  .AboutText {
+    top: 6em;
+    padding: 0.4em;
+    font-size: 0.57em
   }
 }

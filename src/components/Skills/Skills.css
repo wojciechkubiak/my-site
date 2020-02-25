@@ -54,3 +54,32 @@
     transform: scale(1.2);
     opacity: 1;
 }
+
+
+@media only screen and (max-width: 1080px) {
+    .Skills > h1 {
+        text-align: center;
+        border: 3px solid white;
+        background-color: rgba(115, 162, 184, 0.61);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+        width: 40vw;
+        left: 50%;
+        top: 335em;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        padding: 0.5em;
+    }
+
+    .SkillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 338em;
+        left: 50%;
+        width: 80vw;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+  }

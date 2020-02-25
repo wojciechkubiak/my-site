@@ -1,6 +1,6 @@
 .LandingPage {
     position: relative;
-    height:100vh;   
+    height:60em;   
 }
 
 .LandingPageName {
@@ -45,7 +45,7 @@
     overflow: hidden;
     outline:0;
     border: 2px solid white;
-    transition-duration: 1s;;
+    transition-duration: 1s;
     color:white;
     font-size: 1.3em;
     padding: 0.1em;
@@ -67,7 +67,25 @@
     transform: translate(-50%, -50%);
 }
 
+/*@keyframes ArrowDown {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateY(1em);
+    }
+}
+
+.ArrowDown {
+    animation: ArrowDown 3s ease-in-out infinite alternate;
+    -webkit-animation: ArrowDown 3s ease-in-out infinite alternate;
+}*/
+
 @media only screen and (max-width: 1080px) {
+    .LandingPage {
+        height: 32em;   
+    }
+
     .LandingPageName {
         top: 16em;
         width: 18em;
