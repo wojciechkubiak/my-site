@@ -1,126 +1,190 @@
 .LandingPage {
-    position: relative;
-    height:60em;   
+  position: relative;
+  height: 60em;
 }
 
 .LandingPageName {
-    position: absolute;
-    top: 26em;
-    left: 50%;
-    width: 64em;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border: 3px solid white;
-    background-color: rgba(115, 162, 184, 0.61);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
-    padding: 2em;
+  position: absolute;
+  top: 26em;
+  left: 50%;
+  width: 64em;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 3px solid white;
+  background-color: rgba(115, 162, 184, 0.61);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 2em;
+  -webkit-animation: fadeAnim 1.5s ease-in;
+  -moz-animation: fadeAnim 1.5s ease-in;
+  -o-animation: fadeAnim 1.5s ease-in;
+  animation: fadeAnim 1.5s ease-in;
 }
 
 .LandingPageName > h1 {
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 4.5em;
-    color: white;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 4.5em;
+  color: white;
+  display: block;
+  -webkit-animation: fadeAnim 2.5s ease-in;
+  -moz-animation: fadeAnim 2.5s ease-in;
+  -o-animation: fadeAnim 2.5s ease-in;
+  animation: fadeAnim 2.5s ease-in;
 }
 
 .LandingPageName > p {
-    font-size: 2.4em;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    color: white
+  font-size: 2.4em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: white;
+  display: block;
+  -webkit-animation: fadeAnim 3.5s ease-in;
+  -moz-animation: fadeAnim 3.5s ease-in;
+  -o-animation: fadeAnim 3.5s ease-in;
+  animation: fadeAnim 3.5s ease-in;
 }
 
 .BtnInfo {
-    position: absolute;
-    top: 13.5em;
-    left: 50%;
-    width: 10em;
-    transform: translate(-50%, -50%);
-    background-color: #da9393;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:0;
-    border: 2px solid white;
-    transition-duration: 1s;
-    color:white;
-    font-size: 1.3em;
-    padding: 0.1em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
-    font-family: 'Libre Baskerville', sans-serif;
+  position: absolute;
+  top: 13.5em;
+  left: 50%;
+  width: 10em;
+  transform: translate(-50%, -50%);
+  background-color: #da9393;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: 0;
+  border: 2px solid white;
+  transition-duration: 1s;
+  color: white;
+  font-size: 1.3em;
+  padding: 0.1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  font-family: "Libre Baskerville", sans-serif;
 }
 
 .BtnInfo:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .ArrowDown {
-    color: white;
-    position: absolute;
-    top: 38em;
-    left: 50%;
-    width: 4em;
-    height: 4em;
-    transform: translate(-50%, -50%);
+  color: white;
+  position: absolute;
+  top: 38em;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  transform: translate(-50%, -50%);
+  -webkit-animation: fadeAnim 2.5s ease-in;
+  -moz-animation: fadeAnim 2.5s ease-in;
+  -o-animation: fadeAnim 2.5s ease-in;
+  animation: fadeAnim 2.5s ease-in;
 }
 
-/*@keyframes ArrowDown {
-    0% {
-        transform: translate(0);
-    }
-    100% {
-        transform: translateY(1em);
-    }
+@-webkit-keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
-.ArrowDown {
-    animation: ArrowDown 3s ease-in-out infinite alternate;
-    -webkit-animation: ArrowDown 3s ease-in-out infinite alternate;
-}*/
+@-moz-keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width: 1080px) {
-    .LandingPage {
-        height: 32em;   
-    }
-
-    .LandingPageName {
-        top: 16em;
-        width: 18em;
-        height: 15em;
-        padding: 1em;
-    }
-    
-    .LandingPageName > h1 {
-        margin: 0.5em;
-        font-size: 2.5em;
-    }
-    
-    .LandingPageName > p {
-        font-size: 1.5em;
-        padding-bottom: 1em;
-    }
-    
-    .BtnInfo {
-        top: 12.2em;
-        width: 10em;
-        font-size: 1.2em;
-        padding: 0.1em;
-    }
-    
-    .BtnInfo:hover {
-        text-decoration: underline;
-    }
-    
-    .ArrowDown {
-        color: white;
-        position: absolute;
-        top: 22em;
-        left: 50%;
-        width: 3em;
-        height: 3em;
-        transform: translate(-50%, -50%);
-    }
+  .LandingPage {
+    height: 32em;
   }
+
+  .LandingPageName {
+    top: 16em;
+    width: 18em;
+    height: 15em;
+    padding: 1em;
+  }
+
+  .LandingPageName > h1 {
+    margin: 0.5em;
+    font-size: 2.5em;
+  }
+
+  .LandingPageName > p {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .BtnInfo {
+    top: 12.2em;
+    width: 10em;
+    font-size: 1.2em;
+    padding: 0.1em;
+  }
+
+  .BtnInfo:hover {
+    text-decoration: underline;
+  }
+
+  .ArrowDown {
+    color: white;
+    position: absolute;
+    top: 22em;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+  }
+}
