@@ -5,8 +5,8 @@
 
 .LandingPageName {
   position: absolute;
-  top: 26em;
   left: 50%;
+  top: 26em;
   width: 64em;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -79,70 +79,10 @@
   width: 4em;
   height: 4em;
   transform: translate(-50%, -50%);
-  -webkit-animation: fadeAnim 2.5s ease-in;
-  -moz-animation: fadeAnim 2.5s ease-in;
-  -o-animation: fadeAnim 2.5s ease-in;
-  animation: fadeAnim 2.5s ease-in;
-}
-
-@-webkit-keyframes fadeAnim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeAnim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeAnim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeAnim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
+  -webkit-animation: fadeAnimArrow 2.5s ease-in;
+  -moz-animation: fadeAnimArrow 2.5s ease-in;
+  -o-animation: fadeAnimArrow 2.5s ease-in;
+  animation: fadeAnimArrow 2.5s ease-in;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -155,16 +95,28 @@
     width: 18em;
     height: 15em;
     padding: 1em;
+    -webkit-animation: fadeAnimMobile 1.5s ease-in;
+    -moz-animation: fadeAnimMobile 1.5s ease-in;
+    -o-animation: fadeAnimMobile 1.5s ease-in;
+    animation: fadeAnimMobile 1.5s ease-in;
   }
 
   .LandingPageName > h1 {
     margin: 0.5em;
     font-size: 2.5em;
+    -webkit-animation: fadeAnimMobile 2.5s ease-in;
+    -moz-animation: fadeAnimMobile 2.5s ease-in;
+    -o-animation: fadeAnimMobile 2.5s ease-in;
+    animation: fadeAnimMobile 2.5s ease-in;
   }
 
   .LandingPageName > p {
     font-size: 1.5em;
     padding-bottom: 1em;
+    -webkit-animation: fadeAnimMobile 3.5s ease-in;
+    -moz-animation: fadeAnimMobile 3.5s ease-in;
+    -o-animation: fadeAnimMobile 3.5s ease-in;
+    animation: fadeAnimMobile 3.5s ease-in;
   }
 
   .BtnInfo {
@@ -186,5 +138,298 @@
     width: 3em;
     height: 3em;
     transform: translate(-50%, -50%);
+    -webkit-animation: fadeAnimArrowMobile 2.5s ease-in;
+    -moz-animation: fadeAnimArrowMobile 2.5s ease-in;
+    -o-animation: fadeAnimArrowMobile 2.5s ease-in;
+    animation: fadeAnimArrowMobile 2.5s ease-in;
   }
 }
+
+@-webkit-keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 26em;
+  }
+}
+
+@-moz-keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 26em;
+  }
+}
+
+@-o-keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 26em;
+  }
+}
+
+@keyframes fadeAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 26em;
+  }
+}
+
+@-webkit-keyframes fadeAnimMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 16em;
+    }
+  }
+  
+  @-moz-keyframes fadeAnimMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 16em;
+    }
+  }
+  
+  @-o-keyframes fadeAnimMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 16em;
+    }
+  }
+  
+  @keyframes fadeAnimMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 16em;
+    }
+  }
+
+@-webkit-keyframes fadeAnimArrow {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 38em;
+  }
+}
+
+@-moz-keyframes fadeAnimArrow {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 38em;
+  }
+}
+
+@-o-keyframes fadeAnimArrow {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 38em;
+  }
+}
+
+@keyframes fadeAnimArrow {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 38em;
+  }
+}
+
+@-webkit-keyframes fadeAnimArrowMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 22em;
+    }
+  }
+  
+  @-moz-keyframes fadeAnimArrowMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 22em;
+    }
+  }
+  
+  @-o-keyframes fadeAnimArrowMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 22em;
+    }
+  }
+  
+  @keyframes fadeAnimArrowMobile {
+    0% {
+      display: none;
+      opacity: 0;
+      top: 0em;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      top: 1em;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      top: 22em;
+    }
+  }
+  
