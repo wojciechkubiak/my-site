@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => (
   <div className="Footer" data-testid="Footer">
-    Footer Component
+    Created by <strong>Wojciech Kubiak &reg;</strong>
   </div>
 );
 

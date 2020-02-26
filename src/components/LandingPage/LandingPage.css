@@ -6,7 +6,7 @@
 .LandingPageName {
   position: absolute;
   left: 50%;
-  top: 26em;
+  top: 28em;
   width: 64em;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -159,7 +159,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 26em;
+    top: 28em;
   }
 }
 
@@ -177,7 +177,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 26em;
+    top: 28em;
   }
 }
 
@@ -195,7 +195,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 26em;
+    top: 28em;
   }
 }
 
@@ -213,81 +213,81 @@
   100% {
     display: block;
     opacity: 1;
-    top: 26em;
+    top: 28em;
   }
 }
 
 @-webkit-keyframes fadeAnimMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 16em;
-    }
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
   }
-  
-  @-moz-keyframes fadeAnimMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 16em;
-    }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
   }
-  
-  @-o-keyframes fadeAnimMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 16em;
-    }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 16em;
   }
-  
-  @keyframes fadeAnimMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 16em;
-    }
+}
+
+@-moz-keyframes fadeAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
   }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 16em;
+  }
+}
+
+@-o-keyframes fadeAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 16em;
+  }
+}
+
+@keyframes fadeAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 16em;
+  }
+}
 
 @-webkit-keyframes fadeAnimArrow {
   0% {
@@ -362,74 +362,73 @@
 }
 
 @-webkit-keyframes fadeAnimArrowMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 22em;
-    }
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
   }
-  
-  @-moz-keyframes fadeAnimArrowMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 22em;
-    }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
   }
-  
-  @-o-keyframes fadeAnimArrowMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 22em;
-    }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 22em;
   }
-  
-  @keyframes fadeAnimArrowMobile {
-    0% {
-      display: none;
-      opacity: 0;
-      top: 0em;
-    }
-    1% {
-      display: block;
-      opacity: 0;
-      top: 1em;
-    }
-    100% {
-      display: block;
-      opacity: 1;
-      top: 22em;
-    }
+}
+
+@-moz-keyframes fadeAnimArrowMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
   }
-  
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 22em;
+  }
+}
+
+@-o-keyframes fadeAnimArrowMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 22em;
+  }
+}
+
+@keyframes fadeAnimArrowMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    top: 0em;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    top: 1em;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    top: 22em;
+  }
+}

@@ -1,1 +1,15 @@
-.Projects {}
+.Projects {
+  position: relative;
+  color: white;
+  height: 60em;
+}
+
+.ProjectsContainer {
+  position: absolute;
+  left: 50%;
+  top: 32em;
+  width: 90em;
+  height: 44em;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+}

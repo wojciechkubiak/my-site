@@ -1,0 +1,48 @@
+.SocialMedia {
+  position: fixed;
+  right: 3em;
+  bottom: 3em;
+  width: 5em;
+  height: 15em;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.SocialMediaBtn {
+  width: 5em;
+  height: 5em;
+  border: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none !important;
+  color: white;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+.FacebookBtn,
+.LinkedInBtn {
+  width: 5em;
+  height: 5em;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none !important;
+  color: white;
+}
+
+.SocialMediaIcon {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.FacebookIcon,
+.LinkedInIcon {
+  height: 40%;
+  width: 40%;
+  padding: 0.1em;
+  color: white;
+}
