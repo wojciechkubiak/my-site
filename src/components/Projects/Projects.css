@@ -46,7 +46,7 @@
   transform: rotate(90deg);
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 700px) {
   .Projects {
     height: 65em;
   }

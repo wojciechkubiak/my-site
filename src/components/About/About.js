@@ -20,4 +20,6 @@ const About = () => (
   </div>
 );
 
+// TODO: resize is a little bit problematic 
+
 export default About;
