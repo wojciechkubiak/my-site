@@ -5,9 +5,27 @@
   text-align: right;
   padding-right: 2em;
   padding-top: 0.2em;
-  top: 13em;
+  top: 12em;
   width: 100%;
   height: 2em;
   background-color: rgba(115, 162, 184, 0.849);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+  .Footer {
+    position: relative;
+    left: 0%;
+    color: white;
+    text-align: right;
+    padding-right: 2em;
+    padding-top: 0.2em;
+    top: 0em;
+    width: 100%;
+    height: 2em;
+    background-color: rgba(115, 162, 184, 0.849);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  }
 }

@@ -1,7 +1,7 @@
 .Contact {
   position: relative;
   color: white;
-  height: 61em;
+  height: 55em;
   top: 13em
 }
 
@@ -9,14 +9,14 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  top: 5.7em;
+  top: 5em;
   font-size: 4em;
   transform: rotate(90deg);
 }
 
 .ContactContainer {
   position: absolute;
-  top: 26em;
+  top: 22.5em;
   left: 50%;
   width: 90em;
   transform: translate(-50%, -50%);
@@ -33,7 +33,7 @@
   flex-direction: row;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 2em
+  bottom: 5em
 }
 
 .GitIcon {
@@ -59,4 +59,53 @@
 
 .MailContainer:hover {
   color: white
+}
+
+@media only screen and (max-width: 1080px) {
+  .Contact {
+    position: relative;
+    color: white;
+    height: 41.5em;
+    top: 0em
+  }
+  
+  .Contact > h1 {
+    font-size: 2em;
+    text-align: center;
+    border: 3px solid white;
+    background-color: #da9393;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 0.1em;
+    width: 10em;
+    top:2.8em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ContactContainer {
+    position: absolute;
+    top: 18em;
+    left: 50%;
+    width: 20em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .ContactContainer > h1 {
+    padding-bottom: 0.5em;
+    font-size: 2em
+  }
+
+  .ContactContainer > p {
+    font-size: 1em
+  }
+  
+  .GitContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0em
+  }
 }

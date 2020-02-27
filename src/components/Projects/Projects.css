@@ -1,7 +1,7 @@
 .Projects {
   position: relative;
   color: white;
-  height: 62em;
+  height: 50em;
 }
 
 .ProjectsContainer {
@@ -14,14 +14,14 @@
   padding: 1em;
 }
 
-.MonitorGif {
+.MonitorImg {
   position: absolute;
   top: 26em;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.PhoneGif {
+.PhoneImg {
   position: absolute;
   bottom: 6.5em;
   left: 25%;
@@ -29,7 +29,7 @@
   z-index: 2
 }
 
-.TabletGif {
+.TabletImg {
   position: absolute;
   bottom: 8.1em;
   right: 35%;
@@ -45,6 +45,67 @@
   top: 7em;
   transform: rotate(90deg);
 }
-/* @media only screen and (max-width: 1080px) {
 
-} */
+@media only screen and (max-width: 1080px) {
+  .Projects {
+    height: 65em;
+  }
+
+  .ProjectsContainer {
+    position: absolute;
+    left: 50%;
+    top: 28em;
+    width: 20em;  
+    height: 44em;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+  }
+  
+  .MonitorImg {
+    position: absolute;
+    top: 13em;
+    width: 20em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 1.5s;
+  }
+  
+  .PhoneImg {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 46em;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition-duration: 1.5s;
+  }
+  
+  .TabletImg {
+    position: absolute;
+    top: 28em;
+    width: 20em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition-duration: 1.5s;
+  }
+
+  .MonitorImg:hover, .PhoneImg:hover, .TabletImg:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .Projects > h1 {
+
+      font-size: 2em;
+      text-align: center;
+      border: 3px solid white;
+      background-color: #da9393;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+      padding: 0.1em;
+      width: 10em;
+      top:3.3em;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    
+  }
+}
