@@ -1,15 +1,62 @@
 .Contact {
   position: relative;
   color: white;
-  height: 20em;
+  height: 61em;
+  top: 13em
+}
+
+.Contact > h1 {
+  position: absolute;
+  text-align: center;
+  width: 5em;
+  top: 5.7em;
+  font-size: 4em;
+  transform: rotate(90deg);
 }
 
 .ContactContainer {
   position: absolute;
-  left: 0%;
-  top: 0em;
-  width: 100%;
-  height: 20em;
-  background-color: rgba(115, 162, 184, 0.61);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  top: 26em;
+  left: 50%;
+  width: 90em;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ContactContainer > h1 {
+  padding-bottom: 0.5em;
+}
+
+.GitContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 2em
+}
+
+.GitIcon {
+  height: 4em;
+  width: 4em;
+  color: white;
+}
+
+.GitBtn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none !important;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+.MailContainer {
+  color: white;
+
+  transition: 1s;
+}
+
+.MailContainer:hover {
+  color: white
 }

@@ -3,10 +3,11 @@ import './Projects.css';
 
 const Projects = () => (
   <div className="Projects" data-testid="Projects" id="projects">
+    <h1>Projects</h1>
     <div className="ProjectsContainer">
-      <img className="PhoneGif" src={require('./../../img/phone.gif')} onClick={(event) => alert(event.target.src)} alt="React-icon" />
-      <img className="MonitorGif" src={require('./../../img/monitor.gif')} onClick={(event) => alert(event.target.src)} alt="React-icon" />
-      <img className="TabletGif" src={require('./../../img/tablet.gif')} onClick={(event) => alert(event.target.src)} alt="React-icon" />
+      <img className="PhoneGif" src={require('./../../img/1res.png')} onClick={(event) => alert(event.target.src)} alt="React-icon" />
+      <img className="MonitorGif" src={require('./../../img/21.png')} onClick={(event) => alert(event.target.src)} alt="React-icon" />
+      <img className="TabletGif" src={require('./../../img/12.png')} onClick={(event) => alert(event.target.src)} alt="React-icon" />
     </div>
   </div>
 );

@@ -37,6 +37,14 @@
   z-index: 1
 }
 
+.Projects > h1 {
+  position: absolute;
+  text-align: center;
+  width: 5em;
+  font-size: 4em;
+  top: 7em;
+  transform: rotate(90deg);
+}
 /* @media only screen and (max-width: 1080px) {
 
 } */
