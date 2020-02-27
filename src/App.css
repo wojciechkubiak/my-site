@@ -1,21 +1,55 @@
 body,
 html {
-  background: url("./img/bg_blur.jpg") no-repeat center center fixed;
+  /* background: url("./img/bg_blur.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
+  background-size: cover; */
+  /* height: 100%; */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Merriweather', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", sans-serif;
 }
 
 p {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+/* Temporary button */
+.btnnn {
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+}
+
+/* Temporary button */
+.btnnnn {
+	z-index: 3;
+	position: fixed;
+	top: 60%;
+  }
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
 }
