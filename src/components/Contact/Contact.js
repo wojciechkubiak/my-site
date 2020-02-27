@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Footer from './../Footer/Footer';
 import "./Contact.css";
 import { FaGit } from "react-icons/fa";
 
@@ -27,6 +28,7 @@ class Contact extends Component {
           </a>
           <p>/wgkubiak</p>
         </div>
+        <Footer/>
       </div>
     );
   }

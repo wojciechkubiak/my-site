@@ -65,8 +65,8 @@
   .Contact {
     position: relative;
     color: white;
-    height: 41.5em;
-    top: 0em
+    height: 37em;
+    top: 1em
   }
   
   .Contact > h1 {
@@ -77,7 +77,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
-    top:2.8em;
+    top:2.5em;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -97,7 +97,7 @@
   }
 
   .ContactContainer > p {
-    font-size: 1em
+    font-size: 0.9em
   }
   
   .GitContainer {
@@ -106,6 +106,6 @@
     flex-direction: row;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 0em
+    bottom: 1em
   }
 }
