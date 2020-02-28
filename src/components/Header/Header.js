@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = props => {
   let mode = [
-    "shadow p-3 mb-5 rounded",
+    "shadow p-3 mb-5",
     props.headerMode ? "HeaderOut" : "HeaderTop"
   ]
   
@@ -26,7 +26,7 @@ return (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center HeaderText">
         <Nav>
-          <Nav.Link href="#landing" className={textColor.join(' ')}>Home</Nav.Link>
+          <Nav.Link href="#landing" className={textColor.join(' ')} active>Home</Nav.Link>
           <Nav.Link href="#about" className={textColor.join(' ')}>About</Nav.Link>
           <Nav.Link href="#skills" className={textColor.join(' ')}>Skills</Nav.Link>
           <Nav.Link href="#projects" className={textColor.join(' ')}>Projects</Nav.Link>
