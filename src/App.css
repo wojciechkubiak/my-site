@@ -53,3 +53,9 @@ img.bg {
     margin-left: -512px;
   }
 }
+
+.ScrollPos {
+    z-index: 3;
+    position: fixed;
+    top: 70%;
+}
