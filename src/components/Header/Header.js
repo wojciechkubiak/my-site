@@ -3,16 +3,18 @@ import { Navbar, Nav } from "react-bootstrap";
 import "./Header.css";
 
 const Header = props => {
-  const mode = [
+  let mode = [
     "shadow p-3 mb-5 rounded",
     props.headerMode ? "HeaderOut" : "HeaderTop"
   ]
   
-  const textColor = [
+  let textColor = [
     "HeaderLink",
     props.headerMode ? "HeaderTextColorWhite" :  "HeaderTextColorDark"
   ]
 
+
+  // Handle header color onClick
 return (
   <div className="Header">
     <Navbar

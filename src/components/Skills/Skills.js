@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 
+//TODO: Info onClick on skill img
 const Skills = () => (
   <div className="Skills" id="skills">
     <h1>Skills</h1>

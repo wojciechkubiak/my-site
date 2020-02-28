@@ -9,6 +9,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import "./App.css";
 
+//TODO: Animate components
 class App extends Component {
   constructor(props) {
     super(props);

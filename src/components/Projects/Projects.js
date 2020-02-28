@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 
+//TODO: Info onClick on project img
 const Projects = () => (
   <div className="Projects" data-testid="Projects" id="projects">
     <h1>Projects</h1>

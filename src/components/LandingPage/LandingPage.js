@@ -2,10 +2,11 @@ import React from "react";
 import "./LandingPage.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
+import {Nav} from "react-bootstrap";
 
 const LandingPage = props => {
   const [ref, inView, entry] = useInView({
-    threshold: 0.98
+    threshold: 0.9999
   });
 
   const changeTransparency = () => {
@@ -24,11 +25,11 @@ const LandingPage = props => {
       <div className="LandingPageName">
         <h1>Wojciech Kubiak</h1>
         <p>Student</p>
-        <h2>{`Header inside viewport ${inView}. ${props.headerMode}`}</h2>
-        {/* <button className="BtnInfo">More</button> */}
+  
+        {/* TODO: Button scroll onClick  */}
         <MdKeyboardArrowDown
-          className="ArrowDown"
-        />
+          className="ArrowDown"><Nav.Link href="#about" ></Nav.Link></MdKeyboardArrowDown>
+        
       </div>
     </div>
   );
