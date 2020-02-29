@@ -6,8 +6,8 @@
 .LandingPageName {
   position: absolute;
   left: 50%;
-  top: 28em;
-  width: 64em;
+  top: 45vh;
+  width: 60vw;
   transform: translate(-50%, -50%);
   text-align: center;
   border: 3px solid white;
@@ -46,35 +46,10 @@
   animation: fadeAnim 3.5s ease-in;
 }
 
-.BtnInfo {
-  position: absolute;
-  top: 13.5em;
-  left: 50%;
-  width: 10em;
-  transform: translate(-50%, -50%);
-  background-color: #da9393;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: 0;
-  border: 2px solid white;
-  transition-duration: 1s;
-  color: white;
-  font-size: 1.3em;
-  padding: 0.1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  font-family: "Libre Baskerville", sans-serif;
-}
-
-.BtnInfo:hover {
-  text-decoration: underline;
-}
-
 .ArrowDown {
   color: white;
   position: absolute;
-  top: 38em;
+  top: 60vh;
   left: 50%;
   width: 4em;
   height: 4em;
@@ -145,6 +120,7 @@
   }
 }
 
+
 @-webkit-keyframes fadeAnim {
   0% {
     display: none;
@@ -159,7 +135,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 28em;
+    top: 45vh;
   }
 }
 
@@ -177,7 +153,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 28em;
+    top: 45vh;
   }
 }
 
@@ -195,7 +171,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 28em;
+    top: 45vh;
   }
 }
 
@@ -213,10 +189,9 @@
   100% {
     display: block;
     opacity: 1;
-    top: 28em;
+    top: 45vh;
   }
 }
-
 @-webkit-keyframes fadeAnimMobile {
   0% {
     display: none;

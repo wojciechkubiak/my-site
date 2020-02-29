@@ -9,16 +9,16 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  top: 5em;
+  top: 45vh;
   font-size: 4em;
   transform: rotate(90deg);
 }
 
 .ContactContainer {
   position: absolute;
-  top: 22.5em;
+  top: 35vh;
   left: 50%;
-  width: 40em;
+  width: 32vw;
   transform: translate(-50%, -50%);
   background-color: #292930;
   text-align: center;
@@ -40,13 +40,14 @@
 .ContactContainer > p {
   color: white;
 }
+
 .GitContainer {
   position: absolute;
   display: flex;
   flex-direction: row;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 5em
+  bottom: 4vh
 }
 
 .GitIcon {
@@ -123,8 +124,6 @@
     color: #d56c2c
   }
 }
-
-
 
 @-webkit-keyframes contactAnim {
   0% {

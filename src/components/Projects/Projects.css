@@ -1,7 +1,8 @@
 #projects {
   position: relative;
   color: #d56c2c;
-  height: 100vh;
+  height: 101vh; 
+  /*TODO: 101? */
   background-color: #292930;
 }
 
@@ -10,9 +11,9 @@
   display: flex;
   flex-direction: row;
   left: 50%;
-  top: 30em;
-  width: 70%;  
-  height: 44em;
+  top: 50vh;
+  width: 70vw;  
+  height: 75vh;
   transform: translate(-50%, -50%);
   padding: 1em;
 }
@@ -25,27 +26,28 @@
 }
 
 .ProjectImgStyle {
-  width: 25%;
+  width: 25vw;
   padding: 1em;
 }
 
 .ProjectInfoImages {
+  position: relative;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 10em;
+  
+  height: 10vh;
   margin-top: 5em;
 }
 
 .ProjectsTextContainer {
-  width: 100%;
-  height: 50%;
+  width: 30vw;
+  height: 25vh;
   text-align: center;
 }
 
 .ImgContainer {
-  width: 60%;
-  height: 100%;
+  width: 50vw;
+  height: 60vh;
 }
 
 .Img {
@@ -57,12 +59,12 @@
   position: absolute;
   left: 50%;
   bottom: 0em;
-  width: 20%;
-  height: 10%;
+  width: 20vw;
+  height: 10vh;
   transform: translate(-50%, 0%);
   display: flex;
   flex-direction: row;
-  font-size: 3em;
+  font-size: 5vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -84,8 +86,8 @@
 }
 
 .ProjectInfoContainer {
-  width: 30%;
-  height: 70%;
+  width: 30vw;
+  height: 60vh;
   margin-left: auto;
   margin-right: 0;
   
@@ -103,12 +105,12 @@
 }
 
 .ProjectSpan {
-  width: 33%;
+  width: 30vw;
   align-items: center;
 }
 
 .ProjectImgStyle {
-  width: 100%;
+  width: 10vw;
   left: 50%;
 }
 
