@@ -1,7 +1,8 @@
 #skills {
   position: relative;
   color: white;
-  height: 60em;
+  height: 100vh;
+  background-color: #3Eb650;
 }
 
 #skills > h1 {

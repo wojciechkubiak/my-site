@@ -1,11 +1,11 @@
-.Contact {
+#contact {
   position: relative;
   color: white;
-  height: 55em;
-  top: 13em
+  height: 100vh;
+  background-color: #E12B38;
 }
 
-.Contact > h1 {
+#contact > h1 {
   position: absolute;
   text-align: center;
   width: 5em;
@@ -18,13 +18,22 @@
   position: absolute;
   top: 22.5em;
   left: 50%;
-  width: 90em;
+  width: 40em;
   transform: translate(-50%, -50%);
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.ContactAnim {
+  -webkit-animation: contactAnim 1.5s ease-in;
+  -moz-animation: contactAnim 1.5s ease-in;
+  -o-animation: contactAnim 1.5s ease-in;
+  animation: contactAnim 1.5s ease-in;
 }
 
 .ContactContainer > h1 {
-  padding-bottom: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .GitContainer {
@@ -62,18 +71,17 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .Contact {
+  #contact {
     position: relative;
     color: white;
     height: 37em;
     top: 1em
   }
   
-  .Contact > h1 {
+  #contact > h1 {
     font-size: 2em;
     text-align: center;
-    border: 3px solid white;
-    background-color: #da9393;
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
@@ -107,5 +115,151 @@
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 1em
+  }
+}
+
+
+
+@-webkit-keyframes contactAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes contactAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes contactAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes contactAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-webkit-keyframes contactAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes contactAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes contactAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes contactAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
   }
 }

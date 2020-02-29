@@ -2,13 +2,35 @@ import React, { Component } from "react";
 import Footer from './../Footer/Footer';
 import "./Contact.css";
 import { FaGit } from "react-icons/fa";
+import {InView} from "react-intersection-observer";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: ["ContactContainer"]
+    };
+    this.changeClass = this.changeClass.bind(this);
+  }
+
+  changeClass = val => {
+    if (val) {
+      this.setState({ mode: ["ContactContainer", "ContactAnim"] }, () =>
+        console.log(this.state.mode)
+      );
+    }
+  };
+
   render() {
     return (
-      <div className="Contact" data-testid="Contact" id="contact">
+      <InView
+        as="div"
+        data-testid="Contact"
+        id="contact"
+        onChange={(inView, entry) => this.changeClass(inView)}
+      >
         <h1>Contact</h1>
-        <div className="ContactContainer" data-testid="Contact">
+        <div className={this.state.mode.join(" ")} data-testid="Contact">
           <h1>Get in touch</h1>
           <p>Are you interested in working with me or just have a question?</p>
           <p>
@@ -29,9 +51,10 @@ class Contact extends Component {
           <p>/wgkubiak</p>
         </div>
         <Footer/>
-      </div>
+      </InView>
     );
   }
+
 }
 
 export default Contact;

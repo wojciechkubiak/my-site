@@ -1,7 +1,8 @@
 #about {
   position: relative;
-  color: white;
-  height: 55em;
+  color: #d56c2c;
+  height: 100vh;
+  background-color: #292930;
 }
 
 .AboutAnim {
@@ -39,8 +40,7 @@
 .AboutText {
   position: absolute;
   top: 3.5em;
-  border: 3px solid white;
-  background-color: rgba(115, 162, 184, 0.61);
+  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 1em;
 }

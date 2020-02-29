@@ -1,7 +1,8 @@
-.Projects {
+#projects {
   position: relative;
   color: white;
-  height: 50em;
+  height: 100vh;
+  background-color: #FCC133;
 }
 
 .ProjectsContainer {
@@ -14,6 +15,13 @@
   height: 44em;
   transform: translate(-50%, -50%);
   padding: 1em;
+}
+
+.ProjectsAnim {
+  -webkit-animation: projectsAnim 1.5s ease-in;
+  -moz-animation: projectsAnim 1.5s ease-in;
+  -o-animation: projectsAnim 1.5s ease-in;
+  animation: projectsAnim 1.5s ease-in;
 }
 
 .ProjectImgStyle {
@@ -31,7 +39,8 @@
 
 .ProjectsTextContainer {
   width: 100%;
-  height: 50%
+  height: 50%;
+  text-align: center;
 }
 
 .ImgContainer {
@@ -50,10 +59,11 @@
   bottom: 0em;
   width: 20%;
   height: 10%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 0%);
   display: flex;
   flex-direction: row;
-  font-size: 3em
+  font-size: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .PrevBtn {
@@ -78,18 +88,18 @@
   height: 70%;
   margin-left: auto;
   margin-right: 0;
-  border: 3px solid white;
-  background-color: rgba(115, 162, 184, 0.61);
+  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.Projects > h1 {
+#projects > h1 {
   position: absolute;
   text-align: center;
   width: 5em;
   font-size: 4em;
   top: 7em;
   transform: rotate(90deg);
+  
 }
 
 .ProjectSpan {
@@ -112,7 +122,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .Projects {
+  #projects {
     height: 65em;
   }
 
@@ -172,5 +182,150 @@
       left: 50%;
       transform: translate(-50%, -50%);
     
+  }
+}
+
+
+@-webkit-keyframes projectsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes projectsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes projectsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes projectsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-webkit-keyframes projectsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes projectsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes projectsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes projectsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
   }
 }

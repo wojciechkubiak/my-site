@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Projects.css";
+import {InView} from "react-intersection-observer";
 
 class Projects extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Projects extends Component {
     this.state = {
       img: 1,
       data: [
-        ["Obb-SYS", "engengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengengeng"],
+        ["Obb-SYS", "engengengengengengengengengengen gengengengen gengengengengengengengengengengen gengengengengengengengenge ngengengengengengengengengengeng engengengengengeng engengengengengeng"],
         ["Opqn", "Mob"],
         ["FitTracker", "Fit"]
       ],
@@ -27,9 +28,19 @@ class Projects extends Component {
           "white_empty_nodejs.png",
           "white_empty_psql.png"
         ]
-      ]
+      ],
+      mode: ["ProjectsContainer"]
     };
+    this.changeClass = this.changeClass.bind(this);
   }
+
+  changeClass = val => {
+    if (val) {
+      this.setState({ mode: ["ProjectsContainer", "ProjectsAnim"] }, () =>
+        console.log(this.state.mode)
+      );
+    }
+  };
 
   swapImage = event => {
     const { img } = this.state;
@@ -44,10 +55,15 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="Projects" data-testid="Projects" id="projects">
+      <InView
+        as="div"
+        data-testid="Projects"
+        id="projects"
+        onChange={(inView, entry) => this.changeClass(inView)}
+      >
         <h1>Projects</h1>
-        <div className="ProjectsContainer">
-          <div className="ImgContainer">
+        <div className={this.state.mode.join(" ")} data-testid="Projects">
+        <div className="ImgContainer">
             <img
               className="Img"
               src={require(`./../../img/${this.state.img}.png`)}
@@ -102,9 +118,10 @@ class Projects extends Component {
             &rarr;
           </button>
         </div>
-      </div>
+      </InView>
     );
   }
 }
+
 
 export default Projects;
