@@ -32,7 +32,7 @@ class Skills extends Component {
           <span className="SkillsSpan">
             <img
               className="ImageStyle"
-              src={require("./../../img/white_empty_react.png")}
+              src={require("./../../img/black_empty_react.png")}
               alt="React-icon"
             />
             {/* <p>ReactJS</p> */}
@@ -40,7 +40,7 @@ class Skills extends Component {
           <span className="SkillsSpan">
             <img
               className="ImageStyle"
-              src={require("./../../img/white_empty_nodejs.png")}
+              src={require("./../../img/black_empty_nodejs.png")}
               alt="NodeJS-icon"
             />
             {/* <p>NodeJS</p> */}
@@ -51,7 +51,7 @@ class Skills extends Component {
               onClick={() => {
                 alert("121");
               }}
-              src={require("./../../img/white_empty_js.png")}
+              src={require("./../../img/black_empty_js.png")}
               alt="React-icon"
             />
             {/* <p>Javascript</p> */}
@@ -59,7 +59,7 @@ class Skills extends Component {
           <span className="SkillsSpan">
             <img
               className="ImageStyle"
-              src={require("./../../img/white_empty_psql.png")}
+              src={require("./../../img/black_empty_psql.png")}
               alt="PostgreSQL-icon"
             />
             {/* <p>PostgreSQL</p> */}
@@ -67,7 +67,7 @@ class Skills extends Component {
           <span className="SkillsSpan">
             <img
               className="ImageStyle"
-              src={require("./../../img/white_empty_html.png")}
+              src={require("./../../img/black_empty_html.png")}
               alt="HTML-icon"
             />
             {/* <p>HTML5</p> */}
@@ -75,7 +75,7 @@ class Skills extends Component {
           <span className="SkillsSpan">
             <img
               className="ImageStyle"
-              src={require("./../../img/white_empty_css.png")}
+              src={require("./../../img/black_empty_css.png")}
               alt="CSS-icon"
             />
             {/* <p>CSS</p> */}
@@ -83,7 +83,7 @@ class Skills extends Component {
           <span className="SkillsSpan">
             <img
               className="ImageStyle"
-              src={require("./../../img/white_empty_bootstrap.png")}
+              src={require("./../../img/black_empty_bootstrap.png")}
               alt="Bootstrap-icon"
             />
             {/* <p>Bootstrap</p> */}
@@ -93,7 +93,5 @@ class Skills extends Component {
     );
   }
 }
-
-// TODO: resize is a little bit problematic
 
 export default Skills;

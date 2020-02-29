@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./SocialMedia.css";
-import { GoGlobe } from "react-icons/go";
+import { MdContacts } from "react-icons/md";
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 
 class SocialMedia extends Component {
@@ -37,7 +37,7 @@ class SocialMedia extends Component {
           </a>
         )}
         <button className="SocialMediaBtn">
-          <GoGlobe className="SocialMediaIcon" onClick={this.toggleIcons} />
+          <MdContacts className="SocialMediaIcon" onClick={this.toggleIcons} />
           Social
         </button>
       </div>

@@ -3,15 +3,15 @@
   right: 2em;
   bottom: 2.5em;
   width: 5em;
-  height: 15em;
+  height: 12em;
   align-content: center;
   display: flex;
   flex-direction: column;
 }
 
 .SocialMediaBtn {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border: none;
   position: absolute;
   padding: 0;
@@ -19,24 +19,24 @@
   bottom: 0;
   background-color: rgba(255, 255, 255, 0);
   outline: none !important;
-  color: white;
+  color: #d56c2c;
   font-family: "Libre Baskerville", sans-serif;
 }
 
 .FacebookBtn,
 .LinkedInBtn {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   outline: none !important;
-  color: white;
+  color: #d56c2c;
 }
 
 .SocialMediaIcon {
   height: 80%;
   width: 80%;
-  color: white;
+  color: #d56c2c;
 }
 
 .FacebookIcon,
@@ -44,7 +44,7 @@
   height: 40%;
   width: 40%;
   padding: 0.1em;
-  color: white;
+  color: #d56c2c;
 }
 
 @media only screen and (max-width: 700px) {
