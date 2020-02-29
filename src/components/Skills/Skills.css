@@ -1,16 +1,23 @@
-.Skills {
+#skills {
   position: relative;
   color: white;
   height: 60em;
 }
 
-.Skills > h1 {
+#skills > h1 {
   position: absolute;
   text-align: center;
   width: 5em;
   font-size: 4em;
   top: 7em;
   transform: rotate(90deg);
+}
+
+.SkillsAnim {
+  -webkit-animation: skillsAnim 1.5s ease-in;
+  -moz-animation: skillsAnim 1.5s ease-in;
+  -o-animation: skillsAnim 1.5s ease-in;
+  animation: skillsAnim 1.5s ease-in;
 }
 
 .SkillsContainer {
@@ -52,13 +59,13 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .Skills {
+  #skills {
     position: relative;
     color: white;
     height: 96em;
   }
 
-  .Skills > h1 {
+  #skills > h1 {
     font-size: 2em;
     text-align: center;
     border: 3px solid white;
@@ -98,5 +105,150 @@
     width: 9em;
     height: 9em;
     margin: 0.5em;
+  }
+}
+
+
+@-webkit-keyframes skillsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes skillsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes skillsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes skillsAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-webkit-keyframes skillsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes skillsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes skillsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes skillsAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
   }
 }

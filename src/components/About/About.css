@@ -1,7 +1,14 @@
-.About {
+#about {
   position: relative;
   color: white;
   height: 55em;
+}
+
+.AboutAnim {
+  -webkit-animation: aboutAnim 1.5s ease-in;
+  -moz-animation: aboutAnim 1.5s ease-in;
+  -o-animation: aboutAnim 1.5s ease-in;
+  animation: aboutAnim 1.5s ease-in;
 }
 
 .AboutContainer {
@@ -43,7 +50,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .About {
+  #about {
     position: relative;
     color: white;
     height: 35em;
@@ -73,5 +80,150 @@
     top: 6em;
     padding: 0.4em;
     font-size: 0.57em
+  }
+}
+
+
+@-webkit-keyframes aboutAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes aboutAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes aboutAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes aboutAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-webkit-keyframes aboutAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-moz-keyframes aboutAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@-o-keyframes aboutAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
+  }
+}
+
+@keyframes aboutAnimMobile {
+  0% {
+    display: none;
+    opacity: 0;
+    left: 25%
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    left: 25%
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    left: 50%
   }
 }
