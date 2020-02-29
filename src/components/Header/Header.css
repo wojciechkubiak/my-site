@@ -17,7 +17,7 @@
 }
 
 .HeaderTextColorDark {
-  color: #381e2a!important
+  color: #292930!important
 }
 
 .HeaderLink:hover {
@@ -49,11 +49,11 @@
   }
 
   .HeaderTop {
-    background-color: #2c2425;
+    background-color: #292930;
   }
   
   .HeaderOut {
-    background-color:#2c2425;
+    background-color:#292930;
   }
   
 }
