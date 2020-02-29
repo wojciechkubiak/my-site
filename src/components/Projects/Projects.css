@@ -9,23 +9,40 @@
   display: flex;
   flex-direction: row;
   left: 50%;
-  top: 28em;
-  width: 80%;  
-  height: 34em;
+  top: 30em;
+  width: 70%;  
+  height: 44em;
   transform: translate(-50%, -50%);
   padding: 1em;
 }
 
+.ProjectImgStyle {
+  width: 25%;
+  padding: 1em;
+}
+
+.ProjectInfoImages {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10em;
+  margin-top: 5em;
+}
+
+.ProjectsTextContainer {
+  width: 100%;
+  height: 50%
+}
+
 .ImgContainer {
-  width: 50%;
-  align-content: center;
+  width: 60%;
+  height: 100%;
 }
 
 .Img {
-  position: absolute;
   height: 100%;
-  right: 50%;
 }
+
 
 .BtnContainer { 
   position: absolute;
@@ -57,8 +74,10 @@
 }
 
 .ProjectInfoContainer {
-  width: 45%;
-  height: 60%;
+  width: 30%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: 0;
   border: 3px solid white;
   background-color: rgba(115, 162, 184, 0.61);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -71,6 +90,25 @@
   font-size: 4em;
   top: 7em;
   transform: rotate(90deg);
+}
+
+.ProjectSpan {
+  width: 33%;
+  align-items: center;
+}
+
+.ProjectImgStyle {
+  width: 100%;
+  left: 50%;
+}
+
+.ProjectsTextContainer > h3 {
+  text-align: center;
+  padding: 0.4em;
+}
+
+.ProjectInfoContainer > p {
+  padding: 0.4em
 }
 
 @media only screen and (max-width: 700px) {
