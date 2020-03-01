@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Projects.css";
-import {InView} from "react-intersection-observer";
+import { InView } from "react-intersection-observer";
 
 class Projects extends Component {
   constructor(props) {
@@ -8,9 +8,9 @@ class Projects extends Component {
     this.state = {
       img: 1,
       data: [
-        ["Obb-SYS", "engengengengengengengengengengen gengengengen gengengengengengengengengengengen gengengengengengengengenge ngengengengengengengengengengeng engengengengengeng engengengengengeng"],
-        ["Opqn", "Mob"],
-        ["FitTracker", "Fit"]
+        ["Obb-SYS", "Web app for the vet"],
+        ["Opqn", "Mobile app for the diet supervisors"],
+        ["FitTracker", "CRUD diet app"]
       ],
       imageSrc: [
         [
@@ -19,7 +19,7 @@ class Projects extends Component {
           "white_empty_psql.png"
         ],
         [
-          "white_empty_android.png", 
+          "white_empty_android.png",
           "white_empty_nodejs.png",
           "white_empty_psql.png"
         ],
@@ -63,39 +63,43 @@ class Projects extends Component {
       >
         <h1>Projects</h1>
         <div className={this.state.mode.join(" ")} data-testid="Projects">
-        <div className="ImgContainer">
+          <div className="ImgContainer">
             <img
               className="Img"
               src={require(`./../../img/${this.state.img}.png`)}
               alt="React-icon"
             />
+            <h3>{this.state.data[this.state.img - 1][0]}</h3>
+            <p>{this.state.data[this.state.img - 1][1]}</p>
           </div>
           <div className="ProjectInfoContainer">
-            <div className="ProjectsTextContainer">
-              <h3>{this.state.data[this.state.img - 1][0]}</h3>
-              <p>{this.state.data[this.state.img - 1][1]}</p>
-            </div>
             <div className="ProjectInfoImages">
               <span className="ProjectSpan">
                 <img
                   className="ProjectImgStyle"
-                  src={require(`./../../img/${this.state.imageSrc[this.state.img -1][0]}`)}
+                  src={require(`./../../img/${
+                    this.state.imageSrc[this.state.img - 1][0]
+                  }`)}
                   alt="React-icon"
-                /> 
+                />
               </span>
               <span className="ProjectSpan">
                 <img
                   className="ProjectImgStyle"
-                  src={require(`./../../img/${this.state.imageSrc[this.state.img -1][1]}`)}
+                  src={require(`./../../img/${
+                    this.state.imageSrc[this.state.img - 1][1]
+                  }`)}
                   alt="React-icon"
-                /> 
+                />
               </span>
               <span className="ProjectSpan">
                 <img
                   className="ProjectImgStyle"
-                  src={require(`./../../img/${this.state.imageSrc[this.state.img -1][2]}`)}
+                  src={require(`./../../img/${
+                    this.state.imageSrc[this.state.img - 1][2]
+                  }`)}
                   alt="React-icon"
-                /> 
+                />
               </span>
             </div>
           </div>
@@ -122,6 +126,5 @@ class Projects extends Component {
     );
   }
 }
-
 
 export default Projects;

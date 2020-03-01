@@ -88,7 +88,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
-    top:2.5em;
+    top: 4em;
     left: 50%;
     transform: translate(-50%, -50%);
   }

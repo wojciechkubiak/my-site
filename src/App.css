@@ -23,20 +23,6 @@ p {
   font-family: "Libre Baskerville", sans-serif;
 }
 
-/* Temporary button */
-.btnnn {
-  z-index: 3;
-  position: fixed;
-  top: 50%;
-}
-
-/* Temporary button */
-.btnnnn {
-	z-index: 3;
-	position: fixed;
-	top: 60%;
-  }
-
 img.bg {
   min-height: 100%;
   min-width: 1024px;
@@ -52,10 +38,4 @@ img.bg {
     left: 50%;
     margin-left: -512px;
   }
-}
-
-.ScrollPos {
-    z-index: 3;
-    position: fixed;
-    top: 70%;
 }
