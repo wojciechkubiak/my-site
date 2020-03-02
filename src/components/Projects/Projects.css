@@ -1,9 +1,11 @@
 #projects {
   position: relative;
-  color: #d56c2c;
-  height: 101vh; 
-  /*TODO: 101? */
-  background-color: #292930;
+  height: 101vh;
+  background-image: url('./../../img/projects.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ProjectsContainer {
@@ -55,6 +57,7 @@
 
 .ImgContainer > h3 {
   text-align: center;
+  color:#d56c2c;
   font-size: 5em;
 }
 
@@ -64,6 +67,7 @@
 }
 
 .BtnContainer { 
+  background-color: #292930;
   position: absolute;
   left: 50%;
   bottom: 0em;

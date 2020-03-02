@@ -49,11 +49,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img
+        {/* <img
           className="bg"
           src={require("./img/bg_blur.jpg")}
           alt="React-icon"
-        />
+        /> */}
         <Header language={this.state.language} headerMode={this.state.headerMode} />
         <LandingPage headerHandler={this.headerHandler} />
         <About language={this.state.language}/>

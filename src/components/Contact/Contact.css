@@ -1,8 +1,11 @@
 #contact {
   position: relative;
-  color: #d56c2c;
-  height: 100vh;
-  background-color: white;
+  height: 101vh;
+  background-image: url('./../../img/contact.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #contact > h1 {
@@ -11,6 +14,7 @@
   width: 5em;
   top: 45vh;
   font-size: 4em;
+  color: white;
   transform: rotate(90deg);
 }
 
@@ -35,6 +39,7 @@
 .ContactContainer > h1 {
   padding-top: 1em;
   padding-bottom: 1em;
+  color: white;
 }
 
 .ContactContainer > p {
@@ -53,7 +58,11 @@
 .GitIcon {
   height: 4em;
   width: 4em;
-  color: #d56c2c;
+  color: white;
+}
+
+.GitContainer > p {
+  color: white;
 }
 
 .GitBtn {
@@ -95,7 +104,7 @@
   
   .ContactContainer {
     position: absolute;
-    top: 18em;
+    top: 19em;
     left: 50%;
     width: 20em;
     transform: translate(-50%, -50%);

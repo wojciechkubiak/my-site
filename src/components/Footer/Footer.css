@@ -14,7 +14,7 @@
 
 @media only screen and (max-width: 700px) {
   .Footer {
-    position: absolute;
+    position: relative;
     left: 0%;
     color: white;
     text-align: right;
