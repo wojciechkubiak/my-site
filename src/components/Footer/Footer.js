@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => (
+const Footer = props => (
   <div className="Footer" data-testid="Footer">
-    Created by <strong>Wojciech Kubiak &reg;</strong>
+    {props.language ? "Created by " : "Strona stworzona przez "} <strong>Wojciech Kubiak &reg;</strong>
   </div>
 );
 

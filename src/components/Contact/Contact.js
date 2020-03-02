@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Footer from './../Footer/Footer';
+import Footer from "./../Footer/Footer";
 import "./Contact.css";
 import { FaGit } from "react-icons/fa";
-import {InView} from "react-intersection-observer";
+import { InView } from "react-intersection-observer";
 
 class Contact extends Component {
   constructor(props) {
@@ -29,18 +29,28 @@ class Contact extends Component {
         id="contact"
         onChange={(inView, entry) => this.changeClass(inView)}
       >
-        <h1>Contact</h1>
+        <h1> {this.props.language ? "Contact" : "Kontakt"}</h1>
         <div className={this.state.mode.join(" ")} data-testid="Contact">
-          <h1>Get in touch</h1>
-          <p>Are you interested in working with me or just have a question?</p>
+          <h1> {this.props.language ? "Get in touch" : "Skontaktuj się"}</h1>
           <p>
-            Email me at{" "}
+            {" "}
+            {this.props.language
+              ? "Are you interested in working with me or just have a question?"
+              : "Jesteś zainteresowana/y pracą ze mną lub masz jakieś pytanie?"}
+          </p>
+          <p>
+            {this.props.language ? "Email me at" : "Napisz do mnie na adres"}{" "}
             <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
               <strong>wgkubiak@gmail.com</strong>
             </a>
           </p>
-          <p>or</p>
-          <p>Send me a message at 726 823 405</p>
+          <p>{this.props.language ? "or" : "lub"}</p>
+          <p>
+            {this.props.language
+              ? "Send me a message at "
+              : "Wyślij wiadomość na numer "}
+            726 823 405
+          </p>
         </div>
         <div className="GitContainer">
           <a href={"https://www.github.com/wgkubiak"}>
@@ -50,11 +60,9 @@ class Contact extends Component {
           </a>
           <p>/wgkubiak</p>
         </div>
-        <Footer/>
       </InView>
     );
   }
-
 }
 
 export default Contact;

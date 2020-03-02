@@ -8,9 +8,17 @@ class Projects extends Component {
     this.state = {
       img: 1,
       data: [
-        ["Obb-SYS", "Web app for the vet"],
-        ["Opqn", "Mobile app for the diet supervisors"],
-        ["FitTracker", "CRUD diet app"]
+        ["Obb-SYS", "Web app for the vet", "Aplikacja webowa dla weterynarza"],
+        [
+          "Opqn",
+          "Mobile app for the diet supervisors",
+          "Aplikacja mobilna dla dietetyków"
+        ],
+        [
+          "FitTracker",
+          "CRUD diet app",
+          "Aplikacja webowa typu CRUD dla dietetyków"
+        ]
       ],
       imageSrc: [
         [
@@ -61,7 +69,7 @@ class Projects extends Component {
         id="projects"
         onChange={(inView, entry) => this.changeClass(inView)}
       >
-        <h1>Projects</h1>
+        <h1>{this.props.language ? "Projects" : "Projekty"}</h1>
         <div className={this.state.mode.join(" ")} data-testid="Projects">
           <div className="ImgContainer">
             <img
@@ -70,7 +78,11 @@ class Projects extends Component {
               alt="React-icon"
             />
             <h3>{this.state.data[this.state.img - 1][0]}</h3>
-            <p>{this.state.data[this.state.img - 1][1]}</p>
+            <p>
+              {this.props.language
+                ? this.state.data[this.state.img - 1][1]
+                : this.state.data[this.state.img - 1][2]}
+            </p>
           </div>
           <div className="ProjectInfoContainer">
             <div className="ProjectInfoImages">

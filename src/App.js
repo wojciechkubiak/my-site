@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
+import Footer from "./components/Footer/Footer"
 import "./App.css";
 
 //TODO: Resize everything em -> vh/vw
@@ -14,15 +15,35 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      headerMode: false
+      headerMode: false,
+      language: false,  // true = EN | false = PL
+      img: 0,
+      imgSrc: [
+        "uk-flag.jpg",
+        "pl-flag.jpg"
+      ]
     };
     this.headerHandler = this.headerHandler.bind(this);
   }
 
-  headerHandler = (val) => {
+  headerHandler = val => {
     val
       ? this.setState({ headerMode: false })
       : this.setState({ headerMode: true });
+  };
+
+  languageHandler = () => {
+    const { language, img } = this.state;
+    
+    this.setState({language: !language}, () => console.log(language))
+
+    if(img === 1) {
+      this.setState({ img: 0 });
+    }
+
+    if(img === 0) {
+      this.setState({ img: 1});
+    }
   };
 
   render() {
@@ -33,13 +54,21 @@ class App extends Component {
           src={require("./img/bg_blur.jpg")}
           alt="React-icon"
         />
-        <Header headerMode={this.state.headerMode} />
-        <LandingPage headerHandler={this.headerHandler}/>
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Header language={this.state.language} headerMode={this.state.headerMode} />
+        <LandingPage headerHandler={this.headerHandler} />
+        <About language={this.state.language}/>
+        <Skills language={this.state.language}/>
+        <Projects language={this.state.language}/>
+        <Contact language={this.state.language}/>
         <SocialMedia />
+        <Footer language={this.state.language}/>
+        <button className="languageBtn" onClick={this.languageHandler}>
+          <img
+              className="languageImg"
+              src={require(`./img/${ this.state.imgSrc[this.state.img]}`)}
+              alt="flag-icon"
+          />
+        </button>       
       </div>
     );
   }

@@ -6,7 +6,9 @@ class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mode: ["SkillsContainer"]
+      mode: ["SkillsContainer"],
+      language: true,
+      header: "Skills"
     };
     this.changeClass = this.changeClass.bind(this);
   }
@@ -27,7 +29,7 @@ class Skills extends Component {
         id="skills"
         onChange={(inView, entry) => this.changeClass(inView)}
       >
-        <h1>Skills</h1>
+        <h1>{this.props.language ? "Skills" : "Technologie"}</h1>
         <div className={this.state.mode.join(" ")}>
           <span className="SkillsSpan">
             <img
