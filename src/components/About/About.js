@@ -41,7 +41,7 @@ class About extends Component {
                 Measuring Systems at the University of Wroclaw. I am passionate \
                 about creating nice looking web applications using modern technologies. \
                 I got into it during numerous individual and university projects. In \
-                each of them I showed creativy, consistency and attention to the quality \
+                each of them I showed creativity, consistency and attention to the quality \
                 of the application and code. During my studies, I also had the opportunity \
                 to participate in internships and programming internships. During them I \
                 learned how to work in the SCRUM system, how to communicate with client \

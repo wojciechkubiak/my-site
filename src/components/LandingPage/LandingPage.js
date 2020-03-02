@@ -2,7 +2,7 @@ import React from "react";
 import "./LandingPage.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
-import {Nav} from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 const LandingPage = props => {
   const [ref, inView, entry] = useInView({
@@ -10,8 +10,8 @@ const LandingPage = props => {
   });
 
   const changeTransparency = () => {
-    props.headerHandler(inView)
-  }
+    props.headerHandler(inView);
+  };
 
   //TODO: Scroll handler
   return (
@@ -25,11 +25,9 @@ const LandingPage = props => {
       <div className="LandingPageName">
         <h1>Wojciech Kubiak</h1>
         <p>Student</p>
-  
-        {/* TODO: Button scroll onClick  */}
-        <MdKeyboardArrowDown
-          className="ArrowDown"><Nav.Link href="#about" ></Nav.Link></MdKeyboardArrowDown>
-        
+        <Nav.Link href="#about">
+          <MdKeyboardArrowDown className="ArrowDown"></MdKeyboardArrowDown>
+        </Nav.Link>
       </div>
     </div>
   );
