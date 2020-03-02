@@ -57,7 +57,7 @@
 @media only screen and (max-width: 700px) {
   #about {
     position: relative;
-    color: #d56c2c;
+    color: white;
     height: 100vh;
   }
   
@@ -75,6 +75,7 @@
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
+    background-color: #292930;
     margin-left: 0;
     width: 10em
   }
