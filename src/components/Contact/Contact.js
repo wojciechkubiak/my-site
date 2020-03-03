@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Footer from "./../Footer/Footer";
 import "./Contact.css";
 import { FaGit } from "react-icons/fa";
 import { InView } from "react-intersection-observer";
@@ -49,7 +48,7 @@ class Contact extends Component {
             {this.props.language
               ? "Send me a message at "
               : "Wyślij wiadomość na numer "}
-            726 823 405
+            <strong className="PhoneNumber">726 823 405</strong>
           </p>
         </div>
         <div className="GitContainer">

@@ -32,6 +32,14 @@ class App extends Component {
       : this.setState({ headerMode: true });
   };
 
+  headerHandlerOn = () => {
+    this.setState({ headerMode: true}, () => console.log(`headermode:${this.state.headerMode}`))
+  }
+
+  headerHandlerOff = () => {
+    this.setState({ headerMode: false}, () => console.log(`headermode:${this.state.headerMode}`))
+  }
+
   languageHandler = () => {
     const { language, img } = this.state;
     
@@ -49,12 +57,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <img
-          className="bg"
-          src={require("./img/bg_blur.jpg")}
-          alt="React-icon"
-        /> */}
-        <Header language={this.state.language} headerMode={this.state.headerMode} />
+        <Header language={this.state.language} headerMode={this.state.headerMode} headerOn={this.headerHandlerOn} headerOff={this.headerHandlerOff}/>
         <LandingPage headerHandler={this.headerHandler} />
         <About language={this.state.language}/>
         <Skills language={this.state.language}/>

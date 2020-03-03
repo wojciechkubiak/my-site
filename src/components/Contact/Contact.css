@@ -79,6 +79,10 @@
   transition: 1s;
 }
 
+.PhoneNumber {
+  color: #d56c2c;
+}
+
 .MailContainer:hover {
   color: #d56c2c;
 }

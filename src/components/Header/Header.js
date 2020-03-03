@@ -25,19 +25,19 @@ const Header = props => {
           className="justify-content-center HeaderText"
         >
           <Nav>
-            <Nav.Link href="#landing" className={textColor.join(" ")} active>
+            <Nav.Link href="#landing" className={textColor.join(" ")} onClick={props.headerOff} active>
               {props.language ? "Home" : "Strona główna"}
             </Nav.Link>
-            <Nav.Link href="#about" className={textColor.join(" ")}>
+            <Nav.Link href="#about" className={textColor.join(" ")} onClick={props.headerOn}>
               {props.language ? "About" : "O mnie"}
             </Nav.Link>
-            <Nav.Link href="#skills" className={textColor.join(" ")}>
+            <Nav.Link href="#skills" className={textColor.join(" ")} onClick={props.headerOn}>
               {props.language ? "Skills" : "Technologie"}
             </Nav.Link>
-            <Nav.Link href="#projects" className={textColor.join(" ")}>
+            <Nav.Link href="#projects" className={textColor.join(" ")} onClick={props.headerOn}>
               {props.language ? "Projects" : "Projekty"}
             </Nav.Link>
-            <Nav.Link href="#contact" className={textColor.join(" ")}>
+            <Nav.Link href="#contact" className={textColor.join(" ")} onClick={props.headerOn}>
               {props.language ? "Contact" : "Kontakt"}
             </Nav.Link>
           </Nav>
