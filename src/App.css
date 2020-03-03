@@ -46,14 +46,13 @@ img.bg {
   background-color: rgba(255, 255, 255, 0);
   position: fixed;
   right: 2.4em;
-  bottom: 2.5em;
+  bottom: 2.6em;
   width: 5em;
   height: 2em;
   align-content: center;
   display: flex;
   flex-direction: column;
 }
-
 
 @media only screen and (max-width: 700px) {
   .languageBtn {
@@ -68,5 +67,5 @@ img.bg {
     align-content: center;
     display: flex;
     flex-direction: column;
-  }  
+  }
 }

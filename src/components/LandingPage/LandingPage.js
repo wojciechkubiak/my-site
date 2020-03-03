@@ -26,7 +26,10 @@ const LandingPage = props => {
         <h1>Wojciech Kubiak</h1>
         <p>Student</p>
         <Nav.Link href="#about">
-          <MdKeyboardArrowDown className="ArrowDown" onClick={props.headerOn}></MdKeyboardArrowDown>
+          <MdKeyboardArrowDown
+            className="ArrowDown"
+            onClick={props.headerOn}
+          ></MdKeyboardArrowDown>
         </Nav.Link>
       </div>
     </div>

@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-image: url('./../../img/skills.jpg');
+  background-image: url("./../../img/skills.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   width: 5em;
   font-size: 4em;
   color: white;
-  top: 50vh;
+  top: 45vh;
   transform: rotate(90deg);
 }
 
@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 55vh;
+  top: 50vh;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);
@@ -40,7 +40,8 @@
 .SkillsSpan {
   width: 10vw;
   height: 20vh;
-  margin: 3em;
+  margin: 4em;
+  padding: 2em;
   transition: all 1s;
 }
 
@@ -54,7 +55,7 @@
   width: 8vw;
   height: 8vw;
   margin: 1em;
-  opacity: .8;
+  opacity: 0.8;
   transition: all 1s;
 }
 
@@ -67,7 +68,7 @@
   #skills {
     position: relative;
     color: #d56c2c;
-    height: 96em;
+    height: 80em;
   }
 
   #skills > h1 {
@@ -84,7 +85,7 @@
 
   .SkillsContainer {
     width: 16em;
-    top: 52em;
+    top: 44em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -93,10 +94,7 @@
   .SkillsSpan {
     width: 10em;
     height: 10em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin: 0;
   }
 
   .SkillsSpan > p {
@@ -105,9 +103,9 @@
   }
 
   .ImageStyle {
-    width: 9em;
-    height: 9em;
-    margin: 0.5em;
+    width: 6em;
+    height: 6em;
+    margin: 0;
   }
 }
 
@@ -115,17 +113,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -133,17 +131,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -151,17 +149,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -169,17 +167,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -187,17 +185,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -205,17 +203,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -223,17 +221,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -241,16 +239,16 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }

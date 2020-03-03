@@ -6,18 +6,18 @@
 
 .HeaderLink {
   outline: 0;
-  padding-right: 5em!important;
+  padding-right: 5em !important;
   font-family: "Libre Baskerville", sans-serif;
-  padding-left: 5em!important;
-  font-size: 0.8em!important;
+  padding-left: 5em !important;
+  font-size: 0.8em !important;
 }
 
 .HeaderTextColorWhite {
-  color: white!important
+  color: white !important;
 }
 
 .HeaderTextColorDark {
-  color: white!important
+  color: white !important;
 }
 
 .HeaderLink:hover {
@@ -36,24 +36,23 @@
 }
 
 .HeaderOut {
-  background-color:#292930;
+  background-color: #292930;
 }
 
 @media screen and (max-width: 1024px) {
   .HeaderTextColorWhite {
-    color: white!important
+    color: white !important;
   }
-  
+
   .HeaderTextColorDark {
-    color: white!important
+    color: white !important;
   }
 
   .HeaderTop {
     background-color: #292930;
   }
-  
+
   .HeaderOut {
-    background-color:#292930;
+    background-color: #292930;
   }
-  
 }

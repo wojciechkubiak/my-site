@@ -1,7 +1,7 @@
 #projects {
   position: relative;
   height: 101vh;
-  background-image: url('./../../img/projects.jpg');
+  background-image: url("./../../img/projects.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   flex-direction: row;
   left: 50%;
   top: 50vh;
-  width: 70vw;  
+  width: 70vw;
   height: 75vh;
   transform: translate(-50%, -50%);
   padding: 1em;
@@ -55,9 +55,9 @@
   height: 100%;
 }
 
-.ProjectsSubinfo> h3 {
+.ProjectsSubinfo > h3 {
   text-align: center;
-  color:#d56c2c;
+  color: #d56c2c;
   font-size: 5vh;
 }
 
@@ -66,7 +66,7 @@
   font-size: 3vh;
 }
 
-.BtnContainer { 
+.BtnContainer {
   background-color: #292930;
   position: absolute;
   left: 50%;
@@ -81,7 +81,7 @@
 }
 
 .PrevBtn {
-  width: 50%; 
+  width: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   outline: none !important;
@@ -90,7 +90,7 @@
 }
 
 .NextBtn {
-  width: 50%; 
+  width: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   outline: none !important;
@@ -102,7 +102,6 @@
   height: 60vh;
   margin-left: auto;
   margin-right: 0;
-  
 }
 
 #projects > h1 {
@@ -112,7 +111,6 @@
   font-size: 4em;
   top: 7em;
   transform: rotate(90deg);
-  
 }
 
 .ProjectSpan {
@@ -131,7 +129,7 @@
 }
 
 .ProjectInfoContainer > p {
-  padding: 0.4em
+  padding: 0.4em;
 }
 
 @media only screen and (max-width: 700px) {
@@ -140,7 +138,7 @@
     height: 100vh;
     color: white;
   }
-  
+
   #projects > h1 {
     font-size: 2em;
     text-align: center;
@@ -149,7 +147,7 @@
     width: 10em;
     top: 3.5em;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     background-color: #292930;
   }
 
@@ -162,19 +160,19 @@
     height: 14em;
     top: 12em;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
   }
-  
+
   .ProjectInfoImages {
     position: absolute;
     bottom: 0.5em;
     width: 100%;
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
     /* margin-bottom moving */
   }
 
-  .ProjectImgStyle { 
-    padding: 0
+  .ProjectImgStyle {
+    padding: 0;
   }
 
   .ProjectInfoContainer {
@@ -198,19 +196,19 @@
   }
 
   .ImgContainer {
-    width: 20em; 
+    width: 20em;
     /* 867 */
     height: 15em;
     /* 672 */
     z-index: 2;
   }
-  
+
   .Img {
     width: 8.67em;
     height: 6.72em;
   }
 
-  .BtnContainer { 
+  .BtnContainer {
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -225,40 +223,38 @@
   }
 
   .PrevBtn {
-    width: 50%; 
+    width: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 0);
     outline: none !important;
     color: white;
     text-align: center;
   }
-  
+
   .NextBtn {
-    width: 50%; 
+    width: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 0);
     outline: none !important;
     color: white;
   }
-  
 }
-
 
 @-webkit-keyframes projectsAnim {
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -266,17 +262,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -284,17 +280,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -302,17 +298,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -320,17 +316,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -338,17 +334,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -356,17 +352,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -374,16 +370,16 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }

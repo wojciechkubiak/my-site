@@ -1,7 +1,7 @@
 #contact {
   position: relative;
   height: 101vh;
-  background-image: url('./../../img/contact.jpg');
+  background-image: url("./../../img/contact.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@
   flex-direction: row;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 4vh
+  bottom: 4vh;
 }
 
 .GitIcon {
@@ -93,10 +93,10 @@
     color: white;
     height: 100vh;
   }
-  
+
   #contact > h1 {
     font-size: 2em;
-    text-align: center;   
+    text-align: center;
     background-color: #292930;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
@@ -105,7 +105,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .ContactContainer {
     position: absolute;
     top: 19em;
@@ -114,27 +114,27 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  
+
   .ContactContainer > h1 {
     padding-bottom: 0.5em;
-    font-size: 2em
+    font-size: 2em;
   }
 
   .ContactContainer > p {
-    font-size: 0.9em
+    font-size: 0.9em;
   }
-  
+
   .GitContainer {
     position: absolute;
     display: flex;
     flex-direction: row;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 1em
+    bottom: 1em;
   }
 
   .GitContainer > p {
-    color: #d56c2c
+    color: #d56c2c;
   }
 }
 
@@ -142,17 +142,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -160,17 +160,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -178,17 +178,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -196,17 +196,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -214,17 +214,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -232,17 +232,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -250,17 +250,17 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }
 
@@ -268,16 +268,16 @@
   0% {
     display: none;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   1% {
     display: block;
     opacity: 0;
-    left: 25%
+    left: 25%;
   }
   100% {
     display: block;
     opacity: 1;
-    left: 50%
+    left: 50%;
   }
 }

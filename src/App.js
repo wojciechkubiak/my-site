@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 //TODO: Resize everything em -> vh/vw
@@ -16,12 +16,9 @@ class App extends Component {
     super(props);
     this.state = {
       headerMode: false,
-      language: false,  // true = EN | false = PL
+      language: false, // true = EN | false = PL
       img: 0,
-      imgSrc: [
-        "uk-flag.jpg",
-        "pl-flag.jpg"
-      ]
+      imgSrc: ["uk-flag.jpg", "pl-flag.jpg"]
     };
     this.headerHandler = this.headerHandler.bind(this);
   }
@@ -33,45 +30,57 @@ class App extends Component {
   };
 
   headerHandlerOn = () => {
-    this.setState({ headerMode: true}, () => console.log(`headermode:${this.state.headerMode}`))
-  }
+    this.setState({ headerMode: true }, () =>
+      console.log(`headermode:${this.state.headerMode}`)
+    );
+  };
 
   headerHandlerOff = () => {
-    this.setState({ headerMode: false}, () => console.log(`headermode:${this.state.headerMode}`))
-  }
+    this.setState({ headerMode: false }, () =>
+      console.log(`headermode:${this.state.headerMode}`)
+    );
+  };
 
   languageHandler = () => {
     const { language, img } = this.state;
-    
-    this.setState({language: !language}, () => console.log(language))
 
-    if(img === 1) {
+    this.setState({ language: !language }, () => console.log(language));
+
+    if (img === 1) {
       this.setState({ img: 0 });
     }
 
-    if(img === 0) {
-      this.setState({ img: 1});
+    if (img === 0) {
+      this.setState({ img: 1 });
     }
   };
 
   render() {
     return (
       <div className="App">
-        <Header language={this.state.language} headerMode={this.state.headerMode} headerOn={this.headerHandlerOn} headerOff={this.headerHandlerOff}/>
-        <LandingPage headerHandler={this.headerHandler} headerOn={this.headerHandlerOn}/>
-        <About language={this.state.language}/>
-        <Skills language={this.state.language}/>
-        <Projects language={this.state.language}/>
-        <Contact language={this.state.language}/>
+        <Header
+          language={this.state.language}
+          headerMode={this.state.headerMode}
+          headerOn={this.headerHandlerOn}
+          headerOff={this.headerHandlerOff}
+        />
+        <LandingPage
+          headerHandler={this.headerHandler}
+          headerOn={this.headerHandlerOn}
+        />
+        <About language={this.state.language} />
+        <Skills language={this.state.language} />
+        <Projects language={this.state.language} />
+        <Contact language={this.state.language} />
         <SocialMedia />
-        <Footer language={this.state.language}/>
+        <Footer language={this.state.language} />
         <button className="languageBtn" onClick={this.languageHandler}>
           <img
-              className="languageImg"
-              src={require(`./img/${ this.state.imgSrc[this.state.img]}`)}
-              alt="flag-icon"
+            className="languageImg"
+            src={require(`./img/${this.state.imgSrc[this.state.img]}`)}
+            alt="flag-icon"
           />
-        </button>       
+        </button>
       </div>
     );
   }
