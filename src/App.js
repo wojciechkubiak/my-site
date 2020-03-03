@@ -58,7 +58,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header language={this.state.language} headerMode={this.state.headerMode} headerOn={this.headerHandlerOn} headerOff={this.headerHandlerOff}/>
-        <LandingPage headerHandler={this.headerHandler} />
+        <LandingPage headerHandler={this.headerHandler} headerOn={this.headerHandlerOn}/>
         <About language={this.state.language}/>
         <Skills language={this.state.language}/>
         <Projects language={this.state.language}/>

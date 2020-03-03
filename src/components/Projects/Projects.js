@@ -77,12 +77,14 @@ class Projects extends Component {
               src={require(`./../../img/${this.state.img}.png`)}
               alt="React-icon"
             />
-            <h3>{this.state.data[this.state.img - 1][0]}</h3>
-            <p>
-              {this.props.language
-                ? this.state.data[this.state.img - 1][1]
-                : this.state.data[this.state.img - 1][2]}
-            </p>
+            <div className="ProjectsSubinfo">
+              <h3>{this.state.data[this.state.img - 1][0]}</h3>
+              <p className="ProjectSubinfo">
+                {this.props.language
+                  ? this.state.data[this.state.img - 1][1]
+                  : this.state.data[this.state.img - 1][2]}
+              </p>
+            </div>
           </div>
           <div className="ProjectInfoContainer">
             <div className="ProjectInfoImages">

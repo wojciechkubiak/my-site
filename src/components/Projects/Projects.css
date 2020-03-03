@@ -55,15 +55,15 @@
   height: 100%;
 }
 
-.ImgContainer > h3 {
+.ProjectsSubinfo> h3 {
   text-align: center;
   color:#d56c2c;
-  font-size: 5em;
+  font-size: 5vh;
 }
 
-.ImgContainer > p {
+.ProjectsSubinfo > p {
   text-align: center;
-  font-size: 2em;
+  font-size: 3vh;
 }
 
 .BtnContainer { 
@@ -167,7 +167,7 @@
   
   .ProjectInfoImages {
     position: absolute;
-    bottom: 0;
+    bottom: 0.5em;
     width: 100%;
     margin-bottom: 1em; 
     /* margin-bottom moving */
@@ -185,16 +185,16 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
 
-  .ImgContainer > h3 {
+  .ProjectsSubinfo > h3 {
     text-align: center;
-    font-size: 1em;
+    font-size: 4vh;
     color: white;
   }
 
-  .ImgContainer > p {
+  .ProjectsSubinfo > p {
     text-align: center;
     color: white;
-    font-size: 0.7em;
+    font-size: 2vh;
   }
 
   .ImgContainer {
@@ -223,7 +223,7 @@
     font-size: 5vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
-  
+
   .PrevBtn {
     width: 50%; 
     border: none;
