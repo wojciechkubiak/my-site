@@ -10,15 +10,13 @@ import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 
-//TODO: Resize everything em -> vh/vw
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       headerMode: false,
       language: false, // true = EN | false = PL
-      img: 0,
-      imgSrc: ["uk-flag.jpg", "pl-flag.jpg"]
+      img: 0
     };
     this.headerHandler = this.headerHandler.bind(this);
   }
@@ -30,32 +28,24 @@ class App extends Component {
   };
 
   headerHandlerOn = () => {
-    this.setState({ headerMode: true }, () =>
-      console.log(`headermode:${this.state.headerMode}`)
-    );
+    this.setState({ headerMode: true });
   };
 
   headerHandlerOff = () => {
-    this.setState({ headerMode: false }, () =>
-      console.log(`headermode:${this.state.headerMode}`)
-    );
+    this.setState({ headerMode: false });
   };
 
   languageHandler = () => {
     const { language, img } = this.state;
 
-    this.setState({ language: !language }, () => console.log(language));
+    this.setState({ language: !language });
 
-    if (img === 1) {
-      this.setState({ img: 0 });
-    }
-
-    if (img === 0) {
-      this.setState({ img: 1 });
-    }
+    return img ? this.setState({ img: 0 }) : this.setState({ img: 1 });
   };
 
   render() {
+    const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
+
     return (
       <div className="App">
         <Header
@@ -77,7 +67,7 @@ class App extends Component {
         <button className="LanguageBtn" onClick={this.languageHandler}>
           <img
             className="LanguageImg"
-            src={require(`./img/${this.state.imgSrc[this.state.img]}`)}
+            src={require(`./img/${imgSrc[this.state.img]}`)}
             alt="flag-icon"
           />
         </button>

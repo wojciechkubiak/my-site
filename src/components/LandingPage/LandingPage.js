@@ -13,7 +13,6 @@ const LandingPage = props => {
     props.headerHandler(inView);
   };
 
-  //TODO: Scroll handler
   return (
     <div
       className="LandingPage"

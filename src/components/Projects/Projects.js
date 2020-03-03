@@ -7,46 +7,14 @@ class Projects extends Component {
     super(props);
     this.state = {
       img: 1,
-      data: [
-        ["Obb-SYS", "Web app for the vet", "Aplikacja webowa dla weterynarza"],
-        [
-          "Opqn",
-          "Mobile app for the diet supervisors",
-          "Aplikacja mobilna dla dietetyków"
-        ],
-        [
-          "FitTracker",
-          "CRUD diet app",
-          "Aplikacja webowa typu CRUD dla dietetyków"
-        ]
-      ],
-      imageSrc: [
-        [
-          "white_empty_react.png",
-          "white_empty_nodejs.png",
-          "white_empty_psql.png"
-        ],
-        [
-          "white_empty_android.png",
-          "white_empty_nodejs.png",
-          "white_empty_psql.png"
-        ],
-        [
-          "white_empty_react.png",
-          "white_empty_nodejs.png",
-          "white_empty_psql.png"
-        ]
-      ],
       mode: ["ProjectsContainer"]
     };
-    this.changeClass = this.changeClass.bind(this);
+    this.animHandler = this.animHandler.bind(this);
   }
 
-  changeClass = val => {
+  animHandler = val => {
     if (val) {
-      this.setState({ mode: ["ProjectsContainer", "ProjectsAnim"] }, () =>
-        console.log(this.state.mode)
-      );
+      this.setState({ mode: ["ProjectsContainer", "ProjectsAnim"] });
     }
   };
 
@@ -62,12 +30,43 @@ class Projects extends Component {
   };
 
   render() {
+    const data = [
+      ["Obb-SYS", "Web app for the vet", "Aplikacja webowa dla weterynarza"],
+      [
+        "Opqn",
+        "Mobile app for the diet supervisors",
+        "Aplikacja mobilna dla dietetyków"
+      ],
+      [
+        "FitTracker",
+        "CRUD diet app",
+        "Aplikacja webowa typu CRUD dla dietetyków"
+      ]
+    ];
+    const imageSrc = [
+      [
+        "white_empty_react.png",
+        "white_empty_nodejs.png",
+        "white_empty_psql.png"
+      ],
+      [
+        "white_empty_android.png",
+        "white_empty_nodejs.png",
+        "white_empty_psql.png"
+      ],
+      [
+        "white_empty_react.png",
+        "white_empty_nodejs.png",
+        "white_empty_psql.png"
+      ]
+    ];
+
     return (
       <InView
         as="div"
         data-testid="Projects"
         id="projects"
-        onChange={(inView, entry) => this.changeClass(inView)}
+        onChange={(inView, entry) => this.animHandler(inView)}
       >
         <h1>{this.props.language ? "Projects" : "Projekty"}</h1>
         <div className={this.state.mode.join(" ")} data-testid="Projects">
@@ -78,11 +77,11 @@ class Projects extends Component {
               alt="React-icon"
             />
             <div className="ProjectsSubinfo">
-              <h3>{this.state.data[this.state.img - 1][0]}</h3>
+              <h3>{data[this.state.img - 1][0]}</h3>
               <p>
                 {this.props.language
-                  ? this.state.data[this.state.img - 1][1]
-                  : this.state.data[this.state.img - 1][2]}
+                  ? data[this.state.img - 1][1]
+                  : data[this.state.img - 1][2]}
               </p>
             </div>
           </div>
@@ -92,7 +91,7 @@ class Projects extends Component {
                 <img
                   className="ProjectImgStyle"
                   src={require(`./../../img/${
-                    this.state.imageSrc[this.state.img - 1][0]
+                    imageSrc[this.state.img - 1][0]
                   }`)}
                   alt="React-icon"
                 />
@@ -101,7 +100,7 @@ class Projects extends Component {
                 <img
                   className="ProjectImgStyle"
                   src={require(`./../../img/${
-                    this.state.imageSrc[this.state.img - 1][1]
+                    imageSrc[this.state.img - 1][1]
                   }`)}
                   alt="React-icon"
                 />
@@ -110,7 +109,7 @@ class Projects extends Component {
                 <img
                   className="ProjectImgStyle"
                   src={require(`./../../img/${
-                    this.state.imageSrc[this.state.img - 1][2]
+                    imageSrc[this.state.img - 1][2]
                   }`)}
                   alt="React-icon"
                 />

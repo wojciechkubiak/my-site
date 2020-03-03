@@ -10,7 +10,12 @@ const Header = props => {
     props.headerMode ? "HeaderTextColorWhite" : "HeaderTextColorDark"
   ];
 
-  // Handle header color onClick
+  let header = props.language ? "Home" : "Strona główna";
+  let about = props.language ? "About" : "O mnie";
+  let skills = props.language ? "Skills" : "Technologie";
+  let projects = props.language ? "Projects" : "Projekty";
+  let contact = props.language ? "Contact" : "Kontakt";
+
   return (
     <div className="Header">
       <Navbar
@@ -31,35 +36,35 @@ const Header = props => {
               onClick={props.headerOff}
               active
             >
-              {props.language ? "Home" : "Strona główna"}
+              {header}
             </Nav.Link>
             <Nav.Link
               href="#about"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {props.language ? "About" : "O mnie"}
+              {about}
             </Nav.Link>
             <Nav.Link
               href="#skills"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {props.language ? "Skills" : "Technologie"}
+              {skills}
             </Nav.Link>
             <Nav.Link
               href="#projects"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {props.language ? "Projects" : "Projekty"}
+              {projects}
             </Nav.Link>
             <Nav.Link
               href="#contact"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {props.language ? "Contact" : "Kontakt"}
+              {contact}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

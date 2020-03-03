@@ -7,9 +7,7 @@ class SocialMedia extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showIcons: false,
-      facebook: "https://www.facebook.com/wojciech.kubiak.564",
-      linkedin: "https://www.linkedin.com/in/wokub/"
+      showIcons: false
     };
     this.toggleIcons = this.toggleIcons.bind(this);
   }
@@ -20,17 +18,20 @@ class SocialMedia extends Component {
   };
 
   render() {
+    const facebookAdress = "https://www.facebook.com/wojciech.kubiak.564";
+    const linkedinAdress = "https://www.linkedin.com/in/wokub/";
+
     return (
       <div className="SocialMedia">
         {this.state.showIcons && (
-          <a href={this.state.facebook}>
+          <a href={facebookAdress}>
             <button className="FacebookBtn">
               <FaFacebookF className="FacebookIcon" />
             </button>
           </a>
         )}
         {this.state.showIcons && (
-          <a href={this.state.linkedin}>
+          <a href={linkedinAdress}>
             <button className="LinkedInBtn">
               <FaLinkedinIn className="LinkedInIcon" />
             </button>

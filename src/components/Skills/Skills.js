@@ -16,23 +16,15 @@ class Skills extends Component {
     this.state = {
       mode: ["SkillsContainer"],
       language: true,
-      header: "Skills",
-      currentImg: ""
     };
-    this.changeClass = this.changeClass.bind(this);
+    this.animHandler = this.animHandler.bind(this);
   }
 
-  changeClass = val => {
+  animHandler = val => {
     if (val) {
-      this.setState({ mode: ["SkillsContainer", "SkillsAnim"] }, () =>
-        console.log(this.state.mode)
-      );
+      this.setState({ mode: ["SkillsContainer", "SkillsAnim"] });
     }
   };
-
-  currentImgHandler = val => {
-    this.setState({currentImg: val}, () => {console.log(this.state.currentImg)})
-  }
 
   render() {
     let icons = {
@@ -66,14 +58,16 @@ class Skills extends Component {
       ]
     };
 
+    let header = this.props.language ? "Skills" : "Technologie";
+    
     return (
       <InView
         as="div"
         data-testid="Skills"
         id="skills"
-        onChange={(inView, entry) => this.changeClass(inView)}
+        onChange={(inView, entry) => this.animHandler(inView)}
       >
-        <h1>{this.props.language ? "Skills" : "Technologie"}</h1>
+        <h1>{header}</h1>
         <div className={this.state.mode.join(" ")}>
           {Object.keys(icons).map(key => {
             return (

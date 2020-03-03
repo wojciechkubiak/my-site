@@ -14,13 +14,43 @@ class Contact extends Component {
 
   changeClass = val => {
     if (val) {
-      this.setState({ mode: ["ContactContainer", "ContactAnim"] }, () =>
-        console.log(this.state.mode)
-      );
+      this.setState({ mode: ["ContactContainer", "ContactAnim"] });
     }
   };
 
   render() {
+    const contactHeaderEng = "Contact";
+    const contactHeaderPl = "Kontakt";
+    const boxHeaderEng = "Get in touch";
+    const boxHeaderPl = "Skontaktuj się";
+    const firstContactLineEng =
+      "Are you interested in working with me or just have a question?";
+    const firstContactLinePl =
+      "Jesteś zainteresowana/y pracą ze mną lub masz jakieś pytanie?";
+    const contactMeLineEng = "Email me at";
+    const contactMeLinePl = "Napisz do mnie na adres";
+    const orEng = "or";
+    const orPl = "lub";
+    const phoneMessageEng = "Send me a message at";
+    const phoneMessagePl = "Wyślij wiadomość na numer";
+
+    const currentHeader = this.props.language
+      ? contactHeaderEng
+      : contactHeaderPl;
+    const currentBoxHeader = this.props.language ? boxHeaderEng : boxHeaderPl;
+    const currentFirstContactLine = this.props.language
+      ? firstContactLineEng
+      : firstContactLinePl;
+    const currentContactMeLine = this.props.language
+      ? contactMeLineEng
+      : contactMeLinePl;
+    const currentOr = this.props.language ? orEng : orPl;
+    const currentPhoneMsg = this.props.language
+      ? phoneMessageEng
+      : phoneMessagePl;
+
+    const { mode } = this.state;
+
     return (
       <InView
         as="div"
@@ -28,27 +58,20 @@ class Contact extends Component {
         id="contact"
         onChange={(inView, entry) => this.changeClass(inView)}
       >
-        <h1> {this.props.language ? "Contact" : "Kontakt"}</h1>
-        <div className={this.state.mode.join(" ")} data-testid="Contact">
-          <h1> {this.props.language ? "Get in touch" : "Skontaktuj się"}</h1>
+        <h1>{currentHeader}</h1>
+        <div className={mode.join(" ")} data-testid="Contact">
+          <h1>{currentBoxHeader}</h1>
+          <p>{currentFirstContactLine}</p>
           <p>
-            {" "}
-            {this.props.language
-              ? "Are you interested in working with me or just have a question?"
-              : "Jesteś zainteresowana/y pracą ze mną lub masz jakieś pytanie?"}
-          </p>
-          <p>
-            {this.props.language ? "Email me at" : "Napisz do mnie na adres"}{" "}
+            {currentContactMeLine}
             <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
-              <strong>wgkubiak@gmail.com</strong>
+              <strong> wgkubiak@gmail.com</strong>
             </a>
           </p>
-          <p>{this.props.language ? "or" : "lub"}</p>
+          <p>{currentOr}</p>
           <p>
-            {this.props.language
-              ? "Send me a message at "
-              : "Wyślij wiadomość na numer "}
-            <strong className="PhoneNumber">726 823 405</strong>
+            {currentPhoneMsg}
+            <strong className="PhoneNumber"> 726 823 405</strong>
           </p>
         </div>
         <div className="GitContainer">
