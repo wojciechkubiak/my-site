@@ -108,7 +108,7 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  font-size: 4em;
+  font-size: 7vh;
   top: 7em;
   transform: rotate(90deg);
   z-index: 5;
@@ -117,7 +117,8 @@
 .ProjectsSubinfo {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #292930;
-  padding: 2px
+  padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 
 .ProjectsSubinfo > p {

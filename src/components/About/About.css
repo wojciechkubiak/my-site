@@ -38,13 +38,13 @@
 .AboutContainer > h1 {
   text-align: left;
   margin-left: 1em;
-  font-size: 5vh;
+  font-size: 7vh;
   z-index: 5;
 }
 
 .AboutText {
   position: absolute;
-  top: 6vh;
+  top: 8vh;
   background-color: #292930;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 1em;

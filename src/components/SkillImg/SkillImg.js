@@ -1,6 +1,7 @@
 import React from "react";
 import "./../Skills/Skills.css";
 import { ProgressBar } from "react-bootstrap";
+import shortid from "shortid";
 
 class SkillImg extends React.PureComponent {
   render() {
@@ -20,12 +21,12 @@ class SkillImg extends React.PureComponent {
               striped
               variant="warning"
               now={this.props.progress}
-              key={`pb1`}
+              key={shortid.generate()}
             />
             <ProgressBar
               variant="dark"
               now={100 - parseInt(this.props.progress)}
-              key={`pb2`}
+              key={shortid.generate()}
             />
           </ProgressBar>
         </span>

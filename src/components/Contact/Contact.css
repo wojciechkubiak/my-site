@@ -13,7 +13,7 @@
   text-align: center;
   width: 5em;
   top: 45vh;
-  font-size: 4em;
+  font-size: 7vh;
   color: white;
   transform: rotate(90deg);
   z-index: 5;
@@ -28,7 +28,8 @@
   background-color: #292930;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  padding: 0.2em
+  padding: 0.2em;
+  padding-bottom: 1em!important;
 }
 
 .ContactAnim {
@@ -39,8 +40,8 @@
 }
 
 .ContactContainer > h1 {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   color: white;
 }
 
@@ -58,13 +59,14 @@
 }
 
 .GitIcon {
-  height: 4em;
-  width: 4em;
+  height: 4vw;
+  width: 4vw;
   color: white;
 }
 
 .GitContainer > p {
   color: white;
+  font-size: 2vh
 }
 
 .GitBtn {
@@ -115,15 +117,16 @@
     width: 20em;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding-bottom: 1em;
   }
 
   .ContactContainer > h1 {
     padding-bottom: 0.5em;
-    font-size: 2em;
+    font-size: 4vh;
   }
 
   .ContactContainer > p {
-    font-size: 0.9em;
+    font-size: 1.9vh;
   }
 
   .GitContainer {
@@ -136,7 +139,14 @@
   }
 
   .GitContainer > p {
-    color: #d56c2c;
+    color: white;
+    font-size: 3vh
+  }
+
+  .GitIcon {
+    height: 12vw;
+    width: 12vw;
+    color: white;
   }
 }
 

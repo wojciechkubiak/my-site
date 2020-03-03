@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Skills.css";
 import { InView } from "react-intersection-observer";
+import shortid from "shortid";
 import SkillImg from "./../SkillImg/SkillImg";
 import reactLogo from "./../../img/black_empty_react.png";
 import nodeLogo from "./../../img/black_empty_nodejs.png";
@@ -72,7 +73,7 @@ class Skills extends Component {
           {Object.keys(icons).map(key => {
             return (
               <SkillImg
-                key={`${key}skill`}
+                key={shortid.generate()}
                 showInfoHandler={this.showInfoHandler}
                 imgUrl={icons[key][0]}
                 imageInfoHander={this.currentImgHandler}

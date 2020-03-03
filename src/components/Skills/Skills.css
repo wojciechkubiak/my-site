@@ -12,7 +12,7 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  font-size: 4em;
+  font-size: 7vh;
   color: white;
   top: 45vh;
   transform: rotate(90deg);
@@ -22,7 +22,6 @@
 .TechnologyHeader {
   width: 100%
 }
-
 
 .SkillsAnim {
   -webkit-animation: skillsAnim 1.5s ease-in;
@@ -44,9 +43,9 @@
 }
 
 .SkillsSpan {
-  width: 15em;
-  height: 10em;
-  margin: 4em;
+  width: 13vw;
+  height: 18vh;
+  margin: 3vw;
   padding: 2em;
   transition: all 1s;
 }
