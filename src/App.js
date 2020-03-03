@@ -74,9 +74,9 @@ class App extends Component {
         <Contact language={this.state.language} />
         <SocialMedia />
         <Footer language={this.state.language} />
-        <button className="languageBtn" onClick={this.languageHandler}>
+        <button className="LanguageBtn" onClick={this.languageHandler}>
           <img
-            className="languageImg"
+            className="LanguageImg"
             src={require(`./img/${this.state.imgSrc[this.state.img]}`)}
             alt="flag-icon"
           />

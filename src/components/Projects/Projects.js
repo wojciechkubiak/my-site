@@ -79,7 +79,7 @@ class Projects extends Component {
             />
             <div className="ProjectsSubinfo">
               <h3>{this.state.data[this.state.img - 1][0]}</h3>
-              <p className="ProjectSubinfo">
+              <p>
                 {this.props.language
                   ? this.state.data[this.state.img - 1][1]
                   : this.state.data[this.state.img - 1][2]}

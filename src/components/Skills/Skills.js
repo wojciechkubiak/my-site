@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Skills.css";
 import { InView } from "react-intersection-observer";
-import SkillInfo from "./../SkillInfo/SkillInfo";
 import SkillImg from "./../SkillImg/SkillImg";
 import reactLogo from "./../../img/black_empty_react.png";
 import nodeLogo from "./../../img/black_empty_nodejs.png";
@@ -18,10 +17,9 @@ class Skills extends Component {
       mode: ["SkillsContainer"],
       language: true,
       header: "Skills",
-      showInfo: false
+      currentImg: ""
     };
     this.changeClass = this.changeClass.bind(this);
-    this.showInfoHandler = this.showInfoHandler.bind(this);
   }
 
   changeClass = val => {
@@ -32,20 +30,40 @@ class Skills extends Component {
     }
   };
 
-  showInfoHandler = () => {
-    const { showInfo } = this.state;
-    this.setState({ showInfo: !showInfo }, () => console.log(showInfo));
-  };
+  currentImgHandler = val => {
+    this.setState({currentImg: val}, () => {console.log(this.state.currentImg)})
+  }
 
   render() {
     let icons = {
-      react: reactLogo,
-      node: nodeLogo,
-      js: jsLogo,
-      psql: psqlLogo,
-      html: htmlLogo,
-      css: cssLogo,
-      bootstrap: bootstrapLogo
+      ReactJS: [
+        reactLogo,
+        60
+      ],
+      NodeJS: [
+        nodeLogo,
+        50
+      ],
+      JavaScript: [
+        jsLogo,
+        70
+      ],
+      PostgreSQL: [
+        psqlLogo,
+        50
+      ],
+      Html: [
+        htmlLogo,
+        60
+      ],
+      Css: [
+        cssLogo,
+        65
+      ],
+      Bootstrap: [
+        bootstrapLogo,
+        45
+      ]
     };
 
     return (
@@ -60,12 +78,15 @@ class Skills extends Component {
           {Object.keys(icons).map(key => {
             return (
               <SkillImg
+                key={`${key}skill`}
                 showInfoHandler={this.showInfoHandler}
-                imgUrl={icons[key]}
+                imgUrl={icons[key][0]}
+                imageInfoHander={this.currentImgHandler}
+                technology={key}
+                progress={icons[key].slice(1, 2)}
               />
             );
           })}
-          {this.state.showInfo && <SkillInfo />}
         </div>
       </InView>
     );

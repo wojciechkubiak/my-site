@@ -16,7 +16,13 @@
   color: white;
   top: 45vh;
   transform: rotate(90deg);
+  z-index: 5;
 }
+
+.TechnologyHeader {
+  width: 100%
+}
+
 
 .SkillsAnim {
   -webkit-animation: skillsAnim 1.5s ease-in;
@@ -30,7 +36,7 @@
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 50vh;
+  top: 45vh;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);
@@ -38,11 +44,15 @@
 }
 
 .SkillsSpan {
-  width: 10vw;
-  height: 20vh;
+  width: 15em;
+  height: 10em;
   margin: 4em;
   padding: 2em;
   transition: all 1s;
+}
+
+.progress {
+  border-radius: 0;
 }
 
 .SkillsSpan > p {
@@ -52,23 +62,23 @@
 }
 
 .ImageStyle {
-  width: 8vw;
-  height: 8vw;
+  width: 7vw;
+  height: 7vw;
   margin: 1em;
   opacity: 0.8;
   transition: all 1s;
 }
 
 .ImageStyle:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 1;
 }
 
 @media only screen and (max-width: 700px) {
   #skills {
     position: relative;
-    color: #d56c2c;
-    height: 80em;
+    color: #292930;
+    height: 87em;
   }
 
   #skills > h1 {
@@ -85,16 +95,17 @@
 
   .SkillsContainer {
     width: 16em;
-    top: 44em;
+    top: 45em;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
   }
 
   .SkillsSpan {
-    width: 10em;
+    width: 12em;
     height: 10em;
     margin: 0;
+    margin-top: 1em!important;
   }
 
   .SkillsSpan > p {

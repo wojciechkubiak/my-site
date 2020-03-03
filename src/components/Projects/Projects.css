@@ -111,6 +111,17 @@
   font-size: 4em;
   top: 7em;
   transform: rotate(90deg);
+  z-index: 5;
+}
+
+.ProjectsSubinfo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #292930;
+  padding: 2px
+}
+
+.ProjectsSubinfo > p {
+  color: white;
 }
 
 .ProjectSpan {
@@ -187,6 +198,11 @@
     text-align: center;
     font-size: 4vh;
     color: white;
+  }
+
+  .ProjectsSubinfo {
+    box-shadow: none;
+    background-color: #29293000;
   }
 
   .ProjectsSubinfo > p {

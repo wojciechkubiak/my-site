@@ -33,14 +33,7 @@ img.bg {
   left: 0;
 }
 
-@media screen and (max-width: 1024px) {
-  img.bg {
-    left: 50%;
-    margin-left: -512px;
-  }
-}
-
-.languageBtn {
+.LanguageBtn {
   border: none;
   outline: none !important;
   background-color: rgba(255, 255, 255, 0);
@@ -52,10 +45,11 @@ img.bg {
   align-content: center;
   display: flex;
   flex-direction: column;
+  z-index: 8;
 }
 
 @media only screen and (max-width: 700px) {
-  .languageBtn {
+  .LanguageBtn {
     border: none;
     outline: none !important;
     background-color: rgba(255, 255, 255, 0);
