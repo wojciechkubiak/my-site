@@ -58,6 +58,29 @@
   bottom: 4vh;
 }
 
+.ResumeContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 15vh;
+}
+
+.ResumeLinks {
+  text-align: center;
+}
+
+.ResumeLinks > span > a {
+  color: #292930;
+}
+
+.DownloadIcon {
+  height: 4vw;
+  width: 4vw;
+  color: #292930;
+}
+
 .GitIcon {
   height: 4vw;
   width: 4vw;
@@ -92,12 +115,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-  #contact {
-    position: relative;
-    color: white;
-    height: 100vh;
-  }
-
   #contact > h1 {
     font-size: 2em;
     text-align: center;
@@ -111,13 +128,9 @@
   }
 
   .ContactContainer {
-    position: absolute;
     top: 19em;
     left: 50%;
     width: 20em;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding-bottom: 1em;
   }
 
   .ContactContainer > h1 {
@@ -130,25 +143,28 @@
   }
 
   .GitContainer {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 1em;
+    bottom: 0.5em;
   }
 
   .GitContainer > p {
-    color: white;
     font-size: 3vh
   }
 
   .GitIcon {
     height: 12vw;
     width: 12vw;
-    color: white;
+  }
+
+  .ResumeContainer {   
+    bottom: 3.5em;
+  }
+  
+  .DownloadIcon {
+    height: 12vw;
+    width: 12vw;
   }
 }
+
 
 @-webkit-keyframes contactAnim {
   0% {

@@ -2,6 +2,7 @@
   color: white;
   border-top-left-radius: 0em;
   border-top-right-radius: 0em;
+  z-index: 5;
 }
 
 .HeaderLink {
@@ -39,20 +40,28 @@
   background-color: #292930;
 }
 
-@media screen and (max-width: 1024px) {
-  .HeaderTextColorWhite {
-    color: white !important;
-  }
+.LanguageBtn {
+  border: none;
+  outline: none !important;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  right: 1em;
+  top: 1.2em;
+  width: 5em;
+  height: 2em;
+  align-content: center;
+  display: flex;
+  flex-direction: column; 
+}
 
-  .HeaderTextColorDark {
-    color: white !important;
-  }
+
+@media screen and (max-width: 1024px) {
 
   .HeaderTop {
     background-color: #292930;
   }
 
-  .HeaderOut {
-    background-color: #292930;
+  .LanguageBtn {
+    width: 4em;
   }
 }

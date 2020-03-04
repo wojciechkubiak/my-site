@@ -5,12 +5,12 @@ import { useInView } from "react-intersection-observer";
 import { Nav } from "react-bootstrap";
 
 const LandingPage = props => {
-  const [ref, inView, entry] = useInView({
-    threshold: 0.9999
+  const [ref, inView] = useInView({
+    threshold: 0.95
   });
 
   const changeTransparency = () => {
-    props.headerHandler(inView);
+    inView ? props.headerOff() : props.headerOn();
   };
 
   return (

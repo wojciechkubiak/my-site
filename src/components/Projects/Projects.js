@@ -10,6 +10,7 @@ class Projects extends Component {
       mode: ["ProjectsContainer"]
     };
     this.animHandler = this.animHandler.bind(this);
+    this.swapImage = this.swapImage.bind(this);
   }
 
   animHandler = val => {
@@ -60,6 +61,7 @@ class Projects extends Component {
         "white_empty_psql.png"
       ]
     ];
+    const header = this.props.language ? "Projects" : "Projekty";
 
     return (
       <InView
@@ -68,7 +70,7 @@ class Projects extends Component {
         id="projects"
         onChange={(inView, entry) => this.animHandler(inView)}
       >
-        <h1>{this.props.language ? "Projects" : "Projekty"}</h1>
+        <h1>{header}</h1>
         <div className={this.state.mode.join(" ")} data-testid="Projects">
           <div className="ImgContainer">
             <img

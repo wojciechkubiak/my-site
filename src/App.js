@@ -18,14 +18,9 @@ class App extends Component {
       language: false, // true = EN | false = PL
       img: 0
     };
-    this.headerHandler = this.headerHandler.bind(this);
+    this.headerHandlerOn = this.headerHandlerOn.bind(this);
+    this.headerHandlerOff = this.headerHandlerOff.bind(this);
   }
-
-  headerHandler = val => {
-    val
-      ? this.setState({ headerMode: false })
-      : this.setState({ headerMode: true });
-  };
 
   headerHandlerOn = () => {
     this.setState({ headerMode: true });
@@ -44,8 +39,6 @@ class App extends Component {
   };
 
   render() {
-    const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
-
     return (
       <div className="App">
         <Header
@@ -53,10 +46,12 @@ class App extends Component {
           headerMode={this.state.headerMode}
           headerOn={this.headerHandlerOn}
           headerOff={this.headerHandlerOff}
+          languageHandler={this.languageHandler}
+          index={this.state.img}
         />
         <LandingPage
-          headerHandler={this.headerHandler}
           headerOn={this.headerHandlerOn}
+          headerOff={this.headerHandlerOff}
         />
         <About language={this.state.language} />
         <Skills language={this.state.language} />
@@ -64,13 +59,7 @@ class App extends Component {
         <Contact language={this.state.language} />
         <SocialMedia />
         <Footer language={this.state.language} />
-        <button className="LanguageBtn" onClick={this.languageHandler}>
-          <img
-            className="LanguageImg"
-            src={require(`./img/${imgSrc[this.state.img]}`)}
-            alt="flag-icon"
-          />
-        </button>
+        
       </div>
     );
   }

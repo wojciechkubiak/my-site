@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./Contact.css";
-import { FaGit } from "react-icons/fa";
+import { FaGit, FaFileDownload } from "react-icons/fa";
 import { InView } from "react-intersection-observer";
+import ResumePL from "./../../doc/WojciechKubiakCV_PL.pdf";
+import ResumeEN from "./../../doc/WojciechKubiakCV_EN.pdf";
 
 class Contact extends Component {
   constructor(props) {
@@ -73,6 +75,22 @@ class Contact extends Component {
             {currentPhoneMsg}
             <strong className="PhoneNumber"> 726 823 405</strong>
           </p>
+        </div>
+        <div className="ResumeContainer">
+          <FaFileDownload className="DownloadIcon"></FaFileDownload>
+          <div className="ResumeLinks">
+            <span>
+              <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
+                <strong>PL</strong>
+              </a>
+            </span>
+            <strong style={{color: "#292930"}}>{" "}|{" "}</strong>
+            <span>
+              <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
+                <strong>EN</strong>
+              </a>
+            </span>
+          </div>
         </div>
         <div className="GitContainer">
           <a href={"https://www.github.com/wgkubiak"}>

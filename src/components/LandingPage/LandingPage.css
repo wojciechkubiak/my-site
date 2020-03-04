@@ -66,10 +66,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .LandingPage {
-    height: 100vh;
-  }
-
   .LandingPageName {
     top: 16em;
     width: 18em;
@@ -99,7 +95,7 @@
     animation: fadeAnimMobile 3.5s ease-in;
   }
 
-  .BtnInfo {
+  /* .BtnInfo {
     top: 12.2em;
     width: 10em;
     font-size: 1.2em;
@@ -108,16 +104,12 @@
 
   .BtnInfo:hover {
     text-decoration: underline;
-  }
+  } */
 
   .ArrowDown {
-    color: white;
-    position: absolute;
     top: 22em;
-    left: 50%;
     width: 3em;
     height: 3em;
-    transform: translate(-50%, -50%);
     -webkit-animation: fadeAnimArrowMobile 2.5s ease-in;
     -moz-animation: fadeAnimArrowMobile 2.5s ease-in;
     -o-animation: fadeAnimArrowMobile 2.5s ease-in;
