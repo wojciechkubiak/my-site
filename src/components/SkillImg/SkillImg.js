@@ -3,36 +3,28 @@ import "./../Skills/Skills.css";
 import { ProgressBar } from "react-bootstrap";
 import shortid from "shortid";
 
-class SkillImg extends React.PureComponent {
-  render() {
-    return (
-      <>
-        <span className="SkillsSpan">
-          <img
-            className="ImageStyle"
-            src={this.props.imgUrl}
-            alt="React-icon"
-            onMouseOver={this.props.showInfoHandler}
-            onMouseOut={this.props.showInfoHandler}
+const SkillImg = props => {
+  return (
+    <>
+      <span className="SkillsSpan">
+        <img className="ImageStyle" src={props.imgUrl} alt="React-icon" />
+        <h4 className="TechnologyHeader">{props.technology}</h4>
+        <ProgressBar>
+          <ProgressBar
+            striped
+            variant="warning"
+            now={props.progress}
+            key={shortid.generate()}
           />
-          <h4 className="TechnologyHeader">{this.props.technology}</h4>
-          <ProgressBar>
-            <ProgressBar
-              striped
-              variant="warning"
-              now={this.props.progress}
-              key={shortid.generate()}
-            />
-            <ProgressBar
-              variant="dark"
-              now={100 - parseInt(this.props.progress)}
-              key={shortid.generate()}
-            />
-          </ProgressBar>
-        </span>
-      </>
-    );
-  }
-}
+          <ProgressBar
+            variant="dark"
+            now={100 - parseInt(props.progress)}
+            key={shortid.generate()}
+          />
+        </ProgressBar>
+      </span>
+    </>
+  );
+};
 
 export default SkillImg;

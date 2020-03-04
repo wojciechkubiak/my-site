@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import "./Skills.css";
+import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
 import shortid from "shortid";
 import SkillImg from "./../SkillImg/SkillImg";
@@ -10,82 +9,51 @@ import psqlLogo from "./../../img/black_empty_psql.png";
 import htmlLogo from "./../../img/black_empty_html.png";
 import cssLogo from "./../../img/black_empty_css.png";
 import bootstrapLogo from "./../../img/black_empty_bootstrap.png";
+import "./Skills.css";
 
-class Skills extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mode: ["SkillsContainer"],
-      language: true,
-    };
-    this.animHandler = this.animHandler.bind(this);
-  }
+const Skills = props => {
+  const [mode, setMode] = useState(["SkillsContainer"]);
 
-  animHandler = val => {
-    if (val) {
-      this.setState({ mode: ["SkillsContainer", "SkillsAnim"] });
+  const animHandler = value => {
+    if (value) {
+      setMode(["SkillsContainer", "SkillsAnim"]);
     }
   };
 
-  render() {
-    let icons = {
-      ReactJS: [
-        reactLogo,
-        60
-      ],
-      NodeJS: [
-        nodeLogo,
-        50
-      ],
-      JavaScript: [
-        jsLogo,
-        70
-      ],
-      PostgreSQL: [
-        psqlLogo,
-        50
-      ],
-      Html: [
-        htmlLogo,
-        60
-      ],
-      Css: [
-        cssLogo,
-        65
-      ],
-      Bootstrap: [
-        bootstrapLogo,
-        45
-      ]
-    };
+  const icons = {
+    ReactJS: [reactLogo, 50],
+    NodeJS: [nodeLogo, 50],
+    JavaScript: [jsLogo, 60],
+    PostgreSQL: [psqlLogo, 40],
+    Html: [htmlLogo, 55],
+    Css: [cssLogo, 60],
+    Bootstrap: [bootstrapLogo, 60]
+  };
 
-    let header = this.props.language ? "Skills" : "Technologie";
-    
-    return (
-      <InView
-        as="div"
-        data-testid="Skills"
-        id="skills"
-        onChange={(inView, entry) => this.animHandler(inView)}
-      >
-        <h1>{header}</h1>
-        <div className={this.state.mode.join(" ")}>
-          {Object.keys(icons).map(key => {
-            return (
-              <SkillImg
-                key={shortid.generate()}
-                showInfoHandler={this.showInfoHandler}
-                imgUrl={icons[key][0]}
-                imageInfoHander={this.currentImgHandler}
-                technology={key}
-                progress={icons[key].slice(1, 2)}
-              />
-            );
-          })}
-        </div>
-      </InView>
-    );
-  }
-}
+  let header = props.language ? "Skills" : "Technologie";
+
+  return (
+    <InView
+      as="div"
+      data-testid="Skills"
+      id="skills"
+      onChange={(inView, entry) => animHandler(inView)}
+    >
+      <h1>{header}</h1>
+      <div className={mode.join(" ")}>
+        {Object.keys(icons).map(key => {
+          return (
+            <SkillImg
+              key={shortid.generate()}
+              imgUrl={icons[key][0]}
+              technology={key}
+              progress={icons[key].slice(1, 2)}
+            />
+          );
+        })}
+      </div>
+    </InView>
+  );
+};
 
 export default Skills;

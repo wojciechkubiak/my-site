@@ -16,7 +16,7 @@ const Header = props => {
   let projects = props.language ? "Projects" : "Projekty";
   let contact = props.language ? "Contact" : "Kontakt";
   const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
-  
+
   return (
     <div className="Header">
       <Navbar
@@ -69,7 +69,7 @@ const Header = props => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <button className="LanguageBtn" >
+        <button className="LanguageBtn">
           <img
             className="LanguageImg"
             src={require(`./../../img/${imgSrc[props.index]}`)}

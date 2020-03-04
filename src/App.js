@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState } from "react";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
@@ -8,61 +7,40 @@ import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      headerMode: false,
-      language: false, // true = EN | false = PL
-      img: 0
-    };
-    this.headerHandlerOn = this.headerHandlerOn.bind(this);
-    this.headerHandlerOff = this.headerHandlerOff.bind(this);
-  }
+const App = ({ initMode = false, initLanguage = false, initImg = 0 }) => {
+  const [mode, setMode] = useState(initMode);
+  const [language, setLanguage] = useState(initLanguage);
+  const [img, setImg] = useState(initImg);
 
-  headerHandlerOn = () => {
-    this.setState({ headerMode: true });
+  const headerOn = () => setMode(true);
+  const headerOff = () => setMode(false);
+  const languageHandler = () => {
+    setLanguage(!language);
+    return img ? setImg(0) : setImg(1);
   };
 
-  headerHandlerOff = () => {
-    this.setState({ headerMode: false });
-  };
-
-  languageHandler = () => {
-    const { language, img } = this.state;
-
-    this.setState({ language: !language });
-
-    return img ? this.setState({ img: 0 }) : this.setState({ img: 1 });
-  };
-
-  render() {
-    return (
-      <div className="App">
-        <Header
-          language={this.state.language}
-          headerMode={this.state.headerMode}
-          headerOn={this.headerHandlerOn}
-          headerOff={this.headerHandlerOff}
-          languageHandler={this.languageHandler}
-          index={this.state.img}
-        />
-        <LandingPage
-          headerOn={this.headerHandlerOn}
-          headerOff={this.headerHandlerOff}
-        />
-        <About language={this.state.language} />
-        <Skills language={this.state.language} />
-        <Projects language={this.state.language} />
-        <Contact language={this.state.language} />
-        <SocialMedia />
-        <Footer language={this.state.language} />
-        
-      </div>
-    );
-  }
-}
+  return (
+    <div className="App">
+      <Header
+        language={language}
+        headerMode={mode}
+        headerOn={headerOn}
+        headerOff={headerOff}
+        languageHandler={languageHandler}
+        index={img}
+      />
+      <LandingPage headerOn={headerOn} headerOff={headerOff} />
+      <About language={language} />
+      <Skills language={language} />
+      <Projects language={language} />
+      <Contact language={language} />
+      <SocialMedia />
+      <Footer language={language} />
+    </div>
+  );
+};
 
 export default App;

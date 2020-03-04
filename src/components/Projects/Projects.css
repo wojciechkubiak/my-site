@@ -1,7 +1,7 @@
 #projects {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/projects.jpg");
+  background-image: url("./../../img/projects.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #292930;
   padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
 }
 
 .ProjectsSubinfo > p {

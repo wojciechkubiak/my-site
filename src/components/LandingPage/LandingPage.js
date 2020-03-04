@@ -1,8 +1,8 @@
 import React from "react";
-import "./LandingPage.css";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
 import { Nav } from "react-bootstrap";
+import "./LandingPage.css";
 
 const LandingPage = props => {
   const [ref, inView] = useInView({
