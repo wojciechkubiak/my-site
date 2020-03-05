@@ -6,9 +6,9 @@ import shortid from "shortid";
 const SkillImg = props => {
   return (
     <>
-      <span className="SkillsSpan">
-        <img className="ImageStyle" src={props.imgUrl} alt="React-icon" />
-        <h4 className="TechnologyHeader">{props.technology}</h4>
+      <span className="skills--span">
+        <img className="skills--img" src={props.imgUrl} alt="React-icon" />
+        <h4 className="skills--technology-header">{props.technology}</h4>
         <ProgressBar>
           <ProgressBar
             striped

@@ -1,14 +1,14 @@
 #projects {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/projects.webp");
+  background-image: url("./../../img/skills.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.ProjectsContainer {
+.projects--container {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -20,19 +20,13 @@
   padding: 1em;
 }
 
-.ProjectsAnim {
-  -webkit-animation: anim 1s ease-in;
-  -moz-animation: anim 1s ease-in;
-  -o-animation: anim 1s ease-in;
-  animation: anim 1s ease-in;
-}
-
-.ProjectImgStyle {
+.projects--img {
   width: 25vw;
   padding: 1em;
+  background-color: #292930;
 }
 
-.ProjectInfoImages {
+.projects--technologies-container-alt {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -40,35 +34,29 @@
   margin-top: 5em;
 }
 
-.ProjectsTextContainer {
-  width: 30vw;
-  height: 25vh;
-  text-align: center;
-}
-
-.ImgContainer {
+.projects--container-img-container {
   width: 50vw;
   height: 60vh;
 }
 
-.Img {
+.projects--container-img {
   height: 100%;
 }
 
-.ProjectsSubinfo > h3 {
+.projects--subinfo > h3 {
   text-align: center;
   color: #d56c2c;
   font-size: 5vh;
   font-weight: 400
 }
 
-.ProjectsSubinfo > p {
+.projects--subinfo > p {
   text-align: center;
   font-size: 3vh;
   font-weight: 300
 }
 
-.BtnContainer {
+.projects--btn-container {
   background-color: #292930;
   position: absolute;
   left: 50%;
@@ -82,7 +70,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.PrevBtn {
+.projects--btn-prev {
   width: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
@@ -91,7 +79,7 @@
   text-align: center;
 }
 
-.NextBtn {
+.projects--btn-next {
   width: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0);
@@ -99,7 +87,7 @@
   color: white;
 }
 
-.ProjectInfoContainer {
+.projects--technologies-container {
   width: 30vw;
   height: 60vh;
   margin-left: auto;
@@ -114,37 +102,32 @@
   top: 7em;
   transform: rotate(90deg);
   z-index: 5;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500
+  font-weight: 500;
+  color: white
 }
 
-.ProjectsSubinfo {
+.projects--subinfo {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #292930;
   padding-top: 1em;
   padding-bottom: 0.1em;
 }
 
-.ProjectsSubinfo > p {
+.projects--subinfo > p {
   color: white;
 }
 
-.ProjectSpan {
+.projects--span {
   width: 30vw;
   align-items: center;
 }
 
-.ProjectImgStyle {
+.projects--img {
   width: 10vw;
   left: 50%;
 }
 
-.ProjectsTextContainer > h3 {
-  text-align: center;
-  padding: 0.4em;
-}
-
-.ProjectInfoContainer > p {
+.projects--technologies-container > p {
   padding: 0.4em;
 }
 
@@ -161,7 +144,7 @@
     background-color: #292930;
   }
 
-  .ProjectsContainer {
+  .projects--container {
     font-size: 2em;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -171,18 +154,18 @@
     top: 12em;
   }
 
-  .ProjectInfoImages {
+  .projects--technologies-container-alt {
     position: absolute;
     bottom: 0.5em;
     width: 100%;
     margin-bottom: 1em;
   }
 
-  .ProjectImgStyle {
+  .projects--img {
     padding: 0;
   }
 
-  .ProjectInfoContainer {
+  .projects--technologies-container {
     position: absolute;
     width: 10em;
     height: 14em;
@@ -190,23 +173,23 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
 
-  .ProjectsSubinfo > h3 {
+  .projects--subinfo > h3 {
     text-align: center;
     font-size: 4vh;
     color: white;
   }
 
-  .ProjectsSubinfo {
+  .projects--subinfo {
     box-shadow: none;
     background-color: #29293000;
   }
 
-  .ProjectsSubinfo > p {
+  .projects--subinfo > p {
     text-align: center;
     font-size: 2vh;
   }
 
-  .ImgContainer {
+  .projects--container-img-container {
     width: 20em;
     /* 867 */
     height: 15em;
@@ -214,15 +197,22 @@
     z-index: 2;
   }
 
-  .Img {
+  .projects--container-img {
     width: 8.67em;
     height: 6.72em;
   }
 
-  .BtnContainer {
+  .projects--btn-container {
     width: 6em;
   }
 }
+
+/* 
+@media only screen and (max-height: 400px) {
+  .projects--btn-container {
+    height: 1.5em;
+  }
+} */
 
 @-webkit-keyframes projectsAnim {
   0% {

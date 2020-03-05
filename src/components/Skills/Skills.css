@@ -1,7 +1,8 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/skills.webp");
+  background-color: #292930;
+  /* background-image: url("./../../img/skills.webp"); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,18 +21,11 @@
   font-weight: 500
 }
 
-.TechnologyHeader {
+.skills--technology-header {
   width: 100%
 }
 
-.SkillsAnim {
-  -webkit-animation: anim 1s ease-in;
-  -moz-animation: anim 1s ease-in;
-  -o-animation: anim 1s ease-in;
-  animation: anim 1s ease-in;
-}
-
-.SkillsContainer {
+.skills--container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,9 +35,10 @@
   width: 80vw;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: white
 }
 
-.SkillsSpan {
+.skills--span {
   width: 13vw;
   height: 18vh;
   margin: 3vw;
@@ -55,13 +50,13 @@
   border-radius: 0;
 }
 
-.SkillsSpan > p {
+.skills--span > p {
   text-align: center;
   font-size: 1.2rem;
   margin-top: 1em;
 }
 
-.ImageStyle {
+.skills--img {
   width: 7vw;
   height: 7vw;
   margin: 1em;
@@ -85,171 +80,27 @@
     background-color: #292930;
   }
 
-  .SkillsContainer {
+  .skills--container {
     width: 16em;
     top: 45em;
     align-content: center;
   }
 
-  .SkillsSpan {
+  .skills--span {
     width: 12em;
     height: 10em;
     margin: 0;
     margin-top: 1em!important;
   }
 
-  .SkillsSpan > p {
+  .skills--span > p {
     font-size: 1.2em;
     padding: 0.1em;
   }
 
-  .ImageStyle {
+  .skills--img {
     width: 6em;
     height: 6em;
     margin: 0;
-  }
-}
-
-@-webkit-keyframes skillsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-moz-keyframes skillsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-o-keyframes skillsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@keyframes skillsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-webkit-keyframes skillsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-moz-keyframes skillsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-o-keyframes skillsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@keyframes skillsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
   }
 }

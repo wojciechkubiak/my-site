@@ -1,4 +1,4 @@
-.LandingPage {
+.home {
   position: relative;
   height: 101vh;
   background-image: url("./../../img/comp_bg.webp");
@@ -8,7 +8,7 @@
   background-size: cover;
 }
 
-.LandingPageName {
+.home--container {
   position: absolute;
   left: 50%;
   top: 45vh;
@@ -25,7 +25,7 @@
   animation: fadeAnim 1.5s ease-in;
 }
 
-.LandingPageName > h1 {
+.home--container > h1 {
   margin-top: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -35,7 +35,7 @@
   font-weight: 600
 }
 
-.LandingPageName > p {
+.home--container > p {
   font-size: 2.2em;
   margin-top: 0.5em;
   margin-left: 0.5em;
@@ -45,7 +45,7 @@
   font-weight: 300
 }
 
-.ArrowDown {
+.home--arrow {
   color: white;
   position: absolute;
   top: 60vh;
@@ -60,7 +60,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .LandingPageName {
+  .home--container {
     top: 16em;
     width: 18em;
     height: 15em;
@@ -71,17 +71,17 @@
     animation: fadeAnimMobile 1s ease-in;
   }
 
-  .LandingPageName > h1 {
+  .home--container > h1 {
     margin: 0.5em;
     font-size: 2.5em;
   }
 
-  .LandingPageName > p {
+  .home--container > p {
     font-size: 1.5em;
     padding-bottom: 1em;
   }
 
-  .ArrowDown {
+  .home--arrow {
     top: 22em;
     width: 3em;
     height: 3em;

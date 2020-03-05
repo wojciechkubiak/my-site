@@ -15,18 +15,18 @@ const LandingPage = props => {
 
   return (
     <div
-      className="LandingPage"
+      className="home"
       ref={ref}
       id="landing"
-      data-testid="LandingPage"
+      data-testid="Home"
       onWheel={changeTransparency}
     >
-      <div className="LandingPageName">
+      <div className="home--container">
         <h1>Wojciech Kubiak</h1>
         <p>{props.t("landing.pos", { framework: "react-i18next" })}</p>
         <Nav.Link href="#about">
           <MdKeyboardArrowDown
-            className="ArrowDown"
+            className="home--arrow"
             onClick={props.headerOn}
           ></MdKeyboardArrowDown>
         </Nav.Link>

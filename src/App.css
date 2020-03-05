@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.anim {
+  -webkit-animation: anim 1s ease-in;
+  -moz-animation: anim 1s ease-in;
+  -o-animation: anim 1s ease-in;
+  animation: anim 1s ease-in;
+}
 
 @-webkit-keyframes anim {
   0% {

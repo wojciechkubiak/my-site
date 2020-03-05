@@ -10,10 +10,11 @@ const Contact = props => {
 
   const animHandler = value => {
     if (value) {
-      setMode(["ContactContainer", "ContactAnim"]);
+      setMode(["ContactContainer", "anim"]);
     }
   };
 
+  //TODO BEM Css
   return (
     <InView
       as="div"
@@ -56,7 +57,7 @@ const Contact = props => {
       <div className="GitContainer">
         <a href={"https://www.github.com/wgkubiak"}>
           <button className="GitBtn">
-            <FaGit className="GitIcon" />
+            <FaGit className="contact--git-icon" />
           </button>
         </a>
         <p>/wgkubiak</p>

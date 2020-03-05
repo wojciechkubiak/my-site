@@ -47,8 +47,8 @@ const App = (
       />
       <LandingPage headerOn={headerOn} headerOff={headerOff} t={t} />
       <About language={language} t={t} />
-      <Skills language={language} t={t} />
       <Projects language={language} t={t} />
+      <Skills language={language} t={t} />
       <Contact language={language} t={t} />
       <SocialMedia />
       <Footer language={language} t={t} />

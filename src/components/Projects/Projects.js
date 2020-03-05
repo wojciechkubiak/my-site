@@ -4,7 +4,7 @@ import "./Projects.css";
 
 const Projects = props => {
   const [img, setImg] = useState(1);
-  const [mode, setMode] = useState(["ProjectsContainer"]);
+  const [mode, setMode] = useState(["projects--container"]);
 
   const data = [
     [
@@ -28,7 +28,7 @@ const Projects = props => {
 
   const animHandler = value => {
     if (value) {
-      setMode(["ProjectsContainer", "ProjectsAnim"]);
+      setMode(["projects--container", "anim"]);
     }
   };
 
@@ -51,49 +51,49 @@ const Projects = props => {
     >
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className={mode.join(" ")} data-testid="Projects">
-        <div className="ImgContainer">
+        <div className="projects--container-img-container">
           <img
-            className="Img"
+            className="projects--container-img"
             src={require(`./../../img/${img}.png`)}
             alt="React-icon"
           />
-          <div className="ProjectsSubinfo">
+          <div className="projects--subinfo">
             <h3>{data[img - 1][0]}</h3>
             <p>{data[img - 1][1]}</p>
           </div>
         </div>
-        <div className="ProjectInfoContainer">
-          <div className="ProjectInfoImages">
-            <span className="ProjectSpan">
+        <div className="projects--technologies-container">
+          <div className="projects--technologies-container-alt">
+            <span className="projects--span">
               <img
-                className="ProjectImgStyle"
+                className="projects--img"
                 src={require(`./../../img/${imageSrc[img - 1][0]}`)}
-                alt="React-icon"
+                alt="First-img"
               />
             </span>
-            <span className="ProjectSpan">
+            <span className="projects--span">
               <img
-                className="ProjectImgStyle"
+                className="projects--img"
                 src={require(`./../../img/${imageSrc[img - 1][1]}`)}
-                alt="React-icon"
+                alt="Second-img"
               />
             </span>
-            <span className="ProjectSpan">
+            <span className="projects--span">
               <img
-                className="ProjectImgStyle"
+                className="projects--img"
                 src={require(`./../../img/${imageSrc[img - 1][2]}`)}
-                alt="React-icon"
+                alt="Third-img"
               />
             </span>
           </div>
         </div>
       </div>
-      <div className="BtnContainer">
+      <div className="projects--btn-container">
         <button
           name="-1"
           value="backward"
           onClick={swapImage}
-          className="PrevBtn"
+          className="projects--btn-prev"
         >
           &larr;
         </button>
@@ -101,7 +101,7 @@ const Projects = props => {
           name="1"
           value="forward"
           onClick={swapImage}
-          className="NextBtn"
+          className="projects--btn-next"
         >
           &rarr;
         </button>

@@ -2,21 +2,22 @@
   position: relative;
   color: white;
   height: 101vh;
-  background-image: url("./../../img/about.webp");
+  /* background-image: url("./../../img/about.webp"); */
+  background-color: #292930;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.AboutAnim {
+.about--anim {
   -webkit-animation: anim 1s ease-in;
   -moz-animation: anim 1s ease-in;
   -o-animation: anim 1s ease-in;
   animation: anim 1s ease-in;
 }
 
-.AboutContainer {
+.about--container {
   position: absolute;
   top: 45vh;
   left: 50%;
@@ -25,7 +26,7 @@
   text-align: center;
 }
 
-.AboutImg {
+.about--img {
   position: absolute;
   opacity: 0.7;
   top: -8vh;
@@ -35,7 +36,7 @@
   transform: translate(-50%, -50%);
 }
 
-.AboutContainer > h1 {
+.about--container > h1 {
   text-align: left;
   margin-left: 1em;
   font-size: 7vh;
@@ -43,7 +44,7 @@
   font-weight: 500
 }
 
-.AboutText {
+.about--txt {
   position: absolute;
   top: 8vh;
   background-color: #292930;
@@ -51,22 +52,22 @@
   padding: 1em;
 }
 
-.AboutText > p {
+.about--txt > p {
   font-size: 2.5vh !important;
   font-weight: 300
 }
 
 @media only screen and (max-width: 700px) {
-  .AboutContainer {
+  .about--container {
     top: 7em;
     width: 20em;
   }
 
-  .AboutImg {
+  .about--img {
     display: none;
   }
 
-  .AboutContainer > h1 {
+  .about--container > h1 {
     font-size: 2em;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -76,7 +77,7 @@
     width: 10em;
   }
 
-  .AboutText {
+  .about--txt {
     top: 6em;
     padding: 0.4em;
     font-size: 0.57em;
