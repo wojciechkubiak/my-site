@@ -128,7 +128,7 @@
 .projects--img {
   width: 10vw;
   left: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 1em;
 }
 
