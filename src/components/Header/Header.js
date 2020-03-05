@@ -3,18 +3,14 @@ import { Navbar, Nav } from "react-bootstrap";
 import "./Header.css";
 
 const Header = props => {
+ 
   let mode = ["shadow p-3 mb-5", props.headerMode ? "HeaderOut" : "HeaderTop"];
 
   let textColor = [
     "HeaderLink",
     props.headerMode ? "HeaderTextColorWhite" : "HeaderTextColorDark"
   ];
-
-  let header = props.language ? "Home" : "Strona główna";
-  let about = props.language ? "About" : "O mnie";
-  let skills = props.language ? "Skills" : "Technologie";
-  let projects = props.language ? "Projects" : "Projekty";
-  let contact = props.language ? "Contact" : "Kontakt";
+  
   const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
 
   return (
@@ -37,35 +33,35 @@ const Header = props => {
               onClick={props.headerOff}
               active
             >
-              {header}
+              { props.t('header.Home', { framework: "react-i18next"}) }
             </Nav.Link>
             <Nav.Link
               href="#about"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {about}
+              { props.t('header.About', { framework: "react-i18next"}) }
             </Nav.Link>
             <Nav.Link
               href="#skills"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {skills}
+              { props.t('header.Skills', { framework: "react-i18next"}) }
             </Nav.Link>
             <Nav.Link
               href="#projects"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {projects}
+              { props.t('header.Projects', { framework: "react-i18next"}) }
             </Nav.Link>
             <Nav.Link
               href="#contact"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              {contact}
+              { props.t('header.Contact', { framework: "react-i18next"}) }
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
