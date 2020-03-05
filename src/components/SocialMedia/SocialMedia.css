@@ -3,7 +3,7 @@
   right: 1em;
   bottom: 3.5em;
   width: 5em;
-  height: 12em;
+  height: 15em;
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -11,39 +11,47 @@
 }
 
 .SocialMediaBtn {
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   border: none;
   position: absolute;
   padding: 0;
   margin: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
   outline: none !important;
-  color: white;
-  font-weight: 500
+  color: #292930;
+  font-weight: 500;
+  padding-top: 0.2em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .FacebookBtn,
 .LinkedInBtn {
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #292930;
   outline: none !important;
   color: white;
 }
 
+.FacebookBtn {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
 .SocialMediaIcon {
-  height: 80%;
-  width: 80%;
-  color: white;
+  height: 60%;
+  width: 60%;
+  color: #292930;
 }
 
 .FacebookIcon,
 .LinkedInIcon {
-  height: 40%;
-  width: 40%;
+  height: 60%;
+  width: 60%;
   padding: 0.1em;
   color: white;
 }

@@ -14,7 +14,7 @@
   width: 5em;
   top: 45vh;
   font-size: 7vh;
-  color: white;
+  color: #292930;
   transform: rotate(90deg);
   z-index: 5;
 }
@@ -98,16 +98,16 @@
 }
 
 .MailContainer {
-  color: #d56c2c;
+  color: #d19b79;
   transition: 1s;
 }
 
 .PhoneNumber {
-  color: #d56c2c;
+  color: #d19b79;
 }
 
 .MailContainer:hover {
-  color: #d56c2c;
+  color: rgb(219, 131, 77);
 }
 
 @media only screen and (max-width: 700px) {
@@ -120,6 +120,7 @@
     width: 10em;
     top: 4em;
     left: 50%;
+    color: white;
     transform: translate(-50%, -50%);
   }
 

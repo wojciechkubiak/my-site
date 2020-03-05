@@ -1,7 +1,8 @@
 #projects {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/skills.webp");
+  /* background-image: url("./../../img/projects.webp"); */
+  background-color: #292930;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +25,9 @@
   width: 25vw;
   padding: 1em;
   background-color: #292930;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0.5em;
+  margin: 0.5em
 }
 
 .projects--technologies-container-alt {
@@ -45,7 +49,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #d56c2c;
+  color: white;
   font-size: 5vh;
   font-weight: 400
 }
@@ -151,7 +155,7 @@
     padding: 0em;
     width: 10em;
     height: 14em;
-    top: 12em;
+    top: 11.7em;
   }
 
   .projects--technologies-container-alt {
@@ -187,6 +191,8 @@
   .projects--subinfo > p {
     text-align: center;
     font-size: 2vh;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
   .projects--container-img-container {
@@ -204,6 +210,7 @@
 
   .projects--btn-container {
     width: 6em;
+    height: 1.5em;
   }
 }
 

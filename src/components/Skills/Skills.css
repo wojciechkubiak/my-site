@@ -1,8 +1,7 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-color: #292930;
-  /* background-image: url("./../../img/skills.webp"); */
+  background-image: url("./../../img/skills.webp"); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +29,7 @@
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 45vh;
+  top: 55vh;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);
@@ -40,10 +39,12 @@
 
 .skills--span {
   width: 13vw;
-  height: 18vh;
-  margin: 3vw;
+  height: 36vh;
+  margin: 2vw;
   padding: 2em;
   transition: all 1s;
+  background-color: #292930;
+  border-radius: 0.5em;
 }
 
 .progress {
@@ -57,8 +58,8 @@
 }
 
 .skills--img {
-  width: 7vw;
-  height: 7vw;
+  width: 5vw;
+  height: 5vw;
   margin: 1em;
   opacity: 1;
 }
@@ -66,7 +67,7 @@
 @media only screen and (max-width: 700px) {
   #skills {
     color: #292930;
-    height: 87em;
+    height: 167em;
   }
 
   #skills > h1 {
@@ -82,13 +83,13 @@
 
   .skills--container {
     width: 16em;
-    top: 45em;
+    top: 83em;
     align-content: center;
   }
 
   .skills--span {
     width: 12em;
-    height: 10em;
+    height: 20em;
     margin: 0;
     margin-top: 1em!important;
   }
@@ -99,8 +100,8 @@
   }
 
   .skills--img {
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     margin: 0;
   }
 }

@@ -44,7 +44,7 @@
   border: none;
   outline: none !important;
   background-color: rgba(255, 255, 255, 0);
-  position: fixed;
+  position: absolute;
   right: 1em;
   top: 1.5em;
   width: 3.5em;
@@ -52,6 +52,7 @@
   align-content: center;
   display: flex;
   flex-direction: column; 
+  transform: translate(0%, 0%);
 }
 
 
