@@ -7,25 +7,24 @@ const Projects = props => {
   const [mode, setMode] = useState(["ProjectsContainer"]);
 
   const data = [
-    ["Obb-SYS", "Web app for the vet", "Aplikacja webowa dla weterynarza"],
     [
-      "Opqn",
-      "Mobile app for the diet supervisors",
-      "Aplikacja mobilna dla dietetyków"
+      "Obb-SYS",
+      props.t("projects.obbsysAbout", { framework: "react-i18next" })
     ],
-    ["FitTracker", "CRUD diet app", "Aplikacja webowa typu CRUD dla dietetyków"]
-  ];
-  const imageSrc = [
-    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"],
     [
-      "white_empty_android.png",
-      "white_empty_nodejs.png",
-      "white_empty_psql.png"
-    ],
-    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"]
+      "Opqn", 
+      props.t("projects.opqnAbout", { framework: "react-i18next" })],
+    [
+      "FitTracker",
+      props.t("projects.fittrackerAbout", { framework: "react-i18next" })
+    ]
   ];
 
-  const header = props.language ? "Projects" : "Projekty";
+  const imageSrc = [
+    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"],
+    [ "white_empty_android.png", "white_empty_nodejs.png", "white_empty_psql.png"],
+    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"]
+  ];
 
   const animHandler = value => {
     if (value) {
@@ -50,7 +49,7 @@ const Projects = props => {
       id="projects"
       onChange={(inView, entry) => animHandler(inView)}
     >
-      <h1>{header}</h1>
+      <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className={mode.join(" ")} data-testid="Projects">
         <div className="ImgContainer">
           <img
@@ -60,7 +59,7 @@ const Projects = props => {
           />
           <div className="ProjectsSubinfo">
             <h3>{data[img - 1][0]}</h3>
-            <p>{props.language ? data[img - 1][1] : data[img - 1][2]}</p>
+            <p>{data[img - 1][1]}</p>
           </div>
         </div>
         <div className="ProjectInfoContainer">

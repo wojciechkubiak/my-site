@@ -23,7 +23,7 @@ const LandingPage = props => {
     >
       <div className="LandingPageName">
         <h1>Wojciech Kubiak</h1>
-        <p>Student</p>
+        <p>{props.t("landing.pos", { framework: "react-i18next" })}</p>
         <Nav.Link href="#about">
           <MdKeyboardArrowDown
             className="ArrowDown"

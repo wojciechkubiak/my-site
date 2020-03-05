@@ -1,9 +1,36 @@
 {
     "header": {
-        "Home": "Home",
-        "About": "About",
-        "Skills": "Skills",
-        "Projects": "Projects",
-        "Contact": "Contact"
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "landing": {
+        "pos": "Student"
+    },
+    "aboutme": {
+        "header": "About me",
+        "content": "Hi! My name is Wojtek and I'm student of Computer Science and Measuring Systems at the University of Wroclaw. I am passionate about creating nice looking web applications using modern technologies. I got into it during numerous individual and university projects. In each of them I showed creativity, consistency and attention to the quality of the application and code. During my studies, I also had the opportunity to participate in internships and programming internships. During them I learned how to work in the SCRUM system, how to communicate with client while receiving an application creation order and how to program with modern standards."
+    },
+    "skills": {
+        "header": "Skills"
+    },
+    "projects": {
+        "header": "Projects",
+        "opqnAbout": "Mobile app for the diet supervisors",
+        "obbsysAbout": "Web app for the vet",
+        "fittrackerAbout": "CRUD diet app"
+    },
+    "contact": {
+        "header": "Contact",
+        "box": "Get in touch",
+        "firstLine": "Are you interested in working with me or just have a question?",
+        "contactMe": "Email me at",
+        "or": "or",
+        "phone": "Send me a message at"
+    },
+    "footer": {
+        "text": "Created by"
     }
 }

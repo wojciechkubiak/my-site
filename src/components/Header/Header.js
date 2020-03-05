@@ -3,14 +3,13 @@ import { Navbar, Nav } from "react-bootstrap";
 import "./Header.css";
 
 const Header = props => {
- 
   let mode = ["shadow p-3 mb-5", props.headerMode ? "HeaderOut" : "HeaderTop"];
 
   let textColor = [
     "HeaderLink",
     props.headerMode ? "HeaderTextColorWhite" : "HeaderTextColorDark"
   ];
-  
+
   const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
 
   return (
@@ -33,35 +32,35 @@ const Header = props => {
               onClick={props.headerOff}
               active
             >
-              { props.t('header.Home', { framework: "react-i18next"}) }
+              {props.t("header.home", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#about"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              { props.t('header.About', { framework: "react-i18next"}) }
+              {props.t("header.about", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#skills"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              { props.t('header.Skills', { framework: "react-i18next"}) }
+              {props.t("header.skills", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#projects"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              { props.t('header.Projects', { framework: "react-i18next"}) }
+              {props.t("header.projects", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#contact"
               className={textColor.join(" ")}
               onClick={props.headerOn}
             >
-              { props.t('header.Contact', { framework: "react-i18next"}) }
+              {props.t("header.contact", { framework: "react-i18next" })}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

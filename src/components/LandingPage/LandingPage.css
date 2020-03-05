@@ -19,10 +19,10 @@
   background-color: rgba(54, 66, 71, 0.61);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 2em;
-  -webkit-animation: fadeAnim 1.5s ease-in;
-  -moz-animation: fadeAnim 1.5s ease-in;
-  -o-animation: fadeAnim 1.5s ease-in;
-  animation: fadeAnim 1.5s ease-in;
+  -webkit-animation: fadeAnim 1s ease-in;
+  -moz-animation: fadeAnim 1s ease-in;
+  -o-animation: fadeAnim 1s ease-in;
+  animation: fadeAnim 1s ease-in;
 }
 
 .LandingPageName > h1 {
@@ -32,10 +32,6 @@
   font-size: 4.1em;
   color: white;
   display: block;
-  -webkit-animation: fadeAnim 2.5s ease-in;
-  -moz-animation: fadeAnim 2.5s ease-in;
-  -o-animation: fadeAnim 2.5s ease-in;
-  animation: fadeAnim 2.5s ease-in;
 }
 
 .LandingPageName > p {
@@ -45,10 +41,6 @@
   margin-right: 0.5em;
   color: white;
   display: block;
-  -webkit-animation: fadeAnim 3.5s ease-in;
-  -moz-animation: fadeAnim 3.5s ease-in;
-  -o-animation: fadeAnim 3.5s ease-in;
-  animation: fadeAnim 3.5s ease-in;
 }
 
 .ArrowDown {
@@ -59,10 +51,10 @@
   width: 4em;
   height: 4em;
   transform: translate(-50%, -50%);
-  -webkit-animation: fadeAnimArrow 2.5s ease-in;
-  -moz-animation: fadeAnimArrow 2.5s ease-in;
-  -o-animation: fadeAnimArrow 2.5s ease-in;
-  animation: fadeAnimArrow 2.5s ease-in;
+  -webkit-animation: fadeAnimArrow 2s ease-in;
+  -moz-animation: fadeAnimArrow 2s ease-in;
+  -o-animation: fadeAnimArrow 2s ease-in;
+  animation: fadeAnimArrow 2s ease-in;
 }
 
 @media only screen and (max-width: 700px) {
@@ -71,49 +63,30 @@
     width: 18em;
     height: 15em;
     padding: 1em;
-    -webkit-animation: fadeAnimMobile 1.5s ease-in;
-    -moz-animation: fadeAnimMobile 1.5s ease-in;
-    -o-animation: fadeAnimMobile 1.5s ease-in;
-    animation: fadeAnimMobile 1.5s ease-in;
+    -webkit-animation: fadeAnimMobile 1s ease-in;
+    -moz-animation: fadeAnimMobile 1s ease-in;
+    -o-animation: fadeAnimMobile 1s ease-in;
+    animation: fadeAnimMobile 1s ease-in;
   }
 
   .LandingPageName > h1 {
     margin: 0.5em;
     font-size: 2.5em;
-    -webkit-animation: fadeAnimMobile 2.5s ease-in;
-    -moz-animation: fadeAnimMobile 2.5s ease-in;
-    -o-animation: fadeAnimMobile 2.5s ease-in;
-    animation: fadeAnimMobile 2.5s ease-in;
   }
 
   .LandingPageName > p {
     font-size: 1.5em;
     padding-bottom: 1em;
-    -webkit-animation: fadeAnimMobile 3.5s ease-in;
-    -moz-animation: fadeAnimMobile 3.5s ease-in;
-    -o-animation: fadeAnimMobile 3.5s ease-in;
-    animation: fadeAnimMobile 3.5s ease-in;
   }
-
-  /* .BtnInfo {
-    top: 12.2em;
-    width: 10em;
-    font-size: 1.2em;
-    padding: 0.1em;
-  }
-
-  .BtnInfo:hover {
-    text-decoration: underline;
-  } */
 
   .ArrowDown {
     top: 22em;
     width: 3em;
     height: 3em;
-    -webkit-animation: fadeAnimArrowMobile 2.5s ease-in;
-    -moz-animation: fadeAnimArrowMobile 2.5s ease-in;
-    -o-animation: fadeAnimArrowMobile 2.5s ease-in;
-    animation: fadeAnimArrowMobile 2.5s ease-in;
+    -webkit-animation: fadeAnimArrowMobile 2s ease-in;
+    -moz-animation: fadeAnimArrowMobile 2s ease-in;
+    -o-animation: fadeAnimArrowMobile 2s ease-in;
+    animation: fadeAnimArrowMobile 2s ease-in;
   }
 }
 

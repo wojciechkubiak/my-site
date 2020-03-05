@@ -1,9 +1,36 @@
 {
     "header": {
-        "Home": "Strona Główna",
-        "About": "O mnie",
-        "Skills": "Technologie",
-        "Projects": "Projekty",
-        "Contact": "Kontakt"
+        "home": "Strona Główna",
+        "about": "O mnie",
+        "skills": "Technologie",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "landing": {
+        "pos": "Student"
+    },
+    "aboutme": {
+        "header": "O mnie",
+        "content": "Cześć! Nazywam się Wojtek i jestem studentem Informatyki Stosowanej i Systemów Pomiarowych, UWr. Moją pasją jest tworzenie miłych dla oka aplikacji webowych z użyciem nowoczesnych technologii. Pasja ta została zapoczątkowana podczas licznych indywidualnych i studenckich projektów. W każdym z nich wykazałem się kreatywnością, konsekwencją oraz dbałością o jakość aplikacji i kodu. Podczas moich studiów miałem również okazję uczestniczyć w praktyce oraz stażu programistycznym. Podczas ich trwania nauczyłem się specyfiki pracy w systemie SCRUM, komunikacji z klientem podczas otrzymywania zlecenia oraz jak programować z zachowaniem nowoczesnych standardów."
+    },
+    "skills": {
+        "header": "Technologie"
+    },
+    "projects": {
+        "header": "Projekty",
+        "opqnAbout": "Aplikacja mobilna dla dietetyków",
+        "obbsysAbout": "Aplikacja webowa dla weterynarza",
+        "fittrackerAbout": "Aplikacja webowa typu CRUD dla dietetyków"
+    },
+    "contact": {
+        "header": "Kontakt",
+        "box": "Skontaktuj się",
+        "firstLine": "Jesteś zainteresowana/y pracą ze mną lub masz jakieś pytanie?",
+        "contactMe": "Napisz do mnie na adres",
+        "or": "lub",
+        "phone": "Wyślij wiadomość na numer"
+    },
+    "footer": {
+        "text": "Strona stworzona przez"
     }
 }

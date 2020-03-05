@@ -33,10 +33,10 @@
 }
 
 .ContactAnim {
-  -webkit-animation: contactAnim 1.5s ease-in;
-  -moz-animation: contactAnim 1.5s ease-in;
-  -o-animation: contactAnim 1.5s ease-in;
-  animation: contactAnim 1.5s ease-in;
+  -webkit-animation: anim 1.5s ease-in;
+  -moz-animation: anim 1.5s ease-in;
+  -o-animation: anim 1.5s ease-in;
+  animation: anim 1.5s ease-in;
 }
 
 .ContactContainer > h1 {
@@ -166,78 +166,7 @@
 }
 
 
-@-webkit-keyframes contactAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-moz-keyframes contactAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-o-keyframes contactAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@keyframes contactAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
+/* 
 @-webkit-keyframes contactAnimMobile {
   0% {
     display: none;
@@ -308,4 +237,4 @@
     opacity: 1;
     left: 50%;
   }
-}
+} */

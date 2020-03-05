@@ -10,10 +10,10 @@
 }
 
 .AboutAnim {
-  -webkit-animation: aboutAnim 1.5s ease-in;
-  -moz-animation: aboutAnim 1.5s ease-in;
-  -o-animation: aboutAnim 1.5s ease-in;
-  animation: aboutAnim 1.5s ease-in;
+  -webkit-animation: anim 1.5s ease-in;
+  -moz-animation: anim 1.5s ease-in;
+  -o-animation: anim 1.5s ease-in;
+  animation: anim 1.5s ease-in;
 }
 
 .AboutContainer {

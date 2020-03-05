@@ -24,10 +24,10 @@
 }
 
 .SkillsAnim {
-  -webkit-animation: skillsAnim 1.5s ease-in;
-  -moz-animation: skillsAnim 1.5s ease-in;
-  -o-animation: skillsAnim 1.5s ease-in;
-  animation: skillsAnim 1.5s ease-in;
+  -webkit-animation: anim 1.5s ease-in;
+  -moz-animation: anim 1.5s ease-in;
+  -o-animation: anim 1.5s ease-in;
+  animation: anim 1.5s ease-in;
 }
 
 .SkillsContainer {
@@ -64,7 +64,7 @@
   width: 7vw;
   height: 7vw;
   margin: 1em;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 700px) {

@@ -8,32 +8,6 @@ import "./Contact.css";
 const Contact = props => {
   const [mode, setMode] = useState(["ContactContainer"]);
 
-  const contactHeaderEng = "Contact";
-  const contactHeaderPl = "Kontakt";
-  const boxHeaderEng = "Get in touch";
-  const boxHeaderPl = "Skontaktuj się";
-  const firstContactLineEng =
-    "Are you interested in working with me or just have a question?";
-  const firstContactLinePl =
-    "Jesteś zainteresowana/y pracą ze mną lub masz jakieś pytanie?";
-  const contactMeLineEng = "Email me at";
-  const contactMeLinePl = "Napisz do mnie na adres";
-  const orEng = "or";
-  const orPl = "lub";
-  const phoneMessageEng = "Send me a message at";
-  const phoneMessagePl = "Wyślij wiadomość na numer";
-
-  const currentHeader = props.language ? contactHeaderEng : contactHeaderPl;
-  const currentBoxHeader = props.language ? boxHeaderEng : boxHeaderPl;
-  const currentFirstContactLine = props.language
-    ? firstContactLineEng
-    : firstContactLinePl;
-  const currentContactMeLine = props.language
-    ? contactMeLineEng
-    : contactMeLinePl;
-  const currentOr = props.language ? orEng : orPl;
-  const currentPhoneMsg = props.language ? phoneMessageEng : phoneMessagePl;
-
   const animHandler = value => {
     if (value) {
       setMode(["ContactContainer", "ContactAnim"]);
@@ -47,19 +21,19 @@ const Contact = props => {
       id="contact"
       onChange={(inView, entry) => animHandler(inView)}
     >
-      <h1>{currentHeader}</h1>
+      <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
       <div className={mode.join(" ")} data-testid="Contact">
-        <h1>{currentBoxHeader}</h1>
-        <p>{currentFirstContactLine}</p>
+        <h1>{props.t("contact.box", { framework: "react-i18next" })}</h1>
+        <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
         <p>
-          {currentContactMeLine}
+          {props.t("contact.contactMe", { framework: "react-i18next" })}
           <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
             <strong> wgkubiak@gmail.com</strong>
           </a>
         </p>
-        <p>{currentOr}</p>
+        <p>{props.t("contact.or", { framework: "react-i18next" })}</p>
         <p>
-          {currentPhoneMsg}
+          {props.t("contact.phone", { framework: "react-i18next" })}
           <strong className="PhoneNumber"> 726 823 405</strong>
         </p>
       </div>

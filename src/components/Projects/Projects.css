@@ -21,10 +21,10 @@
 }
 
 .ProjectsAnim {
-  -webkit-animation: projectsAnim 1.5s ease-in;
-  -moz-animation: projectsAnim 1.5s ease-in;
-  -o-animation: projectsAnim 1.5s ease-in;
-  animation: projectsAnim 1.5s ease-in;
+  -webkit-animation: anim 1.5s ease-in;
+  -moz-animation: anim 1.5s ease-in;
+  -o-animation: anim 1.5s ease-in;
+  animation: anim 1.5s ease-in;
 }
 
 .ProjectImgStyle {

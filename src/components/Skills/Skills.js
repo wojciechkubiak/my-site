@@ -30,8 +30,6 @@ const Skills = props => {
     Bootstrap: [bootstrapLogo, 60]
   };
 
-  let header = props.language ? "Skills" : "Technologie";
-
   return (
     <InView
       as="div"
@@ -39,7 +37,7 @@ const Skills = props => {
       id="skills"
       onChange={(inView, entry) => animHandler(inView)}
     >
-      <h1>{header}</h1>
+      <h1>{ props.t('skills.header', { framework: "react-i18next"}) }</h1>
       <div className={mode.join(" ")}>
         {Object.keys(icons).map(key => {
           return (
