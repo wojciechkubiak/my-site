@@ -17,6 +17,7 @@
   top: 45vh;
   transform: rotate(90deg);
   z-index: 5;
+  font-weight: 500
 }
 
 .TechnologyHeader {
@@ -24,10 +25,10 @@
 }
 
 .SkillsAnim {
-  -webkit-animation: anim 1.5s ease-in;
-  -moz-animation: anim 1.5s ease-in;
-  -o-animation: anim 1.5s ease-in;
-  animation: anim 1.5s ease-in;
+  -webkit-animation: anim 1s ease-in;
+  -moz-animation: anim 1s ease-in;
+  -o-animation: anim 1s ease-in;
+  animation: anim 1s ease-in;
 }
 
 .SkillsContainer {

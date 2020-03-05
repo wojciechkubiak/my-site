@@ -10,10 +10,10 @@
 }
 
 .AboutAnim {
-  -webkit-animation: anim 1.5s ease-in;
-  -moz-animation: anim 1.5s ease-in;
-  -o-animation: anim 1.5s ease-in;
-  animation: anim 1.5s ease-in;
+  -webkit-animation: anim 1s ease-in;
+  -moz-animation: anim 1s ease-in;
+  -o-animation: anim 1s ease-in;
+  animation: anim 1s ease-in;
 }
 
 .AboutContainer {
@@ -40,6 +40,7 @@
   margin-left: 1em;
   font-size: 7vh;
   z-index: 5;
+  font-weight: 500
 }
 
 .AboutText {
@@ -51,7 +52,8 @@
 }
 
 .AboutText > p {
-  font-size: 2.3vh !important;
+  font-size: 2.5vh !important;
+  font-weight: 300
 }
 
 @media only screen and (max-width: 700px) {

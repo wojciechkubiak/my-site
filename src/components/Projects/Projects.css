@@ -21,10 +21,10 @@
 }
 
 .ProjectsAnim {
-  -webkit-animation: anim 1.5s ease-in;
-  -moz-animation: anim 1.5s ease-in;
-  -o-animation: anim 1.5s ease-in;
-  animation: anim 1.5s ease-in;
+  -webkit-animation: anim 1s ease-in;
+  -moz-animation: anim 1s ease-in;
+  -o-animation: anim 1s ease-in;
+  animation: anim 1s ease-in;
 }
 
 .ProjectImgStyle {
@@ -59,11 +59,13 @@
   text-align: center;
   color: #d56c2c;
   font-size: 5vh;
+  font-weight: 400
 }
 
 .ProjectsSubinfo > p {
   text-align: center;
   font-size: 3vh;
+  font-weight: 300
 }
 
 .BtnContainer {
@@ -112,6 +114,8 @@
   top: 7em;
   transform: rotate(90deg);
   z-index: 5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500
 }
 
 .ProjectsSubinfo {

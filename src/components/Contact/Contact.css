@@ -33,20 +33,22 @@
 }
 
 .ContactAnim {
-  -webkit-animation: anim 1.5s ease-in;
-  -moz-animation: anim 1.5s ease-in;
-  -o-animation: anim 1.5s ease-in;
-  animation: anim 1.5s ease-in;
+  -webkit-animation: anim 1s ease-in;
+  -moz-animation: anim 1s ease-in;
+  -o-animation: anim 1s ease-in;
+  animation: anim 1s ease-in;
 }
 
 .ContactContainer > h1 {
   padding-top: 2vh;
   padding-bottom: 2vh;
   color: white;
+  font-weight: 500;
 }
 
 .ContactContainer > p {
   color: white;
+  font-weight: 300
 }
 
 .GitContainer {
@@ -56,6 +58,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 4vh;
+  font-weight: 300
 }
 
 .ResumeContainer {
