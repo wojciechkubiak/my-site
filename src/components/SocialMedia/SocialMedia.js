@@ -29,8 +29,8 @@ const SocialMedia = ({ initIconState = false }) => {
           </button>
         </a>
       )}
-      <button className="SocialMediaBtn">
-        <MdContacts className="SocialMediaIcon" onClick={toggleIcons} />
+      <button className="SocialMediaBtn" onClick={toggleIcons} >
+        <MdContacts className="SocialMediaIcon"/>
       </button>
     </div>
   );

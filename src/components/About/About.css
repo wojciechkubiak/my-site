@@ -41,14 +41,12 @@
   margin-left: 1em;
   font-size: 7vh;
   z-index: 5;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .about--txt {
   position: absolute;
   top: 10vh;
-  background-color: #292930;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 1em;
 }
 
@@ -79,6 +77,8 @@
 
   .about--txt {
     padding: 0.2em;
+    background-color: #292930;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
 
   .about--txt > p {

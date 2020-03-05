@@ -1,6 +1,6 @@
 #contact {
   position: relative;
-  height: 101vh;
+  height: calc(101vh - 2em);
   background-image: url("./../../img/contact.webp");
   background-attachment: fixed;
   background-position: center;
@@ -30,6 +30,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 0.2em;
   padding-bottom: 1em!important;
+  border-radius: 1em;
 }
 
 .ContactContainer > h1 {
@@ -41,7 +42,7 @@
 
 .ContactContainer > p {
   color: white;
-  font-weight: 300
+  font-weight: 400
 }
 
 .GitContainer {
@@ -118,14 +119,14 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
-    top: 4em;
+    top: 3em;
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
   }
 
   .ContactContainer {
-    top: 19em;
+    top: 16em;
     left: 50%;
     width: 20em;
   }
