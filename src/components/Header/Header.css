@@ -7,10 +7,10 @@
 
 .HeaderLink {
   outline: 0;
-  padding-right: 5em !important;
+  padding-right: 2em !important;
   font-weight: 500;
-  padding-left: 5em !important;
-  font-size: 0.7em !important;
+  padding-left: 2em !important;
+  font-size: 2vh !important;
 }
 
 .HeaderTextColorWhite {
@@ -34,10 +34,22 @@
 
 .HeaderTop {
   background-color: #da939300;
+  width: 50%;
+  left: 10%;
+  transform: translate(50%, 0%);
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  
 }
 
 .HeaderOut {
   background-color: #292930;
+  width: 50%;
+  left: 10%;
+  transform: translate(50%, 0%);
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 1px solid white   /* not sure about it  */
 }
 
 .LanguageBtn {
@@ -56,21 +68,10 @@
 }
 
 
-@media screen and (max-width: 1024px) {
-
-  .LanguageBtn {
-    position: absolute;
-    right: 1em;
-    top: 50%;
-    width: 2em;
-    height: 1em;
-    align-content: center;
-    display: flex;
-    flex-direction: column; 
-    transform: translate(-5%, -50%);
+@media screen and (max-width: 1200px) {
+  .HeaderLink {
+    font-size: 2.2vh !important;
   }
-
-  
   .HeaderTop {
     background-color: #292930;
   }

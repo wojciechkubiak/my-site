@@ -17,7 +17,7 @@ const Header = props => {
       <Navbar
         className={mode.join(" ")}
         collapseOnSelect
-        expand="md"
+        expand="xl"
         fixed="top"
       >
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
