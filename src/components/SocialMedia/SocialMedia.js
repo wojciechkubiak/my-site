@@ -31,7 +31,6 @@ const SocialMedia = ({ initIconState = false }) => {
       )}
       <button className="SocialMediaBtn">
         <MdContacts className="SocialMediaIcon" onClick={toggleIcons} />
-        Social
       </button>
     </div>
   );

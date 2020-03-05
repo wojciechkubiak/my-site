@@ -2,8 +2,8 @@
   position: fixed;
   right: 1em;
   bottom: 3.5em;
-  width: 5em;
-  height: 15em;
+  width: 4em;
+  height: 12em;
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,8 @@
 }
 
 .SocialMediaBtn {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border: none;
   position: absolute;
   padding: 0;
@@ -29,8 +29,8 @@
 
 .FacebookBtn,
 .LinkedInBtn {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border: none;
   background-color: #292930;
   outline: none !important;
@@ -60,10 +60,14 @@
   .SocialMedia {
     right: 1em;
     bottom: 2.5em;
-    width: 4em;
+    width: 3em;
+    height: 9em;
   }
 
-  .SocialMediaBtn {
-    font-size: 1em;
+
+
+  .SocialMediaBtn, .FacebookBtn, .LinkedInBtn {
+    width: 3em;
+    height: 3em;
   }
 }
