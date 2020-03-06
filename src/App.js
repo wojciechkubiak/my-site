@@ -22,6 +22,8 @@ const App = (
   const [img, setImg] = useState(initImg);
   const [arrow, setArrow] = useState(initArrow);
 
+  const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
+
   const { t, i18n } = props;
 
   const headerOn = () => setMode(true);
@@ -48,8 +50,6 @@ const App = (
         headerMode={mode}
         headerOn={headerOn}
         headerOff={headerOff}
-        languageHandler={languageHandler}
-        index={img}
         arrowHandler={arrowHandler}
         t={t}
       />
@@ -65,6 +65,14 @@ const App = (
       <Contact t={t} />
       <SocialMedia />
       <Footer t={t} />
+      <button className="LanguageBtn">
+          <img
+            className="LanguageImg"
+            src={require(`./img/${imgSrc[img]}`)}
+            alt="flag-icon"
+            onClick={languageHandler}
+          />
+      </button>
       {arrow && (
         <Nav.Link href="#landing">
           {/* TODO zfixuj ją na topa i przewijaj do góry do landing po jej kliknięciu */}

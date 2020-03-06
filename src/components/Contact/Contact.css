@@ -163,6 +163,19 @@
     height: 12vw;
     width: 12vw;
   }
+
+
+  .LanguageBtn {
+    right: 0.5em!important;
+    bottom: 2em!important;
+    width: 4em!important;
+    height: 2em!important;
+  }
+  
+  .LanguageImg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 

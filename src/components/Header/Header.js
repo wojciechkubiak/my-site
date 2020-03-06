@@ -10,9 +10,6 @@ const Header = props => {
     props.headerMode ? "HeaderTextColorWhite" : "HeaderTextColorDark"
   ];
 
-
-  const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
-
   const handler = () => {
     props.headerOn();
     props.arrowHandler(true);
@@ -62,14 +59,6 @@ const Header = props => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <button className="LanguageBtn">
-          <img
-            className="LanguageImg"
-            src={require(`./../../img/${imgSrc[props.index]}`)}
-            alt="flag-icon"
-            onClick={props.languageHandler}
-          />
-        </button>
       </Navbar>
     </div>
   );
