@@ -33,8 +33,8 @@
   position: fixed;
   background-color: #da939300;
   width: 50%;
-  -webkit-transform: translate((50%, -300%));
-  transform: translate(50%, -300%);
+  -webkit-transform: translate((50%, -2em));
+  transform: translate(50%, -2em);
   border-radius: 1em;
   transition: 1s;
 }
@@ -48,6 +48,11 @@
   border-radius: 1em;
   border: 1px solid white;
   transition: 1s;
+}
+
+.nav-link {
+  
+  font-weight: 500;
 }
 
 .LanguageBtn {

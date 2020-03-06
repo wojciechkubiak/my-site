@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
 .home--container {
@@ -48,8 +49,8 @@
 .arrow {
   color: white;
   position: fixed;
-  top: 5vh;
-  right: 5vh;
+  top: 2vh;
+  right: 2vh;
   width: 4em;
   height: 4em;
 }

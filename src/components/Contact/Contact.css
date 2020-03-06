@@ -14,7 +14,7 @@
   width: 5em;
   top: 35vh;
   font-size: 7vh;
-  color: #292930;
+  color: white;
   transform: rotate(90deg);
   z-index: 5;
 }
@@ -81,12 +81,13 @@
 .contact--git-icon {
   height: 4vw;
   width: 4vw;
-  color: white;
+  color: #292930;
 }
 
 .GitContainer > p {
-  color: white;
-  font-size: 2vh
+  color: #292930;
+  font-size: 2vh;
+  font-weight: 500;
 }
 
 .GitBtn {
