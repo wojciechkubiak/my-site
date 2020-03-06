@@ -1,27 +1,30 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./../Skills/Skills.css";
-import { ProgressBar } from "react-bootstrap";
+import { Popover, OverlayTrigger, ListGroup } from "react-bootstrap";
 import shortid from "shortid";
 
 const SkillImg = props => {
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Title as="h3">{props.technology}</Popover.Title>
+      <Popover.Content>
+        <ListGroup variant="flush">
+          <ListGroup.Item variant="dark">Używanie das dsa das dasd asd asd</ListGroup.Item>
+          <ListGroup.Item>Modyfikacja</ListGroup.Item>
+        </ListGroup>
+      </Popover.Content>
+    </Popover>
+  );
+
   return (
     <>
-      <span className="skills--span">
-        <img className="skills--img" src={props.imgUrl} alt="React-icon" />
-        <h4 className="skills--technology-header">{props.technology}</h4>
-        <ProgressBar>
-          <ProgressBar
-            striped
-            variant="warning"
-            now={props.progress}
-            key={shortid.generate()}
-          />
-          <ProgressBar
-            variant="dark"
-            now={100 - parseInt(props.progress)}
-            key={shortid.generate()}
-          />
-        </ProgressBar>
+      <span className="skills--span" onClick={() => setShow(!show)}>
+        <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+          <img className="skills--img" src={props.imgUrl} alt="React-icon" />
+        </OverlayTrigger>
       </span>
     </>
   );

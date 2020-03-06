@@ -39,9 +39,9 @@
 
 .skills--span {
   width: 13vw;
-  height: 36vh;
+  height: 26vh;
   margin: 2vw;
-  padding: 2em;
+  padding: 1vw;
   transition: all 1s;
   background-color: #292930;
   border-radius: 0.5em;
@@ -53,15 +53,42 @@
 
 .skills--span > p {
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 1em;
+  font-size: .8vw;
+  margin-top: 1vh;
 }
 
 .skills--img {
-  width: 5vw;
-  height: 5vw;
-  margin: 1em;
+  width: 8vw;
+  height: 8vw;
+  margin: .1vh;
   opacity: 1;
+}
+
+.skills--technology-header {
+  font-size: 2vh;
+  margin-top: 1vh;
+}
+
+.progress-bar, .progress {
+  display: none!important;
+}
+
+.popover-header, .popover-body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.popover-header {
+  font-weight: 500;
+  background-color: #292930!important;
+  color: white!important;
+  border-radius: 0em!important;
+  border-color: 1px solid white!important;
+}
+
+.popover-body {
+  font-weight: 400;
+  color: black;
 }
 
 @media only screen and (max-width: 700px) {
@@ -75,7 +102,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
-    top: 3.4em;
+    top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #292930;
@@ -83,13 +110,13 @@
 
   .skills--container {
     width: 80vw;
-    top: 20em;
+    top: 17em;
     align-content: center;
   }
 
   .skills--span {
-    width: 16vw;
-    height: 20vw;
+    width: 22vw;
+    height: 22vw;
     margin: 1em;
     margin-top: 0em!important;
     padding: 0em
@@ -101,8 +128,9 @@
   }
 
   .skills--img {
-    width: 12vw;
-    height: 12vw;
+    width: 18vw;
+    height: 18vw;
+    padding-top: 0.5vh;
     left: 0px;
     top: 0px;
     margin: 0;

@@ -32,14 +32,6 @@ const Header = props => {
           className="justify-content-center HeaderText"
         >
           <Nav>
-            {/* <Nav.Link
-              href="#landing"
-              className={textColor.join(" ")}
-              onClick={props.headerOff}
-              active
-            >
-              {props.t("header.home", { framework: "react-i18next" })}
-            </Nav.Link> */}
             <Nav.Link
               href="#about"
               className={textColor.join(" ")}
@@ -70,14 +62,14 @@ const Header = props => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        {/* <button className="LanguageBtn">
+        <button className="LanguageBtn">
           <img
             className="LanguageImg"
             src={require(`./../../img/${imgSrc[props.index]}`)}
             alt="flag-icon"
             onClick={props.languageHandler}
           />
-        </button> */}
+        </button>
       </Navbar>
     </div>
   );
