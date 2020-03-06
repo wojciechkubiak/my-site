@@ -1,16 +1,15 @@
 import React from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { useInView } from "react-intersection-observer";
-import { Nav } from "react-bootstrap";
+import { useInView} from "react-intersection-observer";
 import "./LandingPage.css";
 
 const LandingPage = props => {
   const [ref, inView] = useInView({
-    threshold: 0.95
+    threshold: 0.65
   });
 
   const changeTransparency = () => {
     inView ? props.headerOff() : props.headerOn();
+    inView ? props.arrowHandler() : props.arrowHandler(true);
   };
 
   return (
@@ -24,12 +23,6 @@ const LandingPage = props => {
       <div className="home--container">
         <h1>Wojciech Kubiak</h1>
         <p>{props.t("landing.pos", { framework: "react-i18next" })}</p>
-        <Nav.Link href="#about">
-          <MdKeyboardArrowDown
-            className="home--arrow"
-            onClick={props.headerOn}
-          ></MdKeyboardArrowDown>
-        </Nav.Link>
       </div>
     </div>
   );

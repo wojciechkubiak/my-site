@@ -14,7 +14,7 @@
   width: 5em;
   font-size: 7vh;
   color: white;
-  top: 45vh;
+  top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
   font-weight: 500
@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 55vh;
+  top: 45vh;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);
@@ -67,7 +67,7 @@
 @media only screen and (max-width: 700px) {
   #skills {
     color: #292930;
-    height: 167em;
+    height: 101vh;
   }
 
   #skills > h1 {
@@ -82,26 +82,44 @@
   }
 
   .skills--container {
-    width: 16em;
-    top: 83em;
+    width: 80vw;
+    top: 20em;
     align-content: center;
   }
 
   .skills--span {
-    width: 12em;
-    height: 20em;
-    margin: 0;
-    margin-top: 1em!important;
+    width: 16vw;
+    height: 20vw;
+    margin: 1em;
+    margin-top: 0em!important;
+    padding: 0em
   }
 
   .skills--span > p {
-    font-size: 1.2em;
+    font-size: 0em;
     padding: 0.1em;
   }
 
   .skills--img {
-    width: 5em;
-    height: 5em;
+    width: 12vw;
+    height: 12vw;
+    left: 0px;
+    top: 0px;
     margin: 0;
   }
+  
+  .skills--technology-header {
+    display: none;
+  }
+
+  .progress-bar, .progress {
+    display: none!important;
+  }
+  /* .skills--span:hover {
+    position: fixed;
+    top: 2em;
+    left: 0em;
+    width: 80vw;
+    height: 80vh;
+  } */
 }

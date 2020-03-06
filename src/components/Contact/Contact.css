@@ -12,7 +12,7 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  top: 45vh;
+  top: 35vh;
   font-size: 7vh;
   color: #292930;
   transform: rotate(90deg);
@@ -21,7 +21,7 @@
 
 .ContactContainer {
   position: absolute;
-  top: 35vh;
+  top: 30vh;
   left: 50%;
   width: 32vw;
   transform: translate(-50%, -50%);
@@ -51,7 +51,7 @@
   flex-direction: row;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 4vh;
+  top: 80%;
   font-weight: 300
 }
 
@@ -59,9 +59,9 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  bottom: 15vh;
 }
 
 .ResumeLinks {

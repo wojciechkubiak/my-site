@@ -45,18 +45,13 @@
   font-weight: 300
 }
 
-.home--arrow {
+.arrow {
   color: white;
-  position: absolute;
-  top: 60vh;
-  left: 50%;
+  position: fixed;
+  top: 5vh;
+  right: 5vh;
   width: 4em;
   height: 4em;
-  transform: translate(-50%, -50%);
-  -webkit-animation: fadeAnimArrow 2s ease-in;
-  -moz-animation: fadeAnimArrow 2s ease-in;
-  -o-animation: fadeAnimArrow 2s ease-in;
-  animation: fadeAnimArrow 2s ease-in;
 }
 
 @media only screen and (max-width: 700px) {
@@ -81,14 +76,11 @@
     padding-bottom: 1em;
   }
 
-  .home--arrow {
-    top: 22em;
+  .arrow {
+    top: 1em;
+    right: 1em;
     width: 3em;
-    height: 3em;
-    -webkit-animation: fadeAnimArrowMobile 2s ease-in;
-    -moz-animation: fadeAnimArrowMobile 2s ease-in;
-    -o-animation: fadeAnimArrowMobile 2s ease-in;
-    animation: fadeAnimArrowMobile 2s ease-in;
+    height: 3em;    
   }
 }
 

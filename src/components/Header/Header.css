@@ -1,14 +1,11 @@
 .Header {
   color: white;
-  border-top-left-radius: 0em;
-  border-top-right-radius: 0em;
   z-index: 5;
 }
 
 .HeaderLink {
   outline: 0;
   padding-right: 2em !important;
-  font-weight: 500;
   padding-left: 2em !important;
   font-size: 2vh !important;
 }
@@ -33,22 +30,24 @@
 }
 
 .HeaderTop {
+  position: fixed;
   background-color: #da939300;
   width: 50%;
-  left: 10%;
-  transform: translate(50%, 0%);
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 1em;
+  -webkit-transform: translate((50%, -300%));
+  transform: translate(50%, -300%);
+  border-radius: 1em;
+  transition: 1s;
 }
 
 .HeaderOut {
+  position: fixed;
   background-color: #292930;
   width: 50%;
-  left: 10%;
+  -webkit-transform: translate((50%, 0%));
   transform: translate(50%, 0%);
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 1em;
+  border: 1px solid white;
+  transition: 1s;
 }
 
 .LanguageBtn {
@@ -73,7 +72,15 @@
   }
   .HeaderTop {
     background-color: #292930;
+    border-radius: 1em;
+    -webkit-transform: translate((50%, 0%));
+    transform: translate(50%, 0%);
   }
+
+    .HeaderOut {
+      -webkit-transform: translate((50%, 0%));
+    transform: translate(50%, 0%);
+    }
 
   .LanguageBtn {
     width: 3em;

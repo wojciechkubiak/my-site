@@ -8,16 +8,19 @@ import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import { Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const App = (
   props,
-  { initMode = false, initLanguage = false, initImg = 0 }
+  { initMode = false, initLanguage = false, initImg = 0, initArrow = false }
 ) => {
   const [mode, setMode] = useState(initMode);
   const [language, setLanguage] = useState(initLanguage);
   const [img, setImg] = useState(initImg);
+  const [arrow, setArrow] = useState(initArrow);
 
   const { t, i18n } = props;
 
@@ -35,6 +38,10 @@ const App = (
     return img ? setImg(0) : setImg(1);
   };
 
+  const arrowHandler = (value = false) => {
+    setArrow(value);
+  };
+
   return (
     <div className="App">
       <Header
@@ -43,15 +50,33 @@ const App = (
         headerOff={headerOff}
         languageHandler={languageHandler}
         index={img}
+        arrowHandler={arrowHandler}
         t={t}
       />
-      <LandingPage headerOn={headerOn} headerOff={headerOff} t={t} />
-      <About language={language} t={t} />
-      <Skills language={language} t={t} /> 
-      <Projects language={language} t={t} />
-      <Contact language={language} t={t} />
+      <LandingPage
+        headerOn={headerOn}
+        headerOff={headerOff}
+        arrowHandler={arrowHandler}
+        t={t}
+      />
+      <About t={t} arrow={arrowHandler} />
+      <Skills t={t} />
+      <Projects t={t} />
+      <Contact t={t} />
       <SocialMedia />
-      <Footer language={language} t={t} />
+      <Footer t={t} />
+      {arrow && (
+        <Nav.Link href="#landing">
+          {/* TODO zfixuj ją na topa i przewijaj do góry do landing po jej kliknięciu */}
+          <MdKeyboardArrowUp
+            className="arrow"
+            onClick={() => {
+              headerOff();
+              arrowHandler();
+            }}
+          ></MdKeyboardArrowUp>
+        </Nav.Link>
+      )}
     </div>
   );
 };
