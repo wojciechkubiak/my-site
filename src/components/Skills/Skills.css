@@ -87,8 +87,9 @@
 }
 
 .popover-body {
-  font-weight: 400;
+  font-weight: 500;
   color: black;
+  font-size: 2vh!important;
 }
 
 @media only screen and (max-width: 700px) {

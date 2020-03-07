@@ -21,13 +21,13 @@ const Skills = props => {
   };
 
   const icons = {
-    ReactJS: [reactLogo, 50],
-    NodeJS: [nodeLogo, 50],
-    JavaScript: [jsLogo, 60],
-    PostgreSQL: [psqlLogo, 40],
-    Html: [htmlLogo, 55],
-    Css: [cssLogo, 60],
-    Bootstrap: [bootstrapLogo, 60]
+    ReactJS: [reactLogo, "reactjs"],
+    NodeJS: [nodeLogo, "nodejs"],
+    JavaScript: [jsLogo, "javascript"],
+    Css: [cssLogo, "css"],
+    Html: [htmlLogo, "html"],
+    Bootstrap: [bootstrapLogo, "bootstrap"],
+    PostgreSQL: [psqlLogo, "postgres"]
   };
 
   return (
@@ -45,7 +45,8 @@ const Skills = props => {
               key={shortid.generate()}
               imgUrl={icons[key][0]}
               technology={key}
-              progress={icons[key].slice(1, 2)}
+              name={icons[key].slice(1, 2)}
+              t={props.t}
             />
           );
         })}

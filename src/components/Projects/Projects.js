@@ -55,7 +55,7 @@ const Projects = props => {
           <img
             className="projects--container-img"
             src={require(`./../../img/${img}.png`)}
-            alt="React-icon"
+            alt="Project-icon"
           />
           <div className="projects--subinfo">
             <h3>{data[img - 1][0]}</h3>
@@ -93,7 +93,7 @@ const Projects = props => {
           name="-1"
           value="backward"
           onClick={swapImage}
-          className="projects--btn-prev"
+          className="projects--btn btn-prev"
         >
           &larr;
         </button>
@@ -101,7 +101,7 @@ const Projects = props => {
           name="1"
           value="forward"
           onClick={swapImage}
-          className="projects--btn-next"
+          className="projects--btn btn-next"
         >
           &rarr;
         </button>

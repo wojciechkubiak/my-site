@@ -32,5 +32,40 @@
     },
     "footer": {
         "text": "Strona stworzona przez"
+    },
+    "javascript": {
+        "1": "ES6+",
+        "2": "Modyfikacja DOM",
+        "3": "Programowanie Funkcyjne",
+        "4": "Programowanie Obiektowe",
+        "5": "Async"
+    },
+    "reactjs": {
+        "1": "React Hooks",
+        "2": "Programowanie Funkcyjne",
+        "3": "Programowanie Obiektowe"
+    },
+    "nodejs": {
+        "1": "ExpressJS",
+        "2": "REST API",
+        "3": "MVC",
+        "4": "Sequelize"
+    },
+    "html": {
+        "1": "Średnio-zaaw. składnia"
+    },
+    "css": {
+        "1": "CSS Grid",
+        "2": "Flexbox",
+        "3": "SASS",
+        "4": "Animacje"
+    },
+    "bootstrap": {
+        "1": "Użytkowanie",
+        "2": "Edycja"
+    },
+    "postgres": {
+        "1": "Podstawy",
+        "2": "GROUP BY / JOIN"
     }
 }
