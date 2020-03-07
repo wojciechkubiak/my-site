@@ -27,15 +27,10 @@ const Contact = props => {
         <h1>{props.t("contact.box", { framework: "react-i18next" })}</h1>
         <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
         <p>
-          {props.t("contact.contactMe", { framework: "react-i18next" })}
+          {props.t("contact.contactMe", { framework: "react-i18next" })} {' '}
           <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
-            <strong> wgkubiak@gmail.com</strong>
+            <strong>wgkubiak@gmail.com</strong>
           </a>
-        </p>
-        <p>{props.t("contact.or", { framework: "react-i18next" })}</p>
-        <p>
-          {props.t("contact.phone", { framework: "react-i18next" })}
-          <strong className="PhoneNumber"> 726 823 405</strong>
         </p>
         <div className="ResumeContainer">
           <FaFileDownload className="DownloadIcon"></FaFileDownload>
@@ -45,7 +40,7 @@ const Contact = props => {
                 <strong>PL</strong>
               </a>
             </span>
-            <strong style={{ color: "#ffffff" }}> | </strong>
+            <strong style={{ color: "#ffffff", fontWeight: 500 }}> | </strong>
             <span>
               <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
                 <strong>EN</strong>

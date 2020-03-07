@@ -47,10 +47,6 @@
   border-radius: 0.5em;
 }
 
-.skills--span:hover {
-  transform: scale(1.1)
-}
-
 .progress {
   border-radius: 0;
 }

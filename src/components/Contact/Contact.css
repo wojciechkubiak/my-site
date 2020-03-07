@@ -19,6 +19,10 @@
   z-index: 5;
 }
 
+.ResumeContainer {
+  margin-top: 3em;
+}
+
 .ContactContainer {
   position: absolute;
   top: 40vh;
@@ -39,23 +43,26 @@
   padding-bottom: 2vh;
   color: white;
   font-weight: 500;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 .ContactContainer > p {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.8vh;
 }
 
 .DownloadIcon { 
   color: white;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
+  padding-bottom: 0.5em;
 }
+
 .MailContainer {
   color: #d19b79;
   transition: 1s;
+  font-weight: 500;
 }
 
 .PhoneNumber {
@@ -63,7 +70,8 @@
 }
 
 .ResumeLinks > span > a {
-  color: white
+  color: white;
+  font-weight: 500;
 }
 
 .MailContainer:hover {
@@ -120,8 +128,9 @@
   }
   
   .DownloadIcon {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
+    padding-bottom: 0.5em;
   }
 
 
