@@ -19,7 +19,7 @@
 
 .about--container {
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   left: 50%;
   width: 80vw;
   transform: translate(-50%, -50%);

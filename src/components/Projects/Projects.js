@@ -86,9 +86,7 @@ const Projects = props => {
               />
             </span>
           </div>
-        </div>
-      </div>
-      <div className="projects--btn-container">
+          <div className="projects--btn-container">
         <button
           name="-1"
           value="backward"
@@ -106,6 +104,9 @@ const Projects = props => {
           &rarr;
         </button>
       </div>
+        </div>
+      </div>
+      
     </InView>
   );
 };

@@ -31,20 +31,24 @@
   position: absolute;
   top: 45vh;
   left: 50%;
-  width: 80vw;
+  width: 70vw;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white
 }
 
 .skills--span {
-  width: 13vw;
+  width: 12vw;
   height: 26vh;
   margin: 2vw;
   padding: 1vw;
-  transition: all 1s;
+  transition: all 500ms;
   background-color: #292930;
   border-radius: 0.5em;
+}
+
+.skills--span:hover {
+  transform: scale(1.1)
 }
 
 .progress {
@@ -111,16 +115,17 @@
 
   .skills--container {
     width: 80vw;
-    top: 17em;
+    top: 42vh;
     align-content: center;
   }
 
   .skills--span {
-    width: 22vw;
-    height: 22vw;
+    width: 12vh;
+    height: 12vh;
     margin: 1em;
     margin-top: 0em!important;
-    padding: 0em
+    padding: 0em;
+    transition: 500ms;
   }
 
   .skills--span > p {
@@ -129,12 +134,16 @@
   }
 
   .skills--img {
-    width: 18vw;
-    height: 18vw;
-    padding-top: 0.5vh;
+    width: 9vh;
+    height: 9vh;
+    padding: 1vh;
     left: 0px;
     top: 0px;
     margin: 0;
+  }
+
+  .skills--span:hover {
+    transform: scale(1.1)
   }
   
   .skills--technology-header {

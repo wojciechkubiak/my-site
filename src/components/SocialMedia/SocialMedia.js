@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SocialMedia.css";
 import { MdContacts } from "react-icons/md";
-import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaGit } from "react-icons/fa";
 
 const SocialMedia = ({ initIconState = false }) => {
   const [icons, setIcons] = useState(initIconState);
@@ -12,6 +12,7 @@ const SocialMedia = ({ initIconState = false }) => {
 
   const facebookAdress = "https://www.facebook.com/wojciech.kubiak.564";
   const linkedinAdress = "https://www.linkedin.com/in/wokub/";
+  const gitAdress = "https://www.github.com/wgkubiak";
 
   return (
     <div className="SocialMedia">
@@ -28,6 +29,13 @@ const SocialMedia = ({ initIconState = false }) => {
             <FaLinkedinIn className="LinkedInIcon" />
           </button>
         </a>
+      )}
+      {icons && (
+        <a href={gitAdress}>
+        <button className="GitBtn">
+          <FaGit className="GitIcon" />
+        </button>
+      </a>
       )}
       <button className="SocialMediaBtn" onClick={toggleIcons} >
         <MdContacts className="SocialMediaIcon"/>

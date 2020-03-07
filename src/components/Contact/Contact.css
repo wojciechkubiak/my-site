@@ -21,16 +21,17 @@
 
 .ContactContainer {
   position: absolute;
-  top: 30vh;
+  top: 40vh;
   left: 50%;
   width: 32vw;
+  height: 40vh;
   transform: translate(-50%, -50%);
   background-color: #292930;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 0.2em;
   padding-bottom: 1em!important;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .ContactContainer > h1 {
@@ -38,67 +39,20 @@
   padding-bottom: 2vh;
   color: white;
   font-weight: 500;
+  font-size: 3vh;
 }
 
 .ContactContainer > p {
   color: white;
-  font-weight: 400
+  font-weight: 400;
+  font-size: 1.8vh;
 }
 
-.GitContainer {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 80%;
-  font-weight: 300
+.DownloadIcon { 
+  color: white;
+  width: 3em;
+  height: 3em;
 }
-
-.ResumeContainer {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.ResumeLinks {
-  text-align: center;
-}
-
-.ResumeLinks > span > a {
-  color: #292930;
-}
-
-.DownloadIcon {
-  height: 4vw;
-  width: 4vw;
-  color: #292930;
-}
-
-.contact--git-icon {
-  height: 4vw;
-  width: 4vw;
-  color: #292930;
-}
-
-.GitContainer > p {
-  color: #292930;
-  font-size: 2vh;
-  font-weight: 500;
-}
-
-.GitBtn {
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  outline: none !important;
-  padding: 0;
-  margin: 0;
-  bottom: 0;
-}
-
 .MailContainer {
   color: #d19b79;
   transition: 1s;
@@ -106,6 +60,10 @@
 
 .PhoneNumber {
   color: #d19b79;
+}
+
+.ResumeLinks > span > a {
+  color: white
 }
 
 .MailContainer:hover {
@@ -120,17 +78,19 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
-    top: 3em;
+    top: 1em;
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
   }
 
   .ContactContainer {
-    top: 16em;
+    top: 35vh;
     left: 50%;
     width: 20em;
+    height: 50vh;
     border-radius: 0;
+    padding: 1em;
   }
 
   .ContactContainer > h1 {
@@ -160,8 +120,8 @@
   }
   
   .DownloadIcon {
-    height: 12vw;
-    width: 12vw;
+    height: 2em;
+    width: 2em;
   }
 
 

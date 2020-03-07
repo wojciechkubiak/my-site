@@ -26,7 +26,7 @@
   padding: 1em;
   background-color: #292930;
   border-radius: 0em;
-  margin: 0.5em
+  margin: 0em
 }
 
 .projects--technologies-container-alt {
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: row;
   height: 20vh;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .projects--container-img-container {
@@ -61,18 +61,17 @@
 
 .projects--btn-container {
   background-color: #292930;
-  position: absolute;
-  left: 50%;
-  bottom: 0em;
+  position: relative;
+  top: 2vh;
   width: 20vw;
   height: 10vh;
-  transform: translate(-50%, 0%);
+  transform: translate(0%, 50%);
   display: flex;
   flex-direction: row;
   font-size: 5vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  border-radius: 0.5em;
+  z-index: 20;
 }
 
 .projects--btn {
@@ -92,7 +91,7 @@
 }
 
 .projects--technologies-container {
-  width: 30vw;
+  width: 35vw;
   height: 60vh;
   margin-left: auto;
   margin-right: 0;
@@ -111,8 +110,9 @@
 }
 
 .projects--subinfo {
-  padding-top: 1em;
+  padding-top: 0em;
   padding-bottom: 0.1em;
+  position: relative;
 }
 
 .projects--subinfo > p {
@@ -126,6 +126,7 @@
 
 .projects--img {
   width: 10vw;
+  height: 10vw;
   left: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 1em;
@@ -141,7 +142,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
     width: 10em;
-    top: 3.5em;
+    top: 1em;
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
@@ -155,7 +156,7 @@
     padding: 0em;
     width: 10em;
     height: 10em;
-    top: 10em;
+    top: 35vh;
   }
 
   .projects--technologies-container-alt {
@@ -167,12 +168,15 @@
 
   .projects--img {
     padding: 0;
+    border-radius: 0em;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .projects--technologies-container {
     position: absolute;
     width: 10em;
-    height: 12.5em;
+    height: 13em;
     background-color: #292930;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   }
@@ -187,6 +191,7 @@
     box-shadow: none;
     background-color: #29293000;
     transform: translate(0%, 50%);
+    top: 1em;
   }
 
   .projects--subinfo > p {
@@ -205,18 +210,23 @@
   }
 
   .projects--container-img {
+    position: relative;
+    top: 8vh;
     width: 8.67em;
     height: 6.72em;
   }
 
   .projects--btn-container {
+    top: 0%;
     width: 6em;
     height: 1.5em;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   .projects--technologies-container-alt {
     height: 2em;
-    top: 0;
+    bottom: 0em;
     transform: translate(0%, 100%);
     z-index: 20;
     background-color: #292930;

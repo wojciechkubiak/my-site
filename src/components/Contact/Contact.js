@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGit, FaFileDownload } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 import { InView } from "react-intersection-observer";
 import ResumePL from "./../../doc/WojciechKubiakCV_PL.pdf";
 import ResumeEN from "./../../doc/WojciechKubiakCV_EN.pdf";
@@ -37,30 +37,22 @@ const Contact = props => {
           {props.t("contact.phone", { framework: "react-i18next" })}
           <strong className="PhoneNumber"> 726 823 405</strong>
         </p>
-      </div>
-      <div className="ResumeContainer">
-        <FaFileDownload className="DownloadIcon"></FaFileDownload>
-        <div className="ResumeLinks">
-          <span>
-            <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
-              <strong>PL</strong>
-            </a>
-          </span>
-          <strong style={{ color: "#292930" }}> | </strong>
-          <span>
-            <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
-              <strong>EN</strong>
-            </a>
-          </span>
+        <div className="ResumeContainer">
+          <FaFileDownload className="DownloadIcon"></FaFileDownload>
+          <div className="ResumeLinks">
+            <span>
+              <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
+                <strong>PL</strong>
+              </a>
+            </span>
+            <strong style={{ color: "#ffffff" }}> | </strong>
+            <span>
+              <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
+                <strong>EN</strong>
+              </a>
+            </span>
+          </div>
         </div>
-      </div>
-      <div className="GitContainer">
-        <a href={"https://www.github.com/wgkubiak"}>
-          <button className="GitBtn">
-            <FaGit className="contact--git-icon" />
-          </button>
-        </a>
-        <p>/wgkubiak</p>
       </div>
     </InView>
   );

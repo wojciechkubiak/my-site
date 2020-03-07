@@ -3,7 +3,7 @@
   right: 1em;
   bottom: 5.5em;
   width: 4em;
-  height: 12em;
+  height: 16em;
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,8 @@
 }
 
 .FacebookBtn,
-.LinkedInBtn {
+.LinkedInBtn,
+.GitBtn {
   width: 4em;
   height: 4em;
   border: none;
@@ -49,7 +50,8 @@
 }
 
 .FacebookIcon,
-.LinkedInIcon {
+.LinkedInIcon,
+.GitIcon {
   height: 60%;
   width: 60%;
   padding: 0.1em;
@@ -61,12 +63,12 @@
     right: 1em;
     bottom: 4.5em;
     width: 3em;
-    height: 9em;
+    height: 12em;
   }
 
 
 
-  .SocialMediaBtn, .FacebookBtn, .LinkedInBtn {
+  .SocialMediaBtn, .FacebookBtn, .LinkedInBtn, .GitBtn {
     width: 3em;
     height: 3em;
   }
