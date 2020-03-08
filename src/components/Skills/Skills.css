@@ -12,12 +12,14 @@
   position: absolute;
   text-align: center;
   width: 5em;
+  font-family: 'Roboto', sans-serif;
   font-size: 7vh;
   color: white;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
-  font-weight: 500
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .skills--technology-header {
@@ -79,7 +81,8 @@
 }
 
 .popover-header {
-  font-weight: 500;
+  font-family: 'Roboto',  sans-serif;
+  font-weight: 700;
   background-color: #292930!important;
   color: white!important;
   border-radius: 0em!important;
@@ -87,9 +90,10 @@
 }
 
 .popover-body {
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; 
   color: black;
-  font-size: 2vh!important;
+  font-size: 1.5vh!important;
 }
 
 @media only screen and (max-width: 700px) {

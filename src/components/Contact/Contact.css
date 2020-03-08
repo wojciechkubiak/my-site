@@ -17,6 +17,9 @@
   color: white;
   transform: rotate(90deg);
   z-index: 5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .ResumeContainer {
@@ -27,29 +30,31 @@
   position: absolute;
   top: 40vh;
   left: 50%;
-  width: 32vw;
+  width: 42vw;
   height: 40vh;
   transform: translate(-50%, -50%);
   background-color: #292930;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
   padding: 0.2em;
   padding-bottom: 1em!important;
   border-radius: 0.5em;
 }
 
 .ContactContainer > h1 {
-  padding-top: 2vh;
+  padding-top: 3vh;
   padding-bottom: 2vh;
   color: white;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 4vh;
 }
 
 .ContactContainer > p {
   color: white;
-  font-weight: 300;
-  font-size: 1.8vh;
+  font-size: 2vh !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; 
 }
 
 .DownloadIcon { 
@@ -62,7 +67,7 @@
 .MailContainer {
   color: #d19b79;
   transition: 1s;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .PhoneNumber {
@@ -71,7 +76,8 @@
 
 .ResumeLinks > span > a {
   color: white;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .MailContainer:hover {
@@ -103,7 +109,7 @@
 
   .ContactContainer > h1 {
     padding-bottom: 0.5em;
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 
   .ContactContainer > p {

@@ -15,7 +15,7 @@ const Projects = props => {
       "Opqn", 
       props.t("projects.opqnAbout", { framework: "react-i18next" })],
     [
-      "FitTracker",
+      "Fit-Tracker",
       props.t("projects.fittrackerAbout", { framework: "react-i18next" })
     ]
   ];

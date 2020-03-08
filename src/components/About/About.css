@@ -38,21 +38,27 @@
 
 .about--container > h1 {
   text-align: left;
-  margin-left: 2vw;
   font-size: 7vh;
+  font-family: 'Roboto', sans-serif;
   z-index: 5;
-  font-weight: 500;
+  font-weight: 700;
+  color: #292930;
+  background-color: white;
+  width: 30%;
+  text-transform: uppercase;
 }
 
 .about--txt {
   position: absolute;
   top: 10vh;
-  padding: 1vw;
+  text-align: left;
+  margin-top: 1em;
 }
 
 .about--txt > p {
   font-size: 2.3vh !important;
-  font-weight: 300
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; 
 }
 
 @media only screen and (max-width: 700px) {
@@ -70,7 +76,8 @@
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 0.1em;
-    background-color: #292930;
+    color: #292930;
+    background-color: white;
     margin-left: 0;
     width: 10em;
   }
@@ -83,6 +90,7 @@
 
   .about--txt > p {
     font-size: 2.2vh !important;
+    text-align: center;
   }
 }
 

@@ -6,7 +6,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 .home--container {
@@ -28,13 +27,15 @@
 }
 
 .home--container > h1 {
+  font-family: 'Roboto', sans-serif;
   margin-top: 4vh;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
   font-size: 8vh;
   color: white;
   display: block;
-  font-weight: 600
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .home--container > p {
@@ -42,9 +43,10 @@
   margin-top: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; 
   color: white;
   display: block;
-  font-weight: 300
 }
 
 .arrow {

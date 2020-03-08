@@ -8,6 +8,9 @@
   padding-right: 2em !important;
   padding-left: 2em !important;
   font-size: 2vh !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .HeaderTextColorWhite {
@@ -50,13 +53,10 @@
   transition: 1s;
 }
 
-.nav-link {
-  font-weight: 500;
-}
-
 @media screen and (max-width: 1200px) {
   .HeaderLink {
     font-size: 2.2vh !important;
+    text-align: center;
   }
   .HeaderTop {
     background-color: #292930;
