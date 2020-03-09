@@ -49,8 +49,22 @@ const App = (
     setArrow(value);
   };
 
+  const isOnMobile = () => {
+    return navigator.userAgent.match(/Android/i) ||
+      navigator.userAgent.match(/webOS/i) ||
+      navigator.userAgent.match(/iPhone/i) ||
+      navigator.userAgent.match(/iPad/i) ||
+      navigator.userAgent.match(/iPod/i) ||
+      navigator.userAgent.match(/BlackBerry/i) ||
+      navigator.userAgent.match(/Windows Phone/i) ||
+      typeof window.orientation !== "undefined" ||
+      navigator.userAgent.indexOf("IEMobile") !== -1
+      ? true
+      : false;
+  };
+
   window.addEventListener("scroll", function(event) {
-    if((typeof window.orientation !== 'undefined')) {
+    if (!isOnMobile) {
       setScroll(this.scrollY);
 
       if (this.scrollY > 5) {
@@ -59,7 +73,7 @@ const App = (
         headerOff();
         arrowHandler(false);
       }
-    }  
+    }
   });
 
   return (
@@ -84,7 +98,12 @@ const App = (
         onClick={languageHandler}
       ></button>
       {(arrow || scroll > 5) && (
-        <Button href="#landing" className="arrow" variant="dark" onClick={() => arrowHandler(false)}>
+        <Button
+          href="#landing"
+          className="arrow"
+          variant="dark"
+          onClick={() => arrowHandler(false)}
+        >
           <MdKeyboardArrowUp></MdKeyboardArrowUp>
         </Button>
       )}
