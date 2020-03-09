@@ -8,10 +8,12 @@ const LandingPage = props => {
       id="landing"
       data-testid="Home"
     >
-      <div className="home--container">
+      <section className="home--container">
         <h1>Wojciech Kubiak</h1>
-        <p>{props.t("landing.pos", { framework: "react-i18next" })}</p>
-      </div>
+        <article>
+          <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
+        </article>
+      </section>
     </div>
   );
 };

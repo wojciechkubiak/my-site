@@ -16,7 +16,7 @@ const Header = props => {
   }
 
   return (
-    <div className="Header">
+    <header>
       <Navbar
         className={mode.join(" ")}
         collapseOnSelect
@@ -29,13 +29,13 @@ const Header = props => {
           className="justify-content-center HeaderText"
         >
           <Nav>
-            <Nav.Link
+            {/* <Nav.Link
               href="#about"
               className={textColor.join(" ")}
               onClick={handler}
             >
               {props.t("header.about", { framework: "react-i18next" })}
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               href="#skills"
               className={textColor.join(" ")}
@@ -60,7 +60,7 @@ const Header = props => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </div>
+    </header>
   );
 };
 

@@ -1,4 +1,4 @@
-.Header {
+header {
   color: white;
   z-index: 5;
 }
@@ -44,7 +44,7 @@
 
 .HeaderOut {
   position: fixed;
-  background-color: #292930;
+  background-color: #30e09A;
   width: 50%;
   -webkit-transform: translate((50%, 0%));
   transform: translate(50%, 0%);

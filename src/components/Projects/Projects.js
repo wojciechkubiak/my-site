@@ -51,17 +51,17 @@ const Projects = props => {
     >
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className={mode.join(" ")} data-testid="Projects">
-        <div className="projects--container-img-container">
+        <figure className="projects--container-img-container">
           <img
             className="projects--container-img"
             src={require(`./../../img/${img}.png`)}
             alt="Project-icon"
           />
-          <div className="projects--subinfo">
+          <figcaption className="projects--subinfo">
             <h3>{data[img - 1][0]}</h3>
             <p>{data[img - 1][1]}</p>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
         <div className="projects--technologies-container">
           <div className="projects--technologies-container-alt">
             <span className="projects--span">

@@ -3,10 +3,10 @@ import "./Footer.css";
 
 const Footer = props => {
   return (
-    <div className="footer" data-testid="Footer">
+    <footer>
       {props.t("footer.text", { framework: "react-i18next" })}{" "}
       <strong>Wojciech Kubiak &reg;</strong>
-    </div>
+    </footer>
   );
 };
 

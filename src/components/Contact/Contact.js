@@ -23,32 +23,34 @@ const Contact = props => {
       onChange={(inView, entry) => animHandler(inView)}
     >
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
-      <div className={mode.join(" ")} data-testid="Contact">
-        <h1>{props.t("contact.box", { framework: "react-i18next" })}</h1>
-        <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
-        <p>
-          {props.t("contact.contactMe", { framework: "react-i18next" })} {' '}
-          <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
-            <strong>wgkubiak@gmail.com</strong>
-          </a>
-        </p>
-        <div className="ResumeContainer">
-          <FaFileDownload className="DownloadIcon"></FaFileDownload>
-          <div className="ResumeLinks">
-            <span>
-              <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
-                <strong>PL</strong>
-              </a>
-            </span>
-            <strong style={{ color: "#ffffff", fontWeight: 500 }}> | </strong>
-            <span>
-              <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
-                <strong>EN</strong>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
+      <section className={mode.join(" ")} data-testid="Contact">
+        <article>
+          <h1>{props.t("contact.box", { framework: "react-i18next" })}</h1>
+          <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
+          <p>
+            {props.t("contact.contactMe", { framework: "react-i18next" })}{" "}
+            <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
+              <strong>wgkubiak@gmail.com</strong>
+            </a>
+          </p>
+          <figure className="ResumeContainer">
+            <FaFileDownload className="DownloadIcon"></FaFileDownload>
+            <figcaption className="ResumeLinks">
+              <span>
+                <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
+                  <strong>PL</strong>
+                </a>
+              </span>
+              <strong style={{ color: "#ffffff", fontWeight: 500 }}> | </strong>
+              <span>
+                <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
+                  <strong>EN</strong>
+                </a>
+              </span>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
     </InView>
   );
 };

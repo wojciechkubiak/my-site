@@ -4,18 +4,6 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-} */
-
 .App {
   height: 100%;
 }
@@ -34,12 +22,12 @@ html {
 .LanguageBtn {
   border: none;
   outline: none !important;
-  background-color: rgba(255, 255, 255, 0);
   position: fixed;
-  right: 1em;
+  right: 1.3em;
   bottom: 2.5em;
-  width: 4em;
-  height: 2em;
+  width: 3.2em;
+  height: 1.9em;
+  background-size: cover;
 }
 
 .LanguageImg {

@@ -1,11 +1,7 @@
 #contact {
   position: relative;
   height: 100vh;
-  background-image: url("./../../img/contact.webp");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #30e09a;
 }
 
 #contact > h1 {
@@ -17,7 +13,7 @@
   color: white;
   transform: rotate(90deg);
   z-index: 5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -33,31 +29,31 @@
   width: 42vw;
   height: 40vh;
   transform: translate(-50%, -50%);
-  background-color: #292930;
   text-align: center;
   padding: 0.2em;
-  padding-bottom: 1em!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  padding-bottom: 1em !important;
   border-radius: 0.5em;
 }
 
-.ContactContainer > h1 {
+.ContactContainer > article > h1 {
   padding-top: 3vh;
   padding-bottom: 2vh;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 4vh;
+  font-size: 4.5vh;
 }
 
-.ContactContainer > p {
+.ContactContainer > article > p {
   color: white;
-  font-size: 2vh !important;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400; 
+  font-size: 2.5vh !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
-.DownloadIcon { 
+.DownloadIcon {
   color: white;
   width: 4em;
   height: 4em;
@@ -65,18 +61,14 @@
 }
 
 .MailContainer {
-  color: #d19b79;
+  color: white;
   transition: 1s;
   font-weight: 400;
 }
 
-.PhoneNumber {
-  color: #d19b79;
-}
-
 .ResumeLinks > span > a {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -121,7 +113,7 @@
   }
 
   .GitContainer > p {
-    font-size: 3vh
+    font-size: 3vh;
   }
 
   .contact--git-icon {
@@ -129,100 +121,25 @@
     width: 12vw;
   }
 
-  .ResumeContainer {   
+  .ResumeContainer {
     bottom: 3.5em;
   }
-  
+
   .DownloadIcon {
     height: 3em;
     width: 3em;
     padding-bottom: 0.5em;
   }
 
-
   .LanguageBtn {
-    right: 0.5em!important;
-    bottom: 2em!important;
-    width: 4em!important;
-    height: 2em!important;
+    right: 0.5em !important;
+    bottom: 2em !important;
+    width: 4em !important;
+    height: 2em !important;
   }
-  
+
   .LanguageImg {
     width: 100%;
     height: 100%;
   }
 }
-
-
-/* 
-@-webkit-keyframes contactAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-moz-keyframes contactAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-o-keyframes contactAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@keyframes contactAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-} */

@@ -18,17 +18,17 @@ const About = props => {
       id="about"
       onChange={(inView, entry) => animHandler(inView)}
     >
-      <div className={mode.join(" ")}>
+      <section className={mode.join(" ")}>
         <img
           className="about--img"
           alt="Writing"
           src={require("./../../img/writing.png")}
         ></img>
         <h1>{props.t("aboutme.header", { framework: "react-i18next" })}</h1>
-        <div className="about--txt">
+        <article className="about--txt">
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
-        </div>
-      </div>
+        </article>
+      </section>
     </InView>
   );
 };

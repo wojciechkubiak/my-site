@@ -1,11 +1,7 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/skills.webp"); 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color:#30e09A;
 }
 
 #skills > h1 {
@@ -36,24 +32,22 @@
   width: 70vw;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white
+  color: white;
 }
 
-.skills--span {
+.skills--img-container {
   width: 12vw;
   height: 26vh;
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #292930;
+  background-color: #30e09A;
   border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
-.progress {
-  border-radius: 0;
-}
 
-.skills--span > p {
+.skills--img-container > p {
   text-align: center;
   font-size: .8vw;
   margin-top: 1vh;
@@ -71,9 +65,6 @@
   margin-top: 1vh;
 }
 
-.progress-bar, .progress {
-  display: none!important;
-}
 
 .popover-header, .popover-body {
   font-family: "Montserrat", sans-serif;
@@ -83,17 +74,20 @@
 .popover-header {
   font-family: 'Roboto',  sans-serif;
   font-weight: 700;
-  background-color: #292930!important;
-  color: white!important;
-  border-radius: 0em!important;
-  border-color: 1px solid white!important;
+  background-color: #C0F5E1!important;
+  color: #292930!important;
 }
 
 .popover-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  color: black;
+  color: #292930;
   font-size: 1.5vh!important;
+}
+
+.popover {
+  border: none;
+  border-radius: 0.5em!important;
 }
 
 @media only screen and (max-width: 700px) {
@@ -119,7 +113,7 @@
     align-content: center;
   }
 
-  .skills--span {
+  .skills--img-container {
     width: 12vh;
     height: 12vh;
     margin: 1em;
@@ -128,7 +122,7 @@
     transition: 500ms;
   }
 
-  .skills--span > p {
+  .skills--img-container > p {
     font-size: 0em;
     padding: 0.1em;
   }
@@ -142,22 +136,11 @@
     margin: 0;
   }
 
-  .skills--span:hover {
+  .skills--img-container:hover {
     transform: scale(1.1)
   }
   
   .skills--technology-header {
     display: none;
   }
-
-  .progress-bar, .progress {
-    display: none!important;
-  }
-  /* .skills--span:hover {
-    position: fixed;
-    top: 2em;
-    left: 0em;
-    width: 80vw;
-    height: 80vh;
-  } */
 }

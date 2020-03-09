@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { withTranslation } from "react-i18next";
-import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
@@ -10,20 +9,25 @@ import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { Button } from "react-bootstrap";
+import UKFlag from "./../src/img/uk-flag.jpg";
+import PLFlag from "./../src/img/pl-flag.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const App = (
   props,
-  { initMode = false, initLanguage = false, initImg = 0, initArrow = false }
+  {
+    initMode = false,
+    initLanguage = false,
+    initImg = UKFlag,
+    initArrow = false
+  }
 ) => {
   const [mode, setMode] = useState(initMode);
   const [language, setLanguage] = useState(initLanguage);
   const [img, setImg] = useState(initImg);
   const [arrow, setArrow] = useState(initArrow);
   const [scroll, setScroll] = useState(0);
-
-  const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
 
   const { t, i18n } = props;
 
@@ -38,7 +42,7 @@ const App = (
 
     language ? i18n.changeLanguage("pl") : i18n.changeLanguage("en");
 
-    return img ? setImg(0) : setImg(1);
+    return img === UKFlag ? setImg(PLFlag) : setImg(UKFlag);
   };
 
   const arrowHandler = (value = false) => {
@@ -67,27 +71,19 @@ const App = (
         t={t}
       />
       <LandingPage arrowHandler={arrowHandler} t={t} />
-      <About t={t} arrow={arrowHandler} />
       <Skills t={t} />
       <Projects t={t} />
       <Contact t={t} />
       <SocialMedia />
       <Footer t={t} />
-      <button className="LanguageBtn">
-        <img
-          className="LanguageImg"
-          src={require(`./img/${imgSrc[img]}`)}
-          alt="flag-icon"
-          onClick={languageHandler}
-        />
-      </button>
+      <button
+        className="LanguageBtn"
+        style={{ backgroundImage: `url(${img})` }}
+        onClick={languageHandler}
+      ></button>
       {(arrow || scroll > 5) && (
         <Button href="#landing" className="arrow" variant="dark">
-          <MdKeyboardArrowUp
-            onClick={() => {
-              arrowHandler();
-            }}
-          ></MdKeyboardArrowUp>
+          <MdKeyboardArrowUp></MdKeyboardArrowUp>
         </Button>
       )}
     </div>
