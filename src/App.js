@@ -50,14 +50,16 @@ const App = (
   };
 
   window.addEventListener("scroll", function(event) {
-    setScroll(this.scrollY);
+    if((typeof window.orientation !== 'undefined')) {
+      setScroll(this.scrollY);
 
-    if (this.scrollY > 5) {
-      headerOn();
-    } else {
-      headerOff();
-      arrowHandler(false);
-    }
+      if (this.scrollY > 5) {
+        headerOn();
+      } else {
+        headerOff();
+        arrowHandler(false);
+      }
+    }  
   });
 
   return (
@@ -82,7 +84,7 @@ const App = (
         onClick={languageHandler}
       ></button>
       {(arrow || scroll > 5) && (
-        <Button href="#landing" className="arrow" variant="dark">
+        <Button href="#landing" className="arrow" variant="dark" onClick={() => arrowHandler(false)}>
           <MdKeyboardArrowUp></MdKeyboardArrowUp>
         </Button>
       )}

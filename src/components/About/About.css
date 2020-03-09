@@ -74,7 +74,7 @@
   .about--container > h1 {
     font-size: 2em;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     padding: 0.1em;
     color: #292930;
     background-color: white;
@@ -85,7 +85,7 @@
   .about--txt {
     padding: 0.2em;
     background-color: #292930;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .about--txt > p {

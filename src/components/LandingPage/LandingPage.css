@@ -75,8 +75,10 @@
 
 @media only screen and (max-width: 700px) {
   .home--container {
-    top: 16em;
-    width: 18em;
+    top: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
     height: 15em;
     padding: 1em;
     -webkit-animation: fadeAnimMobile 1s ease-in;
@@ -88,36 +90,37 @@
   .home--container > h1 {
     margin: 0.5em;
     font-size: 2.5em;
+    text-align: center;
   }
 
-  .home--container > p {
-    font-size: 1.5em;
-    padding-bottom: 1em;
+  .home--container > article {
+    position: absolute;
+    margin-top: 0.1em;
+    width: 80vw;
+    background-color: #292930;
+  }
+  
+  .home--container > article > p {
+    font-size: 1.6vh;  
+    background-color: #292930;
+    text-align: center;
   }
 
   .arrow {
-    color: rgb(219, 131, 77);
+    padding: 0!important;
     top: 0em;
     right: 0em;
     width: 9vh;
     height: 9vh;    
   }
+  
+  .arrow > svg {
+    width: 100%;
+    height: 100%;
+    color: #292930;
+  }
 }
 
-.home--container {
-  position: absolute;
-  left: 10%;
-  top: 22vh;
-  width: 50vw;
-  height: 35vh;
-  transform: translate(0, -50%);
-  text-align: left;
-  padding: 2vw;
-  -webkit-animation: fadeAnim 1.5s ease-in;
-  -moz-animation: fadeAnim 1.5s ease-in;
-  -o-animation: fadeAnim 1.5s ease-in;
-  animation: fadeAnim 1.5s ease-in;
-}
 
 @-webkit-keyframes fadeAnim {
   0% {
@@ -205,7 +208,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 16em;
+    top: 10em;
   }
 }
 
@@ -223,7 +226,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 16em;
+    top: 10em;
   }
 }
 
@@ -241,7 +244,7 @@
   100% {
     display: block;
     opacity: 1;
-    top: 16em;
+    top: 10em;
   }
 }
 
@@ -259,6 +262,6 @@
   100% {
     display: block;
     opacity: 1;
-    top: 16em;
+    top: 10em;
   }
 }

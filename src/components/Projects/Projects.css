@@ -155,7 +155,7 @@
 @media only screen and (max-width: 700px) {
   #projects > h1 {
     font-size: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     padding: 0.1em;
     width: 10em;
     top: 1em;
@@ -168,7 +168,7 @@
   .projects--container {
     font-size: 2em;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     padding: 0em;
     width: 10em;
     height: 10em;
@@ -194,7 +194,7 @@
     width: 10em;
     height: 11em;
     background-color: #292930;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .projects--subinfo > h3 {
@@ -247,8 +247,13 @@
     transform: translate(0%, 85%);
     z-index: 20;
     background-color: #292930;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
+
+  .btn-prev:hover, .btn-next:hover {
+    background-color: #30e09A;
+  }
+
 }
 
 /* 
