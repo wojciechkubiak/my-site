@@ -1,6 +1,6 @@
 #contact {
   position: relative;
-  height: calc(101vh - 2em);
+  height: 100vh;
   background-image: url("./../../img/contact.webp");
   background-attachment: fixed;
   background-position: center;

@@ -21,6 +21,7 @@ const App = (
   const [language, setLanguage] = useState(initLanguage);
   const [img, setImg] = useState(initImg);
   const [arrow, setArrow] = useState(initArrow);
+  const [scroll, setScroll] = useState(0);
 
   const imgSrc = ["uk-flag.jpg", "pl-flag.jpg"];
 
@@ -44,6 +45,17 @@ const App = (
     setArrow(value);
   };
 
+  window.addEventListener("scroll", function (event) {
+    setScroll(this.scrollY)
+    
+    if(this.scrollY > 5) {
+      headerOn();
+    } else {
+      headerOff();
+      arrowHandler(false);
+    }
+  });
+
   return (
     <div className="App">
       <Header
@@ -51,11 +63,10 @@ const App = (
         headerOn={headerOn}
         headerOff={headerOff}
         arrowHandler={arrowHandler}
+        scrollPos={scroll}
         t={t}
       />
       <LandingPage
-        headerOn={headerOn}
-        headerOff={headerOff}
         arrowHandler={arrowHandler}
         t={t}
       />
@@ -73,7 +84,7 @@ const App = (
             onClick={languageHandler}
           />
       </button>
-      {arrow && (
+      {(arrow || scroll > 5) && (
         <Nav.Link href="#landing">
           {/* TODO zfixuj ją na topa i przewijaj do góry do landing po jej kliknięciu */}
           <MdKeyboardArrowUp

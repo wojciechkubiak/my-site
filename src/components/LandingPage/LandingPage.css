@@ -54,8 +54,8 @@
   position: fixed;
   top: 2vh;
   right: 2vh;
-  width: 4vw;
-  height: 4vw;
+  width: 5vw;
+  height: 5vw;
   z-index: 10;
 }
 
@@ -82,10 +82,11 @@
   }
 
   .arrow {
-    top: 1em;
-    right: 0.5em;
-    width: 8vh;
-    height: 8vh;    
+    color: rgb(219, 131, 77);
+    top: 0em;
+    right: 0em;
+    width: 9vh;
+    height: 9vh;    
   }
 }
 
