@@ -9,7 +9,7 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import { Nav } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -45,10 +45,10 @@ const App = (
     setArrow(value);
   };
 
-  window.addEventListener("scroll", function (event) {
-    setScroll(this.scrollY)
-    
-    if(this.scrollY > 5) {
+  window.addEventListener("scroll", function(event) {
+    setScroll(this.scrollY);
+
+    if (this.scrollY > 5) {
       headerOn();
     } else {
       headerOff();
@@ -66,10 +66,7 @@ const App = (
         scrollPos={scroll}
         t={t}
       />
-      <LandingPage
-        arrowHandler={arrowHandler}
-        t={t}
-      />
+      <LandingPage arrowHandler={arrowHandler} t={t} />
       <About t={t} arrow={arrowHandler} />
       <Skills t={t} />
       <Projects t={t} />
@@ -77,24 +74,21 @@ const App = (
       <SocialMedia />
       <Footer t={t} />
       <button className="LanguageBtn">
-          <img
-            className="LanguageImg"
-            src={require(`./img/${imgSrc[img]}`)}
-            alt="flag-icon"
-            onClick={languageHandler}
-          />
+        <img
+          className="LanguageImg"
+          src={require(`./img/${imgSrc[img]}`)}
+          alt="flag-icon"
+          onClick={languageHandler}
+        />
       </button>
       {(arrow || scroll > 5) && (
-        <Nav.Link href="#landing">
-          {/* TODO zfixuj ją na topa i przewijaj do góry do landing po jej kliknięciu */}
+        <Button href="#landing" className="arrow" variant="dark">
           <MdKeyboardArrowUp
-            className="arrow"
             onClick={() => {
-              headerOff();
               arrowHandler();
             }}
           ></MdKeyboardArrowUp>
-        </Nav.Link>
+        </Button>
       )}
     </div>
   );
