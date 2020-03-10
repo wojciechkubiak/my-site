@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-color:#30e09A;
+  background-color:#292930;
 }
 
 #skills > h1 {
@@ -10,7 +10,7 @@
   width: 5em;
   font-family: 'Roboto', sans-serif;
   font-size: 7vh;
-  color: white;
+  color: #C0F5E1;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
@@ -41,7 +41,7 @@
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #30e09A;
+  background-color: #292930;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -74,19 +74,27 @@
 .popover-header {
   font-family: 'Roboto',  sans-serif;
   font-weight: 700;
-  background-color: #C0F5E1!important;
-  color: #292930!important;
+  background-color: #292930!important;
+  color: #30e09A!important;
+  border-bottom: none!important;
 }
 
 .popover-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  color: #292930;
+  color: #C0F5E1!important;
   font-size: 1.5vh!important;
+  background-color: #292930!important;
+}
+
+.list-group-item {
+  background-color: #292930!important;
 }
 
 .popover {
-  border: none;
+  border:none!important;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0.5em!important;
 }
 

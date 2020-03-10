@@ -38,10 +38,11 @@
 
 .home--container > article {
   margin-top: 1em;
+  border: 1em!important;
 }
 
 .home--container > article > p {
-  background-color: #30e099a9;
+  background-color: #292930d8;
   padding: 1vw;
   font-size: 2.5vh;
   margin-top: 0.5em;
@@ -50,7 +51,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-style: initial; 
-  color: white;
+  color: #C0F5E1;
   line-height: 3vh;
   display: block;
 }
@@ -68,7 +69,7 @@
 }
 
 .arrow > svg {
-  color: white;
+  color: #c0f5e1;
   width: 4vw;
   height: 4vw;
 }

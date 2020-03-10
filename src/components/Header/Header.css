@@ -8,13 +8,13 @@ header {
   padding-right: 2em !important;
   padding-left: 2em !important;
   font-size: 2vh !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .HeaderTextColorWhite {
-  color: white !important;
+  color: #c0f5e1 !important;
 }
 
 .HeaderTextColorDark {
@@ -44,13 +44,16 @@ header {
 
 .HeaderOut {
   position: fixed;
-  background-color: #30e09A;
+  background-color: #292930;
   width: 50%;
   -webkit-transform: translate((50%, 0%));
   transform: translate(50%, 0%);
   border-radius: 1em;
-  border: 1px solid white;
   transition: 1s;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .navbar-toggler {
@@ -70,8 +73,8 @@ header {
     transform: translate(50%, 0%);
   }
 
-    .HeaderOut {
-      -webkit-transform: translate((50%, 0%));
+  .HeaderOut {
+    -webkit-transform: translate((50%, 0%));
     transform: translate(50%, 0%);
-    }
+  }
 }

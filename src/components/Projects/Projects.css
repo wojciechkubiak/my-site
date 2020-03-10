@@ -23,7 +23,7 @@
 .projects--img {
   width: 25vw;
   padding: 1em;
-  background-color: #30e09A;
+  background-color: #292930;
   border-radius: 0em;
   margin: 0em
 }
@@ -47,7 +47,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: white;
+  color: #30e09a;
   font-size: 5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -78,9 +78,9 @@
 .projects--btn {
   width: 50%;
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #292930;
   outline: none !important;
-  color: white;
+  color: #C0F5E1;
 }
 
 .btn-prev {
@@ -124,12 +124,12 @@
   padding-top: 0em;
   padding-bottom: 0.1em;
   position: relative;
-  background-color: #30e09a;
+  background-color: #292930;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .projects--subinfo > p {
-  color: white;
+  color: #C0F5E1;
   font-size: 2.3vh !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 

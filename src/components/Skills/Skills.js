@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
 import shortid from "shortid";
 import SkillImg from "./../SkillImg/SkillImg";
-import reactLogo from "./../../img/white_empty_react.png";
-import nodeLogo from "./../../img/white_empty_nodejs.png";
-import jsLogo from "./../../img/white_empty_js.png";
-import psqlLogo from "./../../img/white_empty_psql.png";
-import htmlLogo from "./../../img/white_empty_html.png";
-import cssLogo from "./../../img/white_empty_css.png";
-import bootstrapLogo from "./../../img/white_empty_bootstrap.png";
+import reactLogo from "./../../img/lightgreen_empty_react.png";
+import nodeLogo from "./../../img/lightgreen_empty_nodejs.png";
+import jsLogo from "./../../img/lightgreen_empty_js.png";
+import psqlLogo from "./../../img/lightgreen_empty_psql.png";
+import htmlLogo from "./../../img/lightgreen_empty_html.png";
+import cssLogo from "./../../img/lightgreen_empty_css.png";
+import bootstrapLogo from "./../../img/lightgreen_empty_bootstrap.png";
 import "./Skills.css";
 
 const Skills = props => {
