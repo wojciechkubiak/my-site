@@ -49,26 +49,13 @@ const App = (
     setArrow(value);
   };
 
-  const isOnMobile = () => {
-    return navigator.userAgent.match(/Android/i) ||
-      navigator.userAgent.match(/webOS/i) ||
-      navigator.userAgent.match(/iPhone/i) ||
-      navigator.userAgent.match(/iPad/i) ||
-      navigator.userAgent.match(/iPod/i) ||
-      navigator.userAgent.match(/BlackBerry/i) ||
-      navigator.userAgent.match(/Windows Phone/i) ||
-      typeof window.orientation !== "undefined" ||
-      navigator.userAgent.indexOf("IEMobile") !== -1
-      ? true
-      : false;
-  };
-
   window.addEventListener("scroll", function(event) {
-    if (!isOnMobile) {
+    if(this.scrollY < 3) {
       setScroll(this.scrollY);
 
-      if (this.scrollY > 5) {
+      if (this.scrollY !== 0) {
         headerOn();
+        arrowHandler(true);
       } else {
         headerOff();
         arrowHandler(false);
