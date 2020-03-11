@@ -3,7 +3,7 @@
   right: 1em;
   bottom: 5.5em;
   width: 4em;
-  height: 16em;
+  height: 12em;
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   padding: 0;
   margin: 0;
   bottom: 0;
-  background-color: #C0F5E1;
+  background-color: #C44550;
   outline: none !important;
   font-weight: 400;
   padding-top: 0.2em;
@@ -32,7 +32,7 @@
   width: 4em;
   height: 4em;
   border: none;
-  background-color: #C0F5E1;
+  background-color: #FBFBFB;
   outline: none !important;
 }
 
@@ -41,10 +41,14 @@
   border-top-right-radius: 1em;
 }
 
+.GitBtn { 
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
 .SocialMediaIcon {
   height: 60%;
   width: 60%;
-  color: #292930;
+  color: #4B7AB3;
 }
 
 .FacebookIcon,
@@ -53,7 +57,7 @@
   height: 60%;
   width: 60%;
   padding: 0.1em;
-  color: #05BBAC;
+  color: #C44550;
 }
 
 @media only screen and (max-width: 700px) {

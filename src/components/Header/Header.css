@@ -14,11 +14,11 @@ header {
 }
 
 .HeaderTextColorWhite {
-  color: #c0f5e1 !important;
+  color: #fbd792 !important;
 }
 
 .HeaderTextColorDark {
-  color: white !important;
+  color: #FBFBFB !important;
 }
 
 .HeaderLink:hover {
@@ -50,6 +50,7 @@ header {
   transform: translate(50%, 0%);
   border-radius: 1em;
   transition: 1s;
+  border: 1px solid #FBFBFB;
 }
 
 .shadow {

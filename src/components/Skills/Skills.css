@@ -10,7 +10,7 @@
   width: 5em;
   font-family: 'Roboto', sans-serif;
   font-size: 7vh;
-  color: #C0F5E1;
+  color: #fbd792;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
@@ -75,15 +75,16 @@
   font-family: 'Roboto',  sans-serif;
   font-weight: 700;
   background-color: #292930!important;
-  color: #30e09A!important;
+  font-size: 2.2vh!important;
+  color: #c44550!important;
   border-bottom: none!important;
 }
 
 .popover-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  color: #C0F5E1!important;
-  font-size: 1.5vh!important;
+  color: #4b7ab3!important;
+  font-size: 2.0vh!important;
   background-color: #292930!important;
 }
 
@@ -93,7 +94,6 @@
 
 .popover {
   border:none!important;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0.5em!important;
 }

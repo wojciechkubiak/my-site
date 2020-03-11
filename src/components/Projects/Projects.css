@@ -1,7 +1,7 @@
 #projects {
   position: relative;
   height: 102vh;
-  background-image: url("./../../img/3156482.jpg");
+  background-image: url('./../../img/bg.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #30e09a;
+  color: #4b7ab3;
   font-size: 5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -61,7 +61,7 @@
 }
 
 .projects--btn-container {
-  background-color: #30e09A;
+  background-color: #c44550;
   position: relative;
   top: 2vh;
   width: 20vw;
@@ -80,7 +80,7 @@
   border: none;
   background-color: #292930;
   outline: none !important;
-  color: #C0F5E1;
+  color: #fbd792
 }
 
 .btn-prev {
@@ -90,7 +90,7 @@
 }
 
 .btn-prev:hover, .btn-next:hover {
-  background-color: #0BC4AB;
+  background-color: #c44550;
 }
 
 .btn-next {
@@ -117,7 +117,7 @@
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase; 
   font-weight: 700;
-  color: white
+  color: #4b7ab3
 }
 
 .projects--subinfo {
@@ -129,7 +129,7 @@
 }
 
 .projects--subinfo > p {
-  color: #C0F5E1;
+  color: #fbd792;
   font-size: 2.3vh !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 

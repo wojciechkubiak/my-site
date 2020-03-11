@@ -1,7 +1,7 @@
 .home {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/3156482.jpg");
+  background-image: url("./../../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
   padding-left: 1vw;
   margin-right: 0.5vw;
   font-size: 10vh;
-  color: white;
+  color: #c44550;
   display: block;
   font-weight: 700;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-style: initial; 
-  color: #C0F5E1;
+  color: white;
   line-height: 3vh;
   display: block;
 }
@@ -69,7 +69,7 @@
 }
 
 .arrow > svg {
-  color: #c0f5e1;
+  color: #c44550;
   width: 4vw;
   height: 4vw;
 }
