@@ -41,7 +41,7 @@
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #292930;
+  background-color: #c44550;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -58,6 +58,11 @@
   height: 8vw;
   margin: .1vh;
   opacity: 1;
+  transition: 2s;
+}
+
+.skills--img-container:hover {
+  transform: translateY(-1em)
 }
 
 .skills--technology-header {
@@ -76,14 +81,15 @@
   font-weight: 700;
   background-color: #292930!important;
   font-size: 2.2vh!important;
-  color: #c44550!important;
+  color: #4b7ab3!important;
   border-bottom: none!important;
 }
 
 .popover-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  color: #4b7ab3!important;
+  color:  #fbd792!important;
+ 
   font-size: 2.0vh!important;
   background-color: #292930!important;
 }

@@ -47,7 +47,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #4b7ab3;
+  color: #fbd792;
   font-size: 5vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -61,7 +61,6 @@
 }
 
 .projects--btn-container {
-  background-color: #c44550;
   position: relative;
   top: 2vh;
   width: 20vw;
@@ -117,7 +116,7 @@
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase; 
   font-weight: 700;
-  color: #4b7ab3
+  color: #292930;
 }
 
 .projects--subinfo {
@@ -129,7 +128,7 @@
 }
 
 .projects--subinfo > p {
-  color: #fbd792;
+  color: #fbfbfb;
   font-size: 2.3vh !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 

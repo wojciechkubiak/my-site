@@ -42,7 +42,7 @@
 }
 
 .home--container > article > p {
-  background-color: #292930d8;
+  background-color: #292930ef;
   padding: 1vw;
   font-size: 2.5vh;
   margin-top: 0.5em;
@@ -51,7 +51,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-style: initial; 
-  color: white;
+  color: #fbd792;
   line-height: 3vh;
   display: block;
 }
