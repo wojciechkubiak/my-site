@@ -1,7 +1,6 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-color:#292930;
 }
 
 #skills > h1 {
@@ -41,7 +40,7 @@
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #c44550;
+  background-color: #292930;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -81,15 +80,14 @@
   font-weight: 700;
   background-color: #292930!important;
   font-size: 2.2vh!important;
-  color: #4b7ab3!important;
+  color: #fbd792!important;
   border-bottom: none!important;
 }
 
 .popover-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  color:  #fbd792!important;
- 
+  color:  #fbfbfb!important;
   font-size: 2.0vh!important;
   background-color: #292930!important;
 }
@@ -118,8 +116,8 @@
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    color: #292930;
+    background-color:  #292930;
+    color: #fbd792
   }
 
   .skills--container {

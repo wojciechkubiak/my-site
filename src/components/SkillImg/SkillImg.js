@@ -34,6 +34,7 @@ const SkillImg = props => {
     </Popover>
   );
 
+  //TODO: popover under header while on mobile
   return (
     <div className="skills--img-container">
       <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>

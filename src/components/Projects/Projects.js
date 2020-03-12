@@ -21,9 +21,9 @@ const Projects = props => {
   ];
 
   const imageSrc = [
-    ["red_empty_react.png", "red_empty_nodejs.png", "red_empty_psql.png"],
-    [ "red_empty_android.png", "red_empty_nodejs.png", "red_empty_psql.png"],
-    ["red_empty_react.png", "red_empty_nodejs.png", "red_empty_psql.png"]
+    ["gold_empty_react.png", "gold_empty_nodejs.png", "gold_empty_psql.png"],
+    [ "gold_empty_android.png", "gold_empty_nodejs.png", "gold_empty_psql.png"],
+    ["gold_empty_react.png", "gold_empty_nodejs.png", "gold_empty_psql.png"]
   ];
 
   const animHandler = value => {
