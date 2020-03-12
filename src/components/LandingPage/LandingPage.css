@@ -1,6 +1,11 @@
 .home {
   position: relative;
   height: 101vh;
+  background-image: url('./../../img/bg.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home--container {
@@ -37,7 +42,7 @@
 }
 
 .home--container > article > p {
-  background-color: #292930ef;
+  background-color: #292930e0;
   padding: 1vw;
   font-size: 2.5vh;
   margin-top: 0.5em;
@@ -49,6 +54,7 @@
   color: #fbd792;
   line-height: 3vh;
   display: block;
+  border-radius: 0.5em;
 }
 
 .arrow { 

@@ -1,6 +1,7 @@
 #contact {
   position: relative;
   height: 100vh;
+  background-color: #292930;
 }
 
 #contact > h1 {
@@ -9,7 +10,7 @@
   width: 5em;
   top: 35vh;
   font-size: 7vh;
-  color: #fbd792;
+  color: #c44550;
   transform: rotate(90deg);
   z-index: 5;
   font-family: "Roboto", sans-serif;
@@ -33,6 +34,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   padding-bottom: 1em !important;
   background-color: #292930;
+  border-radius: 0.5em;
 }
 
 .ContactContainer > article > h1 {

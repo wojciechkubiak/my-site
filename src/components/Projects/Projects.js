@@ -21,9 +21,9 @@ const Projects = props => {
   ];
 
   const imageSrc = [
-    ["gold_empty_react.png", "gold_empty_nodejs.png", "gold_empty_psql.png"],
-    [ "gold_empty_android.png", "gold_empty_nodejs.png", "gold_empty_psql.png"],
-    ["gold_empty_react.png", "gold_empty_nodejs.png", "gold_empty_psql.png"]
+    ["gold_empty_react.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"],
+    [ "gold_empty_android.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"],
+    ["gold_empty_react.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"]
   ];
 
   const animHandler = value => {
@@ -54,7 +54,7 @@ const Projects = props => {
         <figure className="projects--container-img-container">
           <img
             className="projects--container-img"
-            src={require(`./../../img/${img}.png`)}
+            src={require(`./../../img/${img}.webp`)}
             alt="Project-icon"
           />
           <figcaption className="projects--subinfo">

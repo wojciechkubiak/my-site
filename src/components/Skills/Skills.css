@@ -1,6 +1,7 @@
 #skills {
   position: relative;
   height: 101vh;
+  background-color: #292930;
 }
 
 #skills > h1 {
@@ -9,7 +10,7 @@
   width: 5em;
   font-family: 'Roboto', sans-serif;
   font-size: 7vh;
-  color: #fbd792;
+  color: #c44550;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
