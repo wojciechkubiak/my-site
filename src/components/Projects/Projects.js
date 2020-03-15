@@ -11,9 +11,7 @@ const Projects = props => {
       "Obb-SYS",
       props.t("projects.obbsysAbout", { framework: "react-i18next" })
     ],
-    [
-      "Opqn", 
-      props.t("projects.opqnAbout", { framework: "react-i18next" })],
+    ["Opqn", props.t("projects.opqnAbout", { framework: "react-i18next" })],
     [
       "Fit-Tracker",
       props.t("projects.fittrackerAbout", { framework: "react-i18next" })
@@ -22,7 +20,11 @@ const Projects = props => {
 
   const imageSrc = [
     ["gold_empty_react.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"],
-    [ "gold_empty_android.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"],
+    [
+      "gold_empty_android.webp",
+      "gold_empty_nodejs.webp",
+      "gold_empty_psql.webp"
+    ],
     ["gold_empty_react.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"]
   ];
 
@@ -87,26 +89,25 @@ const Projects = props => {
             </span>
           </div>
           <div className="projects--btn-container">
-        <button
-          name="-1"
-          value="backward"
-          onClick={swapImage}
-          className="projects--btn btn-prev"
-        >
-          &larr;
-        </button>
-        <button
-          name="1"
-          value="forward"
-          onClick={swapImage}
-          className="projects--btn btn-next"
-        >
-          &rarr;
-        </button>
-      </div>
+            <button
+              name="-1"
+              value="backward"
+              onClick={swapImage}
+              className="projects--btn btn-prev"
+            >
+              &larr;
+            </button>
+            <button
+              name="1"
+              value="forward"
+              onClick={swapImage}
+              className="projects--btn btn-next"
+            >
+              &rarr;
+            </button>
+          </div>
         </div>
       </div>
-      
     </InView>
   );
 };

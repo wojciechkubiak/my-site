@@ -35,7 +35,14 @@ const Contact = props => {
           </p>
           <figure className="ResumeContainer">
             <FaFileDownload className="DownloadIcon"></FaFileDownload>
-            <figcaption className= "ResumeDownloadText" style={{ color: "#ffffff", fontWeight: 500 }}><strong>{props.t("download.cv", { framework: "react-i18next" })}</strong></figcaption>
+            <figcaption
+              className="ResumeDownloadText"
+              style={{ color: "#ffffff", fontWeight: 500 }}
+            >
+              <strong>
+                {props.t("download.cv", { framework: "react-i18next" })}
+              </strong>
+            </figcaption>
             <figcaption className="ResumeLinks">
               <span>
                 <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">

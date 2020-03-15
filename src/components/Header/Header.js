@@ -13,7 +13,7 @@ const Header = props => {
   const handler = () => {
     props.headerOn();
     props.arrowHandler(true);
-  }
+  };
 
   return (
     <header>
@@ -29,13 +29,15 @@ const Header = props => {
           className="justify-content-center HeaderText"
         >
           <Nav>
-            {/* <Nav.Link
-              href="#about"
-              className={textColor.join(" ")}
-              onClick={handler}
-            >
-              {props.t("header.about", { framework: "react-i18next" })}
-            </Nav.Link> */}
+            {typeof window.orientation !== "undefined" && (
+              <Nav.Link
+                href="#landing"
+                className={textColor.join(" ")}
+                onClick={handler}
+              >
+                {props.t("header.about", { framework: "react-i18next" })}
+              </Nav.Link>
+            )}
             <Nav.Link
               href="#skills"
               className={textColor.join(" ")}

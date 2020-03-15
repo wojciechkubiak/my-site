@@ -50,11 +50,17 @@ const App = (
   };
 
   window.addEventListener("scroll", function(event) {
-    if (typeof window.orientation === 'undefined') {
-      if(this.scrollY < 3 || ( window.pageYOffset || document.documentElement.scrollTop < 3)) {
+    if (typeof window.orientation === "undefined") {
+      if (
+        this.scrollY < 3 ||
+        window.pageYOffset || document.documentElement.scrollTop < 3
+      ) {
         setScroll(this.scrollY);
-  
-        if (this.scrollY !== 0 || ( window.pageYOffset || document.documentElement.scrollTop !== 0)) {
+
+        if (
+          this.scrollY !== 0 ||
+          window.pageYOffset || document.documentElement.scrollTop !== 0
+        ) {
           headerOn();
           arrowHandler(true);
         } else {
@@ -63,11 +69,7 @@ const App = (
         }
       }
     }
-
-   
   });
-
-  
 
   return (
     <div className="App">
@@ -90,10 +92,10 @@ const App = (
         style={{ backgroundImage: `url(${img})` }}
         onClick={languageHandler}
       ></button>
-      {(arrow || scroll > 5) && (
+      {(arrow || scroll > 5) && typeof window.orientation === "undefined" && (
         <Button
           href="#landing"
-          className="arrow"
+          className="global--arrow"
           variant="dark"
           onClick={() => arrowHandler(false)}
         >

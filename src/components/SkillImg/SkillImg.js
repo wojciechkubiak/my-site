@@ -5,7 +5,7 @@ import { Popover, OverlayTrigger, ListGroup, Tooltip } from "react-bootstrap";
 const SkillImg = props => {
   const [show, setShow] = useState(false);
   let skillsData = [];
-  let infoVersion = props.t('tooltip.info', { framework: "react-i18next"});
+  let infoVersion = props.t("tooltip.info", { framework: "react-i18next" });
 
   const insertSkills = () => {
     for (let i = 1; i < 10; i++) {
@@ -36,27 +36,26 @@ const SkillImg = props => {
   );
 
   const tooltipHandler = props => {
-    if (typeof window.orientation === 'undefined') {
+    if (typeof window.orientation === "undefined") {
       return <Tooltip {...props}>{infoVersion}</Tooltip>;
     } else {
-      return <Tooltip style={{ display: "none"}} {...props}></Tooltip>;
+      return <Tooltip style={{ display: "none" }} {...props}></Tooltip>;
     }
-  }
+  };
 
-  
   return (
     <OverlayTrigger overlay={tooltipHandler} placement="right">
       <div className="skills--img-container">
-      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
-        <img
-          className="skills--img"
-          src={props.imgUrl}
-          alt="Skill-img"
-          onClick={() => setShow(!show)}
-        />
-      </OverlayTrigger>
-    </div>
-  </OverlayTrigger>
+        <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+          <img
+            className="skills--img"
+            src={props.imgUrl}
+            alt="Skill-img"
+            onClick={() => setShow(!show)}
+          />
+        </OverlayTrigger>
+      </div>
+    </OverlayTrigger>
   );
 };
 
