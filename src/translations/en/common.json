@@ -67,5 +67,11 @@
     "postgres": {
         "1": "Fundamentals",
         "2": "GROUP BY / JOIN"
+    },
+    "download": {
+        "cv": "Download Resume"
+    },
+    "tooltip": {
+        "info": "Click image for more info"
     }
 }

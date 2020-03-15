@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./../Skills/Skills.css";
-import { Popover, OverlayTrigger, ListGroup } from "react-bootstrap";
+import { Popover, OverlayTrigger, ListGroup, Tooltip } from "react-bootstrap";
 
 const SkillImg = props => {
   const [show, setShow] = useState(false);
   let skillsData = [];
+  let infoVersion = props.t('tooltip.info', { framework: "react-i18next"});
 
   const insertSkills = () => {
     for (let i = 1; i < 10; i++) {
@@ -34,9 +35,18 @@ const SkillImg = props => {
     </Popover>
   );
 
-  //TODO: popover under header while on mobile
+  const tooltipHandler = props => {
+    if (typeof window.orientation === 'undefined') {
+      return <Tooltip {...props}>{infoVersion}</Tooltip>;
+    } else {
+      return <Tooltip style={{ display: "none"}} {...props}></Tooltip>;
+    }
+  }
+
+  
   return (
-    <div className="skills--img-container">
+    <OverlayTrigger overlay={tooltipHandler} placement="right">
+      <div className="skills--img-container">
       <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
         <img
           className="skills--img"
@@ -46,6 +56,7 @@ const SkillImg = props => {
         />
       </OverlayTrigger>
     </div>
+  </OverlayTrigger>
   );
 };
 

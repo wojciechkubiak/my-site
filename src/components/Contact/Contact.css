@@ -19,7 +19,7 @@
 }
 
 .ResumeContainer {
-  margin-top: 3em;
+  margin-top: 4vh;
 }
 
 .ContactContainer {
@@ -27,7 +27,7 @@
   top: 40vh;
   left: 50%;
   width: 42vw;
-  height: 40vh;
+  height: 42vh;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0.2em;
@@ -56,8 +56,8 @@
 
 .DownloadIcon {
   color: #fbd792;
-  width: 4em;
-  height: 4em;
+  width: 8vh;
+  height: 8vh;
   padding-bottom: 0.5em;
 }
 
@@ -74,7 +74,12 @@
 .ResumeLinks > span > a {
   color: #FBFBFB;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 1.6vh !important;
+}
+
+.ResumeDownloadText {
+  font-size: 1.6vh !important;
 }
 
 
@@ -133,4 +138,13 @@
     width: 3em;
     padding-bottom: 0.5em;
   }
+
+  .ResumeLinks > span > a {
+    font-size: 2.2vh !important;
+  }
+  
+  .ResumeDownloadText {
+    font-size: 2.2vh !important;
+  }
+
 }

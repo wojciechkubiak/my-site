@@ -50,17 +50,21 @@ const App = (
   };
 
   window.addEventListener("scroll", function(event) {
-    if(this.scrollY < 3 || ( window.pageYOffset || document.documentElement.scrollTop < 3)) {
-      setScroll(this.scrollY);
-
-      if (this.scrollY !== 0 || ( window.pageYOffset || document.documentElement.scrollTop !== 0)) {
-        headerOn();
-        arrowHandler(true);
-      } else {
-        headerOff();
-        arrowHandler(false);
+    if (typeof window.orientation === 'undefined') {
+      if(this.scrollY < 3 || ( window.pageYOffset || document.documentElement.scrollTop < 3)) {
+        setScroll(this.scrollY);
+  
+        if (this.scrollY !== 0 || ( window.pageYOffset || document.documentElement.scrollTop !== 0)) {
+          headerOn();
+          arrowHandler(true);
+        } else {
+          headerOff();
+          arrowHandler(false);
+        }
       }
     }
+
+   
   });
 
   

@@ -67,5 +67,11 @@
     "postgres": {
         "1": "Podstawy",
         "2": "GROUP BY / JOIN"
+    },
+    "download": {
+        "cv": "Pobierz CV"
+    },
+    "tooltip": {
+        "info": "Więcej informacji po kliknięciu"
     }
 }
