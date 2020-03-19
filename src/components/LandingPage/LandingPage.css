@@ -17,6 +17,11 @@
   transform: translate(0, -50%);
   text-align: left;
   padding: 2vw;
+  display: none;
+}
+
+.home--container-anim {
+  display: block;
   -webkit-animation: fadeAnim 1.5s ease-in;
   -moz-animation: fadeAnim 1.5s ease-in;
   -o-animation: fadeAnim 1.5s ease-in;

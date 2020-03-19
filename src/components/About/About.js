@@ -11,6 +11,7 @@ const About = props => {
     }
   };
 
+  
   return (
     <InView
       as="div"

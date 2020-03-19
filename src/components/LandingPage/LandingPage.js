@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./LandingPage.css";
 
 const LandingPage = props => {
+  const startingClass = ["home--container"];
+  
+  const [anim, setAnim] = useState(startingClass);
+
+  useEffect(() => {
+    animElement();
+  }, [anim])
+
+  const animElement = () => {
+    setTimeout(() => {
+      setAnim(["home--container", "home--container-anim"])
+    }, 500)
+  }
+  
   return (
     <div className="home" id="landing" data-testid="Home">
-      <section className="home--container">
+      <section className={anim.join(" ")}>
         <h1>
           Wojciech
           <br />

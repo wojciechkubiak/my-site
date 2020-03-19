@@ -2,6 +2,11 @@ body,
 html {
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  background-image: url('./img/bg.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
@@ -13,12 +18,20 @@ html {
 }
 
 .anim {
+  display: block;
   -webkit-animation: anim 1s ease-in;
   -moz-animation: anim 1s ease-in;
   -o-animation: anim 1s ease-in;
   animation: anim 1s ease-in;
 }
 
+.skills-anim {
+  display: flex;
+  -webkit-animation: anim 1s ease-in;
+  -moz-animation: anim 1s ease-in;
+  -o-animation: anim 1s ease-in;
+  animation: anim 1s ease-in;
+}
 .LanguageBtn {
   border: none;
   outline: none !important;

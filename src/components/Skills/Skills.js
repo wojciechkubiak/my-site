@@ -16,7 +16,7 @@ const Skills = props => {
 
   const animHandler = value => {
     if (value) {
-      setMode(["skills--container", "anim"]);
+      setMode(["skills--container", "skills-anim"]);
     }
   };
 

@@ -30,7 +30,7 @@ const Projects = props => {
 
   const animHandler = value => {
     if (value) {
-      setMode(["projects--container", "anim"]);
+      setMode(["projects--container", "skills-anim"]);
     }
   };
 
