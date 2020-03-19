@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { InView } from "react-intersection-observer";
-import ResumePL from "./../../doc/WojciechKubiakCV_PL.pdf";
-import ResumeEN from "./../../doc/WojciechKubiakCV_ENG.pdf";
+import ResumePL from "./../../doc/cv_pl.pdf";
+import ResumeEN from "./../../doc/cv_en.pdf";
 import "./Contact.css";
 
 const Contact = props => {
