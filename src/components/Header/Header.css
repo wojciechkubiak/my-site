@@ -34,7 +34,7 @@ header {
 
 .HeaderTop {
   position: fixed;
-  background-color: #da939300;
+  background-color: #292930;
   width: 50%;
   -webkit-transform: translate((50%, -2em));
   transform: translate(50%, -2em);

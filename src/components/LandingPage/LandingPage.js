@@ -28,6 +28,7 @@ const LandingPage = props => {
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
         </article>
       </section>
+      <div className="image--holder" style={{width: "50em", height: "50em", position: "absolute", right: "0em"}}></div>
     </div>
   );
 };

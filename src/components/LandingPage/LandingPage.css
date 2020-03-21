@@ -1,7 +1,7 @@
 .home {
   position: relative;
   height: 101vh;
-  background-image: url('./../../img/bg.jpg');
+  background-image: url('./../../img/Template\ 3.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
   padding-left: 1vw;
   margin-right: 0.5vw;
   font-size: 10vh;
-  color: #eeeeee;
+  color: #292930;
   display: block;
   font-weight: 700;
   text-transform: uppercase;
@@ -56,6 +56,7 @@
   font-weight: 500;
   font-style: initial; 
   color: #ffffff;
+  background-color: #292930;
   line-height: 3vh;
   display: block;
   border-radius: 0.5em;
@@ -77,6 +78,10 @@
   color: #ffffff;
   width: 4vw;
   height: 4vw;
+}
+
+.image--holder {
+  background-image: url("./../../img/Profit2_png.png");
 }
 
 @media only screen and (max-width: 700px) {
