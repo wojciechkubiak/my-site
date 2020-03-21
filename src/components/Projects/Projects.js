@@ -19,13 +19,13 @@ const Projects = props => {
   ];
 
   const imageSrc = [
-    ["gold_empty_react.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"],
+    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"],
     [
-      "gold_empty_android.webp",
-      "gold_empty_nodejs.webp",
-      "gold_empty_psql.webp"
+      "white_empty_android.png",
+      "white_empty_nodejs.png",
+      "white_empty_psql.png"
     ],
-    ["gold_empty_react.webp", "gold_empty_nodejs.webp", "gold_empty_psql.webp"]
+    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"]
   ];
 
   const animHandler = value => {

@@ -91,14 +91,14 @@ div > .arrow {
   font-weight: 700;
   background-color: #292930!important;
   font-size: 2.2vh!important;
-  color: #fbd792!important;
+  color: #ffffff!important;
   border-bottom: none!important;
 }
 
 .popover-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; 
-  color:  #fbfbfb!important;
+  color:  #eeeeee!important;
   font-size: 2.0vh!important;
   background-color: #292930!important;
 }

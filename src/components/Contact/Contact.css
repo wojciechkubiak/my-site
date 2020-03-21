@@ -40,7 +40,7 @@
 .ContactContainer > article > h1 {
   padding-top: 3vh;
   padding-bottom: 2vh;
-  color: #fbd792;
+  color: #eeeeee;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -48,14 +48,14 @@
 }
 
 .ContactContainer > article > p {
-  color: #FBFBFB;
+  color: #ffffff;
   font-size: 2vh !important;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
 .DownloadIcon {
-  color: #fbd792;
+  color: #eeeeee;
   width: 8vh;
   height: 8vh;
   padding-bottom: 0.5em;
