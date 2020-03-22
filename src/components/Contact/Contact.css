@@ -97,8 +97,8 @@
     width: 10em;
     top: 1em;
     left: 50%;
-    background-color:  #292930;
-    color: #fbd792;
+    background-color:#292930;
+    color: #ffffff;
     transform: translate(-50%, -50%);
   }
 
@@ -106,15 +106,21 @@
     top: 40vh;
     left: 50%;
     width: 20em;
-    height: 60vh;
+    height: 52vh;
     border-radius: 0;
     padding: 1em;
     background-color: #292930;
   }
 
-  .ContactContainer > h1 {
-    padding-bottom: 0.5em;
+  .ContactContainer > article > h1 {
     font-size: 3.5vh;
+  }
+
+  .ContactContainer > article > p {
+    color: #ffffff;
+    font-size: 2vh !important;
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
   }
 
   .ContactContainer > p {
@@ -126,7 +132,7 @@
   }
 
   .GitContainer > p {
-    font-size: 3vh;
+    font-size: 2.2vh;
   }
 
   .contact--git-icon {
@@ -139,8 +145,8 @@
   }
 
   .DownloadIcon {
-    height: 3em;
-    width: 3em;
+    height: 15vw;
+    width: 15vw;
     padding-bottom: 0.5em;
   }
 
@@ -152,4 +158,5 @@
     font-size: 2.2vh !important;
   }
 
+  
 }
