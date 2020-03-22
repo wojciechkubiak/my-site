@@ -7,9 +7,9 @@ header {
   outline: 0;
   padding-right: 2em !important;
   padding-left: 2em !important;
-  font-size: 2vh !important;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-size: 3vh !important;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -18,12 +18,13 @@ header {
 }
 
 .HeaderTextColorDark {
-  color: #ffffff !important;
+  color: #292930 !important;
 }
 
 .HeaderLink:hover {
   text-decoration: underline;
 }
+
 .HeaderText {
   font-size: 1.5rem;
 }
@@ -34,7 +35,6 @@ header {
 
 .HeaderTop {
   position: fixed;
-  background-color: #292930;
   width: 50%;
   -webkit-transform: translate((50%, -2em));
   transform: translate(50%, -2em);

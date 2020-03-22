@@ -30,7 +30,7 @@ const Contact = props => {
           <p>
             {props.t("contact.contactMe", { framework: "react-i18next" })}{" "}
             <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
-              <strong>wgkubiak@gmail.com</strong>
+              wgkubiak@gmail.com
             </a>
           </p>
           <figure className="ResumeContainer">
@@ -39,20 +39,18 @@ const Contact = props => {
               className="ResumeDownloadText"
               style={{ color: "#ffffff", fontWeight: 500 }}
             >
-              <strong>
-                {props.t("download.cv", { framework: "react-i18next" })}
-              </strong>
+              {props.t("download.cv", { framework: "react-i18next" })}
             </figcaption>
             <figcaption className="ResumeLinks">
               <span>
                 <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
-                  <strong>PL</strong>
+                  PL
                 </a>
               </span>
               <strong style={{ color: "#ffffff", fontWeight: 500 }}> | </strong>
               <span>
                 <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
-                  <strong>EN</strong>
+                  EN
                 </a>
               </span>
             </figcaption>

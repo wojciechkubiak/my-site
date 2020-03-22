@@ -8,13 +8,13 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
   font-size: 7vh;
   color: #ffffff;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -23,9 +23,12 @@
 }
 
 .tooltip-inner {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   background-color: #292930 !important;
   color: #c44550 !important;
   font-size: 1.5vh !important;
+  text-transform: uppercase;
 }
 
 div > .arrow {
@@ -87,17 +90,18 @@ div > .arrow {
 }
 
 .popover-header {
-  font-family: 'Roboto',  sans-serif;
-  font-weight: 700;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
   background-color: #292930!important;
-  font-size: 2.2vh!important;
+  font-size: 2.5vh!important;
   color: #ffffff!important;
   border-bottom: none!important;
+  text-transform: uppercase;
 }
 
 .popover-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color:  #eeeeee!important;
   font-size: 2.0vh!important;
   background-color: #292930!important;

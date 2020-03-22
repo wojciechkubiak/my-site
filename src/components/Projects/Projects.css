@@ -48,10 +48,10 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #BF74C2;
+  color: #292930;
   font-size: 5vh;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -80,24 +80,26 @@
   border: none;
   background-color: #292930;
   outline: none !important;
-  color: #BF74C2;
+  color: #ffffff;
 }
 
 .btn-prev {
   text-align: center;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
+  transition: 500ms;
 }
 
 .btn-prev:hover,
 .btn-next:hover {
-  background-color: #c44550;
+  background-color: rgb(22, 21, 21);
 }
 
 .btn-next {
   text-align: center;
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  transition: 500ms;
 }
 
 .projects--technologies-container {
@@ -115,9 +117,9 @@
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
-  font-weight: 700;
   color: #292930;
 }
 
@@ -125,16 +127,13 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   position: relative;
-  background-color: #292930;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 0.5em;
 }
 
 .projects--subinfo > p {
-  color: #fbfbfb;
+  color: #292930;
   font-size: 2.3vh !important;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
 }
 
 .projects--span {

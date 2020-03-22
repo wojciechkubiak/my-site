@@ -5,7 +5,7 @@ const Footer = props => {
   return (
     <footer>
       {props.t("footer.text", { framework: "react-i18next" })}{" "}
-      <strong>Wojciech Kubiak &reg;</strong>
+      Wojciech Kubiak &reg;
     </footer>
   );
 };
