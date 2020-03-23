@@ -106,7 +106,6 @@
     margin: 0.5em;
     font-size: 2.5em;
     text-align: center;
-
   }
 
   .home--container > article {
@@ -117,7 +116,7 @@
   }
   
   .home--container > article > p {
-    font-size: 1.8vh;  
+    font-size: 2vh;  
     background-color: #C44550;
     line-height: 3vh;
     text-align: center;
