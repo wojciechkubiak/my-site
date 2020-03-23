@@ -13,8 +13,8 @@
   position: absolute;
   text-align: center;
   width: 5em;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 7vh;
   color: #C44550;
   top: 35vh;
@@ -29,7 +29,6 @@
 
 .tooltip-inner {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   background-color: #C44550 !important;
   color: #ffffff !important;
   font-size: 1.5vh !important;
@@ -90,13 +89,12 @@ div > .arrow {
 
 
 .popover-header, .popover-body {
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 .popover-header {
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
   background-color: #C44550!important;
   font-size: 2.5vh!important;
   color: #ffffff!important;
@@ -106,7 +104,6 @@ div > .arrow {
 
 .popover-body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   color:  #C44550!important;
   font-size: 2.0vh!important;
   background-color: #ffffff!important;

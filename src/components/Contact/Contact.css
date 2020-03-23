@@ -17,8 +17,8 @@
   color: #C44550;
   transform: rotate(90deg);
   z-index: 5;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -47,16 +47,15 @@
   padding-bottom: 2vh;
   color: #eeeeee;
   text-transform: uppercase;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 4.5vh;
 }
 
 .ContactContainer > article > p {
   color: #ffffff;
   font-size: 2.5vh !important;
-  font-family: 'Anton', sans-serif;
-  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
 }
 
 .DownloadIcon {
@@ -68,19 +67,27 @@
 
 .MailContainer {
   color: #ffffff;
-  transition: 1s;
+  transition: 500ms;
   font-family: 'Anton', sans-serif;
   font-weight: 400;
 }
 
 .MailContainer:hover {
-  color: #ffffff
+  color: #C44550
+}
+
+.ResumeLinks > span > a {
+  transition: 500ms;
 }
 
 .ResumeLinks > span > a {
   color: #FBFBFB;
   font-family: 'Anton', sans-serif;
   font-weight: 500;
+}
+
+.ResumeLinks > span > a:hover {
+  color: #C44550
 }
 
 .ResumeDownloadText {

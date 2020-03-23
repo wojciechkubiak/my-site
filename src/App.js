@@ -49,7 +49,7 @@ const App = (
     setArrow(value);
   };
 
-  window.addEventListener("scroll", function(event) {
+  window.addEventListener("scroll", function (event) {
     if (typeof window.orientation === "undefined") {
       if (
         this.scrollY < 3 ||
@@ -89,7 +89,7 @@ const App = (
       <Footer t={t} />
       <button
         className="LanguageBtn"
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${img})`, boxShadow: "0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 9px 30px 0 rgba(0, 0, 0, 0.3)" }}
         onClick={languageHandler}
       ></button>
       {(arrow || scroll > 5) && typeof window.orientation === "undefined" && (
