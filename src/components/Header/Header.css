@@ -77,7 +77,10 @@ header {
   }
 
   .HeaderTop {
-    background-color: #292930;
+    background-color: #3c5c64;
+  }
+  .HeaderOut {
+    background-color: #C44550;
     border-radius: 1em;
     -webkit-transform: translate((50%, 0%));
     transform: translate(50%, 0%);

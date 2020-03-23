@@ -135,7 +135,7 @@ div > .arrow {
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:  #292930;
+    background-color:  #C44550;
     color: #ffffff;
   }
 
@@ -149,7 +149,7 @@ div > .arrow {
     width: 12vh;
     height: 12vh;
     margin: 1em;
-    background-color: #292930;
+    background-color: #3c5c64;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;

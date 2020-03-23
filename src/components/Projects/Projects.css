@@ -151,6 +151,14 @@
 }
 
 @media only screen and (max-width: 700px) {
+  #projects {
+    background-image: url("./../../img/bg.jpg");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
   #projects > h1 {
     font-size: 2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
@@ -159,7 +167,7 @@
     top: 1em;
     left: 50%;   
     transform: translate(-50%, -50%);
-    background-color:  #292930;
+    background-color:  #C44550;
     color: #ffffff;
   }
 
@@ -191,7 +199,7 @@
     position: absolute;
     width: 10em;
     height: 11em;
-    background-color: #292930;
+    background-color: #3c5c64;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
@@ -199,7 +207,7 @@
     text-align: center;
     font-size: 3.8vh;
     color: #ffffff;
-    background-color: #292930;
+    background-color: #3c5c64;
   }
 
   .projects--subinfo {
@@ -244,13 +252,13 @@
     bottom: 0em;
     transform: translate(0%, 85%);
     z-index: 20;
-    background-color: #292930;
+    background-color: #C44550;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .btn-prev:hover,
   .btn-next:hover {
-    background-color: #292930;
+    background-color: #C44550;
   }
 }
 

@@ -7,7 +7,7 @@
   align-content: center;
   display: flex;
   flex-direction: column;
-  z-index: 8
+  z-index: 8;
 }
 
 .SocialMediaBtn {

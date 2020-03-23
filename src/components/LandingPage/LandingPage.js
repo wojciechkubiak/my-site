@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import "./LandingPage.css";
 
 const LandingPage = props => {
   return (
     <div className="home" id="landing" data-testid="Home">
       <section className="home--container">
-        <h1 className="home--container-anim">
+        <h1>
           Wojciech Kubiak
         </h1>
-        <article className="home--container-anim-p home--container-out">
+        <article>
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
         </article>
       </section>

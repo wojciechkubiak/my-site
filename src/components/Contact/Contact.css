@@ -106,7 +106,7 @@
     width: 10em;
     top: 1em;
     left: 50%;
-    background-color:#292930;
+    background-color:#C44550;
     color: #ffffff;
     transform: translate(-50%, -50%);
   }
@@ -118,18 +118,20 @@
     height: 52vh;
     border-radius: 0;
     padding: 1em;
-    background-color: #292930;
+    background-color: #3c5c64;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .ContactContainer > article > h1 {
     font-size: 3.5vh;
+    color: #ffffff;
   }
 
   .ContactContainer > article > p {
     color: #ffffff;
     font-size: 2vh !important;
-    font-family: 'Anton', sans-serif;
-    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
   }
 
   .ContactContainer > p {
@@ -142,6 +144,13 @@
 
   .GitContainer > p {
     font-size: 2.2vh;
+  }
+
+  .MailContainer {
+    color: #ffffff;
+    transition: 500ms;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
   }
 
   .contact--git-icon {
@@ -161,10 +170,14 @@
 
   .ResumeLinks > span > a {
     font-size: 2.2vh !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
   }
   
   .ResumeDownloadText {
     font-size: 2.2vh !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
   }
 
   
