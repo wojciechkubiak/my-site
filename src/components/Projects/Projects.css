@@ -1,11 +1,7 @@
 #projects {
   position: relative;
   height: 102vh;
-  background-image: url('./../../img/Template\ 3.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffffff;
 }
 
 .projects--container {
@@ -24,7 +20,7 @@
 .projects--img {
   width: 25vw;
   padding: 1em;
-  background-color: #292930;
+  background-color: #c44550;
   border-radius: 0em;
   margin: 0em;
 }
@@ -48,7 +44,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #292930;
+  color: #ffffff;
   font-size: 5vh;
   font-family: 'Anton', sans-serif;
   font-weight: 400;
@@ -78,7 +74,7 @@
 .projects--btn {
   width: 50%;
   border: none;
-  background-color: #292930;
+  background-color: #3c5c64;
   outline: none !important;
   color: #ffffff;
 }
@@ -92,7 +88,7 @@
 
 .btn-prev:hover,
 .btn-next:hover {
-  background-color: rgb(22, 21, 21);
+  background-color: #C44550;
 }
 
 .btn-next {
@@ -120,17 +116,19 @@
   font-family: 'Anton', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #292930;
+  color: #C44550;
 }
 
 .projects--subinfo {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   position: relative;
+  background-color: #3c5c64;
+  border-radius: 1em;
 }
 
 .projects--subinfo > p {
-  color: #292930;
+  color: #ffffff;
   font-size: 2.3vh !important;
   font-family: 'Anton', sans-serif;
   font-weight: 100;

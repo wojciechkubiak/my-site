@@ -1,7 +1,7 @@
 .home {
   position: relative;
   height: 101vh;
-  background-image: url('./../../img/Template\ 3.jpg');
+  background-image: url('./../../img/bg_alt.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,9 +12,9 @@
   position: absolute;
   left: 10%;
   top: 22vh;
-  width: 50vw;
+  width: 55%;
   height: 35vh;
-  transform: translate(0, -50%);
+  transform: translate(0%, -50%);
   text-align: left;
   padding: 2vw;
   -webkit-animation: fadeAnim 700ms ease-in;
@@ -38,12 +38,11 @@
 }
 
 .home--container > h1 { 
-  /* font-family: 'Abril Fatface', cursive; */
+  font-family: 'Abril Fatface', cursive;
   /* font-family: 'Patua One', cursive;  */
-  font-family: 'Knewave', cursive;
+  text-align: center;
+  /* font-family: 'Knewave', cursive; */
   margin-top: 4vh;
-  margin-left: 0.5vw;
-  padding-left: 1vw;
   margin-right: 0.5vw;
   font-size: 10vh;
   color: #ffffff;
@@ -51,7 +50,11 @@
   font-weight: 400;
   border-radius: 10px;
   text-transform: uppercase;
-  background-color: #f4d75d;
+}
+
+.home--container-out {
+  color: #ffffff !important;
+  background-color: #C44550 !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -66,15 +69,13 @@
   margin-top: 0.5em;
   margin-left: 0.5vw!important;
   margin-right: 0.5em; 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-style: initial; 
   color: #ffffff;
-  line-height: 3.5vh;
+  line-height: 4vh;
   border-radius: 10px;
   display: block;
-  background-color: #5fb9ed;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.15) !important;
 }
 
 .global--arrow { 
@@ -90,7 +91,7 @@
 }
 
 .global--arrow > svg {
-  color: #ffffff;
+  color: #C44550;
   width: 4vw;
   height: 4vw;
 }

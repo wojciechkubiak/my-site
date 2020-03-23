@@ -1,7 +1,11 @@
 #contact {
   position: relative;
   height: 100vh;
-  background-color: #292930;
+  background-image: url('./../../img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #contact > h1 {
@@ -10,7 +14,7 @@
   width: 5em;
   top: 35vh;
   font-size: 7vh;
-  color: #ffffff;
+  color: #C44550;
   transform: rotate(90deg);
   z-index: 5;
   font-family: 'Anton', sans-serif;
@@ -34,9 +38,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0.2em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   padding-bottom: 1em !important;
-  background-color: #292930;
   border-radius: 0.5em;
 }
 
@@ -65,14 +67,14 @@
 }
 
 .MailContainer {
-  color: #c44550;
+  color: #ffffff;
   transition: 1s;
   font-family: 'Anton', sans-serif;
   font-weight: 400;
 }
 
 .MailContainer:hover {
-  color: #c44550
+  color: #ffffff
 }
 
 .ResumeLinks > span > a {

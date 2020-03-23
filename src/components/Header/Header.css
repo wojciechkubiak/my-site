@@ -7,9 +7,9 @@ header {
   outline: 0;
   padding-right: 2em !important;
   padding-left: 2em !important;
-  font-size: 3vh !important;
-  font-family: 'Knewave', cursive;
-  font-weight: 400;
+  font-size: 2.5vh !important;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -38,14 +38,14 @@ header {
   width: 50%;
   -webkit-transform: translate((50%, -2em));
   transform: translate(50%, -2em);
-  background-color: #bd72c5;
-  border-radius: 1em;
+  background-color: #243443;
   transition: 1s;
+  border-radius: 1em;
 }
 
 .HeaderOut {
   position: fixed;
-  background-color: #292930;
+  background-color: #3c5c64;
   width: 50%;
   -webkit-transform: translate((50%, 0%));
   transform: translate(50%, 0%);
@@ -59,6 +59,14 @@ header {
 
 .navbar-toggler {
   outline: none !important;
+}
+
+.nav-link {
+  transition: 1000ms;
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
 }
 
 @media screen and (max-width: 1200px) {

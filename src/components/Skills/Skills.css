@@ -1,7 +1,12 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-color: #292930;
+  background-color: #ffffff;
+  background-image: url('./../../img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #skills > h1 {
@@ -11,7 +16,7 @@
   font-family: 'Anton', sans-serif;
   font-weight: 400;
   font-size: 7vh;
-  color: #ffffff;
+  color: #C44550;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
@@ -25,8 +30,8 @@
 .tooltip-inner {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background-color: #292930 !important;
-  color: #c44550 !important;
+  background-color: #C44550 !important;
+  color: #ffffff !important;
   font-size: 1.5vh !important;
   text-transform: uppercase;
 }
@@ -54,7 +59,7 @@ div > .arrow {
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #292930;
+  background-color: #3c5c64;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -92,7 +97,7 @@ div > .arrow {
 .popover-header {
   font-family: 'Anton', sans-serif;
   font-weight: 400;
-  background-color: #292930!important;
+  background-color: #C44550!important;
   font-size: 2.5vh!important;
   color: #ffffff!important;
   border-bottom: none!important;
@@ -102,13 +107,15 @@ div > .arrow {
 .popover-body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color:  #eeeeee!important;
+  color:  #C44550!important;
   font-size: 2.0vh!important;
-  background-color: #292930!important;
+  background-color: #ffffff!important;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
 }
 
 .list-group-item {
-  background-color: #292930!important;
+  background-color: #ffffff!important;
 }
 
 .popover {

@@ -8,7 +8,7 @@ const LandingPage = props => {
         <h1 className="home--container-anim">
           Wojciech Kubiak
         </h1>
-        <article className="home--container-anim-p">
+        <article className="home--container-anim-p home--container-out">
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
         </article>
       </section>
