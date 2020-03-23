@@ -8,7 +8,7 @@ header {
   padding-right: 2em !important;
   padding-left: 2em !important;
   font-size: 3vh !important;
-  font-family: 'Lobster', cursive;
+  font-family: 'Knewave', cursive;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -18,7 +18,7 @@ header {
 }
 
 .HeaderTextColorDark {
-  color: #292930 !important;
+  color: #ffffff !important;
 }
 
 .HeaderLink:hover {
@@ -38,6 +38,7 @@ header {
   width: 50%;
   -webkit-transform: translate((50%, -2em));
   transform: translate(50%, -2em);
+  background-color: #bd72c5;
   border-radius: 1em;
   transition: 1s;
 }
