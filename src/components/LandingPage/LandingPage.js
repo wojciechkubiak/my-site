@@ -20,7 +20,7 @@ const LandingPage = props => {
   useEffect(() => {
     t1.fromTo(
       svgArrow,
-      { x: -200 },
+      { x: -1000 },
       { delay: 1, duration: 1,  ease: "slow (0.7, 0.7, false)", x: -20}
     );
     t1.fromTo(
@@ -100,7 +100,7 @@ const LandingPage = props => {
       <section className="home--container" ref={e => {sectionItem = e}} style={{opacity: 0, transform: "scale(0)", transformOrigin: "left top"}}>
         <h1 ref={e => {greetingItem = e}}>{props.t("aboutme.greeting", { framework: "react-i18next" })}</h1>
         <h1 style={{display: "none", opacity: "0"}} ref={e => {nameIs = e}}>{props.t("aboutme.mynameis", { framework: "react-i18next" })}</h1>
-        <h1 style={{display: "none", opacity: "0"}}  ref={e => {nameItem = e}}>Wojciech Kubiak</h1>
+        <h1 style={{display: "none", opacity: "0"}}  ref={e => {nameItem = e}}>Wojtek Kubiak</h1>
         <article style={{display: "none", opacity: "0"}} ref={e => {aboutItem = e}}>
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
           <Button
