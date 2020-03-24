@@ -38,8 +38,7 @@
 .home--container > h1 { 
   font-family: 'Abril Fatface', cursive;
   text-align: center;
-  margin-top: 2vh;
-  margin-right: 0.5vw;
+  margin: auto;
   font-size: 10vh;
   color: #ffffff;
   display: block;
