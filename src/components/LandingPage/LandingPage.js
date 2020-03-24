@@ -93,7 +93,7 @@ const LandingPage = props => {
           opacity: 1,
           display: "block"
     })
-  });
+  }, []);
 
   return (
     <div className="home" id="landing" data-testid="Home">
