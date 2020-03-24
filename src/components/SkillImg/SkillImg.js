@@ -28,7 +28,7 @@ const SkillImg = props => {
       <Popover.Content>
         <ListGroup variant="flush">
           {skillsData.map((value, index) => (
-            <ListGroup.Item>{value}</ListGroup.Item>
+            <ListGroup.Item key={`${value}${index}`}>{value}</ListGroup.Item>
           ))}
         </ListGroup>
       </Popover.Content>

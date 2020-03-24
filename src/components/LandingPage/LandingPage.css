@@ -10,23 +10,35 @@
 
 .home--container {
   position: absolute;
-  left: 10%;
-  top: 22vh;
+  right: 10%;
+  top: 15%;
   width: 55%;
-  height: 35vh;
+  height: auto;
   transform: translate(0%, -50%);
   text-align: left;
-  padding: 2vw;
-  -webkit-animation: fadeAnim 1000ms ease-in;
-  -moz-animation: fadeAnim 1000ms ease-in;
-  -o-animation: fadeAnim 1000ms ease-in;
-  animation: fadeAnim 1000ms ease-in;
+  padding: 1vw;
+  background-color: #C44550;
+  transform-origin: left top;
+  border-radius: 1em;
+}
+
+.home--container:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 50px solid transparent;
+  border-right: 50px solid #C44550;
+  border-top: 50px solid #C44550;
+  border-bottom: 50px solid transparent;
+  left: -50px;
+  top: 6px;
 }
 
 .home--container > h1 { 
   font-family: 'Abril Fatface', cursive;
   text-align: center;
-  margin-top: 4vh;
+  margin-top: 2vh;
   margin-right: 0.5vw;
   font-size: 10vh;
   color: #ffffff;
@@ -84,9 +96,17 @@
   height: 4vw;
 }
 
-.image--holder {
-  background-image: url("./../../img/Profit2_png.png");
-}
+.st0{fill:rgb(231, 77, 90);}
+.st1{fill:rgb(172, 48, 58);}
+.st2{fill:rgb(231, 77, 90);}
+.st3{fill:#46ABBC;}
+.st4 {fill:rgb(149, 149, 150);}
+.case {fill:rgb(231, 77, 90);}
+.st5{fill:#F0EFEF;}
+.st6{fill:rgb(231, 77, 90);}
+.st7{fill:#292930}
+.st8{fill:#292930}
+.st9{fill:rgb(231, 146, 77)}
 
 @media only screen and (max-width: 700px) {
   .home--container {
@@ -154,69 +174,6 @@
 }
 
 
-@-webkit-keyframes fadeAnim {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@-moz-keyframes fadeAnim {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@-o-keyframes fadeAnim {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@keyframes fadeAnim {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-
-
-
 @-webkit-keyframes fadeAnimHeader {
   0% {
     display: none;
@@ -276,9 +233,6 @@
     left: 10%;
   }
 }
-
-
-
 
 @-webkit-keyframes fadeAnimMobile {
   0% {
