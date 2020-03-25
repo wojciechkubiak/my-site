@@ -34,7 +34,7 @@ const Contact = props => {
       }}
     >
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
-      <section className="ContactContainer" ref={e => {contactItem = e}} data-testid="Contact">
+      <section className="ContactContainer" ref={e => {contactItem = e}} data-testid="Contact" style={{display: "none"}}>
         <article>
           <h1>{props.t("contact.box", { framework: "react-i18next" })}</h1>
           <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
