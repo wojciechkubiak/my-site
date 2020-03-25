@@ -107,7 +107,7 @@ const LandingPage = props => {
           style={{ backgroundColor: "transparent", zIndex: "100", width: "5em", height: "5em", position: "relative", left: "50%", bottom: "0%", transform: "translate(-50%, 0%)", border: "none"}}
           href="#skills"
           >
-          <MdKeyboardArrowDown style={{color: "#ffffff", width: "100%", height: "100%", position: "relative"}}/>
+          <MdKeyboardArrowDown className="landing--arrow" style={{color: "#ffffff", width: "100%", height: "100%", position: "relative"}}/>
         </Button>
         </article>
       </section>

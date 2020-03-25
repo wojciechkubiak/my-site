@@ -116,7 +116,7 @@
     left: 30%;
     top: 0%;
     transform: translate(-50%, -50%);
-    width: 85vw;
+    width: 80vw;
     height: 22em;
     padding: 1em;
     background-color: transparent;
@@ -138,7 +138,7 @@
   .home--container > article {
     position: absolute;
     height: 20vh;
-    width: auto;
+    width: 60vw;
     margin: 0.1em;
     border-radius: 0em;
     background-color: transparent;
@@ -176,6 +176,10 @@
     height: 1.7em!important;
     background-size: cover;
     background-position: center;
+  }
+
+  .landing--arrow {
+    color: #C44550 !important
   }
 
   .image--holder {
