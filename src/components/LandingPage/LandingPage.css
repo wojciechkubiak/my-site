@@ -179,7 +179,7 @@
   }
 
   .landing--arrow {
-    color: #C44550 !important
+    display: none !important;
   }
 
   .image--holder {
