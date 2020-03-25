@@ -40,12 +40,12 @@ const Projects = props => {
     gsap.fromTo(
       screenshots,
       { opacity: 0},
-      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)"}
+      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)", visibility: "visible"}
     );
     t1.fromTo(
       technologies,
       { opacity: 0},
-      { delay: 1, duration: 1, opacity: 1, ease: "slow (0.7, 0.7, false)", onComplete: function() {
+      { delay: 1, duration: 1, opacity: 1, visibility: "visible", ease: "slow (0.7, 0.7, false)", onComplete: function() {
         setAnimated(true);
       }}
     );
@@ -90,18 +90,18 @@ const Projects = props => {
     >
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
-        <figure className="projects--container-img-container" ref={e => {screenshots = e}}>
+        <figure className="projects--container-img-container" style={{visibility: "hidden"}} ref={e => {screenshots = e}}>
           <img
             className="projects--container-img"
             src={require(`./../../img/${img}.webp`)}
             alt="Project-icon"
           />
-          <figcaption className="projects--subinfo" ref={e => {subinfoContainer = e}}>
+          <figcaption className="projects--subinfo" style={{visibility: "hidden"}} ref={e => {subinfoContainer = e}}>
             <h3 ref={e => {subinfoHeader = e}}>{data[img - 1][0]}</h3>
             <p ref={e => {subinfoParagraph = e}}>{data[img - 1][1]}</p>
           </figcaption>
         </figure>
-        <div className="projects--technologies-container" ref={e => {technologies = e}}>
+        <div className="projects--technologies-container" style={{visibility: "hidden"}} ref={e => {technologies = e}}>
           <div className="projects--technologies-container-alt">
             <span className="projects--span">
               <img
