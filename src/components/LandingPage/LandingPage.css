@@ -47,6 +47,7 @@
   font-weight: 400;
   border-radius: 10px;
   text-transform: uppercase;
+  height: 14vh
 }
 
 .home--container > article {
@@ -84,8 +85,8 @@
   position: fixed;
   top: 2vh;
   right: 2vh;
-  width: 5vw;
-  height: 5vw;
+  width: 4vw;
+  height: 4vw;
   z-index: 10;
   align-content: center;
   background-color: transparent!important;
@@ -94,8 +95,8 @@
 
 .global--arrow > svg {
   color: #C44550;
-  width: 4vw;
-  height: 4vw;
+  width: 3vw;
+  height: 3vw;
 }
 
 .st0{fill:rgb(231, 77, 90);}

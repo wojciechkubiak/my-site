@@ -72,12 +72,14 @@ const LandingPage = props => {
           opacity: 0,
           display: "none"
     });
+    // HERE SECTION IS SCALING
     t1.to(nameIs, {
       duration: 1, opacity: 1, display: "block"
     })
     t1.to(nameIs, {
       duration: 1, opacity: 0, display: "none"
     })
+    // HERE SECTION IS SCALING
     t1.to(nameItem, {
           duration: 1,
           opacity: 1,
@@ -88,6 +90,7 @@ const LandingPage = props => {
       opacity: 0,
       display: "none"
       })
+    // HERE SECTION IS SCALING
     t1.to(aboutItem, {
           duration: 3,
           opacity: 1,
