@@ -20,7 +20,7 @@
   background-color: #C44550;
   transform-origin: left top;
   border-radius: 1em;
-  z-index: 25
+ 
 }
 
 /* TODO nachodzi na container przy mniejszej rozdzialce*/
@@ -115,7 +115,7 @@
   .home--container {
     top: 7em;
     left: 30%;
-    top: 0%;
+    top: 20%;
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 22em;

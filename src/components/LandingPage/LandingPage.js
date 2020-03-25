@@ -86,12 +86,15 @@ const LandingPage = props => {
           display: "block"
     })
     t1.to(nameItem, {
-      duration: 1,
-      opacity: 0,
-      display: "none"
+      y: -120
       })
-    // HERE SECTION IS SCALING
     t1.to(aboutItem, {
+      y: -120
+    })
+    t1.to(sectionItem, {
+      height: "50vh"
+    })
+    t1.to(aboutItem, {         
           duration: 3,
           opacity: 1,
           display: "block"
