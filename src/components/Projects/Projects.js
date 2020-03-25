@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { InView } from "react-intersection-observer";
+import gsap from "gsap";
 import "./Projects.css";
 
 const Projects = props => {
+  let technologies = useRef(null);
+  let screenshots = useRef(null);
+  let subinfoHeader = useRef(null);
+  let subinfoParagraph = useRef(null);
+  let subinfoContainer = useRef(null);
   const [img, setImg] = useState(1);
-  const [mode, setMode] = useState(["projects--container"]);
+  const [animated, setAnimated] = useState(false);
 
   const data = [
     [
@@ -28,11 +34,37 @@ const Projects = props => {
     ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"]
   ];
 
-  const animHandler = value => {
-    if (value) {
-      setMode(["projects--container", "skills-anim"]);
-    }
-  };
+  const t1 = gsap.timeline();
+
+  const anim = () => {
+    gsap.fromTo(
+      screenshots,
+      { opacity: 0},
+      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)"}
+    );
+    t1.fromTo(
+      technologies,
+      { opacity: 0},
+      { delay: 1, duration: 1, opacity: 1, ease: "slow (0.7, 0.7, false)", onComplete: function() {
+        setAnimated(true);
+      }}
+    );
+    t1.to(subinfoContainer, {
+      duration: 1,
+      opacity: 1,
+      visibility: "visible"
+    });
+    t1.to(subinfoHeader, {
+      duration: 1,
+      opacity: 1,
+      visibility: "visible"
+    });
+    t1.to(subinfoParagraph, {
+      duration: 1,
+      opacity: 1,
+      visibility: "visible"
+    });
+  }
 
   const swapImage = event => {
     if (img === 3 && event.target.value === "forward") {
@@ -49,22 +81,27 @@ const Projects = props => {
       as="div"
       data-testid="Projects"
       id="projects"
-      onChange={(inView, entry) => animHandler(inView)}
+      onChange={(inView, entry) => {
+        if(inView && !animated) {
+          console.log(inView, !animated)
+          anim();
+        }
+      }}
     >
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
-      <div className={mode.join(" ")} data-testid="Projects">
-        <figure className="projects--container-img-container">
+      <div className="projects--container" data-testid="Projects">
+        <figure className="projects--container-img-container" ref={e => {screenshots = e}}>
           <img
             className="projects--container-img"
             src={require(`./../../img/${img}.webp`)}
             alt="Project-icon"
           />
-          <figcaption className="projects--subinfo">
-            <h3>{data[img - 1][0]}</h3>
-            <p>{data[img - 1][1]}</p>
+          <figcaption className="projects--subinfo" ref={e => {subinfoContainer = e}}>
+            <h3 ref={e => {subinfoHeader = e}}>{data[img - 1][0]}</h3>
+            <p ref={e => {subinfoParagraph = e}}>{data[img - 1][1]}</p>
           </figcaption>
         </figure>
-        <div className="projects--technologies-container">
+        <div className="projects--technologies-container" ref={e => {technologies = e}}>
           <div className="projects--technologies-container-alt">
             <span className="projects--span">
               <img

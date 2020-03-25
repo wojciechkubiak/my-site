@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { InView } from "react-intersection-observer";
 import shortid from "shortid";
 import SkillImg from "./../SkillImg/SkillImg";
@@ -9,16 +9,12 @@ import psqlLogo from "./../../img/white_empty_psql.png";
 import htmlLogo from "./../../img/white_empty_html.png";
 import cssLogo from "./../../img/white_empty_css.png";
 import bootstrapLogo from "./../../img/white_empty_bootstrap.png";
+import { gsap } from "gsap";
 import "./Skills.css";
 
 const Skills = props => {
-  const [mode, setMode] = useState(["skills--container"]);
-
-  const animHandler = value => {
-    if (value) {
-      setMode(["skills--container", "skills-anim"]);
-    }
-  };
+  const [notAnimated, setNotAnimated] = useState(false);
+  let skillItems = useRef(null);
 
   const icons = {
     ReactJS: [reactLogo, "reactjs"],
@@ -30,15 +26,29 @@ const Skills = props => {
     PostgreSQL: [psqlLogo, "postgres"]
   };
 
+  const anim = () => {
+    gsap.fromTo(
+      skillItems,
+      { opacity: 0},
+      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)", display: "flex", onComplete: function() {
+        setNotAnimated(true);
+      }}
+    );
+  }
+  
   return (
     <InView
       as="div"
       data-testid="Skills"
       id="skills"
-      onChange={(inView, entry) => animHandler(inView)}
+      onChange={(inView, entry) => {
+        if(inView && !notAnimated) {
+          anim();
+        }
+      }}
     >
       <h1>{props.t("skills.header", { framework: "react-i18next" })}</h1>
-      <div className={mode.join(" ")}>
+      <div ref={e=>{ skillItems = e }} className="skills--container">
         {Object.keys(icons).map(key => {
           return (
             <SkillImg

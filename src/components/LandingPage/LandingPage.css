@@ -20,9 +20,11 @@
   background-color: #C44550;
   transform-origin: left top;
   border-radius: 1em;
+  z-index: 25
 }
 
-.home--container:before {
+/* TODO nachodzi na container przy mniejszej rozdzialce*/
+.home--container::before {
   content: "";
   width: 0px;
   height: 0px;
@@ -31,8 +33,9 @@
   border-right: 50px solid #C44550;
   border-top: 50px solid #C44550;
   border-bottom: 50px solid transparent;
-  left: -50px;
+  left: -5em;
   top: 6px;
+  z-index: 30
 }
 
 .home--container > h1 { 
@@ -60,6 +63,7 @@
 .home--container > article {
   margin-top: 1em;
   border: 1em!important;
+  
 }
 
 .home--container > article > p {

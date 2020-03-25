@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { InView } from "react-intersection-observer";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
+import gsap from "gsap";
 import "./Contact.css";
 
 const Contact = props => {
-  const [mode, setMode] = useState(["ContactContainer"]);
+  const [notAnimated, setNotAnimated] = useState(false);
 
-  const animHandler = value => {
-    if (value) {
-      setMode(["ContactContainer", "anim"]);
-    }
-  };
+  let contactItem = useRef(null);
+
+  const anim = () => {
+    gsap.fromTo(
+      contactItem,
+      { opacity: 0},
+      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)", display: "block", onComplete: function() {
+        setNotAnimated(true);
+      }}
+    );
+  }
 
   //TODO BEM Css
   return (
@@ -20,10 +27,14 @@ const Contact = props => {
       as="div"
       data-testid="Contact"
       id="contact"
-      onChange={(inView, entry) => animHandler(inView)}
+      onChange={(inView, entry) => {
+        if(inView && !notAnimated) {
+          anim();
+        }
+      }}
     >
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
-      <section className={mode.join(" ")} data-testid="Contact">
+      <section className="ContactContainer" ref={e => {contactItem = e}} data-testid="Contact">
         <article>
           <h1>{props.t("contact.box", { framework: "react-i18next" })}</h1>
           <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
