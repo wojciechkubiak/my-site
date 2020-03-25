@@ -35,7 +35,6 @@
   border-bottom: 50px solid transparent;
   left: -5em;
   top: 6px;
-  z-index: 30
 }
 
 .home--container > h1 { 
@@ -114,36 +113,45 @@
 @media only screen and (max-width: 700px) {
   .home--container {
     top: 7em;
-    left: 50%;
+    left: 30%;
+    top: 0%;
     transform: translate(-50%, -50%);
     width: 85vw;
-    height: 15em;
+    height: 22em;
     padding: 1em;
-    -webkit-animation: fadeAnimMobile 1s ease-in;
-    -moz-animation: fadeAnimMobile 1s ease-in;
-    -o-animation: fadeAnimMobile 1s ease-in;
-    animation: fadeAnimMobile 1s ease-in;
+    background-color: transparent;
+  }
+  
+  .home--container::before {
+    display: none
   }
 
   .home--container > h1 {
-    margin: 0.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, 50%);
     font-size: 2.5em;
     text-align: center;
+    background-color: transparent;
   }
 
   .home--container > article {
     position: absolute;
-    margin-top: 0.1em;
-    width: 80vw;
-    background-color: #C44550;
+    height: 20vh;
+    width: auto;
+    margin: 0.1em;
+    border-radius: 0em;
+    background-color: transparent;
   }
   
   .home--container > article > p {
     font-size: 1.9vh;  
     background-color: #C44550;
+    border-radius: 0em;
     line-height: 2.8vh;
     text-align: center;
     color: #ffffff;
+    height: auto;
     text-transform: uppercase;
   }
 
@@ -173,138 +181,5 @@
   .image--holder {
     background-image: url("./../../img/Profit2_png.png");
     display: none;
-  }
-}
-
-
-@-webkit-keyframes fadeAnimHeader {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@-moz-keyframes fadeAnimHeader {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@-o-keyframes fadeAnimHeader {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@keyframes fadeAnimHeader {
-  0% {
-    display: none;
-    left: 0em;
-  }
-  1% {
-    display: block;
-    left: 1%;
-  }
-  100% {
-    display: block;
-    left: 10%;
-  }
-}
-
-@-webkit-keyframes fadeAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    top: 0em;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    top: 1em;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    top: 7em;
-  }
-}
-
-@-moz-keyframes fadeAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    top: 0em;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    top: 1em;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    top: 7em;
-  }
-}
-
-@-o-keyframes fadeAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    top: 0em;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    top: 1em;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    top: 7em;
-  }
-}
-
-@keyframes fadeAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    top: 0em;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    top: 1em;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    top: 7em;
   }
 }

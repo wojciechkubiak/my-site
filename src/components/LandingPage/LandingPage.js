@@ -25,12 +25,12 @@ const LandingPage = props => {
     );
     t1.fromTo(
       svgItem,
-      { y: -1000 },
+      { y: -3000 },
       { duration: 1.5, ease: "slow (0.7, 0.7, false)", y: 0 }
     );
     t1.fromTo(
       caseItem,
-      { y: 1500, x: -200 },
+      { y: 3000, x: -200 },
       {
         duration: 2,
         ease: "slow (0.7, 0.7, false)",
