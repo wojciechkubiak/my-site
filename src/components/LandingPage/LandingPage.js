@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./LandingPage.css";
 import { gsap } from "gsap";
-import {MdKeyboardArrowDown} from "react-icons/md";
-import {Button} from "react-bootstrap";
 
 const LandingPage = props => {
   let svgItem = useRef(null);
