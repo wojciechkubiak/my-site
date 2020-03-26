@@ -93,10 +93,10 @@ const LandingPage = props => {
       y: -100
     })
     t1.to(sectionItem, {
-      height: "50vh"
+      height: "40vh"
     })
     t1.to(aboutItem, {         
-          duration: 2,
+          duration: 1,
           opacity: 1,
           display: "block", onComplete: function() {
             props.showHeaderHandler();
@@ -112,12 +112,6 @@ const LandingPage = props => {
         <h1 style={{display: "none", opacity: "0"}}  ref={e => {nameItem = e}}>Wojtek Kubiak</h1>
         <article style={{display: "none", opacity: "0"}} ref={e => {aboutItem = e}}>
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
-          <Button
-          style={{ backgroundColor: "transparent", zIndex: "100", width: "5em", height: "5em", position: "relative", left: "50%", bottom: "0%", transform: "translate(-50%, 0%)", border: "none"}}
-          href="#skills"
-          >
-          <MdKeyboardArrowDown className="landing--arrow" style={{color: "#ffffff", width: "100%", height: "100%", position: "relative"}}/>
-        </Button>
         </article>
       </section>
       <svg

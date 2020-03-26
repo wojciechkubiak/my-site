@@ -40,7 +40,7 @@ div > .arrow {
 }
 
 .skills--container {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;

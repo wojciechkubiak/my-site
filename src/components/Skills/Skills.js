@@ -29,8 +29,8 @@ const Skills = props => {
   const anim = () => {
     gsap.fromTo(
       skillItems,
-      { opacity: 0},
-      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)", display: "flex", onComplete: function() {
+      { opacity: 0 },
+      { duration: 4, opacity: 1, visibility: "visible", ease: "slow (0.7, 0.7, false)", display: "flex", onComplete: function() {
         setNotAnimated(true);
       }}
     );
@@ -48,7 +48,7 @@ const Skills = props => {
       }}
     >
       <h1>{props.t("skills.header", { framework: "react-i18next" })}</h1>
-      <div ref={e=>{ skillItems = e }} className="skills--container">
+      <div ref={e=>{ skillItems = e }} className="skills--container" style={{visibility: "hidden"}}>
         {Object.keys(icons).map(key => {
           return (
             <SkillImg
