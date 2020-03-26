@@ -77,10 +77,10 @@ header > .shadow {
   }
 
   .HeaderTop {
-    background-color: #3c5c64;
+    background-color: #fbd791;
   }
   .HeaderOut {
-    background-color: #C44550;
+    background-color: #fbd791;
     border-radius: 1em;
     -webkit-transform: translate((50%, 0%));
     transform: translate(50%, 0%);
@@ -92,10 +92,10 @@ header > .shadow {
   }
 
   .HeaderTextColorWhite {
-    color: #ffffff !important;
+    color: #292930 !important;
   }
   
   .HeaderTextColorDark {
-    color: #ffffff !important;
+    color: #292930 !important;
   }
 }

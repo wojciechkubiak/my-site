@@ -57,16 +57,16 @@ const LandingPage = props => {
     t1.to(aboutItem, {
       duration: 3,
       opacity: 1,
-      display: "block"
+      display: "block",
+      onComplete: function() {
+        props.showHeaderHandler();
+      }
     });
     t1.to(arrowItem, {
       visibility: "visible",
       duration: 2,
       opacity: 1,
-      display: "block",
-      onComplete: function() {
-        props.showHeaderHandler();
-      }
+      display: "block"
     });
   }, []);
 
@@ -114,7 +114,7 @@ const LandingPage = props => {
           href="#projects"
           className="landing--arrow"
           variant="dark"
-          style={{visibility: "hidden", position: "relative", backgroundColor: "transparent", border: "none", opacity: "0"}}
+          style={{visibility: "hidden", position: "relative", width: "20%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "transparent", border: "none", opacity: "0"}}
           ref={e => {arrowItem = e}}
         >
           <AiOutlineArrowDown style={{width: "calc(2vh + 2vw)", height: "calc(2vh + 2vw)", color: "#fbd791"}}/>

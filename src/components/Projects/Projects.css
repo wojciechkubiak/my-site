@@ -153,24 +153,15 @@
 }
 
 @media only screen and (max-width: 700px) {
-  #projects {
-    background-image: url("./../../img/bg.webp");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-     background-size: cover;
-  }
   
   #projects > h1 {
     font-size: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     padding: 0.1em;
     width: 10em;
     top: 1em;
     left: 50%;   
     transform: translate(-50%, -50%);
-    background-color:  #C44550;
-    color: #ffffff;
+    color: #fbd791;
   }
 
   .projects--container {
@@ -201,15 +192,14 @@
     position: absolute;
     width: 10em;
     height: 11em;
-    background-color: #3c5c64;
+    background-color: #292930;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .projects--subinfo > h3 {
     text-align: center;
     font-size: 3.8vh;
-    color: #ffffff;
-    background-color: #3c5c64;
+    color: #fbd791;
   }
 
   .projects--subinfo {
@@ -254,12 +244,13 @@
     bottom: 0em;
     transform: translate(0%, 85%);
     z-index: 20;
-    background-color: #C44550;
+    background-color: #292930;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .btn-prev:hover,
   .btn-next:hover {
-    background-color: #C44550;
+    background-color: #fbd791;
+    color: #292930
   }
 }

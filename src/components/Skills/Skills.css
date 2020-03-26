@@ -124,14 +124,12 @@ div > .arrow {
 
   #skills > h1 {
     font-size: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     padding: 0.1em;
     width: 10em;
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:  #C44550;
-    color: #ffffff;
+    color: #fbd791;
   }
 
   .skills--container {
@@ -144,7 +142,7 @@ div > .arrow {
     width: 12vh;
     height: 12vh;
     margin: 1em;
-    background-color: #3c5c64;
+    background-color: #292930;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;

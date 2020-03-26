@@ -15,7 +15,7 @@ const Contact = props => {
     gsap.fromTo(
       contactItem,
       { opacity: 0},
-      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)", display: "block", onComplete: function() {
+      { duration: 1, opacity: 1, ease: "slow (0.7, 0.7, false)", display: "block", onComplete: function() {
         setNotAnimated(true);
       }}
     );

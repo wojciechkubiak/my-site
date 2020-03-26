@@ -30,7 +30,7 @@ const Skills = props => {
     gsap.fromTo(
       skillItems,
       { opacity: 0 },
-      { duration: 4, opacity: 1, visibility: "visible", ease: "slow (0.7, 0.7, false)", display: "flex", onComplete: function() {
+      { duration: 2, opacity: 1, visibility: "visible", ease: "slow (0.7, 0.7, false)", display: "flex", onComplete: function() {
         setNotAnimated(true);
       }}
     );
