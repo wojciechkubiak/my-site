@@ -5,16 +5,11 @@ import {Button} from "react-bootstrap";
 import { gsap } from "gsap";
 
 const LandingPage = props => {
-  let svgItem = useRef(null);
-  let svgArrow = useRef(null);
-  let caseItem = useRef(null);
-  let flagItem = useRef(null);
   let sectionItem = useRef(null);
   let greetingItem = useRef(null);
   let nameItem = useRef(null);
   let nameIs = useRef(null);
   let aboutItem = useRef(null);
-  let svgContainer = useRef(null);
   let arrowItem = useRef(null);
 
   const t1 = gsap.timeline();
