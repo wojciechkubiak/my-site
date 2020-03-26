@@ -1,43 +1,27 @@
 .home {
   position: relative;
   height: 101vh;
-  background-color: white;
+  background-color: #292930;
 }
 
 .home--container {
   position: absolute;
-  right: 10%;
-  top: 15%;
-  width: 55%;
-
-  transform: translate(0%, -50%);
-  text-align: left;
+  left: 50%;
+  top: 45%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   padding: 1vw;
-  background-color: #3c5c64;
-  transform-origin: left top;
   border-radius: 1em;
-  height: 18vh
-}
-
-.home--container::before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 50px solid transparent;
-  border-right: 50px solid #3c5c64;
-  border-top: 50px solid #3c5c64;
-  border-bottom: 50px solid transparent;
-  left: -5em;
-  top: 6px;
+  height: 50%
 }
 
 .home--container > h1 { 
   font-family: 'Abril Fatface', cursive;
   text-align: center;
   margin: auto;
-  font-size: 10vh;
-  color: #ffffff;
+  font-size: calc(4vh + 3vw);
+  color: #fbd791;
   display: block;
   font-weight: 400;
   border-radius: 10px;
@@ -58,7 +42,7 @@
 
 .home--container > article > p {
   padding: 1vw;
-  font-size: 2.5vh;
+  font-size: calc(1vh + .8vw);
   margin-top: 0.5em;
   margin-left: 0.5vw!important;
   margin-right: 0.5em; 
@@ -66,7 +50,7 @@
   font-weight: 500;
   font-style: initial; 
   color: #ffffff;
-  line-height: 4vh;
+  line-height: calc(1.5vh + 1.2vw);
   border-radius: 10px;
   display: block;
   height: 12em
@@ -85,27 +69,15 @@
 }
 
 .global--arrow > svg {
-  color: #C44550;
+  color: #fbd791;
   width: 3vw;
   height: 3vw;
 }
 
-.st0{fill:rgb(231, 77, 90);}
-.st1{fill:rgb(172, 48, 58);}
-.st2{fill:rgb(231, 77, 90);}
-.st3{fill:#46ABBC;}
-.st4 {fill:rgb(149, 149, 150);}
-.case {fill:rgb(231, 77, 90);}
-.st5{fill:rgb(180, 144, 133);}
-.st6{fill:rgb(231, 77, 90);}
-.st7{fill:#292930}
-.st8{fill:#292930}
-.st9{fill:rgb(231, 146, 77)}
-
 @media only screen and (max-width: 700px) {
   .home--container {
     top: 7em;
-    left: 30%;
+    left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
     width: 80vw;
@@ -119,19 +91,17 @@
   }
 
   .home--container > h1 {
-    left: 50%;
     top: 50%;
-    transform: translate(0%, 50%);
     font-size: 2.5em;
     text-align: center;
     background-color: transparent;
-    color: #C44550
+    color: #fbd791
   }
 
   .home--container > article {
-    position: absolute;
-    height: 20vh;
-    width: 60vw;
+    position: relative;
+    height: auto;
+    width: 80vw !important;
     margin: 0.1em;
     border-radius: 0em;
     background-color: transparent;

@@ -76,6 +76,7 @@ const Projects = props => {
     }
   };
 
+  //TODO: on mouse over image show layer with link to the site and repo of project
   return (
     <InView
       as="div"

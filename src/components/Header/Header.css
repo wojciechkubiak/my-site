@@ -14,11 +14,11 @@ header {
 }
 
 .HeaderTextColorWhite {
-  color: #ffffff !important;
+  color: #292930 !important;
 }
 
 .HeaderTextColorDark {
-  color: #ffffff !important;
+  color: #fbd791 !important;
 }
 
 .HeaderLink:hover {
@@ -38,14 +38,14 @@ header {
   width: 50%;
   -webkit-transform: translate((50%, -2em));
   transform: translate(50%, -2em);
-  background-color: #3c5c64;
+  background-color: #292930;
   transition: 1s;
   border-radius: 1em;
 }
 
 .HeaderOut {
   position: fixed;
-  background-color: #3c5c64;
+  background-color: #fbd791;
   width: 50%;
   -webkit-transform: translate((50%, 0%));
   transform: translate(50%, 0%);
@@ -53,8 +53,8 @@ header {
   transition: 1s;
 }
 
-.shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3) !important;
+header > .shadow {
+  box-shadow: none !important;
 }
 
 .navbar-toggler {

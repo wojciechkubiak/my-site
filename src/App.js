@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
-import { MdKeyboardArrowUp } from "react-icons/md";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import { Button } from "react-bootstrap";
 import UKFlag from "./../src/img/uk-flag.webp";
 import PLFlag from "./../src/img/pl-flag.webp";
@@ -86,8 +86,8 @@ const App = (
         show={showHeader}
       />
       <LandingPage arrowHandler={arrowHandler} showHeaderHandler={showHeaderHandler} t={t} />
-      <Skills t={t} />
       <Projects t={t} />
+      <Skills t={t} />
       <Contact t={t} />
       <SocialMedia />
       <Footer t={t} />
@@ -103,7 +103,7 @@ const App = (
           variant="dark"
           onClick={() => arrowHandler(false)}
         >
-          <MdKeyboardArrowUp></MdKeyboardArrowUp>
+          <AiOutlineArrowUp/>
         </Button>
       )}
     </div>

@@ -52,19 +52,20 @@ const Header = props => {
                 {props.t("header.about", { framework: "react-i18next" })}
               </Nav.Link>
             )}
-            <Nav.Link
-              href="#skills"
-              className={textColor.join(" ")}
-              onClick={handler}
-            >
-              {props.t("header.skills", { framework: "react-i18next" })}
-            </Nav.Link>
+            
             <Nav.Link
               href="#projects"
               className={textColor.join(" ")}
               onClick={handler}
             >
               {props.t("header.projects", { framework: "react-i18next" })}
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              className={textColor.join(" ")}
+              onClick={handler}
+            >
+              {props.t("header.skills", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#contact"

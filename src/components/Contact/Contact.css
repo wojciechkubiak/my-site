@@ -1,11 +1,7 @@
 #contact {
   position: relative;
   height: 100vh;
-  background-image: url('./../../img/bg.webp');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #292930;
 }
 
 #contact > h1 {
@@ -14,7 +10,7 @@
   width: 5em;
   top: 35vh;
   font-size: 7vh;
-  color: #C44550;
+  color: #fbd791;
   transform: rotate(90deg);
   z-index: 5;
   font-family: 'Oswald', sans-serif;
@@ -73,7 +69,7 @@
 }
 
 .MailContainer:hover {
-  color: #C44550
+  color: #fbd791
 }
 
 .ResumeLinks > span > a {
@@ -87,7 +83,7 @@
 }
 
 .ResumeLinks > span > a:hover {
-  color: #C44550
+  color: #fbd791
 }
 
 .ResumeDownloadText {
