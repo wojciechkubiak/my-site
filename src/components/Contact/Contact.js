@@ -21,7 +21,6 @@ const Contact = props => {
     );
   }
 
-  //TODO BEM Css
   return (
     <InView
       as="div"

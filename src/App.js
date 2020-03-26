@@ -9,8 +9,8 @@ import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { Button } from "react-bootstrap";
-import UKFlag from "./../src/img/uk-flag.jpg";
-import PLFlag from "./../src/img/pl-flag.jpg";
+import UKFlag from "./../src/img/uk-flag.webp";
+import PLFlag from "./../src/img/pl-flag.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -28,11 +28,13 @@ const App = (
   const [img, setImg] = useState(initImg);
   const [arrow, setArrow] = useState(initArrow);
   const [scroll, setScroll] = useState(0);
-
+  const [showHeader, setShowHeader] = useState(false);
   const { t, i18n } = props;
 
   const headerOn = () => setMode(true);
   const headerOff = () => setMode(false);
+  const showHeaderHandler = () => setShowHeader(true);
+
   const languageHandler = () => {
     setLanguage(!language);
 
@@ -63,6 +65,7 @@ const App = (
         ) {
           headerOn();
           arrowHandler(true);
+          showHeaderHandler();
         } else {
           headerOff();
           arrowHandler(false);
@@ -80,8 +83,9 @@ const App = (
         arrowHandler={arrowHandler}
         scrollPos={scroll}
         t={t}
+        show={showHeader}
       />
-      <LandingPage arrowHandler={arrowHandler} t={t} />
+      <LandingPage arrowHandler={arrowHandler} showHeaderHandler={showHeaderHandler} t={t} />
       <Skills t={t} />
       <Projects t={t} />
       <Contact t={t} />

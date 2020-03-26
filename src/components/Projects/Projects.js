@@ -25,13 +25,13 @@ const Projects = props => {
   ];
 
   const imageSrc = [
-    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"],
+    ["white_empty_react.webp", "white_empty_nodejs.webp", "white_empty_psql.webp"],
     [
-      "white_empty_android.png",
-      "white_empty_nodejs.png",
-      "white_empty_psql.png"
+      "white_empty_android.webp",
+      "white_empty_nodejs.webp",
+      "white_empty_psql.webp"
     ],
-    ["white_empty_react.png", "white_empty_nodejs.png", "white_empty_psql.png"]
+    ["white_empty_react.webp", "white_empty_nodejs.webp", "white_empty_psql.webp"]
   ];
 
   const t1 = gsap.timeline();

@@ -2,11 +2,7 @@ body,
 html {
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  background-image: url('./img/bg_alt.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
 }
 
 .App {
@@ -17,21 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.anim {
-  display: block;
-  -webkit-animation: anim 1s ease-in;
-  -moz-animation: anim 1s ease-in;
-  -o-animation: anim 1s ease-in;
-  animation: anim 1s ease-in;
-}
-
-.skills-anim {
-  display: flex;
-  -webkit-animation: anim 1s ease-in;
-  -moz-animation: anim 1s ease-in;
-  -o-animation: anim 1s ease-in;
-  animation: anim 1s ease-in;
-}
 .LanguageBtn {
   border: none;
   outline: none !important;
@@ -46,64 +27,4 @@ html {
 .LanguageImg {
   width: 100%;
   height: 100%;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes anim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@-o-keyframes anim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@keyframes anim {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
 }

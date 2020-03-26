@@ -14,10 +14,12 @@ const LandingPage = props => {
   let nameItem = useRef(null);
   let nameIs = useRef(null);
   let aboutItem = useRef(null);
+  let svgContainer = useRef(null);
 
   const t1 = gsap.timeline();
-  //TODO: hide SVG at start
+ 
   useEffect(() => {
+    t1.to(svgContainer, { display: "block" })
     t1.fromTo(
       svgArrow,
       { x: -1000 },
@@ -72,32 +74,33 @@ const LandingPage = props => {
           opacity: 0,
           display: "none"
     });
-    // HERE SECTION IS SCALING
     t1.to(nameIs, {
       duration: 1, opacity: 1, display: "block"
     })
     t1.to(nameIs, {
       duration: 1, opacity: 0, display: "none"
     })
-    // HERE SECTION IS SCALING
     t1.to(nameItem, {
           duration: 1,
           opacity: 1,
           display: "block"
     })
     t1.to(nameItem, {
+      color: "#C44550",
       y: -120
       })
     t1.to(aboutItem, {
-      y: -120
+      y: -100
     })
     t1.to(sectionItem, {
       height: "50vh"
     })
     t1.to(aboutItem, {         
-          duration: 3,
+          duration: 2,
           opacity: 1,
-          display: "block"
+          display: "block", onComplete: function() {
+            props.showHeaderHandler();
+          }
     })
   }, []);
 
@@ -127,9 +130,10 @@ const LandingPage = props => {
         style={{
           zIndex: "50",
           position: "absolute",
-          display: "block",
+          display: "none",
           opacity: "1"
         }}
+        ref={e => {svgContainer = e}}
       >
         <g
           ref={e => {

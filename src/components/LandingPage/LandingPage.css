@@ -1,11 +1,7 @@
 .home {
   position: relative;
   height: 101vh;
-  background-image: url('./../../img/bg_alt.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
 }
 
 .home--container {
@@ -17,21 +13,20 @@
   transform: translate(0%, -50%);
   text-align: left;
   padding: 1vw;
-  background-color: #C44550;
+  background-color: #3c5c64;
   transform-origin: left top;
   border-radius: 1em;
- 
+  height: 18vh
 }
 
-/* TODO nachodzi na container przy mniejszej rozdzialce*/
 .home--container::before {
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
   border-left: 50px solid transparent;
-  border-right: 50px solid #C44550;
-  border-top: 50px solid #C44550;
+  border-right: 50px solid #3c5c64;
+  border-top: 50px solid #3c5c64;
   border-bottom: 50px solid transparent;
   left: -5em;
   top: 6px;
@@ -47,11 +42,7 @@
   font-weight: 400;
   border-radius: 10px;
   text-transform: uppercase;
-  height: 14vh
-}
-
-.home--container > article {
-  background-color: #C44550;
+  height: 10vh
 }
 
 .home--container-out {
@@ -63,7 +54,6 @@
 .home--container > article {
   margin-top: 1em;
   border: 1em!important;
-  
 }
 
 .home--container > article > p {
@@ -79,6 +69,7 @@
   line-height: 4vh;
   border-radius: 10px;
   display: block;
+  height: 12em
 }
 
 .global--arrow { 
@@ -105,7 +96,7 @@
 .st3{fill:#46ABBC;}
 .st4 {fill:rgb(149, 149, 150);}
 .case {fill:rgb(231, 77, 90);}
-.st5{fill:#F0EFEF;}
+.st5{fill:rgb(180, 144, 133);}
 .st6{fill:rgb(231, 77, 90);}
 .st7{fill:#292930}
 .st8{fill:#292930}
@@ -134,6 +125,7 @@
     font-size: 2.5em;
     text-align: center;
     background-color: transparent;
+    color: #C44550
   }
 
   .home--container > article {
@@ -181,10 +173,5 @@
 
   .landing--arrow {
     display: none !important;
-  }
-
-  .image--holder {
-    background-image: url("./../../img/Profit2_png.png");
-    display: none;
   }
 }

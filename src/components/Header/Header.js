@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import gsap from "gsap"
 import "./Header.css";
 
 const Header = props => {
+  let headerRef = useRef(null);
+
   let mode = ["shadow p-3 mb-5", props.headerMode ? "HeaderOut" : "HeaderTop"];
 
   let textColor = [
@@ -15,13 +18,24 @@ const Header = props => {
     props.arrowHandler(true);
   };
 
+  useEffect(() => {
+    if(props.show) {
+      gsap.to(headerRef, {
+        duration: .5,
+        opacity: 1,
+        visibility: "visible"
+      });
+    }
+  }, [props.show])
+
   return (
-    <header>
+    <header >
       <Navbar
         className={mode.join(" ")}
         collapseOnSelect
         expand="xl"
         fixed="bottom"
+        style={{visibility: "hidden", opacity: "0"}} ref={e => {headerRef = e}}
       >
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse

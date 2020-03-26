@@ -38,7 +38,7 @@ header {
   width: 50%;
   -webkit-transform: translate((50%, -2em));
   transform: translate(50%, -2em);
-  background-color: #243443;
+  background-color: #3c5c64;
   transition: 1s;
   border-radius: 1em;
 }

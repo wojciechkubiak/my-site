@@ -44,7 +44,7 @@
 .projects--subinfo > h3 {
   text-align: center;
   color: #ffffff;
-  font-size: 5vh;
+  font-size: 4.5vh;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
   text-align: center;
   font-weight: 400;
   color: #ffffff;
-  font-size: 2.3vh !important;
+  font-size: 2.2vh !important;
   font-family: 'Roboto', sans-serif;
   visibility: hidden;
   opacity: 0;
@@ -132,9 +132,8 @@
   border-radius: 1em;
   opacity: 0;
   visibility: hidden;
+  height: auto;
 }
-
-
 
 .projects--span {
   width: 30vw;
@@ -155,7 +154,7 @@
 
 @media only screen and (max-width: 700px) {
   #projects {
-    background-image: url("./../../img/bg.jpg");
+    background-image: url("./../../img/bg.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,156 +261,5 @@
   .btn-prev:hover,
   .btn-next:hover {
     background-color: #C44550;
-  }
-}
-
-/* 
-@media only screen and (max-height: 400px) {
-  .projects--btn-container {
-    height: 1.5em;
-  }
-} */
-
-@-webkit-keyframes projectsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-moz-keyframes projectsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-o-keyframes projectsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@keyframes projectsAnim {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-webkit-keyframes projectsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-moz-keyframes projectsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@-o-keyframes projectsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
-  }
-}
-
-@keyframes projectsAnimMobile {
-  0% {
-    display: none;
-    opacity: 0;
-    left: 25%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    left: 25%;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    left: 50%;
   }
 }
