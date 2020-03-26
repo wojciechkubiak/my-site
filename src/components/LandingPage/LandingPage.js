@@ -16,7 +16,7 @@ const LandingPage = props => {
   let aboutItem = useRef(null);
 
   const t1 = gsap.timeline();
-
+  //TODO: hide SVG at start
   useEffect(() => {
     t1.fromTo(
       svgArrow,
