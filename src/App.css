@@ -1,7 +1,10 @@
 body,
 html {
   height: 100%;
-  background-color: #292930;
+  background-image: url("./img/fabrizio-conti-8m0jo7jb5To-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .App {
