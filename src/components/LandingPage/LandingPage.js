@@ -76,7 +76,7 @@ const LandingPage = props => {
       display: "block"
     });
     t1.to(arrowItem, {
-      y: -80, 
+      y: -90, 
       yoyo: true,
       repeat: -1,
       ease: "power1.inOut",

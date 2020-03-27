@@ -149,7 +149,6 @@
   }
 
   .MailContainer {
-    color: #ffffff;
     transition: 500ms;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -168,7 +167,6 @@
     height: 15vw;
     width: 15vw;
     padding-bottom: 0.5em;
-    color: #fbd791
   }
 
   .ResumeLinks > span > a {

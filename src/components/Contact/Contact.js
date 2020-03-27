@@ -39,27 +39,33 @@ const Contact = props => {
           <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
           <p>
             {props.t("contact.contactMe", { framework: "react-i18next" })}{" "}
-            <a href="mailto:wgkubiak@gmail.com" className="MailContainer">
+            <a href="mailto:wgkubiak@gmail.com" className="MailContainer" style={{color: "#fbd791"}}>
               wgkubiak@gmail.com
             </a>
           </p>
+          <p style={{color: "#fbd791"}}>{props.t("contact.or", { framework: "react-i18next" })}</p>
+          <p>
+            {props.t("contact.phone", { framework: "react-i18next" })}{" "}
+            <span style={{color: "#fbd791"}}>726-823-405</span>
+          </p>
+
           <figure className="ResumeContainer">
-            <FaFileDownload className="DownloadIcon"></FaFileDownload>
+            <FaFileDownload style={{color: "#fbd791"}} className="DownloadIcon"></FaFileDownload>
             <figcaption
               className="ResumeDownloadText"
-              style={{ color: "#ffffff", fontWeight: 500 }}
+              style={{ color: "#fbd791", fontWeight: 500 }}
             >
               {props.t("download.cv", { framework: "react-i18next" })}
             </figcaption>
             <figcaption className="ResumeLinks">
               <span>
-                <a href={ResumePL} download="WojciechKubiakCV_PL.pdf">
+                <a href={ResumePL} style={{color: "#fbd791"}} download="WojciechKubiakCV_PL.pdf">
                   PL
                 </a>
               </span>
-              <strong style={{ color: "#ffffff", fontWeight: 500 }}> | </strong>
+              <strong style={{ color: "#fbd791" }}> | </strong>
               <span>
-                <a href={ResumeEN} download="WojciechKubiakCV_EN.pdf">
+                <a href={ResumeEN} style={{color: "#fbd791"}} download="WojciechKubiakCV_EN.pdf">
                   EN
                 </a>
               </span>
