@@ -109,7 +109,7 @@
     text-align: center;
     padding: 0.1em;
     width: 10em;
-    top: 2em;
+    top: 1em;
     left: 50%;
     color: #fbd791;
     transform: translate(-50%, -50%);
@@ -125,7 +125,7 @@
   }
 
   .ContactContainer > article > h1 {
-    font-size: 3vh;
+    font-size: 4vh;
     color: #fbd791;
   }
 
