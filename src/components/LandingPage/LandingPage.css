@@ -93,7 +93,7 @@
 @media only screen and (max-width: 700px) {
   .home--container {
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 22em;
