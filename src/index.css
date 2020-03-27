@@ -8,8 +8,3 @@ code {
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    overflow: hidden
-  }
-}
