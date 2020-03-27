@@ -14,7 +14,7 @@ header {
 }
 
 .HeaderTextColorWhite {
-  color: #292930 !important;
+  color: #2e2e30 !important;
 }
 
 .HeaderTextColorDark {
@@ -92,10 +92,10 @@ header > .shadow {
   }
 
   .HeaderTextColorWhite {
-    color: #292930 !important;
+    color: #2e2e30 !important;
   }
   
   .HeaderTextColorDark {
-    color: #292930 !important;
+    color: #2e2e30 !important;
   }
 }

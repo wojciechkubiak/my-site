@@ -49,10 +49,17 @@ const LandingPage = props => {
     t1.to(nameItem, {
       duration: 1,
       opacity: 1,
-      display: "block"
+      display: "block",
     });
+    t1.to(nameItem, {
+      delay: 1.5,
+      y: -100
+    })
     t1.to(aboutItem, {
-      duration: 3,
+      y: -100
+    })
+    t1.to(aboutItem, {
+      duration: 1,
       opacity: 1,
       display: "block",
       onComplete: function() {
@@ -60,13 +67,16 @@ const LandingPage = props => {
       }
     });
     t1.to(arrowItem, {
+      y: -100
+    })
+    t1.to(arrowItem, {
       visibility: "visible",
       duration: 2,
       opacity: 1,
       display: "block"
     });
     t1.to(arrowItem, {
-      y: -10, 
+      y: -80, 
       yoyo: true,
       repeat: -1,
       ease: "power1.inOut",
@@ -99,7 +109,7 @@ const LandingPage = props => {
           {props.t("aboutme.mynameis", { framework: "react-i18next" })}
         </h1>
         <h1
-          style={{ display: "none", opacity: "0", textDecoration: "1px underline"}}
+          style={{ display: "none", opacity: "0"}}
           ref={e => {
             nameItem = e;
           }}
@@ -120,7 +130,7 @@ const LandingPage = props => {
              href="#projects"
              className="landing--arrow"
              variant="dark"
-             style={{visibility: "hidden", position: "relative", top: "20%", width: "20%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "transparent", border: "none", opacity: "0"}}
+             style={{visibility: "hidden", position: "relative", top: "10%", width: "20%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "transparent", border: "none", opacity: "0"}}
              ref={e => {arrowItem = e}}
              onClick={() => setShowArrow(false)}
            >

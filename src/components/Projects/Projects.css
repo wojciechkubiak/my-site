@@ -1,7 +1,7 @@
 #projects {
   position: relative;
   height: 102vh;
-  background-color: #292930;
+  background-color: #2e2e30;
 }
 
 #projects::before {
@@ -29,7 +29,7 @@
 .projects--img {
   width: 25vw;
   padding: 1em;
-  background-color: #292930;
+  background-color: #2e2e30;
   border-radius: 0em;
   margin: 0em;
 }
@@ -89,7 +89,7 @@
 .projects--btn {
   width: 50%;
   border: none;
-  background-color: #292930;
+  background-color: #2e2e30;
   outline: none !important;
   color: #ffffff;
 }
@@ -104,7 +104,7 @@
 .btn-prev:hover,
 .btn-next:hover {
   background-color: #fbd791;
-  color: #292930
+  color: #2e2e30
 }
 
 .btn-next {
@@ -139,7 +139,7 @@
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   position: relative;
-  background-color: #292930;
+  background-color: #2e2e30;
   border-radius: 1em;
   opacity: 0;
   height: auto;
@@ -202,7 +202,7 @@
     position: absolute;
     width: 10em;
     height: 11em;
-    background-color: #292930;
+    background-color: #2e2e30;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
@@ -214,7 +214,7 @@
 
   .projects--subinfo {
     box-shadow: none;
-    background-color: #29293000;
+    background-color: #2e2e3000;
     transform: translate(0%, 50%);
     top: 0em;
   }
@@ -254,13 +254,13 @@
     bottom: 0em;
     transform: translate(0%, 85%);
     z-index: 20;
-    background-color: #292930;
+    background-color: #2e2e30;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
   .btn-prev:hover,
   .btn-next:hover {
     background-color: #fbd791;
-    color: #292930
+    color: #2e2e30
   }
 }

@@ -11,7 +11,7 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 7vh;
-  color: #fbd791;
+  color: #2e2e30;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
@@ -24,7 +24,7 @@
 
 .tooltip-inner {
   font-family: 'Roboto', sans-serif;
-  background-color: #292930 !important;
+  background-color: #2e2e30 !important;
   color: #ffffff !important;
   font-size: 1.5vh !important;
   text-transform: uppercase;
@@ -53,7 +53,7 @@ div > .arrow {
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #292930;
+  background-color: #2e2e30;
   border-radius: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -92,7 +92,7 @@ div > .arrow {
   font-weight: 500;
   background-color: #fbd791!important;
   font-size: 2.5vh!important;
-  color: #292930!important;
+  color: #2e2e30!important;
   border-bottom: none!important;
   text-transform: uppercase;
 }
@@ -101,13 +101,13 @@ div > .arrow {
   font-family: 'Roboto', sans-serif;
   color:  #ffffff!important;
   font-size: 2.0vh!important;
-  background-color: #292930!important;
+  background-color: #2e2e30!important;
   border-bottom-left-radius: 0.2em;
   border-bottom-right-radius: 0.2em;
 }
 
 .list-group-item {
-  background-color: #292930!important;
+  background-color: #2e2e30!important;
 }
 
 .popover {
@@ -118,7 +118,7 @@ div > .arrow {
 
 @media only screen and (max-width: 700px) {
   #skills {
-    color: #292930;
+    color: #2e2e30;
     height: 101vh;
   }
 
@@ -129,7 +129,7 @@ div > .arrow {
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fbd791;
+    color: #2e2e30;
   }
 
   .skills--container {
@@ -142,7 +142,7 @@ div > .arrow {
     width: 12vh;
     height: 12vh;
     margin: 1em;
-    background-color: #292930;
+    background-color: #2e2e30;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;
