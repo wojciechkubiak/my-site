@@ -4,6 +4,16 @@
   background-color: #292930;
 }
 
+#projects::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 25%;
+  border-top: 3px solid #fbd791;
+}
+
 .projects--container {
   position: absolute;
   display: flex;

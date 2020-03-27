@@ -1,13 +1,26 @@
 .home {
   position: relative;
   height: 101vh;
-  background-color: #292930;
+  background-image: url("./../../img/fabrizio-conti-8m0jo7jb5To-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.home::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 25%;
+  border-top: 3px solid #fbd791;
 }
 
 .home--container {
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 35%;
   width: 70%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -26,7 +39,8 @@
   font-weight: 400;
   border-radius: 10px;
   text-transform: uppercase;
-  height: 10vh
+  height: 12vh;
+  text-shadow: #292930;
 }
 
 .home--container-out {
@@ -36,8 +50,10 @@
 }
 
 .home--container > article {
+  position: relative;
   margin-top: 1em;
   border: 1em!important;
+  top: 5%;
 }
 
 .home--container > article > p {
@@ -51,7 +67,7 @@
   font-style: initial; 
   color: #ffffff;
   line-height: calc(1.5vh + 1.2vw);
-  border-radius: 10px;
+  /* background-color: #2929309a; */
   display: block;
   height: 12em
 }

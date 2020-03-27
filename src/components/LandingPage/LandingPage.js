@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./LandingPage.css";
 import {AiOutlineArrowDown} from "react-icons/ai";
 import {Button} from "react-bootstrap";
@@ -11,6 +11,8 @@ const LandingPage = props => {
   let nameIs = useRef(null);
   let aboutItem = useRef(null);
   let arrowItem = useRef(null);
+  
+  const [showArrow, setShowArrow] = useState(true);
 
   const t1 = gsap.timeline();
 
@@ -63,6 +65,13 @@ const LandingPage = props => {
       opacity: 1,
       display: "block"
     });
+    t1.to(arrowItem, {
+      y: -10, 
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+      delay: .2
+    })
   }, []);
 
   return (
@@ -90,12 +99,12 @@ const LandingPage = props => {
           {props.t("aboutme.mynameis", { framework: "react-i18next" })}
         </h1>
         <h1
-          style={{ display: "none", opacity: "0" }}
+          style={{ display: "none", opacity: "0", textDecoration: "1px underline"}}
           ref={e => {
             nameItem = e;
           }}
         >
-          Wojtek Kubiak
+          Wojciech Kubiak
         </h1>
         <article
           style={{ display: "none", opacity: "0" }}
@@ -105,16 +114,23 @@ const LandingPage = props => {
         >
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
         </article>
-        <Button
-          href="#projects"
-          className="landing--arrow"
-          variant="dark"
-          style={{visibility: "hidden", position: "relative", width: "20%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "transparent", border: "none", opacity: "0"}}
-          ref={e => {arrowItem = e}}
-        >
-          <AiOutlineArrowDown style={{width: "calc(2vh + 2vw)", height: "calc(2vh + 2vw)", color: "#fbd791"}}/>
-        </Button>
-      </section>   
+          {showArrow && (
+            <>
+             <Button
+             href="#projects"
+             className="landing--arrow"
+             variant="dark"
+             style={{visibility: "hidden", position: "relative", top: "20%", width: "20%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "transparent", border: "none", opacity: "0"}}
+             ref={e => {arrowItem = e}}
+             onClick={() => setShowArrow(false)}
+           >
+             <AiOutlineArrowDown style={{width: "calc(2vh + 2vw)", height: "calc(2vh + 2vw)", color: "#fbd791"}}/>
+           </Button>
+            </>
+          )}
+      </section>  
+      <div className="landing--transparency-layer" style={{height: "100%", width: "100%", backgroundColor: "#28282f66", zIndex: "2"}}>
+    </div> 
     </div>
   );
 };

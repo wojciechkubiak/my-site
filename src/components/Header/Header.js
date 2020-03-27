@@ -64,6 +64,7 @@ const Header = props => {
               href="#skills"
               className={textColor.join(" ")}
               onClick={handler}
+              // style={{borderLeft: "3px solid #fbd791", borderRight: "3px solid #fbd791"}}
             >
               {props.t("header.skills", { framework: "react-i18next" })}
             </Nav.Link>
