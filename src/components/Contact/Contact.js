@@ -106,7 +106,7 @@ const Contact = props => {
                className="contact--icons"
               />
               <figcaption className="contact--figcaption">
-                726-823-405
+                726823405
               </figcaption>
             </figure>
           </article>

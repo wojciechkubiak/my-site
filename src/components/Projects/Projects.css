@@ -40,15 +40,22 @@
   flex-direction: row;
   height: 20vh;
   margin-top: 2em;
-}
-
-.projects--container-img-container {
-  width: 50vw;
-  height: 60vh;
+  margin-left: 2em;
 }
 
 .projects--container-img {
-  height: 100%;
+  width: 40vw;
+  height: auto
+}
+
+.projects--container-img > img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  width: auto;
+  padding: 1em;
+  box-shadow:0px 0px 3em .5em #fbd791 inset;
 }
 
 .projects--subinfo > h3 {
@@ -83,6 +90,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0.5em;
   z-index: 20;
+  margin-left: 2em;
 }
 
 .projects--btn {
@@ -114,7 +122,7 @@
 }
 
 .projects--technologies-container {
-  width: 35vw;
+  width: 30vw;
   height: 60vh;
   margin-left: auto;
   margin-right: 0;
@@ -150,8 +158,8 @@
 }
 
 .projects--img {
-  width: 10vw;
-  height: 10vw;
+  width: 8vw;
+  height: 8vw;
   left: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 1em;
@@ -161,7 +169,7 @@
   padding: 0.4em;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1500px) {
   
   #projects > h1 {
     font-size: 2em;
@@ -256,8 +264,11 @@
   .projects--container-img {
     position: relative;
     top: 8vh;
-    width: 7.8em;
+    width: auto;
     height: 6em;
+    box-shadow: none;
+    padding: .4em;
+    border-bottom: 3px solid #fbd791 
   }
 
   .projects--btn-container {
@@ -266,6 +277,7 @@
     height: 1.5em;
     left: 50%;
     transform: translate(-50%, 0%);
+    margin-left: 0;
   }
 
 
@@ -274,4 +286,30 @@
     background-color: #fbd791;
     color: #2e2e30
   }
+}
+
+@media only screen and (max-width: 1500px) {
+ 
+  .projects--container-img {
+    position: relative;
+    top: 8vh;
+    width: auto;
+    height: 5em;
+    box-shadow: none;
+    
+    border-bottom: 3px solid #fbd791 
+  }
+
+  .projects--container-img > img {
+    width: auto;
+    /* 867 */
+    height: 5.8em;
+    /* 672 */
+    z-index: 2;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, -20%);
+    box-shadow: none
+  }
+
 }
