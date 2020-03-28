@@ -42,6 +42,8 @@ const Contact = props => {
       }}
     >
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
+      
+      <div className="contact--main">
       <section
         className="ContactContainer"
         ref={e => {
@@ -66,20 +68,19 @@ const Contact = props => {
                 <span>
                   <a
                     href={ResumePL}
-                    style={{ color: "#fbd791" }}
+                    style={{ color: "#fbd791", paddingRight: "1em" }}
                     download="WojciechKubiakCV_PL.pdf"
                   >
-                    POL
+                    pol
                   </a>
                 </span>
-                <strong style={{ color: "#fbd791" }}>  |  </strong>
                 <span>
                   <a
                     href={ResumeEN}
-                    style={{ color: "#fbd791" }}
+                    style={{ color: "#fbd791", borderLeft: "1px solid #fbd791", paddingLeft: "1em" }}
                     download="WojciechKubiakCV_EN.pdf"
                   >
-                    ENG
+                    eng
                   </a>
                 </span>
               </figcaption>
@@ -112,6 +113,7 @@ const Contact = props => {
           </article>
         </article>
       </section>
+      </div>
     </InView>
   );
 };

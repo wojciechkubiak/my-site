@@ -40,7 +40,6 @@ header {
   transform: translate(50%, -2em);
   background-color: transparent;
   transition: 1s;
-  border-radius: 1em;
 }
 
 .HeaderOut {
@@ -49,7 +48,6 @@ header {
   width: 50%;
   -webkit-transform: translate((50%, 0%));
   transform: translate(50%, 0%);
-  border-radius: 1em;
   transition: 1s;
 }
 

@@ -5,7 +5,7 @@
 }
 
 #projects::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -32,12 +32,12 @@
   flex-direction: row;
   height: 20vh;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 3em;
 }
 
 .projects--container-img {
   width: 40vw;
-  height: auto
+  height: auto;
 }
 
 .projects--container-img > img {
@@ -47,25 +47,25 @@
   transform: translate(-50%, 0%);
   width: auto;
   padding: 1em;
-  box-shadow:0px 0px 3em .5em #fbd791 inset;
+  box-shadow: 0px 0px 3em 0.5em #fbd791 inset;
 }
 
 .projects--subinfo > h3 {
   text-align: center;
   color: #fbd791;
   font-size: 4.5vh;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   visibility: hidden;
-  opacity: 0
+  opacity: 0;
 }
 
 .projects--subinfo > p {
   text-align: center;
   color: #ffffff;
   font-size: 2.2vh !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   visibility: hidden;
   opacity: 0;
 }
@@ -103,7 +103,7 @@
 .btn-prev:hover,
 .btn-next:hover {
   background-color: #fbd791;
-  color: #2e2e30
+  color: #2e2e30;
 }
 
 .btn-next {
@@ -128,7 +128,7 @@
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #fbd791;
@@ -163,13 +163,12 @@
 }
 
 @media only screen and (max-width: 1500px) {
-  
   #projects > h1 {
     font-size: 2em;
     padding: 0.1em;
     width: 10em;
     top: 1em;
-    left: 50%;   
+    left: 50%;
     transform: translate(-50%, -50%);
     color: #fbd791;
   }
@@ -201,7 +200,7 @@
     width: 4vw;
     height: 4vw;
   }
- 
+
   .projects--technologies-container {
     position: relative;
     top: 0em;
@@ -211,7 +210,7 @@
     margin-left: 0em;
     margin-right: 0em;
     margin-bottom: 0em;
-    margin-top: .5em
+    margin-top: 0.5em;
   }
 
   .projects--technologies-container-alt {
@@ -226,7 +225,7 @@
     height: auto;
     align-items: center;
   }
-  
+
   .projects--subinfo > h3 {
     text-align: center;
     font-size: 3.8vh;
@@ -261,7 +260,7 @@
     width: auto;
     height: 6em;
     box-shadow: none;
-    padding: .4em;
+    padding: 0.4em;
   }
 
   .projects--btn-container {
@@ -276,39 +275,38 @@
   .projects--technologies-container-alt {
     background-color: #2e2e30;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
 
   .btn-prev:hover,
   .btn-next:hover {
     background-color: #fbd791;
-    color: #2e2e30
+    color: #2e2e30;
   }
 
   .projects--btn-container {
-    margin-top: .5em
+    margin-top: 0.5em;
   }
 
-  
-.projects--subinfo{
-  background-color: #fbd791;
-  border-radius: 0;
-}
+  .projects--subinfo {
+    background-color: #fbd791;
+    border-radius: 0;
+  }
 
-.projects--subinfo > p, .projects--subinfo > h3 {
-  color: #292930
-}
+  .projects--subinfo > p,
+  .projects--subinfo > h3 {
+    color: #292930;
+  }
 }
 
 @media only screen and (max-width: 700px) {
- 
   .projects--container-img {
     position: relative;
     top: 8vh;
     width: auto;
     height: 5em;
     box-shadow: none;
-    border-bottom: 3px solid #fbd791 
+    border-bottom: 3px solid #fbd791;
   }
 
   .projects--container-img > img {
@@ -320,7 +318,7 @@
     left: 0%;
     top: 0%;
     transform: translate(0%, -20%);
-    box-shadow: none
+    box-shadow: none;
   }
 
   .projects--technologies-container {
@@ -333,12 +331,12 @@
     margin-left: 0em;
     margin-right: 0em;
     margin-bottom: 0em;
-    margin-top: .5em
+    margin-top: 0.5em;
   }
 
   .projects--technologies-container-alt {
     background-color: #2e2e30;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: none;
   }
 
   .projects--img {
@@ -350,8 +348,17 @@
     height: 12vw;
   }
 
-  .projects--subinfo{
-    border-top-left-radius: .5em;
-    border-top-right-radius: .5em;
+  .projects--subinfo {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    background-color: #2e2e30;
+  }
+
+  .projects--subinfo > h3 {
+    color: #fbd791
+  }
+
+  .projects--subinfo > p {
+    color: #ffffff
   }
 }
