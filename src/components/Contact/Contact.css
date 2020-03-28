@@ -39,8 +39,8 @@
   position: absolute;
   top: 40vh;
   left: 50%;
-  width: 42vw;
-  height: 42vh;
+  width: 60vw;
+  height: auto;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0.2em;
@@ -48,7 +48,7 @@
   border-radius: 0.5em;
 }
 
-.ContactContainer > article > h1 {
+.ContactContainer > article > h3 {
   padding-top: 3vh;
   padding-bottom: 2vh;
   color: #eeeeee;
@@ -64,13 +64,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.DownloadIcon {
-  color: #eeeeee;
-  width: 8vh;
-  height: 8vh;
-  padding-bottom: 0.5em;
-}
-
 .MailContainer {
   color: #ffffff;
   transition: 500ms;
@@ -82,25 +75,10 @@
   color: #fbd791
 }
 
-.ResumeLinks > span > a {
-  transition: 500ms;
-}
-
-.ResumeLinks > span > a {
-  color: #FBFBFB;
-  font-family: 'Anton', sans-serif;
-  font-weight: 500;
-}
-
 .ResumeLinks > span > a:hover {
   color: #fbd791
 }
 
-.ResumeDownloadText {
-  font-size: 2.5vh !important;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-}
 
 
 @media only screen and (max-width: 700px) {

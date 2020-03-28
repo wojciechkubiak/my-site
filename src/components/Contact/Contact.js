@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaFileDownload } from "react-icons/fa";
+import { GoMail } from "react-icons/go";
+import { FiPhoneCall } from "react-icons/fi";
 import { InView } from "react-intersection-observer";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
@@ -14,63 +16,108 @@ const Contact = props => {
   const anim = () => {
     gsap.fromTo(
       contactItem,
-      { opacity: 0},
-      { duration: 1, opacity: 1, ease: "slow (0.7, 0.7, false)", display: "block", onComplete: function() {
-        setNotAnimated(true);
-      }}
+      { opacity: 0 },
+      {
+        duration: 1,
+        opacity: 1,
+        ease: "slow (0.7, 0.7, false)",
+        display: "block",
+        onComplete: function() {
+          setNotAnimated(true);
+        }
+      }
     );
-  }
+  };
 
+  //TODO: figcaption font and mobile version 
   return (
     <InView
       as="div"
       data-testid="Contact"
       id="contact"
       onChange={(inView, entry) => {
-        if(inView && !notAnimated) {
+        if (inView && !notAnimated) {
           anim();
         }
       }}
     >
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
-      <section className="ContactContainer" ref={e => {contactItem = e}} data-testid="Contact" style={{display: "none"}}>
+      <section
+        className="ContactContainer"
+        ref={e => {
+          contactItem = e;
+        }}
+        data-testid="Contact"
+        style={{ display: "none" }}
+      >
         <article>
-          <h1 style={{color: "#fbd791"}}>{props.t("contact.box", { framework: "react-i18next" })}</h1>
-          <p>{props.t("contact.firstLine", { framework: "react-i18next" })}</p>
-          <p>
-            {props.t("contact.contactMe", { framework: "react-i18next" })}{" "}
-            <a href="mailto:wgkubiak@gmail.com" className="MailContainer" style={{color: "#fbd791"}}>
-              wgkubiak@gmail.com
-            </a>
-          </p>
-          <p style={{color: "#fbd791"}}>{props.t("contact.or", { framework: "react-i18next" })}</p>
-          <p>
-            {props.t("contact.phone", { framework: "react-i18next" })}{" "}
-            <span style={{color: "#fbd791"}}>726-823-405</span>
-          </p>
-
-          <figure className="ResumeContainer">
-            <FaFileDownload style={{color: "#fbd791"}} className="DownloadIcon"></FaFileDownload>
-            <figcaption
-              className="ResumeDownloadText"
-              style={{ color: "#fbd791", fontWeight: 500 }}
-            >
-              {props.t("download.cv", { framework: "react-i18next" })}
+          <h3 style={{color: "#fbd791"}}>
+            {props.t("contact.firstLine", { framework: "react-i18next" })}
+          </h3>
+        </article>
+        <article
+          style={{
+            display: "grid",
+            gridTemplateColumns: "20vw 20vw 20vw",
+            gridTemplateRows: "20vh",
+            position: "relative",
+            marginTop: "10vh"
+          }}
+        >
+          <article>
+            <figure>
+              <FaFileDownload
+                style={{ width: "5em", height: "5em", color: "#ffffff" }}
+              ></FaFileDownload>
+              <figcaption style={{ marginTop: "1em", fontFamily: "'Roboto', sans-serif"}}>
+                <span>
+                  <a
+                    href={ResumePL}
+                    style={{ color: "#fbd791" }}
+                    download="WojciechKubiakCV_PL.pdf"
+                  >
+                    POL
+                  </a>
+                </span>
+                <strong style={{ color: "#fbd791" }}> | </strong>
+                <span>
+                  <a
+                    href={ResumeEN}
+                    style={{ color: "#fbd791" }}
+                    download="WojciechKubiakCV_EN.pdf"
+                  >
+                    ENG
+                  </a>
+                </span>
+              </figcaption>
+            </figure>
+          </article>
+          <article>
+            <figure>
+              <GoMail
+                style={{ width: "5em", height: "5em", color: "#ffffff"}}
+              />
+            </figure>
+            <figcaption>
+              <a
+                href="mailto:wgkubiak@gmail.com"
+                className="MailContainer"
+                style={{ color: "#fbd791" }}
+              >
+                wgkubiak@gmail.com
+              </a>
             </figcaption>
-            <figcaption className="ResumeLinks">
-              <span>
-                <a href={ResumePL} style={{color: "#fbd791"}} download="WojciechKubiakCV_PL.pdf">
-                  PL
-                </a>
-              </span>
-              <strong style={{ color: "#fbd791" }}> | </strong>
-              <span>
-                <a href={ResumeEN} style={{color: "#fbd791"}} download="WojciechKubiakCV_EN.pdf">
-                  EN
-                </a>
-              </span>
-            </figcaption>
-          </figure>
+          </article>
+          <article>
+            <figure>
+              <FiPhoneCall
+                style={{ width: "5em", height: "5em", color: "#ffffff" }}
+              />
+              <figcaption style={{ color: "#fbd791", marginTop: "1em", fontFamily: "'Roboto', sans-serif" }}>
+                726-823-405
+              </figcaption>
+            </figure>
+          </article>
         </article>
       </section>
     </InView>

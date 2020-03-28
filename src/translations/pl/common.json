@@ -28,9 +28,9 @@
         "header": "Kontakt",
         "box": "Skontaktuj się",
         "firstLine": "Jesteś zainteresowana/y pracą ze mną lub masz jakieś pytanie?",
-        "contactMe": "Napisz do mnie na adres",
-        "or": "lub",
-        "phone": "Zadzwoń/wyślij wiadomość na numer"
+        "contactMe": "Napisz na adres:",
+        "or": "/",
+        "phone": "Zadzwoń:"
     },
     "footer": {
         "text": "Strona stworzona przez"

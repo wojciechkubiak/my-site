@@ -28,9 +28,9 @@
         "header": "Contact",
         "box": "Get in touch",
         "firstLine": "Are you interested in working with me or just have a question?",
-        "contactMe": "Email me at",
+        "contactMe": "Email me at:",
         "or": "or",
-        "phone": "Call/send me a message at"
+        "phone": "Call:"
     },
     "footer": {
         "text": "Created by"
