@@ -26,14 +26,6 @@
   padding: 1em;
 }
 
-.projects--img {
-  width: 25vw;
-  padding: 1em;
-  background-color: #2e2e30;
-  border-radius: 0em;
-  margin: 0em;
-}
-
 .projects--technologies-container-alt {
   position: relative;
   display: flex;
@@ -153,7 +145,8 @@
 }
 
 .projects--span {
-  width: 30vw;
+  width: 33%;
+  height: auto;
   align-items: center;
 }
 
@@ -181,10 +174,6 @@
     color: #fbd791;
   }
 
-  .projects--btn-container {
-    margin-top: .5em
-  }
-
   .projects--container {
     position: relative;
     font-size: 2em;
@@ -209,14 +198,15 @@
     border-radius: 0em;
     background-color: transparent;
     box-shadow: none;
+    width: 4vw;
+    height: 4vw;
   }
-
+ 
   .projects--technologies-container {
     position: relative;
     top: 0em;
     width: 10em;
     height: auto;
-    background-color: #2e2e30;
     box-shadow: none;
     margin-left: 0em;
     margin-right: 0em;
@@ -229,10 +219,14 @@
     bottom: 0em;
     margin: 0em;
     z-index: 20;
-    background-color: #2e2e30;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   }
 
+  .projects--span {
+    width: 33%;
+    height: auto;
+    align-items: center;
+  }
+  
   .projects--subinfo > h3 {
     text-align: center;
     font-size: 3.8vh;
@@ -268,7 +262,6 @@
     height: 6em;
     box-shadow: none;
     padding: .4em;
-    border-bottom: 3px solid #fbd791 
   }
 
   .projects--btn-container {
@@ -280,15 +273,34 @@
     margin-left: 0;
   }
 
+  .projects--technologies-container-alt {
+    background-color: #2e2e30;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: .5em;
+  }
 
   .btn-prev:hover,
   .btn-next:hover {
     background-color: #fbd791;
     color: #2e2e30
   }
+
+  .projects--btn-container {
+    margin-top: .5em
+  }
+
+  
+.projects--subinfo{
+  background-color: #fbd791;
+  border-radius: 0;
 }
 
-@media only screen and (max-width: 1500px) {
+.projects--subinfo > p, .projects--subinfo > h3 {
+  color: #292930
+}
+}
+
+@media only screen and (max-width: 700px) {
  
   .projects--container-img {
     position: relative;
@@ -296,7 +308,6 @@
     width: auto;
     height: 5em;
     box-shadow: none;
-    
     border-bottom: 3px solid #fbd791 
   }
 
@@ -312,4 +323,35 @@
     box-shadow: none
   }
 
+  .projects--technologies-container {
+    position: relative;
+    top: 0em;
+    width: 10em;
+    height: auto;
+    background-color: #2e2e30;
+    box-shadow: none;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;
+    margin-top: .5em
+  }
+
+  .projects--technologies-container-alt {
+    background-color: #2e2e30;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .projects--img {
+    padding: 0;
+    border-radius: 0em;
+    background-color: transparent;
+    box-shadow: none;
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .projects--subinfo{
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+  }
 }
