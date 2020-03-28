@@ -78,12 +78,15 @@ header > .shadow {
 
   .HeaderTop {
     background-color: #fbd791;
+    border-radius: 1em;
+    -webkit-transform: translate((50%, 20%));
+    transform: translate(50%, 20%);
   }
   .HeaderOut {
     background-color: #fbd791;
     border-radius: 1em;
-    -webkit-transform: translate((50%, 0%));
-    transform: translate(50%, 30%);
+    -webkit-transform: translate((50%, 20%));
+    transform: translate(50%, 20%);
   }
 
   .HeaderTextColorWhite {
