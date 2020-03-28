@@ -52,10 +52,10 @@
   padding-top: 3vh;
   padding-bottom: 2vh;
   color: #eeeeee;
-  text-transform: uppercase;
+  
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: 4.5vh;
+  font-size: 4.2vh;
 }
 
 .ContactContainer > article > p {
@@ -79,7 +79,25 @@
   color: #fbd791
 }
 
+.contact--article {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: auto;
+  position: relative;
+  margin-top: 10vh;
+}
 
+.contact--icons {
+  width: 5em; 
+  height: 5em;
+  color: #ffffff
+}
+
+.contact--figcaption {
+  color: #fbd791;
+  margin-top: 1em;
+  font-family: "Roboto", sans-serif;
+}
 
 @media only screen and (max-width: 700px) {
   #contact > h1 {
@@ -107,6 +125,10 @@
     color: #fbd791;
   }
 
+  .ContactContainer > article > h3 {
+    font-size: 3.5vh;
+  }
+  
   .ContactContainer > article > p {
     color: #ffffff;
     font-size: 2vh !important;
@@ -159,5 +181,23 @@
     font-weight: 700;
   }
 
+  .contact--article {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15vh 15vh 15vh;
+    position: relative;
+    margin-top: 2vh;
+    height: auto;
+  }
   
+  .contact--icons {
+    width: 10vw; 
+    height: 10vw;
+    color: #ffffff
+  }
+  
+  .contact--figcaption {
+    color: #fbd791;
+    font-family: "Roboto", sans-serif;
+  }
 }

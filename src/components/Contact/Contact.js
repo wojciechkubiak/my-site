@@ -55,21 +55,14 @@ const Contact = props => {
             {props.t("contact.firstLine", { framework: "react-i18next" })}
           </h3>
         </article>
-        <article
-          style={{
-            display: "grid",
-            gridTemplateColumns: "20vw 20vw 20vw",
-            gridTemplateRows: "20vh",
-            position: "relative",
-            marginTop: "10vh"
-          }}
+        <article className="contact--article"
         >
           <article>
             <figure>
               <FaFileDownload
-                style={{ width: "5em", height: "5em", color: "#ffffff" }}
+                className="contact--icons"
               ></FaFileDownload>
-              <figcaption style={{ marginTop: "1em", fontFamily: "'Roboto', sans-serif"}}>
+              <figcaption className="contact--figcaption">
                 <span>
                   <a
                     href={ResumePL}
@@ -79,7 +72,7 @@ const Contact = props => {
                     POL
                   </a>
                 </span>
-                <strong style={{ color: "#fbd791" }}> | </strong>
+                <strong style={{ color: "#fbd791" }}>  |  </strong>
                 <span>
                   <a
                     href={ResumeEN}
@@ -95,13 +88,12 @@ const Contact = props => {
           <article>
             <figure>
               <GoMail
-                style={{ width: "5em", height: "5em", color: "#ffffff"}}
+               className="contact--icons"
               />
             </figure>
-            <figcaption>
+            <figcaption className="contact--figcaption">
               <a
                 href="mailto:wgkubiak@gmail.com"
-                className="MailContainer"
                 style={{ color: "#fbd791" }}
               >
                 wgkubiak@gmail.com
@@ -111,9 +103,9 @@ const Contact = props => {
           <article>
             <figure>
               <FiPhoneCall
-                style={{ width: "5em", height: "5em", color: "#ffffff" }}
+               className="contact--icons"
               />
-              <figcaption style={{ color: "#fbd791", marginTop: "1em", fontFamily: "'Roboto', sans-serif" }}>
+              <figcaption className="contact--figcaption">
                 726-823-405
               </figcaption>
             </figure>
