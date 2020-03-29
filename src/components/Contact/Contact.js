@@ -49,9 +49,8 @@ const Contact = props => {
         style={{ display: "none" }}
       >
         <section
-          className="ContactContainer"
+          className="contact--container"
           data-testid="Contact"
-         
         >
           <article>
             <h3 style={{ color: "#fbd791" }}>

@@ -28,14 +28,7 @@
   text-transform: uppercase;
 }
 
-.ResumeContainer {
-  margin-top: 4vh;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-  font-size: 2.2vh
-}
-
-.ContactContainer { 
+.contact--container { 
   width: auto;
   height: auto;
   text-align: center;
@@ -55,7 +48,7 @@
   box-shadow:0px 0px 3em .5em #fbd791 inset;
 }
 
-.ContactContainer > article > h3 {
+.contact--container > article > h3 {
   padding-top: 3vh;
   padding-bottom: 2vh;
   color: #eeeeee;
@@ -64,25 +57,10 @@
   font-size: 3.5vh;
 }
 
-.ContactContainer > article > p {
+.contact--container > article > p {
   color: #ffffff;
   font-size: 2.5vh !important;
   font-family: 'Roboto', sans-serif;
-}
-
-.MailContainer {
-  color: #ffffff;
-  transition: 500ms;
-  font-family: 'Anton', sans-serif;
-  font-weight: 400;
-}
-
-.MailContainer:hover {
-  color: #fbd791
-}
-
-.ResumeLinks > span > a:hover {
-  color: #fbd791
 }
 
 .contact--article {
@@ -117,34 +95,20 @@
     transform: translate(-50%, -50%);
   }
 
-  .ContactContainer {
-    top: 40%;
-    left: 50%;
-    width: 20em;
-    height: 52vh;
-    border-radius: 0;
-    padding: 1em;
-  }
-
-  .ContactContainer > article > h1 {
-    font-size: 4vh;
-    color: #fbd791;
-  }
-
-  .ContactContainer > article > h3 {
+  .contact--container > article > h3 {
     font-size: 3vh;
     border-bottom: 1px solid #fbd791;
     margin-bottom: 5vh;
   }
   
-  .ContactContainer > article > p {
+  .contact--container > article > p {
     color: #ffffff;
     font-size: 2vh !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
   }
 
-  .ContactContainer > p {
+  .contact--container > p {
     font-size: 1.9vh;
   }
 
@@ -153,7 +117,7 @@
     margin-top: 5em;
   }
 
-  .ContactContainer { 
+  .contact--container { 
     width: auto;
     height: auto;
     text-align: center;
@@ -173,45 +137,9 @@
     box-shadow: none;
   }
 
-  .GitContainer {
-    bottom: 0.5em;
-  }
-
-  .GitContainer > p {
-    font-size: 2.2vh;
-  }
-
-  .MailContainer {
-    transition: 500ms;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-  }
-
   .contact--git-icon {
     height: 12vw;
     width: 12vw;
-  }
-
-  .ResumeContainer {
-    bottom: 3.5em;
-  }
-
-  .DownloadIcon {
-    height: 15vw;
-    width: 15vw;
-    padding-bottom: 0.5em;
-  }
-
-  .ResumeLinks > span > a {
-    font-size: 2.2vh !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-  }
-  
-  .ResumeDownloadText {
-    font-size: 2.2vh !important;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
   }
 
   .contact--article {

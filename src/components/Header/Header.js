@@ -6,11 +6,11 @@ import "./Header.css";
 const Header = props => {
   let headerRef = useRef(null);
 
-  let mode = ["shadow p-3 mb-5", props.headerMode ? "HeaderOut" : "HeaderTop"];
+  let mode = ["shadow p-3 mb-5", props.headerMode ? "header--out" : "header--top"];
 
   let textColor = [
-    "HeaderLink",
-    props.headerMode ? "HeaderTextColorWhite" : "HeaderTextColorDark"
+    "header--link",
+    props.headerMode ? "text--gold" : "text--gray"
   ];
 
   const handler = () => {
@@ -40,7 +40,7 @@ const Header = props => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
-          className="justify-content-center HeaderText"
+          className="justify-content-center header--container"
         >
           <Nav>
             {typeof window.orientation !== "undefined" && (

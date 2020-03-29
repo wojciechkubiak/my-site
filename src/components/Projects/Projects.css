@@ -248,9 +248,7 @@
 
   .projects--container-img-container {
     width: auto;
-    /* 867 */
     height: auto;
-    /* 672 */
     z-index: 2;
   }
 
@@ -311,9 +309,7 @@
 
   .projects--container-img > img {
     width: auto;
-    /* 867 */
     height: 5.8em;
-    /* 672 */
     z-index: 2;
     left: 0%;
     top: 0%;

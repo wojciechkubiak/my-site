@@ -92,7 +92,7 @@ const App = (
       <SocialMedia />
       <Footer t={t} />
       <button
-        className="LanguageBtn"
+        className="button--lang"
         style={{ backgroundImage: `url(${img})`, boxShadow: "0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 9px 30px 0 rgba(0, 0, 0, 0.3)" }}
         onClick={languageHandler}
       ></button>

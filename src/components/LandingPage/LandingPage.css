@@ -67,28 +67,10 @@
   font-style: initial; 
   color: #ffffff;
   line-height: calc(1.5vh + 1.2vw);
-  /* background-color: #2929309a; */
   display: block;
   height: 12em
 }
 
-.global--arrow { 
-  position: fixed;
-  top: 2vh;
-  right: 2vh;
-  width: 4vw;
-  height: 4vw;
-  z-index: 10;
-  align-content: center;
-  background-color: transparent!important;
-  border: none!important
-}
-
-.global--arrow > svg {
-  color: #fbd791;
-  width: 3vw;
-  height: 3vw;
-}
 
 @media only screen and (max-width: 700px) {
   .home--container {
@@ -125,29 +107,6 @@
     color: #ffffff;
     height: auto;
     text-transform: uppercase;
-  }
-
-  .global--arrow {
-    padding: 0!important;
-    top: 0em;
-    right: 0em;
-    width: 6vh;
-    height: 6vh;    
-  }
-
-  .global--arrow > svg {
-    width: 100%;
-    height: 100%;
-    color: #ffffff;
-  }
-
-  .LanguageBtn {
-    right: 0.2em!important;
-    bottom: 2em!important;
-    width: 2.5em!important;
-    height: 1.7em!important;
-    background-size: cover;
-    background-position: center;
   }
 
   .landing--arrow {

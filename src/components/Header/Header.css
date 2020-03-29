@@ -3,7 +3,7 @@ header {
   z-index: 5;
 }
 
-.HeaderLink {
+.header--link {
   outline: 0;
   padding-right: 2em !important;
   padding-left: 2em !important;
@@ -13,27 +13,23 @@ header {
   text-transform: uppercase;
 }
 
-.HeaderTextColorWhite {
+.text--gold {
   color: #2e2e30 !important;
 }
 
-.HeaderTextColorDark {
+.text--gray {
   color: #fbd791 !important;
 }
 
-.HeaderLink:hover {
+.header--link:hover {
   text-decoration: underline;
 }
 
-.HeaderText {
+.header--container {
   font-size: 1.5rem;
 }
 
-.HeaderNav {
-  padding: 3em;
-}
-
-.HeaderTop {
+.header--top {
   position: fixed;
   width: 50%;
   -webkit-transform: translate((50%, -2em));
@@ -42,7 +38,7 @@ header {
   transition: 1s;
 }
 
-.HeaderOut {
+.header--out {
   position: fixed;
   background-color: #fbd791;
   width: 50%;
@@ -68,30 +64,30 @@ header > .shadow {
 }
 
 @media screen and (max-width: 1200px) {
-  /* overflow: hidden */
-  .HeaderLink {
+  .header--link {
     font-size: 2.2vh!important;
     text-align: center;
   }
 
-  .HeaderTop {
-    background-color: #fbd791;
-    border-radius: 1em;
-    -webkit-transform: translate((50%, 20%));
-    transform: translate(50%, 20%);
-  }
-  .HeaderOut {
+  .header--top {
     background-color: #fbd791;
     border-radius: 1em;
     -webkit-transform: translate((50%, 20%));
     transform: translate(50%, 20%);
   }
 
-  .HeaderTextColorWhite {
+  .header--out {
+    background-color: #fbd791;
+    border-radius: 1em;
+    -webkit-transform: translate((50%, 20%));
+    transform: translate(50%, 20%);
+  }
+
+  .text--gold {
     color: #2e2e30 !important;
   }
   
-  .HeaderTextColorDark {
+  .text--gray {
     color: #2e2e30 !important;
   }
 }
