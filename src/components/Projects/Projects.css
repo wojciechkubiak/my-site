@@ -14,6 +14,20 @@
   border-top: 3px solid #fbd791;
 }
 
+.projects--adress {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%; /* Adjust this value to move the positioned div up and down */
+  background: rgba(0, 0, 0, 0.8);
+  font-family: Arial, sans-serif;
+  color: #fff;
+  width: auto; /* Set the width of the positioned div */
+}
+
 .projects--container {
   position: absolute;
   display: flex;
@@ -236,7 +250,7 @@
     box-shadow: none;
     background-color: #2e2e3000;
     transform: translate(0%, 50%);
-    top: 0em;
+    top: 1em;
   }
 
   .projects--subinfo > p {
@@ -304,12 +318,11 @@
     width: auto;
     height: 5em;
     box-shadow: none;
-    border-bottom: 3px solid #fbd791;
   }
 
   .projects--container-img > img {
     width: auto;
-    height: 5.8em;
+    height: 6em;
     z-index: 2;
     left: 0%;
     top: 0%;
@@ -351,10 +364,10 @@
   }
 
   .projects--subinfo > h3 {
-    color: #fbd791
+    color: #fbd791;
   }
 
   .projects--subinfo > p {
-    color: #ffffff
+    color: #ffffff;
   }
 }

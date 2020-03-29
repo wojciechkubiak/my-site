@@ -92,19 +92,17 @@ const Projects = props => {
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
         <figure className="projects--container-img-container" style={{visibility: "hidden"}} ref={e => {screenshots = e}}>
-          <figure className="projects--container-img">
-          <img
-            
+          <figure className="projects--container-img" style={{position: "relative"}}>
+          <img  
             src={require(`./../../img/${img}.png`)}
-
             alt="Project-icon"
-          />
-          </figure>
+          />     
           <figcaption className="projects--subinfo" style={{visibility: "hidden"}} ref={e => {subinfoContainer = e}}>
             <h3 ref={e => {subinfoHeader = e}}>{data[img - 1][0]}</h3>
             <p ref={e => {subinfoParagraph = e}}>{data[img - 1][1]}</p>
-          </figcaption>
+          </figcaption>      
         </figure>
+    </figure>
         <div className="projects--technologies-container" style={{visibility: "hidden"}} ref={e => {technologies = e}}>
           <div className="projects--technologies-container-alt">
             <span className="projects--span">

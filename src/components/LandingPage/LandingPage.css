@@ -1,7 +1,10 @@
 .home {
   position: relative;
   height: 101vh;
-  background-image: url("./../../img/bg.webp");
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url("./../../img/bg.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

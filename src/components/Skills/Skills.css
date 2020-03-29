@@ -48,15 +48,16 @@ div > .arrow {
   
 }
 
-.skills--img-container {
-  width: 12vw;
-  height: 26vh;
+.skills--img-container { 
+  width: calc(12vh + 6vw);
+  height: calc(16vh + 4vw);
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
   background-color: #2e2e30;
-  border-radius: 0.5em;
+  border-radius: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  border: .4em solid #fbd791
 }
 
 
@@ -67,15 +68,11 @@ div > .arrow {
 }
 
 .skills--img {
-  width: 8vw;
-  height: 8vw;
+  width: calc(10vh + 4vw);
+  height: calc(10vh + 4vw);
   margin: .1vh;
   opacity: 1;
   transition: 2s;
-}
-
-.skills--img-container:hover {
-  transform: translateY(-1em)
 }
 
 .skills--technology-header {
@@ -135,18 +132,19 @@ div > .arrow {
 
   .skills--container {
     width: 80vw;
-    top: 42vh;
+    top: 44vh;
     align-content: center;
   }
 
   .skills--img-container {
-    width: 12vh;
-    height: 12vh;
+    width: 14vh;
+    height: 14vh;
     margin: 1em;
     background-color: #2e2e30;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;
+    border: .2em solid #fbd791
   }
 
   .skills--img-container > p {
@@ -155,16 +153,12 @@ div > .arrow {
   }
 
   .skills--img {
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     padding: 1vh;
     left: 0px;
     top: 0px;
     margin: 0;
-  }
-
-  .skills--img-container:hover {
-    transform: scale(1.1)
   }
   
   .skills--technology-header {

@@ -139,8 +139,6 @@ const LandingPage = props => {
             </>
           )}
       </section>  
-      <div className="landing--transparency-layer" style={{height: "100%", width: "100%", backgroundColor: "#28282f66", zIndex: "2"}}>
-    </div> 
     </div>
   );
 };
