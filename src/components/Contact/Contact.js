@@ -29,7 +29,6 @@ const Contact = props => {
     );
   };
 
-  //TODO: figcaption font and mobile version 
   return (
     <InView
       as="div"
@@ -42,77 +41,76 @@ const Contact = props => {
       }}
     >
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
-      
-      <div className="contact--main">
-      <section
-        className="ContactContainer"
+      <div
+        className="contact--main"
         ref={e => {
           contactItem = e;
         }}
-        data-testid="Contact"
         style={{ display: "none" }}
       >
-        <article>
-          <h3 style={{color: "#fbd791"}}>
-            {props.t("contact.firstLine", { framework: "react-i18next" })}
-          </h3>
-        </article>
-        <article className="contact--article"
+        <section
+          className="ContactContainer"
+          data-testid="Contact"
+         
         >
           <article>
-            <figure>
-              <FaFileDownload
-                className="contact--icons"
-              ></FaFileDownload>
+            <h3 style={{ color: "#fbd791" }}>
+              {props.t("contact.firstLine", { framework: "react-i18next" })}
+            </h3>
+          </article>
+          <article className="contact--article">
+            <article>
+              <figure>
+                <FaFileDownload className="contact--icons"></FaFileDownload>
+                <figcaption className="contact--figcaption">
+                  <span>
+                    <a
+                      href={ResumePL}
+                      style={{ color: "#fbd791", paddingRight: "1em" }}
+                      download="WojciechKubiakCV_PL.pdf"
+                    >
+                      pol
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      href={ResumeEN}
+                      style={{
+                        color: "#fbd791",
+                        borderLeft: "1px solid #fbd791",
+                        paddingLeft: "1em"
+                      }}
+                      download="WojciechKubiakCV_EN.pdf"
+                    >
+                      eng
+                    </a>
+                  </span>
+                </figcaption>
+              </figure>
+            </article>
+            <article>
+              <figure>
+                <GoMail className="contact--icons" />
+              </figure>
               <figcaption className="contact--figcaption">
-                <span>
-                  <a
-                    href={ResumePL}
-                    style={{ color: "#fbd791", paddingRight: "1em" }}
-                    download="WojciechKubiakCV_PL.pdf"
-                  >
-                    pol
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href={ResumeEN}
-                    style={{ color: "#fbd791", borderLeft: "1px solid #fbd791", paddingLeft: "1em" }}
-                    download="WojciechKubiakCV_EN.pdf"
-                  >
-                    eng
-                  </a>
-                </span>
+                <a
+                  href="mailto:wgkubiak@gmail.com"
+                  style={{ color: "#fbd791" }}
+                >
+                  wgkubiak@gmail.com
+                </a>
               </figcaption>
-            </figure>
+            </article>
+            <article>
+              <figure>
+                <FiPhoneCall className="contact--icons" />
+                <figcaption className="contact--figcaption">
+                  726823405
+                </figcaption>
+              </figure>
+            </article>
           </article>
-          <article>
-            <figure>
-              <GoMail
-               className="contact--icons"
-              />
-            </figure>
-            <figcaption className="contact--figcaption">
-              <a
-                href="mailto:wgkubiak@gmail.com"
-                style={{ color: "#fbd791" }}
-              >
-                wgkubiak@gmail.com
-              </a>
-            </figcaption>
-          </article>
-          <article>
-            <figure>
-              <FiPhoneCall
-               className="contact--icons"
-              />
-              <figcaption className="contact--figcaption">
-                726823405
-              </figcaption>
-            </figure>
-          </article>
-        </article>
-      </section>
+        </section>
       </div>
     </InView>
   );

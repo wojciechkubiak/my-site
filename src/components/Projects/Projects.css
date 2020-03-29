@@ -20,7 +20,7 @@
   flex-direction: row;
   left: 50%;
   top: 45vh;
-  width: 70vw;
+  width: 70%;
   height: 75vh;
   transform: translate(-50%, -50%);
   padding: 1em;
@@ -30,9 +30,9 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  height: 20vh;
+  justify-content: space-between;
+  height: auto;
   margin-top: 2em;
-  margin-left: 3em;
 }
 
 .projects--container-img {
@@ -73,7 +73,7 @@
 .projects--btn-container {
   position: relative;
   top: 2vh;
-  width: 20vw;
+  width: 100%;
   height: 10vh;
   transform: translate(0%, 50%);
   display: flex;
@@ -82,7 +82,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0.5em;
   z-index: 20;
-  margin-left: 2em;
 }
 
 .projects--btn {
@@ -114,7 +113,7 @@
 }
 
 .projects--technologies-container {
-  width: 30vw;
+  width: 30%;
   height: 60vh;
   margin-left: auto;
   margin-right: 0;
@@ -151,8 +150,9 @@
 }
 
 .projects--img {
-  width: 8vw;
-  height: 8vw;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
   left: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 1em;
