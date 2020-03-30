@@ -27,7 +27,7 @@ const Projects = props => {
   const imageSrc = [
     ["white_empty_react.webp", "white_empty_nodejs.webp", "white_empty_psql.webp"],
     [
-      "white_empty_android.webp",
+      "white_empty_java.webp",
       "white_empty_nodejs.webp",
       "white_empty_psql.webp"
     ],
@@ -94,7 +94,7 @@ const Projects = props => {
         <figure className="projects--container-img-container" style={{visibility: "hidden"}} ref={e => {screenshots = e}}>
           <figure className="projects--container-img" style={{position: "relative"}}>
           <img  
-            src={require(`./../../img/${img}.png`)}
+            src={require(`./../../img/${img}.webp`)}
             alt="Project-icon"
           />     
           <figcaption className="projects--subinfo" style={{visibility: "hidden"}} ref={e => {subinfoContainer = e}}>
