@@ -4,9 +4,9 @@ import { FaLinkedinIn, FaFacebookF, FaGit } from "react-icons/fa";
 
 const SocialMedia = ({ initIconState = false }) => {
   
-  const facebookAdress = "https://www.facebook.com/wojciech.kubiak.564";
-  const linkedinAdress = "https://www.linkedin.com/in/wokub/";
-  const gitAdress = "https://www.github.com/wgkubiak";
+  const facebookAdress = "https://www.facebook.com/wojciechkubiakfb";
+  const linkedinAdress = "https://www.linkedin.com/in/wojciechkubiakin";
+  const gitAdress = "https://www.github.com/wojciechkubiak";
 
   return (
     <div className="SocialMedia">

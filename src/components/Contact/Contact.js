@@ -96,7 +96,7 @@ const Contact = props => {
                   href="mailto:wgkubiak@gmail.com"
                   style={{ color: "#fbd791" }}
                 >
-                  wgkubiak@gmail.com
+                  wojciechkubiak@pm.me
                 </a>
               </figcaption>
             </article>
