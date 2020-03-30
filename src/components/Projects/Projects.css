@@ -14,6 +14,16 @@
   border-top: 3px solid #fbd791;
 }
 
+#projects::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 25%;
+  border-top: 3px solid #fbd791;
+}
+
 .projects--adress {
   position: absolute;
   z-index: 999;
@@ -307,7 +317,7 @@
 
   .projects--subinfo > p,
   .projects--subinfo > h3 {
-    color: #292930;
+    color: #2e2e30;
   }
 }
 

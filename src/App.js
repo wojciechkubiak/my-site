@@ -85,7 +85,7 @@ const App = (
         t={t}
         show={showHeader}
       />
-      <LandingPage arrowHandler={arrowHandler} showHeaderHandler={showHeaderHandler} t={t} />
+      <LandingPage arrowHandler={arrowHandler} showHeaderHandler={showHeaderHandler} showArrow={arrow} t={t} />
       <Projects t={t} />
       <Skills t={t} />
       <Contact t={t} />

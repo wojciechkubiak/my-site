@@ -124,7 +124,7 @@ const LandingPage = props => {
         >
           <p>{props.t("aboutme.content", { framework: "react-i18next" })}</p>
         </article>
-          {showArrow && (
+          {showArrow && !props.showArrow && (
             <>
              <Button
              href="#projects"

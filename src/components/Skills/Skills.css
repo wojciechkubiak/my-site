@@ -1,7 +1,6 @@
 #skills {
   position: relative;
   height: 101vh;
-  background-color: #f3f3f3;
 }
 
 #skills > h1 {
@@ -11,7 +10,7 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 7vh;
-  color: #2e2e30;
+  color: #fbd791;
   top: 35vh;
   transform: rotate(90deg);
   z-index: 5;
@@ -125,7 +124,7 @@ div > .arrow {
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #2e2e30;
+    color: #fbd791;
   }
 
   .skills--container {

@@ -1,24 +1,8 @@
 .home {
   position: relative;
   height: 101vh;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url("./../../img/bg.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
-.home::before {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-  left: 25%;
-  border-top: 3px solid #fbd791;
-}
 
 .home--container {
   position: absolute;
@@ -43,7 +27,7 @@
   border-radius: 10px;
   text-transform: uppercase;
   height: 12vh;
-  text-shadow: #292930;
+  text-shadow: #2e2e30;
 }
 
 .home--container-out {
