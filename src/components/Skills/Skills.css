@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   height: 80vh;
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
 #skills > h1 {
@@ -14,7 +14,7 @@
   color: #2e2e30;
   top: 50%;
   right: 0em;
-  transform: translate(0%, -50%) rotate(270deg);
+  transform: translate(30%, -50%) rotate(270deg);
   z-index: 5;
   text-transform: uppercase;
 }

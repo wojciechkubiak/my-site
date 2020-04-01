@@ -21,7 +21,7 @@
   top: 50%;
   font-size: 7vh;
   color: #fbd791;
-  transform: translate(0%, -50%) rotate(90deg);
+  transform: translate(-30%, -50%) rotate(90deg);
   z-index: 5;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -44,8 +44,7 @@
   width: 60vw;
   height: auto;
   transform: translate(-50%, -50%);
-  padding: 1em;
-  box-shadow:0px 0px 3em .5em #fbd791 inset;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .contact--container > article > h3 {
@@ -54,7 +53,7 @@
   color: #eeeeee;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  font-size: 3.2vh;
+  font-size: calc(1vw + 1vh);
 }
 
 .contact--container > article > p {
@@ -66,15 +65,15 @@
 
 .contact--article {
   display: grid;
-  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
   position: relative;
   margin-top: 10vh;
 }
 
 .contact--icons {
-  width: 5em; 
-  height: 5em;
+  width: calc(2vh + 2vw); 
+  height: calc(2vh + 2vw); 
   color: #ffffff
 }
 
@@ -83,7 +82,7 @@
   margin-top: 1em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: calc(.5vh + .8vw);
 }
 
 @media only screen and (max-width: 700px) {
