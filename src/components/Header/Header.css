@@ -7,18 +7,40 @@ header {
   outline: 0;
   padding-right: 2em !important;
   padding-left: 2em !important;
-  font-size: 2.5vh !important;
+  font-size: 2.2vh !important;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
 
+.dropdown-menu {
+  background-color: #2e2e30 !important;
+  border: none !important;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.dropdown-menu > a {
+  color: #fbd791 !important;
+}
+
+.dropdown-divider {
+  color: #2e2e30 !important
+}
+
+.dropdown-item:hover {
+  background-color: #2e2e30 !important;
+}
+
+.dropdown-menu > a:hover {
+  text-decoration: 1px solid #fbd791 underline;
+}
 .text--gold {
-  color: #2e2e30 !important;
+  color: #fbd791 !important;
 }
 
 .text--gray {
-  color: #fbd791 !important;
+  color: #ffffff !important;
 }
 
 .header--link:hover {
@@ -30,20 +52,12 @@ header {
 }
 
 .header--top {
-  position: fixed;
-  width: 50%;
-  -webkit-transform: translate((50%, -2em));
-  transform: translate(50%, -2em);
-  background-color: transparent;
+  background-color: #2e2e3000;
   transition: 1s;
 }
 
 .header--out {
-  position: fixed;
-  background-color: #fbd791;
-  width: 50%;
-  -webkit-transform: translate((50%, 0%));
-  transform: translate(50%, 0%);
+  background-color: #2e2e30;
   transition: 1s;
 }
 
@@ -63,31 +77,33 @@ header > .shadow {
   text-decoration: underline !important;
 }
 
+.nav-item > a {
+  color: #fbd791
+}
+
+.nav-item > a:hover {
+  color: #fbd791
+}
+.socials {
+  position: absolute;
+}
+
 @media screen and (max-width: 1200px) {
   .header--link {
     font-size: 2.2vh!important;
     text-align: center;
   }
 
-  .header--top {
-    background-color: #fbd791;
-    border-radius: 1em;
-    -webkit-transform: translate((50%, 20%));
-    transform: translate(50%, 20%);
+  .header--top, .header--out {
+    background-color: #2e2e30;
   }
 
-  .header--out {
-    background-color: #fbd791;
-    border-radius: 1em;
-    -webkit-transform: translate((50%, 20%));
-    transform: translate(50%, 20%);
+  .text--gold, .text--gray {
+    color: #fbd791 !important;
   }
 
-  .text--gold {
-    color: #2e2e30 !important;
+  .socials {
+    position: relative;
   }
   
-  .text--gray {
-    color: #2e2e30 !important;
-  }
 }

@@ -1,13 +1,7 @@
 #skills {
   position: relative;
-  height: 101vh;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url("./../../img/bg.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  height: 80vh;
+  background-color: #ffffff;
 }
 
 #skills > h1 {
@@ -17,9 +11,10 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 7vh;
-  color: #fbd791;
+  color: #2e2e30;
   top: 35vh;
-  transform: rotate(90deg);
+  right: 0em;
+  transform: rotate(270deg);
   z-index: 5;
   text-transform: uppercase;
 }

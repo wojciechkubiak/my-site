@@ -9,23 +9,23 @@ const SocialMedia = ({ initIconState = false }) => {
   const gitAdress = "https://www.github.com/wojciechkubiak";
 
   return (
-    <div className="SocialMedia">
+    <>
         <a href={facebookAdress}>
-          <button className="FacebookBtn">
-            <FaFacebookF className="FacebookIcon" />
+          <button style={{backgroundColor: "transparent", border: "none", width: "3em", height: "3em"}}>
+            <FaFacebookF style={{color: "#fbd791"}}/>
           </button>
         </a>
         <a href={linkedinAdress}>
-          <button className="LinkedInBtn">
-            <FaLinkedinIn className="LinkedInIcon" />
+          <button style={{backgroundColor: "transparent", border: "none", width: "3em", height: "3em"}}>
+            <FaLinkedinIn style={{color: "#fbd791"}}/>
           </button>
         </a>
         <a href={gitAdress}>
-        <button className="GitBtn">
-          <FaGit className="GitIcon" />
+        <button style={{backgroundColor: "transparent", border: "none", width: "3em", height: "3em"}}>
+          <FaGit style={{color: "#fbd791"}}/>
         </button>
       </a>
-    </div>
+    </>
   );
 };
 

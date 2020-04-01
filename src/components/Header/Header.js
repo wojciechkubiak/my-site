@@ -1,12 +1,17 @@
-import React, { useRef, useEffect } from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import gsap from "gsap"
+import React, { useRef, useEffect, useState } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import gsap from "gsap";
 import "./Header.css";
+import SocialMedia from "./../../components/SocialMedia/SocialMedia";
 
 const Header = props => {
   let headerRef = useRef(null);
+  const [languageDrop, setLanguageDrop] = useState(props.lang);
 
-  let mode = ["shadow p-3 mb-5", props.headerMode ? "header--out" : "header--top"];
+  let mode = [
+    "shadow p-3 mb-5",
+    props.headerMode ? "header--out" : "header--top"
+  ];
 
   let textColor = [
     "header--link",
@@ -18,24 +23,31 @@ const Header = props => {
     props.arrowHandler(true);
   };
 
+  const headerHandler = () => {
+    props.headerOff();
+  }
+
   useEffect(() => {
-    if(props.show) {
+    if (props.show) {
       gsap.to(headerRef, {
-        duration: .5,
+        duration: 0.5,
         opacity: 1,
         visibility: "visible"
       });
     }
-  }, [props.show])
+  }, [props.show]);
 
   return (
-    <header >
+    <header>
       <Navbar
         className={mode.join(" ")}
         collapseOnSelect
         expand="xl"
-        fixed="bottom"
-        style={{visibility: "hidden", opacity: "0"}} ref={e => {headerRef = e}}
+        fixed="top"
+        style={{ visibility: "hidden", opacity: "0" }}
+        ref={e => {
+          headerRef = e;
+        }}
       >
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
@@ -43,16 +55,13 @@ const Header = props => {
           className="justify-content-center header--container"
         >
           <Nav>
-            {typeof window.orientation !== "undefined" && (
-              <Nav.Link
-                href="#landing"
-                className={textColor.join(" ")}
-                onClick={handler}
-              >
-                {props.t("header.about", { framework: "react-i18next" })}
-              </Nav.Link>
-            )}
-            
+            <Nav.Link
+              href="#landing"
+              className={textColor.join(" ")}
+              onClick={headerHandler}
+            >
+              {props.t("header.about", { framework: "react-i18next" })}
+            </Nav.Link>
             <Nav.Link
               href="#projects"
               className={textColor.join(" ")}
@@ -76,6 +85,14 @@ const Header = props => {
               {props.t("header.contact", { framework: "react-i18next" })}
             </Nav.Link>
           </Nav>
+          <NavDropdown title={props.lang.toUpperCase()} id="collasible-nav-dropdown dropdown-menu-align-right" style={{position: "absolute", left: "0"}}>
+            <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">POLSKI</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">ENGLISH</NavDropdown.Item>
+          </NavDropdown>
+        </Navbar.Collapse>
+        <Navbar.Collapse className="justify-content-end socials" style={{position: "absolute", right: "0"}}>
+          <SocialMedia/>
         </Navbar.Collapse>
       </Navbar>
     </header>

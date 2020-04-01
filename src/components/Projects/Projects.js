@@ -1,16 +1,8 @@
-import React, { useState, useRef } from "react";
-import { InView } from "react-intersection-observer";
-import gsap from "gsap";
+import React, { useState} from "react";
 import "./Projects.css";
 
 const Projects = props => {
-  let technologies = useRef(null);
-  let screenshots = useRef(null);
-  let subinfoHeader = useRef(null);
-  let subinfoParagraph = useRef(null);
-  let subinfoContainer = useRef(null);
   const [img, setImg] = useState(1);
-  const [animated, setAnimated] = useState(false);
 
   const data = [
     [
@@ -34,38 +26,6 @@ const Projects = props => {
     ["white_empty_react.webp", "white_empty_nodejs.webp", "white_empty_psql.webp"]
   ];
 
-  const t1 = gsap.timeline();
-
-  const anim = () => {
-    gsap.fromTo(
-      screenshots,
-      { opacity: 0},
-      { duration: 2, opacity: 1, ease: "slow (0.7, 0.7, false)", visibility: "visible"}
-    );
-    t1.fromTo(
-      technologies,
-      { opacity: 0},
-      { delay: 1, duration: 1, opacity: 1, visibility: "visible", ease: "slow (0.7, 0.7, false)", onComplete: function() {
-        setAnimated(true);
-      }}
-    );
-    t1.to(subinfoContainer, {
-      duration: 1,
-      opacity: 1,
-      visibility: "visible"
-    });
-    t1.to(subinfoHeader, {
-      duration: 1,
-      opacity: 1,
-      visibility: "visible"
-    });
-    t1.to(subinfoParagraph, {
-      duration: 1,
-      opacity: 1,
-      visibility: "visible"
-    });
-  }
-
   const swapImage = event => {
     if (img === 3 && event.target.value === "forward") {
       setImg(1);
@@ -76,34 +36,24 @@ const Projects = props => {
     }
   };
 
-  //TODO: on mouse over image show layer with link to the site and repo of project
+  
   return (
-    <InView
-      as="div"
-      data-testid="Projects"
-      id="projects"
-      onChange={(inView, entry) => {
-        if(inView && !animated) {
-          console.log(inView, !animated)
-          anim();
-        }
-      }}
-    >
+    <div id="projects">
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
-        <figure className="projects--container-img-container" style={{visibility: "hidden"}} ref={e => {screenshots = e}}>
-          <figure className="projects--container-img" style={{position: "relative"}}>
+        <figure className="projects--container-img-container">
+          <figure className="projects--container-img">
           <img  
             src={require(`./../../img/${img}.webp`)}
             alt="Project-icon"
           />     
-          <figcaption className="projects--subinfo" style={{visibility: "hidden"}} ref={e => {subinfoContainer = e}}>
-            <h3 ref={e => {subinfoHeader = e}}>{data[img - 1][0]}</h3>
-            <p ref={e => {subinfoParagraph = e}}>{data[img - 1][1]}</p>
+          <figcaption className="projects--subinfo">
+            <h3>{data[img - 1][0]}</h3>
+            <p>{data[img - 1][1]}</p>
           </figcaption>      
         </figure>
     </figure>
-        <div className="projects--technologies-container" style={{visibility: "hidden"}} ref={e => {technologies = e}}>
+        <div className="projects--technologies-container">
           <div className="projects--technologies-container-alt">
             <span className="projects--span">
               <img
@@ -147,7 +97,7 @@ const Projects = props => {
           </div>
         </div>
       </div>
-    </InView>
+    </div>
   );
 };
 

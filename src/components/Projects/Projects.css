@@ -1,6 +1,6 @@
 #projects {
   position: relative;
-  height: 102vh;
+  height: 80vh;
   background-color: #2e2e30;
 }
 
@@ -322,6 +322,10 @@
 }
 
 @media only screen and (max-width: 700px) {
+  #projects {
+    height: 101vh
+  }
+
   .projects--container-img {
     position: relative;
     top: 8vh;

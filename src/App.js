@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { withTranslation } from "react-i18next";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
-import SocialMedia from "./components/SocialMedia/SocialMedia";
 import Footer from "./components/Footer/Footer";
-import { AiOutlineArrowUp } from "react-icons/ai";
-import { Button } from "react-bootstrap";
-import UKFlag from "./../src/img/uk-flag.webp";
-import PLFlag from "./../src/img/pl-flag.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -19,13 +14,11 @@ const App = (
   {
     initMode = false,
     initLanguage = false,
-    initImg = UKFlag,
     initArrow = false
   }
 ) => {
   const [mode, setMode] = useState(initMode);
   const [language, setLanguage] = useState(initLanguage);
-  const [img, setImg] = useState(initImg);
   const [arrow, setArrow] = useState(initArrow);
   const [scroll, setScroll] = useState(0);
   const [showHeader, setShowHeader] = useState(false);
@@ -35,17 +28,18 @@ const App = (
   const headerOff = () => setMode(false);
   const showHeaderHandler = () => setShowHeader(true);
 
-  const languageHandler = () => {
-    setLanguage(!language);
+  const [lang, setLang] = useState("pl");
 
-    language
-      ? (document.documentElement.lang = "pl")
-      : (document.documentElement.lang = "en");
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    i18n.changeLanguage(lang);
+    console.log(lang)
+  }, [lang])
+  
 
-    language ? i18n.changeLanguage("pl") : i18n.changeLanguage("en");
-
-    return img === UKFlag ? setImg(PLFlag) : setImg(UKFlag);
-  };
+  const langHandler = language => {
+    setLang(language);
+  }
 
   const arrowHandler = (value = false) => {
     setArrow(value);
@@ -82,6 +76,8 @@ const App = (
         headerOff={headerOff}
         arrowHandler={arrowHandler}
         scrollPos={scroll}
+        lang={lang}
+        languageHandler={langHandler}
         t={t}
         show={showHeader}
       />
@@ -89,23 +85,7 @@ const App = (
       <Projects t={t} />
       <Skills t={t} />
       <Contact t={t} />
-      <SocialMedia />
       <Footer t={t} />
-      <button
-        className="button--lang"
-        style={{ backgroundImage: `url(${img})`, boxShadow: "0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 9px 30px 0 rgba(0, 0, 0, 0.3)" }}
-        onClick={languageHandler}
-      ></button>
-      {(arrow || scroll > 5) && typeof window.orientation === "undefined" && (
-        <Button
-          href="#landing"
-          className="global--arrow"
-          variant="dark"
-          onClick={() => arrowHandler(false)}
-        >
-          <AiOutlineArrowUp/>
-        </Button>
-      )}
     </div>
   );
 };
