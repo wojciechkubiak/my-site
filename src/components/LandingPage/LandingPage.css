@@ -79,15 +79,16 @@
  
   .home--container > h1 {
     position: relative;
-    font-size: 5vh;
+    font-size: 4vh;
     text-align: center;
     background-color: transparent;
-    color: #fbd791
+    color: #fbd791;
+    height: auto;
   }
 
   .home--container > article {
     position: relative;
-    top: 10%;
+    top: 0%;
     height: auto;  
     margin: 0em;
     border-radius: 0em;
