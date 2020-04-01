@@ -8,16 +8,15 @@ header {
   padding-right: 2em !important;
   padding-left: 2em !important;
   font-size: 2.2vh !important;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .dropdown-menu {
   background-color: #2e2e30 !important;
   border: none !important;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .dropdown-menu > a {
@@ -78,12 +77,14 @@ header > .shadow {
 }
 
 .nav-item > a {
-  color: #fbd791
+  color: #fbd791;
+  font-size: 2.2vh !important;
 }
 
 .nav-item > a:hover {
   color: #fbd791
 }
+
 .socials {
   position: absolute;
 }

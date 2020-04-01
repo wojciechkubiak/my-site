@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 
 const Projects = props => {
@@ -17,13 +17,21 @@ const Projects = props => {
   ];
 
   const imageSrc = [
-    ["white_empty_react.webp", "white_empty_nodejs.webp", "white_empty_psql.webp"],
+    [
+      "white_empty_react.webp",
+      "white_empty_nodejs.webp",
+      "white_empty_psql.webp"
+    ],
     [
       "white_empty_java.webp",
       "white_empty_nodejs.webp",
       "white_empty_psql.webp"
     ],
-    ["white_empty_react.webp", "white_empty_nodejs.webp", "white_empty_psql.webp"]
+    [
+      "white_empty_react.webp",
+      "white_empty_nodejs.webp",
+      "white_empty_psql.webp"
+    ]
   ];
 
   const swapImage = event => {
@@ -36,23 +44,19 @@ const Projects = props => {
     }
   };
 
-  
   return (
     <div id="projects">
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
         <figure className="projects--container-img-container">
           <figure className="projects--container-img">
-          <img  
-            src={require(`./../../img/${img}.webp`)}
-            alt="Project-icon"
-          />     
-          <figcaption className="projects--subinfo">
-            <h3>{data[img - 1][0]}</h3>
-            <p>{data[img - 1][1]}</p>
-          </figcaption>      
+            <img src={require(`./../../img/${img}.webp`)} alt="Project-icon" />
+            <figcaption className="projects--subinfo">
+              <h3>{data[img - 1][0]}</h3>
+              <p>{data[img - 1][1]}</p>
+            </figcaption>
+          </figure>
         </figure>
-    </figure>
         <div className="projects--technologies-container">
           <div className="projects--technologies-container-alt">
             <span className="projects--span">

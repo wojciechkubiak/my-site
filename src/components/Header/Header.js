@@ -86,9 +86,9 @@ const Header = props => {
             </Nav.Link>
           </Nav>
           <NavDropdown title={props.lang.toUpperCase()} id="collasible-nav-dropdown dropdown-menu-align-right" style={{position: "absolute", left: "0"}}>
-            <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">POLSKI</NavDropdown.Item>
+            <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">Polski</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">ENGLISH</NavDropdown.Item>
+            <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">English</NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end socials" style={{position: "absolute", right: "0"}}>
