@@ -184,6 +184,9 @@
 
 
 @media only screen and (max-width: 700px) {
+  #projects {
+    height: 36em
+  }
   #projects > h1 {
     font-size: 2em;
     padding: 0.1em;
@@ -200,7 +203,7 @@
     text-align: center;
     box-shadow: none;
     padding: 0em;
-    width: 10em;
+    width: 100vw;
     height: 80%;
     flex-direction: column;
   }
@@ -223,15 +226,16 @@
   }
 
   .projects--technologies-container {
-    position: relative;
-    top: 0em;
-    width: 10em;
+    position: absolute;
+    bottom: 0;
+    margin-top: 2em;
+    width: 100%;
     height: auto;
     box-shadow: none;
     margin-left: 0em;
     margin-right: 0em;
     margin-bottom: 0em;
-    margin-top: 0.5em;
+   
   }
 
   .projects--technologies-container-alt {
@@ -256,8 +260,8 @@
   .projects--subinfo {
     box-shadow: none;
     background-color: #2e2e3000;
-    transform: translate(0%, 50%);
-    top: 1em;
+    transform: translate(0%, -50%);
+    top: 0em;
   }
 
   .projects--subinfo > p {
@@ -283,7 +287,8 @@
   }
 
   .projects--btn-container {
-    top: 0%;
+    position: relative;
+    bottom: 0;
     width: 6em;
     height: 1.5em;
     left: 50%;
@@ -312,14 +317,6 @@
     border-radius: 0;
   }
 
-  .projects--subinfo > p,
-  .projects--subinfo > h3 {
-    color: #2e2e30;
-  }
-
-  #projects {
-    height: 101vh
-  }
 
   .projects--container-img {
     position: relative;
@@ -337,19 +334,6 @@
     top: 0%;
     transform: translate(0%, -20%);
     box-shadow: none;
-  }
-
-  .projects--technologies-container {
-    position: relative;
-    top: 0em;
-    width: 10em;
-    height: auto;
-    background-color: #2e2e30;
-    box-shadow: none;
-    margin-left: 0em;
-    margin-right: 0em;
-    margin-bottom: 0em;
-    margin-top: 0.5em;
   }
 
   .projects--technologies-container-alt {
