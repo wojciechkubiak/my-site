@@ -6,7 +6,7 @@
     rgba(0, 0, 0, 0.4)
   ), url("./../../img/bg.webp");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
 }
 
@@ -69,26 +69,25 @@
 @media only screen and (max-width: 700px) {
   .home--container {
     left: 50%;
-    top: 65%;
+    top: 60%;
     transform: translate(-50%, -50%);
     width: 80vw;
-    height: auto;
+    height: 22em;
     padding: 1em;
     background-color: transparent;
   }
  
   .home--container > h1 {
-    position: relative;
-    font-size: 4vh;
+    font-size: 2.5em;
+    height: auto;
     text-align: center;
     background-color: transparent;
-    color: #fbd791;
-    height: auto;
+    color: #fbd791
   }
 
   .home--container > article {
     position: relative;
-    top: 0%;
+    top: 2%;
     height: auto;  
     margin: 0em;
     border-radius: 0em;
