@@ -18,11 +18,15 @@ const App = (
   }
 ) => {
   const [mode, setMode] = useState(initMode);
-  const [language, setLanguage] = useState(initLanguage);
   const [arrow, setArrow] = useState(initArrow);
   const [scroll, setScroll] = useState(0);
   const [showHeader, setShowHeader] = useState(false);
   const { t, i18n } = props;
+
+  const [landingOn, setLandingOn] = useState(true);
+  const [projectsOn, setProjectsOn] = useState(false);
+  const [skillsOn, setSkillsOn] = useState(false);
+  const [contactOn, setContactOn] = useState(false);
 
   const headerOn = () => setMode(true);
   const headerOff = () => setMode(false);
@@ -33,8 +37,7 @@ const App = (
   useEffect(() => {
     document.documentElement.lang = lang;
     i18n.changeLanguage(lang);
-    console.log(lang)
-  }, [lang])
+  }, [lang, i18n])
   
 
   const langHandler = language => {
@@ -44,6 +47,22 @@ const App = (
   const arrowHandler = (value = false) => {
     setArrow(value);
   };
+
+  const activeLandingHandler = landing => {
+    setLandingOn(landing);
+  }
+
+  const activeProjectsHandler = projects => {
+    setProjectsOn(projects);
+  }
+
+  const activeSkillsHandler = skills => {
+    setSkillsOn(skills);
+  }
+
+  const activeContactHandler = contact => {
+    setContactOn(contact);
+  }
 
   window.addEventListener("scroll", function (event) {
     if (typeof window.orientation === "undefined") {
@@ -74,6 +93,10 @@ const App = (
         headerMode={mode}
         headerOn={headerOn}
         headerOff={headerOff}
+        landingOn={landingOn}
+        projectsOn={projectsOn}
+        skillsOn={skillsOn}
+        contactOn={contactOn}
         arrowHandler={arrowHandler}
         scrollPos={scroll}
         lang={lang}
@@ -81,11 +104,11 @@ const App = (
         t={t}
         show={showHeader}
       />
-      <LandingPage arrowHandler={arrowHandler} showHeaderHandler={showHeaderHandler} showArrow={arrow} t={t} />
-      <Projects t={t} />
-      <Skills t={t} />
-      <Contact t={t} />
-      <Footer t={t} />
+      <LandingPage arrowHandler={arrowHandler} activeHandler={activeLandingHandler} showHeaderHandler={showHeaderHandler} showArrow={arrow} t={t} />
+      <Projects t={t} activeHandler={activeProjectsHandler} />
+      <Skills t={t} activeHandler={activeSkillsHandler}/>
+      <Contact t={t} activeHandler={activeContactHandler}/>
+      <Footer t={t}/>
     </div>
   );
 };

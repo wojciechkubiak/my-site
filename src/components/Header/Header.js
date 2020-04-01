@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import gsap from "gsap";
 import "./Header.css";
@@ -6,7 +6,6 @@ import SocialMedia from "./../../components/SocialMedia/SocialMedia";
 
 const Header = props => {
   let headerRef = useRef(null);
-  const [languageDrop, setLanguageDrop] = useState(props.lang);
 
   let mode = [
     "shadow p-3 mb-5",
@@ -26,6 +25,10 @@ const Header = props => {
   const headerHandler = () => {
     props.headerOff();
   }
+
+  useEffect(() => {
+    console.log(props.landingOn, props.projectsOn, props.skillsOn, props.contactOn)
+  }, [props.landingOn, props.projectsOn, props.skillsOn, props.contactOn])
 
   useEffect(() => {
     if (props.show) {

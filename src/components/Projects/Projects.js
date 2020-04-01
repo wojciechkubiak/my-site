@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {useInView} from "react-intersection-observer";
+
 import "./Projects.css";
 
 const Projects = props => {
   const [img, setImg] = useState(1);
+  const [ref, inView] = useInView({
+    threshold: 0.8
+  })
 
   const data = [
     [
@@ -44,8 +49,12 @@ const Projects = props => {
     }
   };
 
+  useEffect(() => {
+    props.activeHandler(inView)
+  }, [inView])
+
   return (
-    <div id="projects">
+    <div id="projects" ref={ref}>
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
         <figure className="projects--container-img-container">

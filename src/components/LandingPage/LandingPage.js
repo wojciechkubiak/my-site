@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import "./LandingPage.css";
 import {AiOutlineArrowDown} from "react-icons/ai";
 import {Button} from "react-bootstrap";
@@ -13,8 +14,15 @@ const LandingPage = props => {
   let arrowItem = useRef(null);
   
   const [showArrow, setShowArrow] = useState(true);
+  const [ref, inView] = useInView({
+    threshold: 0.8
+  })
 
   const t1 = gsap.timeline();
+
+  useEffect(() => {
+    props.activeHandler(inView)
+  }, [inView])
 
   useEffect(() => {
     t1.fromTo(
@@ -85,7 +93,7 @@ const LandingPage = props => {
   }, []);
 
   return (
-    <div className="home" id="landing" data-testid="Home">
+    <div className="home" id="landing" data-testid="Home" ref={ref}>
       <section
         className="home--container"
         ref={e => {

@@ -1,52 +1,26 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect } from "react";
+import {useInView} from "react-intersection-observer";
 import { FaFileDownload } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FiPhoneCall } from "react-icons/fi";
-import { InView } from "react-intersection-observer";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
-import gsap from "gsap";
 import "./Contact.css";
 
 const Contact = props => {
-  const [notAnimated, setNotAnimated] = useState(false);
+  const [ref, inView] = useInView({
+    threshold: 0.8
+  })
 
-  let contactItem = useRef(null);
-
-  const anim = () => {
-    gsap.fromTo(
-      contactItem,
-      { opacity: 0 },
-      {
-        duration: 1,
-        opacity: 1,
-        ease: "slow (0.7, 0.7, false)",
-        display: "block",
-        onComplete: function() {
-          setNotAnimated(true);
-        }
-      }
-    );
-  };
+  useEffect(() => {
+    props.activeHandler(inView)
+  }, [inView])
 
   return (
-    <InView
-      as="div"
-      data-testid="Contact"
-      id="contact"
-      onChange={(inView, entry) => {
-        if (inView && !notAnimated) {
-          anim();
-        }
-      }}
-    >
+      <div id="contact" ref={ref}>
       <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
       <div
         className="contact--main"
-        ref={e => {
-          contactItem = e;
-        }}
-        style={{ display: "none" }}
       >
         <section
           className="contact--container"
@@ -111,7 +85,7 @@ const Contact = props => {
           </article>
         </section>
       </div>
-    </InView>
+      </div>
   );
 };
 
