@@ -1,11 +1,15 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import gsap from "gsap";
 import "./Header.css";
 import SocialMedia from "./../../components/SocialMedia/SocialMedia";
 
-const Header = props => {
+const Header = (props, {initWithoutUnderline = {}}) => {
   let headerRef = useRef(null);
+  const [landing, setLanding] = useState(initWithoutUnderline);
+  const [projects, setProjects] = useState(initWithoutUnderline);
+  const [skills, setSkills] = useState(initWithoutUnderline);
+  const [contact, setContact] = useState(initWithoutUnderline);
 
   let mode = [
     "shadow p-3 mb-5",
@@ -26,8 +30,19 @@ const Header = props => {
     props.headerOff();
   }
 
+  const headerLinkHandler = (value, action) => {
+    if(value) {
+      action({textDecoration: "underline"})
+    } else {
+      action({})
+    }
+  }
+
   useEffect(() => {
-    console.log(props.landingOn, props.projectsOn, props.skillsOn, props.contactOn)
+    headerLinkHandler(props.landingOn, setLanding)
+    headerLinkHandler(props.projectsOn, setProjects)
+    headerLinkHandler(props.skillsOn, setSkills)
+    headerLinkHandler(props.contactOn, setContact)
   }, [props.landingOn, props.projectsOn, props.skillsOn, props.contactOn])
 
   useEffect(() => {
@@ -62,6 +77,7 @@ const Header = props => {
               href="#landing"
               className={textColor.join(" ")}
               onClick={headerHandler}
+              style={landing}
             >
               {props.t("header.about", { framework: "react-i18next" })}
             </Nav.Link>
@@ -69,6 +85,7 @@ const Header = props => {
               href="#projects"
               className={textColor.join(" ")}
               onClick={handler}
+              style={projects}
             >
               {props.t("header.projects", { framework: "react-i18next" })}
             </Nav.Link>
@@ -76,19 +93,19 @@ const Header = props => {
               href="#skills"
               className={textColor.join(" ")}
               onClick={handler}
-              // style={{borderLeft: "3px solid #fbd791", borderRight: "3px solid #fbd791"}}
+              style={skills}
             >
               {props.t("header.skills", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#contact"
               className={textColor.join(" ")}
-              onClick={handler}
+              style={contact}
             >
               {props.t("header.contact", { framework: "react-i18next" })}
             </Nav.Link>
           </Nav>
-          <NavDropdown title={props.lang.toUpperCase()} id="collasible-nav-dropdown dropdown-menu-align-right" style={{position: "absolute", left: "0"}}>
+          <NavDropdown title={props.lang.toUpperCase()} id="collasible-nav-dropdown dropdown-menu-align-right" className="language--dropdown" style={{position: "absolute", left: "0"}}>
             <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">Polski</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">English</NavDropdown.Item>

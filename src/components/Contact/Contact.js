@@ -27,7 +27,8 @@ const Contact = props => {
           data-testid="Contact"
         >
           <article>
-            <h3 style={{ color: "#fbd791" }}>
+            <h2 style={{textTransform: "uppercase"}}>{props.t("contact.box", { framework: "react-i18next" })}</h2>
+            <h3>
               {props.t("contact.firstLine", { framework: "react-i18next" })}
             </h3>
           </article>
