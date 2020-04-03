@@ -57,18 +57,21 @@ const Projects = props => {
     <div id="projects" ref={ref}>
       <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
-        <figure className="projects--container-img-container">
-          <figure className="projects--container-img">
+        <div className="projects--container-img-container">
+          <div className="projects--container-img">
             <img src={require(`./../../img/${img}.webp`)} alt="Project-icon" />
-            <figcaption className="projects--subinfo">
+            
+          </div>
+        </div>     
+        <div className="projects--technologies-container">
+        <div className="projects--subinfo">
               <h3>{data[img - 1][0]}</h3>
               <p>{data[img - 1][1]}</p>
-            </figcaption>
-          </figure>
-        </figure>
-        <div className="projects--technologies-container">
+            </div>
           <div className="projects--technologies-container-alt">
+         
             <span className="projects--span">
+            
               <img
                 className="projects--img"
                 src={require(`./../../img/${imageSrc[img - 1][0]}`)}

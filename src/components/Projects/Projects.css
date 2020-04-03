@@ -76,7 +76,7 @@
 .projects--subinfo > h3 {
   text-align: center;
   color: #fbd791;
-  font-size: 4.5vh;
+  font-size: calc(.8vh + 2vw);
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -85,7 +85,7 @@
 .projects--subinfo > p {
   text-align: center;
   color: #ffffff;
-  font-size: 2.2vh !important;
+  font-size: calc(.5vh + .8vw);
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
@@ -136,7 +136,7 @@
 .projects--technologies-container {
   width: 30%;
   height: 60vh;
-  margin-left: auto;
+  margin-left: 0.5em;
   margin-right: 0;
 }
 
