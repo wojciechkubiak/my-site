@@ -32,7 +32,7 @@ const Header = (props, {initWithoutUnderline = {}}) => {
 
   const headerLinkHandler = (value, action) => {
     if(value) {
-      action({textDecoration: "underline"})
+      action({textDecoration: "underline 2px"})
     } else {
       action({})
     }
