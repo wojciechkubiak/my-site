@@ -18,7 +18,6 @@ const Contact = props => {
 
   return (
       <div id="contact" ref={ref}>
-      <h1>{props.t("contact.header", { framework: "react-i18next" })}</h1>
       <div
         className="contact--main"
       >

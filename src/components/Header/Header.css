@@ -54,7 +54,7 @@ header {
 }
 
 .header--out {
-  background-color: #2e2e30;
+  background-image: url("./../../img/noise_bg.webp"); 
   transition: 1s;
 }
 

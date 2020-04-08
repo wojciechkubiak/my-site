@@ -32,9 +32,7 @@ const Skills = props => {
 
 
   return (
-
       <div id="skills" ref={ref}>
-      <h1>{props.t("skills.header", { framework: "react-i18next" })}</h1>
       <div className="skills--container">
         {Object.keys(icons).map(key => {
           return (

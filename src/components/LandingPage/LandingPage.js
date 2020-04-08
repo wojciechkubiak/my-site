@@ -29,45 +29,45 @@ const LandingPage = props => {
       sectionItem,
       { opacity: 0 },
       {
-        duration: 1.5,
+        duration: .5,
         ease: "slow (0.7, 0.7, false)",
         opacity: 1
       }
     );
     t1.to(greetingItem, {
-      duration: 1,
+      duration: .5,
       opacity: 1,
       display: "block"
     });
     t1.to(greetingItem, {
-      duration: 1,
+      duration: .5,
       opacity: 0,
       display: "none"
     });
     t1.to(nameIs, {
-      duration: 1,
+      duration:  .5,
       opacity: 1,
       display: "block"
     });
     t1.to(nameIs, {
-      duration: 1,
+      duration:  .5,
       opacity: 0,
       display: "none"
     });
     t1.to(nameItem, {
-      duration: 1,
+      duration:  .5,
       opacity: 1,
       display: "block",
     });
     t1.to(nameItem, {
-      delay: 1.5,
+      delay: 1,
       y: -100
     })
     t1.to(aboutItem, {
       y: -100
     })
     t1.to(aboutItem, {
-      duration: 1,
+      duration:  .5,
       opacity: 1,
       display: "block",
       onComplete: function() {

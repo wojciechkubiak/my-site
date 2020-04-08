@@ -1,27 +1,7 @@
 #projects {
   position: relative;
   height: 80vh;
-  background-color: #2e2e30;
-}
-
-#projects::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-  left: 25%;
-  border-top: 3px solid #fbd791;
-}
-
-#projects::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  left: 25%;
-  border-top: 3px solid #fbd791;
+  background-color: transparent;
 }
 
 .projects--adress {
@@ -31,11 +11,11 @@
   left: 0;
   right: 0;
   text-align: center;
-  top: 40%; /* Adjust this value to move the positioned div up and down */
+  top: 40%;
   background: rgba(0, 0, 0, 0.8);
   font-family: Arial, sans-serif;
   color: #fff;
-  width: auto; /* Set the width of the positioned div */
+  width: auto;
 }
 
 .projects--container {
@@ -48,6 +28,7 @@
   height: 80%;
   transform: translate(-50%, -50%);
   padding: 1em;
+  z-index: 5;
 }
 
 .projects--technologies-container-alt {
@@ -60,7 +41,7 @@
 }
 
 .projects--container-img {
-  width: 100%; /* 40vw */
+  width: 100%;
   height: auto;
 }
 
@@ -158,8 +139,9 @@
   margin-top: 5%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  position: relative;
-  border-radius: 1em;
+  position: relative; 
+  border-radius: 0em;
+  
   height: auto;
 }
 
@@ -183,12 +165,40 @@
   padding: 0.4em;
 }
 
-
-
 @media only screen and (max-width: 700px) {
+
+  
+#projects::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 25%;
+  border-top: 3px solid #fbd791;
+}
+
+.projects--background {
+  display: none;
+}
+
+#projects::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 25%;
+  border-top: 3px solid #fbd791;
+}
+
   #projects {
-    height: 36em
+    height: 36em;
+    background-image: url("./../../img/noise_bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
   #projects > h1 {
     font-size: 2em;
     padding: 0.1em;
@@ -299,7 +309,9 @@
   }
 
   .projects--technologies-container-alt {
-    background-color: #2e2e30;
+    background-image: url("./../../img/noise_bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     border-radius: 0.5em;
   }
@@ -355,7 +367,9 @@
   .projects--subinfo {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    background-color: #2e2e30;
+    background-image: url("./../../img/noise_bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .projects--subinfo > h3 {

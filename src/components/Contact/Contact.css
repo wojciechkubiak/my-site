@@ -1,7 +1,9 @@
 #contact {
   position: relative;
   height: 70vh;
-  background-color: #2e2e30;
+  background-image: url("./../../img/noise_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #contact::after {
@@ -11,7 +13,7 @@
   top: 0;
   width: 50%;
   left: 25%;
-  border-top: 3px solid #fbd791;
+  border-top: 2px solid #fbd791;
 }
 
 #contact > h1 {
@@ -29,12 +31,14 @@
 }
 
 .contact--container { 
+  position: relative;
   width: auto;
   height: auto;
   text-align: center;
   padding: 0.2em;
   padding-bottom: 1em !important;
   background-color: #2e2e30;
+  border: 1px solid #fbd791;
 }
 
 .contact--main {
@@ -45,6 +49,7 @@
   height: auto;
   transform: translate(-50%, -50%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  z-index: 5;
 }
 
 .contact--container > article > h3 {
@@ -93,7 +98,10 @@
 @media only screen and (max-width: 700px) {
 
   #contact {
-    height: 101vh
+    height: 101vh;
+    background-image: url("./../../img/noise_bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   #contact > h1 {
@@ -118,7 +126,6 @@
 
   .contact--container > article > h3 {
     font-size: 3vh;
-    border-bottom: 1px solid #fbd791;
     margin-bottom: 5vh;
   }
   
@@ -151,7 +158,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 60vw;
+    width: 70vw;
     height: auto;
     transform: translate(-50%, -50%);
     padding: 0em;

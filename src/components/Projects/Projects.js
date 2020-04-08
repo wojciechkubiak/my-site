@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {useInView} from "react-intersection-observer";
-
+import Background from "./../../img/noise_bg.webp";
+import {gsap} from "gsap";
 import "./Projects.css";
 
 const Projects = props => {
@@ -8,6 +9,8 @@ const Projects = props => {
   const [ref, inView] = useInView({
     threshold: 0.8
   })
+
+  let subinfoItem = useRef(null);
 
   const data = [
     [
@@ -51,27 +54,30 @@ const Projects = props => {
 
   useEffect(() => {
     props.activeHandler(inView)
+
+    if(inView) {
+      gsap.to(subinfoItem, {
+        duration: 2,
+        opacity: 1
+      })
+    }
   }, [inView])
 
   return (
     <div id="projects" ref={ref}>
-      <h1>{props.t("projects.header", { framework: "react-i18next" })}</h1>
       <div className="projects--container" data-testid="Projects">
         <div className="projects--container-img-container">
           <div className="projects--container-img">
-            <img src={require(`./../../img/${img}.webp`)} alt="Project-icon" />
-            
+            <img src={require(`./../../img/${img}.webp`)} alt="Project-icon" />          
           </div>
         </div>     
         <div className="projects--technologies-container">
-        <div className="projects--subinfo">
+        <div ref={e => {subinfoItem = e}} className="projects--subinfo" style={{opacity: "0"}}>
               <h3>{data[img - 1][0]}</h3>
               <p>{data[img - 1][1]}</p>
             </div>
-          <div className="projects--technologies-container-alt">
-         
-            <span className="projects--span">
-            
+          <div className="projects--technologies-container-alt">        
+            <span className="projects--span">           
               <img
                 className="projects--img"
                 src={require(`./../../img/${imageSrc[img - 1][0]}`)}
@@ -113,6 +119,7 @@ const Projects = props => {
           </div>
         </div>
       </div>
+      <div className="projects--background" style={{width: "100%", height: "84%", position: "absolute", bottom: "0%", backgroundImage: `url(${Background})`}}></div>
     </div>
   );
 };
