@@ -58,7 +58,7 @@
   color: #eeeeee;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  font-size: calc(0.8vw + 1vh);
+  font-size: calc(0.8vh + .8vw);
 }
 
 .contact--container > article > h2 {
@@ -66,7 +66,7 @@
   color: #fbd791;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: calc(1.4vw + 1vh);
+  font-size: calc(.8vh + 2vw);
 }
 
 .contact--article {
@@ -92,7 +92,7 @@
   margin-top: 1em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: calc(.5vh + .8vw);
+  font-size: calc(.5vh + .7vw);
 }
 
 @media only screen and (max-width: 700px) {

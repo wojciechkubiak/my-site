@@ -34,26 +34,6 @@ const LandingPage = props => {
         opacity: 1
       }
     );
-    t1.to(greetingItem, {
-      duration: .5,
-      opacity: 1,
-      display: "block"
-    });
-    t1.to(greetingItem, {
-      duration: .5,
-      opacity: 0,
-      display: "none"
-    });
-    t1.to(nameIs, {
-      duration:  .5,
-      opacity: 1,
-      display: "block"
-    });
-    t1.to(nameIs, {
-      duration:  .5,
-      opacity: 0,
-      display: "none"
-    });
     t1.to(nameItem, {
       duration:  .5,
       opacity: 1,
@@ -101,21 +81,6 @@ const LandingPage = props => {
         }}
         style={{ opacity: 0 }}
       >
-        <h1
-          ref={e => {
-            greetingItem = e;
-          }}
-        >
-          {props.t("aboutme.greeting", { framework: "react-i18next" })}
-        </h1>
-        <h1
-          style={{ display: "none", opacity: "0" }}
-          ref={e => {
-            nameIs = e;
-          }}
-        >
-          {props.t("aboutme.mynameis", { framework: "react-i18next" })}
-        </h1>
         <h1
           style={{ display: "none", opacity: "0"}}
           ref={e => {
