@@ -13,7 +13,7 @@
   top: 0;
   width: 50%;
   left: 25%;
-  border-top: 2px solid #fbd791;
+  border-top: 1px solid #fbd791;
 }
 
 #skills > h1 {
@@ -70,7 +70,7 @@ div > .arrow {
   background-color: #2e2e30;
   border-radius: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  border: .4em solid #fbd791
+  border: 2px solid #fbd791
 }
 
 .skills--img-container > p {

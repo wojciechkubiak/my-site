@@ -10,6 +10,9 @@ const Header = (props, {initWithoutUnderline = {}}) => {
   const [projects, setProjects] = useState(initWithoutUnderline);
   const [skills, setSkills] = useState(initWithoutUnderline);
   const [contact, setContact] = useState(initWithoutUnderline);
+  const [lang, setLang] = useState("Polski");
+  const [langShort, setLangShort] = useState("PL");
+  const [arrowRotation, setArrowRotation] = useState("180deg");
 
   let mode = [
     "shadow p-3 mb-5",
@@ -20,6 +23,16 @@ const Header = (props, {initWithoutUnderline = {}}) => {
     "header--link",
     props.headerMode ? "text--gold" : "text--gray"
   ];
+
+  const rotateElement = () => {
+    const rotation = arrowRotation;
+    
+    if(rotation === "0deg") {
+      setArrowRotation("180deg")
+    } else if (rotation === "180deg") {
+      setArrowRotation("0deg")
+    }
+  }
 
   const handler = () => {
     props.headerOn();
@@ -32,7 +45,7 @@ const Header = (props, {initWithoutUnderline = {}}) => {
 
   const headerLinkHandler = (value, action) => {
     if(value) {
-      action({textDecoration: "underline 2px"})
+      action({textDecoration: "underline 1px"})
     } else {
       action({})
     }
@@ -43,7 +56,21 @@ const Header = (props, {initWithoutUnderline = {}}) => {
     headerLinkHandler(props.projectsOn, setProjects)
     headerLinkHandler(props.skillsOn, setSkills)
     headerLinkHandler(props.contactOn, setContact)
-  }, [props.landingOn, props.projectsOn, props.skillsOn, props.contactOn])
+
+    if(props.lang.toUpperCase() === "PL") {
+      setLang("Polski");
+      setLangShort("PL");
+      console.log(props.lang.toUpperCase())
+    } else if(props.lang.toUpperCase() === "EN") {
+      setLang("English");
+      setLangShort("UK");
+      console.log(props.lang.toUpperCase())
+    }
+
+    const dropdownArrow = document.querySelector('.dropdown-toggle').style;
+    dropdownArrow.setProperty('--val', `${arrowRotation}`)
+
+  }, [props.landingOn, props.projectsOn, props.skillsOn, props.contactOn, props.lang, arrowRotation])
 
   useEffect(() => {
     if (props.show) {
@@ -105,10 +132,9 @@ const Header = (props, {initWithoutUnderline = {}}) => {
               {props.t("header.contact", { framework: "react-i18next" })}
             </Nav.Link>
           </Nav>
-          <NavDropdown title={props.lang.toUpperCase()} id="collasible-nav-dropdown dropdown-menu-align-right" className="language--dropdown" style={{position: "absolute", left: "0"}}>
-            <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">Polski</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">English</NavDropdown.Item>
+          <NavDropdown onClick={() => rotateElement() } title={`${lang} (${langShort})`} id="collasible-nav-dropdown dropdown-menu-align-right" className="language--dropdown" style={{position: "absolute", left: "0"}}>
+            <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">Polski (PL)</NavDropdown.Item>
+            <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">English (UK)</NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end socials" style={{position: "absolute", right: "0"}}>

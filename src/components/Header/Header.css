@@ -9,7 +9,7 @@ header {
   padding-left: 2em !important;
   font-size: 2.2vh !important;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .dropdown-menu {
@@ -34,6 +34,11 @@ header {
 
 .dropdown-menu > a:hover {
   text-decoration: 1px solid #fbd791 underline;
+}
+
+.dropdown-toggle::after {
+  transition: 500ms;
+  transform: rotate(var(--val));
 }
 
 .text--gold {

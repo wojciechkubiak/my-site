@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+  import React, { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./LandingPage.css";
 import {AiOutlineArrowDown} from "react-icons/ai";

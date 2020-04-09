@@ -11,10 +11,10 @@ import cssLogo from "./../../img/white_empty_css.webp";
 import bootstrapLogo from "./../../img/white_empty_bootstrap.webp";
 import "./Skills.css";
 
-const Skills = props => {
+const Skills = (props) => {
   const [ref, inView] = useInView({
-    threshold: 0.8
-  })
+    threshold: 0.8,
+  });
 
   const icons = {
     ReactJS: [reactLogo, "reactjs"],
@@ -23,18 +23,17 @@ const Skills = props => {
     Css: [cssLogo, "css"],
     Html: [htmlLogo, "html"],
     Bootstrap: [bootstrapLogo, "bootstrap"],
-    PostgreSQL: [psqlLogo, "postgres"]
+    PostgreSQL: [psqlLogo, "postgres"],
   };
 
   useEffect(() => {
-    props.activeHandler(inView)
-  }, [inView])
-
+    props.activeHandler(inView);
+  }, [inView]);
 
   return (
-      <div id="skills" ref={ref}>
+    <div id="skills" ref={ref}>
       <div className="skills--container">
-        {Object.keys(icons).map(key => {
+        {Object.keys(icons).map((key) => {
           return (
             <SkillImg
               key={shortid.generate()}
@@ -46,7 +45,7 @@ const Skills = props => {
           );
         })}
       </div>
-      </div>
+    </div>
   );
 };
 
