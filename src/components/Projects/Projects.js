@@ -11,7 +11,7 @@ const Projects = props => {
   })
 
   let subinfoItem = useRef(null);
-
+  let imageItem = useRef(null);
   const data = [
     [
       "Obb-SYS",
@@ -43,6 +43,22 @@ const Projects = props => {
   ];
 
   const swapImage = event => {
+    gsap.fromTo(imageItem, {
+      opacity: 0,
+      duration: 1.2,
+      x: -50
+    }, {
+      opacity: 1,
+      duration: 1.2,
+      x: 0
+    })
+    gsap.fromTo(subinfoItem, {
+      duration: 1.2,
+      opacity: 0
+    }, {
+      duration: 1.2,
+      opacity: 1
+    })
     if (img === 3 && event.target.value === "forward") {
       setImg(1);
     } else if (img === 1 && event.target.value === "backward") {
@@ -50,6 +66,7 @@ const Projects = props => {
     } else {
       setImg(img + parseInt(event.target.name));
     }
+  
   };
 
   useEffect(() => {
@@ -63,11 +80,12 @@ const Projects = props => {
     }
   }, [inView])
 
+
   return (
     <div id="projects" ref={ref}>
       <div className="projects--container" data-testid="Projects">
         <div className="projects--container-img-container">
-          <div className="projects--container-img">
+          <div className="projects--container-img" ref={e => {imageItem = e}}>
             <img src={require(`./../../img/${img}.webp`)} alt="Project-icon" />          
           </div>
         </div>     
