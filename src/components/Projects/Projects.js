@@ -45,12 +45,10 @@ const Projects = props => {
   const swapImage = event => {
     gsap.fromTo(imageItem, {
       opacity: 0,
-      duration: 1.2,
-      x: -50
+      duration: .5,
     }, {
       opacity: 1,
-      duration: 1.2,
-      x: 0
+      duration: .5,
     })
     gsap.fromTo(subinfoItem, {
       duration: 1.2,
