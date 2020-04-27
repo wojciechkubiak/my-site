@@ -77,7 +77,7 @@ const Projects = props => {
       <div className="projects--container" data-testid="Projects">
         <div className="projects--container-img-container">
           <div className="projects--container-img" ref={e => {imageItem = e}}>
-            <img src={require(`./../../img/${img}.webp`)} alt="Project-icon" />          
+            <img src={require(`./../../img/${img}.gif`)} alt="Project-icon" />          
           </div>
         </div>     
         <div className="projects--technologies-container">
