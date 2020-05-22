@@ -42,6 +42,10 @@
         "4": "Programowanie Obiektowe",
         "5": "Async"
     },
+    "typescript": {
+        "1": "Konwersja ES6 na Typescript",
+        "2": "React Typescript"
+    },
     "reactjs": {
         "1": "React Hooks",
         "2": "Programowanie Funkcyjne",

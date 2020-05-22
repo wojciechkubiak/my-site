@@ -1,20 +1,12 @@
 #skills {
   position: relative;
-  height: 80vh;
-  background-image: url("./../../img/noise_bg.webp");
+  height: 100vh;
+  /* background-image: url("./../../img/noise_bg.png"); */
+  background-color: rgba(0, 0, 0, .4);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#skills::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  left: 25%;
-  border-top: 1px solid #fbd791;
-}
 
 #skills > h1 {
   position: absolute;
@@ -23,7 +15,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 7vh;
-  color: #2e2e30;
+  color: #152534;
   top: 50%;
   right: 0em;
   transform: translate(30%, -50%) rotate(270deg);
@@ -38,7 +30,7 @@
 .tooltip-inner {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  background-color: #2e2e30 !important;
+  background-color: #152534 !important;
   color: #ffffff !important;
   font-size: 1.5vh !important;
   text-transform: uppercase;
@@ -67,10 +59,10 @@ div > .arrow {
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #2e2e30;
+  background-color: #152534;
   border-radius: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  border: 2px solid #fbd791
+  border: 2px solid #ffffff
 }
 
 .skills--img-container > p {
@@ -100,9 +92,9 @@ div > .arrow {
 .popover-header {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  background-color: #fbd791!important;
+  background-color: #ffffff!important;
   font-size: 2.4vh!important;
-  color: #2e2e30!important;
+  color: #152534!important;
   border-bottom: none!important;
   text-transform: uppercase;
 }
@@ -112,13 +104,13 @@ div > .arrow {
   font-weight: 300;
   color:  #ffffff!important;
   font-size: 2.0vh!important;
-  background-color: #2e2e30!important;
+  background-color: #152534!important;
   border-bottom-left-radius: 0.2em;
   border-bottom-right-radius: 0.2em;
 }
 
 .list-group-item {
-  background-color: #2e2e30!important;
+  background-color: #152534!important;
 }
 
 .popover {
@@ -129,9 +121,9 @@ div > .arrow {
 
 @media only screen and (max-width: 700px) {
   #skills {
-    color: #2e2e30;
+    color: #152534;
     height: 101vh;
-    background-image: url("./../../img/noise_bg.webp");
+    background-image: url("./../../img/noise_bg.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -143,7 +135,7 @@ div > .arrow {
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #2e2e30;
+    color: #152534;
   }
 
   .skills--container {
@@ -156,11 +148,11 @@ div > .arrow {
     width: 14vh;
     height: 14vh;
     margin: 1em;
-    background-color: #2e2e30;
+    background-color: #152534;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;
-    border: .2em solid #fbd791
+    border: .2em solid #ffffff
   }
 
   .skills--img-container > p {

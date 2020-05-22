@@ -1,14 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import {useInView} from "react-intersection-observer";
-import Background from "./../../img/noise_bg.webp";
+import Background from "./../../img/noise_bg.png";
 import {gsap} from "gsap";
 import "./Projects.css";
 
 const Projects = props => {
   const [img, setImg] = useState(1);
-  const [ref, inView] = useInView({
-    threshold: 0.8
-  })
 
   let subinfoItem = useRef(null);
   let imageItem = useRef(null);
@@ -61,19 +57,15 @@ const Projects = props => {
   };
 
   useEffect(() => {
-    props.activeHandler(inView)
-
-    if(inView) {
-      gsap.to(subinfoItem, {
-        duration: 2,
-        opacity: 1
-      })
-    }
-  }, [inView])
+    gsap.to(subinfoItem, {
+      duration: 2,
+      opacity: 1
+    })
+  }, [])
 
 
   return (
-    <div id="projects" ref={ref}>
+    <div id="projects">
       <div className="projects--container" data-testid="Projects">
         <div className="projects--container-img-container">
           <div className="projects--container-img" ref={e => {imageItem = e}}>

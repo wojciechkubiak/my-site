@@ -42,6 +42,10 @@
         "4": "Objective Programming",
         "5": "Async"
     },
+    "typescript": {
+        "1": "ES6 into Typescript conversion",
+        "2": "React implementation"
+    },
     "reactjs": {
         "1": "React Hooks",
         "2": "Functional Programming",

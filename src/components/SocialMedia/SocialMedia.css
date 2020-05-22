@@ -18,7 +18,7 @@
   padding: 0;
   margin: 0;
   bottom: 0;
-  background-color: #fbd791;
+  background-color: #ffffff;
   outline: none !important;
   font-weight: 400;
   padding-top: 0.2em;
@@ -32,7 +32,7 @@
   width: 4em;
   height: 4em;
   border: none;
-  background-color: #fbd791;
+  background-color: #ffffff;
   outline: none !important;
 }
 
@@ -58,7 +58,7 @@
   height: 60%;
   width: 60%;
   padding: 0.1em;
-  color: #2e2e30;
+  color: #152534;
 }
 
 @media only screen and (max-width: 700px) {

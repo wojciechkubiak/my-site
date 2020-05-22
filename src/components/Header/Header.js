@@ -13,6 +13,7 @@ const Header = (props, {initWithoutUnderline = {}}) => {
   const [lang, setLang] = useState("Polski");
   const [langShort, setLangShort] = useState("PL");
   const [arrowRotation, setArrowRotation] = useState("180deg");
+  const [activeKey, setActiveKey] = useState(1);
 
   let mode = [
     "shadow p-3 mb-5",
@@ -32,15 +33,6 @@ const Header = (props, {initWithoutUnderline = {}}) => {
     } else if (rotation === "180deg") {
       setArrowRotation("0deg")
     }
-  }
-
-  const handler = () => {
-    props.headerOn();
-    props.arrowHandler(true);
-  };
-
-  const headerHandler = () => {
-    props.headerOff();
   }
 
   const headerLinkHandler = (value, action) => {
@@ -99,34 +91,51 @@ const Header = (props, {initWithoutUnderline = {}}) => {
           id="responsive-navbar-nav"
           className="justify-content-center header--container"
         >
-          <Nav>
+          <Nav variant="pills" activeKey={activeKey}>
             <Nav.Link
+              eventKey="1"
               href="#landing"
               className={textColor.join(" ")}
-              onClick={headerHandler}
+              onClick={() => {
+                setActiveKey(1);
+                props.showLanding();
+              }}
               style={landing}
             >
               {props.t("header.about", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
+              eventKey="2"
               href="#projects"
               className={textColor.join(" ")}
-              onClick={handler}
+              onClick={() => {
+                setActiveKey(2);
+                props.showProjects();
+              }}
               style={projects}
             >
               {props.t("header.projects", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#skills"
+              eventKey="3"
               className={textColor.join(" ")}
-              onClick={handler}
+              onClick={() => {
+                setActiveKey(3);
+                props.showSkills();
+              }}
               style={skills}
             >
               {props.t("header.skills", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
               href="#contact"
+              eventKey="4"
               className={textColor.join(" ")}
+              onClick={() => {
+                setActiveKey(4);
+                props.showContact();
+              }}
               style={contact}
             >
               {props.t("header.contact", { framework: "react-i18next" })}

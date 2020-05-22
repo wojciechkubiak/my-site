@@ -6,6 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
+import BackgroundVideo from "./media/stockvideo_02671k.mp4";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -28,6 +29,16 @@ const App = (
   const [skillsOn, setSkillsOn] = useState(false);
   const [contactOn, setContactOn] = useState(false);
 
+  const [landing, setShowLanding] = useState(true);
+  const [projects, setShowProjects] = useState(false);
+  const [skills, setShowSkills] = useState(false);
+  const [contact, setShowContact] = useState(false);
+
+  const [landingAnimComplete, setLandingAnimComplete] = useState(false);
+  const [projectsAnimComplete, setProjectsAnimComplete] = useState(false);
+  const [skillsAnimComplete, setSkillsAnimComplete] = useState(false);
+  const [contactAnimComplete, setContactAnimComplete] = useState(false);
+
   const headerOn = () => setMode(true);
   const headerOff = () => setMode(false);
   const showHeaderHandler = () => setShowHeader(true);
@@ -48,21 +59,6 @@ const App = (
     setArrow(value);
   };
 
-  const activeLandingHandler = landing => {
-    setLandingOn(landing);
-  }
-
-  const activeProjectsHandler = projects => {
-    setProjectsOn(projects);
-  }
-
-  const activeSkillsHandler = skills => {
-    setSkillsOn(skills);
-  }
-
-  const activeContactHandler = contact => {
-    setContactOn(contact);
-  }
 
   window.addEventListener("scroll", function (event) {
     if (typeof window.orientation === "undefined") {
@@ -87,8 +83,28 @@ const App = (
     }
   });
 
+  const show = (landing, projects, skills, contact) => {
+    setShowLanding(landing);
+    setShowProjects(projects);
+    setShowSkills(skills);
+    setShowContact(contact);
+  }
+
+  const showLanding = () => show(true, false, false, false);
+  const showProjects = () => show(false, true, false, false);
+  const showSkills = () => show(false, false, true, false);
+  const showContact = () => show(false, false, false, true);
+
+  const landingAnimCompleteHandler = () => setLandingAnimComplete(true);
+  const projectsAnimCompleteHandler = () => setProjectsAnimComplete(true);
+  const skillsAnimCompleteHandler = () => setSkillsAnimComplete(true);
+  const contactAnimCompleteHandler = () => setContactAnimComplete(true);
+
   return (
     <div className="App">
+      <video className="background--video" autoPlay loop muted>
+        <source src={BackgroundVideo} type='video/mp4'/>
+      </video>
       <Header
         headerMode={mode}
         headerOn={headerOn}
@@ -103,11 +119,24 @@ const App = (
         languageHandler={langHandler}
         t={t}
         show={showHeader}
+
+        showLanding={showLanding}
+        showProjects={showProjects}
+        showSkills={showSkills}
+        showContact={showContact}
       />
-      <LandingPage arrowHandler={arrowHandler} activeHandler={activeLandingHandler} showHeaderHandler={showHeaderHandler} showArrow={arrow} t={t} />
-      <Projects t={t} activeHandler={activeProjectsHandler} />
-      <Skills t={t} activeHandler={activeSkillsHandler}/>
-      <Contact t={t} activeHandler={activeContactHandler}/>
+      {landing && (
+        <LandingPage animComplete={landingAnimComplete} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
+      )}
+      {projects && (
+        <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t}/>
+      )}
+      {skills && (
+         <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t}/>
+      )}
+      {contact && (
+        <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t}/>
+      )}
       <Footer t={t}/>
     </div>
   );

@@ -1,20 +1,23 @@
 .home {
   position: relative;
-  height: 101vh;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url("./../../img/bg.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  height: 100vh;
 }
 
+
+.landing--about {
+  background-color: rgba(0, 0, 0, .4); 
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
 
 .home--container {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 50%;
   width: 70%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -29,12 +32,12 @@
   text-align: center;
   margin: auto;
   font-size: calc(4vh + 3vw);
-  color: #fbd791;
+  color: #ffffff;
   display: block;
   border-radius: 10px;
   text-transform: uppercase;
   height: 12vh;
-  text-shadow: #2e2e30;
+  text-shadow: #152534;
 }
 
 .home--container-out {
@@ -86,7 +89,7 @@
     height: auto;
     text-align: center;
     background-color: transparent;
-    color: #fbd791
+    color: #ffffff
   }
 
   .home--container > article {

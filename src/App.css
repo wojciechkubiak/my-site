@@ -1,18 +1,20 @@
 body,
 html {
   height: 100%;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  ), url("./img/bg.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 .App {
   height: 100%;
+  width: 100%
 }
+
+.background--video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+};
 
 .global--arrow { 
   position: fixed;
@@ -27,7 +29,7 @@ html {
 }
 
 .global--arrow > svg {
-  color: #fbd791;
+  color: #ffffff;
   width: 3vw;
   height: 3vw;
 }

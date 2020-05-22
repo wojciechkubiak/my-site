@@ -8,16 +8,9 @@ import ResumeEN from "./../../doc/cv_en.pdf";
 import "./Contact.css";
 
 const Contact = props => {
-  const [ref, inView] = useInView({
-    threshold: 0.8
-  })
-
-  useEffect(() => {
-    props.activeHandler(inView)
-  }, [inView])
 
   return (
-      <div id="contact" ref={ref}>
+      <div id="contact">
       <div
         className="contact--main"
       >
@@ -39,7 +32,7 @@ const Contact = props => {
                   <span>
                     <a
                       href={ResumePL}
-                      style={{ color: "#fbd791", paddingRight: "1em" }}
+                      style={{ color: "#ffffff", paddingRight: "1em" }}
                       download="WojciechKubiakCV_PL.pdf"
                     >
                       pol
@@ -49,8 +42,8 @@ const Contact = props => {
                     <a
                       href={ResumeEN}
                       style={{
-                        color: "#fbd791",
-                        borderLeft: "1px solid #fbd791",
+                        color: "#ffffff",
+                        borderLeft: "1px solid #ffffff",
                         paddingLeft: "1em"
                       }}
                       download="WojciechKubiakCV_EN.pdf"
@@ -68,7 +61,7 @@ const Contact = props => {
               <figcaption className="contact--figcaption">
                 <a
                   href="mailto:wgkubiak@gmail.com"
-                  style={{ color: "#fbd791" }}
+                  style={{ color: "#ffffff" }}
                 >
                   wojciechkubiak@pm.me
                 </a>
