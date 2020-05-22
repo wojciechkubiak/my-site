@@ -63,18 +63,19 @@
 }
 
 .home--container > article > p {
-  padding: 1vw;
+  padding: 1em;
   font-size: calc(1vh + .8vw);
   margin-top: 0.5em;
   margin-left: 0.5vw!important;
-  margin-right: 0.5em; 
+  margin-right: 0.5em;
+  padding-bottom: 2em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-style: initial; 
   color: #ffffff;
   line-height: calc(1.5vh + 1.2vw);
   display: block;
-  height: 12em
+  height: auto
 }
 
 
