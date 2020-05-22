@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { withTranslation } from "react-i18next";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
@@ -24,6 +25,7 @@ const App = (
   const [showHeader, setShowHeader] = useState(false);
   const { t, i18n } = props;
 
+  const [isMobile, setIsMobile] = useState(false);
   const [landingOn, setLandingOn] = useState(true);
   const [projectsOn, setProjectsOn] = useState(false);
   const [skillsOn, setSkillsOn] = useState(false);
@@ -49,7 +51,18 @@ const App = (
     document.documentElement.lang = lang;
     i18n.changeLanguage(lang);
   }, [lang, i18n])
-  
+
+  useEffect(() => {
+    if( navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)) {     
+          setIsMobile(true);
+      }
+  }, [])
 
   const langHandler = language => {
     setLang(language);
@@ -103,9 +116,10 @@ const App = (
   return (
     <div className="App">
       <video className="background--video" autoPlay loop muted>
-        <source src={BackgroundVideo} type='video/mp4'/>
+        <source src={BackgroundVideo} type='video/mp4' />
       </video>
-      <Header
+      {isMobile && (
+        <Header
         headerMode={mode}
         headerOn={headerOn}
         headerOff={headerOff}
@@ -125,19 +139,33 @@ const App = (
         showSkills={showSkills}
         showContact={showContact}
       />
+      )}
+      {!isMobile && (
+        <Navbar t={t}
+        landing={landing}
+        projects={projects}
+        skills={skills}
+        lang={lang}
+        languageHandler={langHandler}
+        contact={contact}
+        showLanding={showLanding}
+        showProjects={showProjects}
+        showSkills={showSkills}
+        showContact={showContact} />
+      )}
       {landing && (
         <LandingPage animComplete={landingAnimComplete} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
       )}
       {projects && (
-        <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t}/>
+        <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t} />
       )}
       {skills && (
-         <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t}/>
+        <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t} />
       )}
       {contact && (
-        <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t}/>
+        <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t} />
       )}
-      <Footer t={t}/>
+      <Footer t={t} />
     </div>
   );
 };

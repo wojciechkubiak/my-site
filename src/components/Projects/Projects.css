@@ -2,7 +2,7 @@
   position: relative;
   position: relative;
   height: 100vh;
-  background-image: url("./../../img/noise_bg.png");
+  background-color: rgba(0, 0, 0, .4);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -185,7 +185,6 @@
 
   #projects {
     height: 36em;
-    background-image: url("./../../img/noise_bg.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -301,7 +300,7 @@
   }
 
   .projects--technologies-container-alt {
-    background-image: url("./../../img/noise_bg.png");
+    background-image: url("./../../img/noise_bg.webp");
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
@@ -359,7 +358,7 @@
   .projects--subinfo {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    background-image: url("./../../img/noise_bg.png");
+    background-image: url("./../../img/noise_bg.webp");
     background-repeat: no-repeat;
     background-position: center;
   }

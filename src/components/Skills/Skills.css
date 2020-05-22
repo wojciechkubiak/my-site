@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   height: 100vh;
-  /* background-image: url("./../../img/noise_bg.png"); */
+  /* background-image: url("./../../img/noise_bg.webp"); */
   background-color: rgba(0, 0, 0, .4);
   background-repeat: no-repeat;
   background-position: center;
@@ -123,7 +123,7 @@ div > .arrow {
   #skills {
     color: #152534;
     height: 101vh;
-    background-image: url("./../../img/noise_bg.png");
+    background-image: url("./../../img/noise_bg.webp");
     background-repeat: no-repeat;
     background-position: center;
   }

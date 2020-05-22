@@ -59,7 +59,7 @@ header {
 }
 
 .header--out {
-  background-image: url("./../../img/noise_bg.png"); 
+  background-image: url("./../../img/noise_bg.webp"); 
   transition: 1s;
 }
 
@@ -102,8 +102,10 @@ header > .shadow {
   }
 
   .header--top, .header--out {
-    background-color: #152534;
+    background-image: url("./../../img/noise_bg.webp"); 
+
   }
+
 
   .language--dropdown {
     position: fixed;

@@ -1,0 +1,41 @@
+.nav--container {
+    position: fixed;
+    height: auto;
+    width: auto;
+    text-align: center;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 1em;
+    z-index: 500;
+}
+
+.nav--rect {
+    position: relative;
+    height: 2em;
+    width: 2em;
+    margin: .5em;
+    display: block;
+    cursor: pointer;
+}
+
+.nav--circle {
+    position: absolute;
+    height: .5em;
+    width: .5em;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav--rect:hover {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.nav--rect-active {
+    border: 1px solid #ffffff;
+    border-radius: 50%; 
+}

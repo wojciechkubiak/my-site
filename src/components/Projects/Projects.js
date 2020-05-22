@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Background from "./../../img/noise_bg.png";
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 import "./Projects.css";
 
 const Projects = props => {
@@ -120,7 +119,7 @@ const Projects = props => {
           </div>
         </div>
       </div>
-      <div className="projects--background" style={{width: "100%", height: "84%", position: "absolute", bottom: "0%", backgroundImage: `url(${Background})`}}></div>
+      <div className="projects--background" style={{width: "100%", height: "84%", position: "absolute", bottom: "0%"}}></div>
     </div>
   );
 };

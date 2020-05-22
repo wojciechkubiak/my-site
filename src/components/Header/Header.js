@@ -94,7 +94,6 @@ const Header = (props, {initWithoutUnderline = {}}) => {
           <Nav variant="pills" activeKey={activeKey}>
             <Nav.Link
               eventKey="1"
-              href="#landing"
               className={textColor.join(" ")}
               onClick={() => {
                 setActiveKey(1);
@@ -106,7 +105,6 @@ const Header = (props, {initWithoutUnderline = {}}) => {
             </Nav.Link>
             <Nav.Link
               eventKey="2"
-              href="#projects"
               className={textColor.join(" ")}
               onClick={() => {
                 setActiveKey(2);
@@ -117,7 +115,6 @@ const Header = (props, {initWithoutUnderline = {}}) => {
               {props.t("header.projects", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
-              href="#skills"
               eventKey="3"
               className={textColor.join(" ")}
               onClick={() => {
@@ -129,7 +126,6 @@ const Header = (props, {initWithoutUnderline = {}}) => {
               {props.t("header.skills", { framework: "react-i18next" })}
             </Nav.Link>
             <Nav.Link
-              href="#contact"
               eventKey="4"
               className={textColor.join(" ")}
               onClick={() => {
