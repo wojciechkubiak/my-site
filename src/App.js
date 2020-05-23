@@ -15,7 +15,6 @@ const App = (
   props,
   {
     initMode = false,
-    initLanguage = false,
     initArrow = false
   }
 ) => {

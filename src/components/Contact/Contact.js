@@ -1,22 +1,58 @@
-import React, { useEffect } from "react";
-import {useInView} from "react-intersection-observer";
+import React, { useEffect, useRef} from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FiPhoneCall } from "react-icons/fi";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
+import {gsap} from "gsap";
+
 import "./Contact.css";
 
 const Contact = props => {
+  const t1 = gsap.timeline();
+  let sectionItem = useRef(null);
+
+  useEffect(() => {
+    if(!props.animComplete) {
+      t1.fromTo(
+          sectionItem,
+          { opacity: 0, x: -2000 },
+          {
+            duration: 2,
+            ease: "slow (0.7, 0.7, false)",
+            opacity: 1,
+            x: 0,
+            onComplete: () => {
+              props.setAnimComplete(true);
+            }
+          }
+      );
+    } else {
+      t1.fromTo(
+          sectionItem,
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          }
+      )
+    }
+  }, []);
 
   return (
       <div id="contact">
       <div
         className="contact--main"
+        style={{ opacity: "0" }}
+        ref={e => {
+          sectionItem = e;
+        }}
       >
         <section
           className="contact--container"
           data-testid="Contact"
+
         >
           <article>
             <h2 style={{textTransform: "uppercase"}}>{props.t("contact.box", { framework: "react-i18next" })}</h2>

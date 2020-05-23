@@ -1,15 +1,11 @@
-  import React, { useRef, useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import React, { useRef, useEffect } from "react";
 import "./LandingPage.css";
-import {AiOutlineArrowDown} from "react-icons/ai";
-import {Button} from "react-bootstrap";
 import { gsap } from "gsap";
 
 const LandingPage = props => {
   let sectionItem = useRef(null);
   let nameItem = useRef(null);
   let aboutItem = useRef(null);
-  
 
   const t1 = gsap.timeline();
 

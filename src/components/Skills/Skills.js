@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React, {useRef, useEffect} from "react";
 import shortid from "shortid";
+import { gsap } from "gsap";
 import SkillImg from "./../SkillImg/SkillImg";
 import reactLogo from "./../../img/white_empty_react.webp";
 import nodeLogo from "./../../img/white_empty_nodejs.webp";
@@ -13,6 +13,7 @@ import typescriptLogo from "./../../img/white_empty_typescript.webp";
 import "./Skills.css";
 
 const Skills = (props) => {
+  const t1 = gsap.timeline();
   const icons = {
     ReactJS: [reactLogo, "reactjs"],
     NodeJS: [nodeLogo, "nodejs"],
@@ -23,10 +24,39 @@ const Skills = (props) => {
     Bootstrap: [bootstrapLogo, "bootstrap"],
     PostgreSQL: [psqlLogo, "postgres"],
   };
+  let skillsItem = useRef(null);
+
+  useEffect(() => {
+    if(!props.animComplete) {
+      t1.fromTo(
+          skillsItem,
+          { opacity: 0, x: -2000 },
+          {
+            duration: 2,
+            ease: "slow (0.7, 0.7, false)",
+            opacity: 1,
+            x: 0,
+            onComplete: () => {
+              props.setAnimComplete(true);
+            }
+          }
+      );
+    } else {
+      t1.fromTo(
+          skillsItem,
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+          }
+      )
+    }
+  }, []);
 
   return (
     <div id="skills">
-      <div className="skills--container">
+      <div className="skills--container" style={{ opacity: "0" }} ref = {e => skillsItem = e}>
         {Object.keys(icons).map((key) => {
           return (
             <SkillImg
