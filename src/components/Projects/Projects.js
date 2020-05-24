@@ -1,8 +1,43 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { AiFillGithub } from "react-icons/ai";
+import { MdWeb } from "react-icons/md";
+import {OverlayTrigger, Tooltip} from "react-bootstrap";
+
 import "./Projects.css";
 
-const Projects = props => {
+const Projects = (props) => {
+  const t1 = gsap.timeline();
+  let projectsItem = useRef(null);
+
+  useEffect(() => {
+    if (!props.animComplete) {
+      t1.fromTo(
+        projectsItem,
+        { opacity: 0, x: -2000 },
+        {
+          duration: 2,
+          ease: "slow (0.7, 0.7, false)",
+          opacity: 1,
+          x: 0,
+          onComplete: () => {
+            props.setAnimComplete(true);
+          },
+        }
+      );
+    } else {
+      t1.fromTo(
+        projectsItem,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        }
+      );
+    }
+  }, []);
+
   const [img, setImg] = useState(1);
 
   let subinfoItem = useRef(null);
@@ -10,41 +45,62 @@ const Projects = props => {
   const data = [
     [
       "Obb-SYS",
-      props.t("projects.obbsysAbout", { framework: "react-i18next" })
+      props.t("projects.obbsysAbout", { framework: "react-i18next" }),
     ],
     ["Opqn", props.t("projects.opqnAbout", { framework: "react-i18next" })],
     [
       "Fit-Tracker",
-      props.t("projects.fittrackerAbout", { framework: "react-i18next" })
-    ]
+      props.t("projects.fittrackerAbout", { framework: "react-i18next" }),
+    ],
   ];
 
   const imageSrc = [
     [
       "white_empty_react.webp",
       "white_empty_nodejs.webp",
-      "white_empty_psql.webp"
+      "white_empty_psql.webp",
     ],
     [
       "white_empty_java.webp",
       "white_empty_nodejs.webp",
-      "white_empty_psql.webp"
+      "white_empty_psql.webp",
     ],
     [
       "white_empty_react.webp",
       "white_empty_nodejs.webp",
-      "white_empty_psql.webp"
-    ]
+      "white_empty_psql.webp",
+    ],
   ];
 
-  const swapImage = event => {
-    gsap.fromTo(subinfoItem, {
-      duration: 1.2,
-      opacity: 0
-    }, {
-      duration: 1.2,
-      opacity: 1
-    })
+  const gits = [
+    [
+      "https://github.com/wojciechkubiak/obb-api",
+      "https://github.com/wojciechkubiak/obb-web",
+    ],
+    [
+      "https://github.com/wojciechkubiak/opqn-api",
+      "https://github.com/wojciechkubiak/opqn-mobile",
+    ],
+    [
+      "https://github.com/wojciechkubiak/opqn-api",
+      "https://github.com/wojciechkubiak/opqn-web",
+    ],
+  ];
+
+  const url = ["https://obb-sys.netlify.app", null, "https://opqn.netlify.app"];
+
+  const swapImage = (event) => {
+    gsap.fromTo(
+      subinfoItem,
+      {
+        duration: 1.2,
+        opacity: 0,
+      },
+      {
+        duration: 1.2,
+        opacity: 1,
+      }
+    );
     if (img === 3 && event.target.value === "forward") {
       setImg(1);
     } else if (img === 1 && event.target.value === "backward") {
@@ -52,53 +108,123 @@ const Projects = props => {
     } else {
       setImg(img + parseInt(event.target.name));
     }
-  
   };
 
   useEffect(() => {
     gsap.to(subinfoItem, {
       duration: 2,
-      opacity: 1
-    })
-  }, [])
-
+      opacity: 1,
+    });
+  }, []);
 
   return (
     <div id="projects">
-      <div className="projects--container" data-testid="Projects">
-        <div className="projects--container-img-container">
-          <div className="projects--container-img" ref={e => {imageItem = e}}>
-            <img src={require(`./../../img/${img}.gif`)} alt="Project-icon" />          
-          </div>
-        </div>     
-        <div className="projects--technologies-container">
-        <div ref={e => {subinfoItem = e}} className="projects--subinfo" style={{opacity: "0"}}>
-              <h3>{data[img - 1][0]}</h3>
-              <p>{data[img - 1][1]}</p>
+      <div
+        className="projects--container"
+        ref={(e) => (projectsItem = e)}
+        data-testid="Projects"
+        style={{ opacity: 0 }}
+      >
+        <div
+          ref={(e) => {
+            subinfoItem = e;
+          }}
+          className="projects--subinfo"
+          style={{ opacity: "0" }}
+        >
+          <h3>{data[img - 1][0]}</h3>
+          <p>{data[img - 1][1]}</p>
+        </div>
+        <div
+          style={{
+            position: "relative",
+            left: "50%",
+            top: "0%",
+            width: "70%",
+            textAlign: "center",
+            transform: "translate(-50%, 0%)",
+          }}
+        >
+          <OverlayTrigger placement="top" overlay={<Tooltip>API</Tooltip>}>
+          <a href={gits[img - 1][0]}>
+            <button
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                width: "3em",
+                height: "3em",
+              }}
+            >
+              <AiFillGithub size={32} style={{ color: "#ffffff" }} />
+            </button>
+          </a>
+          </OverlayTrigger>
+          <OverlayTrigger placement="top" overlay={<Tooltip>Web/Mobile</Tooltip>}>
+          <a href={gits[img - 1][1]}>
+            <button
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                width: "3em",
+                height: "3em",
+              }}
+            >
+              <AiFillGithub size={32} style={{ color: "#ffffff" }} />
+            </button>
+          </a>
+          </OverlayTrigger>
+          {url[img - 1] && (
+            <OverlayTrigger placement="top" overlay={<Tooltip>WWW</Tooltip>}>
+              <a href={url[img - 1]}>
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "none",
+                    width: "3em",
+                    height: "3em",
+                  }}
+                >
+                  <MdWeb size={32} style={{ color: "#ffffff" }} />
+                </button>
+              </a>
+            </OverlayTrigger>
+          )}
+        </div>
+        <div
+          className="projects--container-img"
+          ref={(e) => {
+            imageItem = e;
+          }}
+        >
+          <img src={require(`./../../img/${img}.gif`)} alt="Project-icon" />
+          <div className="projects--technologies-container-alt">
+            <div className="projects--spans-container">
+              <span className="projects--span">
+                <img
+                  className="projects--img"
+                  src={require(`./../../img/${imageSrc[img - 1][0]}`)}
+                  alt="First-img"
+                />
+              </span>
+              <span className="projects--span">
+                <img
+                  className="projects--img"
+                  src={require(`./../../img/${imageSrc[img - 1][1]}`)}
+                  alt="Second-img"
+                />
+              </span>
+              <span className="projects--span">
+                <img
+                  className="projects--img"
+                  src={require(`./../../img/${imageSrc[img - 1][2]}`)}
+                  alt="Third-img"
+                />
+              </span>
             </div>
-          <div className="projects--technologies-container-alt">        
-            <span className="projects--span">           
-              <img
-                className="projects--img"
-                src={require(`./../../img/${imageSrc[img - 1][0]}`)}
-                alt="First-img"
-              />
-            </span>
-            <span className="projects--span">
-              <img
-                className="projects--img"
-                src={require(`./../../img/${imageSrc[img - 1][1]}`)}
-                alt="Second-img"
-              />
-            </span>
-            <span className="projects--span">
-              <img
-                className="projects--img"
-                src={require(`./../../img/${imageSrc[img - 1][2]}`)}
-                alt="Third-img"
-              />
-            </span>
           </div>
+        </div>
+
+        <div className="projects--technologies-container">
           <div className="projects--btn-container">
             <button
               name="-1"
@@ -119,7 +245,6 @@ const Projects = props => {
           </div>
         </div>
       </div>
-      <div className="projects--background" style={{width: "100%", height: "84%", position: "absolute", bottom: "0%"}}></div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 #projects {
   position: relative;
-  position: relative;
   height: 100vh;
   background-color: rgba(0, 0, 0, .4);
   background-repeat: no-repeat;
@@ -23,8 +22,6 @@
 
 .projects--container {
   position: absolute;
-  display: flex;
-  flex-direction: row;
   left: 50%;
   top: 50%;
   width: 70%;
@@ -36,14 +33,15 @@
 
 .projects--technologies-container-alt {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: inline-block;
   height: auto;
-  margin-top: 2em;
+  margin-top: 1em;
+  width: 100%;
 }
 
 .projects--container-img {
+  position: relative;
+  margin-top: 1em;
   width: 100%;
   height: auto;
 }
@@ -51,10 +49,10 @@
 .projects--container-img > img {
   position: relative;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, 50%);
-  width: 100%;
-  height: auto
+  top: 0%;
+  transform: translate(-50%, 0%);
+  width: auto;
+  height: auto;
 }
 
 .projects--subinfo > h3 {
@@ -72,14 +70,16 @@
   font-size: calc(.5vh + .8vw);
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  width: 100%;
 }
 
 .projects--btn-container {
   position: relative;
-  top: 1vh;
-  width: 100%;
-  height: 15%;
-  transform: translate(0%, 50%);
+  top: 0%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  transform: translate(-50%, 0%);
   display: flex;
   flex-direction: row;
   font-size: 4vh;
@@ -91,7 +91,7 @@
 .projects--btn {
   width: 50%;
   border: none;
-  background-color: #152534;
+  background-color: transparent;
   outline: none !important;
   color: #ffffff;
 }
@@ -101,7 +101,7 @@
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   transition: 500ms;
-  border-right: 1px solid #292930;
+
 }
 
 .btn-prev:hover,
@@ -118,8 +118,10 @@
 }
 
 .projects--technologies-container {
-  width: 30%;
-  height: 60vh;
+  position: relative;
+  width: 100%;
+  margin-top: 1em;
+  height: auto;
   margin-left: 0.5em;
   margin-right: 0;
 }
@@ -139,29 +141,46 @@
 }
 
 .projects--subinfo {
-  margin-top: 5%;
+  position: relative; 
+  left: 50%;
+  transform: translate(-50%, 0%);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  position: relative; 
   border-radius: 0em;
-  
   height: auto;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  
 }
 
 .projects--span {
-  width: 33%;
-  height: auto;
+  width: 72px;
+  height: 72px;
+  top: 0%;
+  position: relative;
   align-items: center;
 }
 
+.projects--spans-container {
+  position: relative;
+  width: 264px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
 .projects--img {
-  width: 100%;
-  height: 100%;
+  width: 72px;
+  height: 72px;
   padding: 0.2vw;
   left: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   background-color: #152534;
-  border-radius: 1vw;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .projects--technologies-container > p {
