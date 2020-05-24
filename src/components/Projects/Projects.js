@@ -47,9 +47,9 @@ const Projects = (props) => {
       "Obb-SYS",
       props.t("projects.obbsysAbout", { framework: "react-i18next" }),
     ],
-    ["Opqn", props.t("projects.opqnAbout", { framework: "react-i18next" })],
+    ["Opqn-m", props.t("projects.opqnAbout", { framework: "react-i18next" })],
     [
-      "Fit-Tracker",
+      "Opqn-w",
       props.t("projects.fittrackerAbout", { framework: "react-i18next" }),
     ],
   ];
@@ -196,7 +196,7 @@ const Projects = (props) => {
             imageItem = e;
           }}
         >
-          <img src={require(`./../../img/${img}.gif`)} alt="Project-icon" />
+          <img src={require(`./../../img/${img}.png`)} alt="Project-icon" />
           <div className="projects--technologies-container-alt">
             <div className="projects--spans-container">
               <span className="projects--span">

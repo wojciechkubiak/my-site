@@ -53,6 +53,7 @@
   transform: translate(-50%, 0%);
   width: auto;
   height: auto;
+  box-shadow: inset 0 0 2em #ffffff, 0 0 2em #ffffff;
 }
 
 .projects--subinfo > h3 {
