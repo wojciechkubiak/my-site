@@ -1,9 +1,6 @@
 #contact {
   position: relative;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .4);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #contact > h1 {

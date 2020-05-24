@@ -140,9 +140,11 @@ const Projects = (props) => {
             position: "relative",
             left: "50%",
             top: "0%",
-            width: "70%",
+            width: "9em",
             textAlign: "center",
             transform: "translate(-50%, 0%)",
+            // backgroundColor: "rgba(21, 37, 52,   .8)",
+            borderRadius: "0.2em"
           }}
         >
           <OverlayTrigger placement="top" overlay={<Tooltip>API</Tooltip>}>

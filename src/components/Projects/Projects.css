@@ -1,9 +1,6 @@
 #projects {
   position: relative;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, .4);
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%; 
 }
 
 .projects--adress {
@@ -21,12 +18,12 @@
 }
 
 .projects--container {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   width: 70%;
   height: 100%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   padding: 1em;
   z-index: 5;
 }
@@ -123,6 +120,7 @@
   width: 100%;
   margin-top: 1em;
   height: auto;
+  margin-bottom: 1em;
   margin-left: 0.5em;
   margin-right: 0;
 }

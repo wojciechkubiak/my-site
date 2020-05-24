@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
-import BackgroundVideo from "./media/stockvideo_02671k.mp4";
+import BackgroundVideo from "./media/bg.mp4";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -164,7 +164,7 @@ const App = (
       {contact && (
         <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t} />
       )}
-      <Footer t={t} />
+      {/* <Footer t={t} /> */}
     </div>
   );
 };
