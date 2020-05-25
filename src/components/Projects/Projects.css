@@ -162,23 +162,20 @@
 
 .projects--spans-container {
   position: relative;
-  width: 210px;
-  top: 0%;
+  width: 20%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .projects--img {
-  width: 54px;
-  height: 54px;
+  width: 33.3%;
+  height: auto;
   padding: 0.2vw;
   left: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);*/
   /*background-color: rgba(21, 37, 52, 0.32);*/
   border-bottom: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
 }
 
 .projects--technologies-container > p {
