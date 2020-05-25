@@ -32,8 +32,9 @@
   position: relative;
   display: inline-block;
   height: auto;
-  margin-top: 1em;
   width: 100%;
+  margin: 0;
+  margin-top: 1em;
 }
 
 .projects--container-img {
@@ -87,11 +88,11 @@
 }
 
 .projects--btn {
-  width: 50%;
   border: none;
   background-color: transparent;
   outline: none !important;
   color: #ffffff;
+  font-size: 24px;
 }
 
 .btn-prev {
@@ -99,14 +100,13 @@
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
   transition: 500ms;
-
 }
 
-.btn-prev:hover,
-.btn-next:hover {
-  background-color: #ffffff;
-  color: #152534;
-}
+/*.btn-prev:hover,*/
+/*.btn-next:hover {*/
+/*  background-color: #ffffff;*/
+/*  color: #152534;*/
+/*}*/
 
 .btn-next {
   text-align: center;
@@ -148,9 +148,8 @@
   border-radius: 0em;
   height: auto;
   width: 100%;
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: center;
-  
 }
 
 .projects--span {
@@ -163,19 +162,19 @@
 
 .projects--spans-container {
   position: relative;
-  width: 264px;
+  width: 210px;
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .projects--img {
-  width: 72px;
-  height: 72px;
+  width: 54px;
+  height: 54px;
   padding: 0.2vw;
   left: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  background-color: #152534;
+  /*background-color: rgba(21, 37, 52, 0.32);*/
   border-bottom: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
   margin-left: 0.5em;

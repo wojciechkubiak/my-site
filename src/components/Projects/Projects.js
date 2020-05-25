@@ -140,13 +140,23 @@ const Projects = (props) => {
             position: "relative",
             left: "50%",
             top: "0%",
-            width: "9em",
+            width: "100%",
             textAlign: "center",
             transform: "translate(-50%, 0%)",
+            display: "inline-block",
             // backgroundColor: "rgba(21, 37, 52,   .8)",
             borderRadius: "0.2em"
           }}
         >
+          <button
+              name="-1"
+              value="backward"
+              onClick={swapImage}
+              className="projects--btn btn-prev"
+          >
+            &larr;
+          </button>
+
           <OverlayTrigger placement="top" overlay={<Tooltip>API</Tooltip>}>
           <a href={gits[img - 1][0]}>
             <button
@@ -190,7 +200,17 @@ const Projects = (props) => {
                 </button>
               </a>
             </OverlayTrigger>
+
+
           )}
+          <button
+              name="1"
+              value="forward"
+              onClick={swapImage}
+              className="projects--btn btn-next"
+          >
+            &rarr;
+          </button>
         </div>
         <div
           className="projects--container-img"
@@ -223,27 +243,6 @@ const Projects = (props) => {
                 />
               </span>
             </div>
-          </div>
-        </div>
-
-        <div className="projects--technologies-container">
-          <div className="projects--btn-container">
-            <button
-              name="-1"
-              value="backward"
-              onClick={swapImage}
-              className="projects--btn btn-prev"
-            >
-              &larr;
-            </button>
-            <button
-              name="1"
-              value="forward"
-              onClick={swapImage}
-              className="projects--btn btn-next"
-            >
-              &rarr;
-            </button>
           </div>
         </div>
       </div>

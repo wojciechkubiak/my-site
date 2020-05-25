@@ -164,7 +164,7 @@ const App = (
       {contact && (
         <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t} />
       )}
-      {/* <Footer t={t} /> */}
+       <Footer t={t} />
     </div>
   );
 };

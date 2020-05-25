@@ -2,6 +2,7 @@ import React, { useEffect, useRef} from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FiPhoneCall } from "react-icons/fi";
+import Footer from "./../Footer/Footer";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
 import {gsap} from "gsap";
@@ -114,6 +115,7 @@ const Contact = props => {
           </article>
         </section>
       </div>
+          {/*<Footer t={props.t} />*/}
       </div>
   );
 };
