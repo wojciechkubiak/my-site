@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./LandingPage.css";
+import BackgroundVideo from "./../../media/bg.mp4";
+
 import { gsap } from "gsap";
 
 const LandingPage = props => {
@@ -39,6 +41,9 @@ const LandingPage = props => {
 
   return (
     <div className="home" id="landing" data-testid="Home">
+       <video className="background--video" autoPlay loop muted>
+        <source src={BackgroundVideo} type='video/mp4' />
+      </video>
       <section
         className="home--container"
         ref={e => {

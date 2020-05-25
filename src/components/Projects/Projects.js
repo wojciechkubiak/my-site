@@ -136,6 +136,7 @@ const Projects = (props) => {
           <p>{data[img - 1][1]}</p>
         </div>
         <div
+          className="projects--buttons-container"
           style={{
             position: "relative",
             left: "50%",

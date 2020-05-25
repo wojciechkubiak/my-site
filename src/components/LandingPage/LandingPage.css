@@ -83,12 +83,14 @@
   .home {
     background-attachment: scroll;
     background-image: url("./../../img/noise_bg.webp");
+    position: relative;
   }
 
   .home--container {
+    position: relative;
     left: 50%;
-    top: 56%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    transform: translate(-50%, 0%);
     width: 80vw;
     height: 22em;
     padding: 1em;

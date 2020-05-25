@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
-import BackgroundVideo from "./media/bg.mp4";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -114,10 +113,7 @@ const App = (
 
   return (
     <div className="App">
-      <video className="background--video" autoPlay loop muted>
-        <source src={BackgroundVideo} type='video/mp4' />
-      </video>
-      {isMobile && (
+      {!isMobile && (
         <Header
         headerMode={mode}
         headerOn={headerOn}
@@ -139,7 +135,7 @@ const App = (
         showContact={showContact}
       />
       )}
-      {!isMobile && (
+      {isMobile && (
         <Navbar t={t}
         landing={landing}
         projects={projects}
