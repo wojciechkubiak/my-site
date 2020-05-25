@@ -113,7 +113,7 @@ const App = (
 
   return (
     <div className="App">
-      {!isMobile && (
+      {/* {!isMobile && (
         <Header
         headerMode={mode}
         headerOn={headerOn}
@@ -134,8 +134,8 @@ const App = (
         showSkills={showSkills}
         showContact={showContact}
       />
-      )}
-      {isMobile && (
+      )} */}
+      {/* {isMobile && ( */}
         <Navbar t={t}
         landing={landing}
         projects={projects}
@@ -147,7 +147,7 @@ const App = (
         showProjects={showProjects}
         showSkills={showSkills}
         showContact={showContact} />
-      )}
+      {/* )} */}
       {landing && (
         <LandingPage animComplete={landingAnimComplete} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
       )}

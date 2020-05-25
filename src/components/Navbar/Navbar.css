@@ -39,3 +39,12 @@
     border: 1px solid #ffffff;
     border-radius: 50%; 
 }
+
+@media only screen and (max-width: 700px) {
+    .nav--container {  
+        margin-left: .2em;
+        background-color: #152534;
+        border-radius: 2em;
+        border: 1px solid #ffffff
+    }
+}
