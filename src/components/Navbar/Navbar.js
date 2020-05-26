@@ -44,12 +44,10 @@ const Navbar = props => {
     return (
         <>
         <Nb style={{top: "0%", padding: "0"}}>
-        <Nb.Collapse>
             <NavDropdown title={`${lang} (${langShort})`} id="collasible-nav-dropdown dropdown-menu-align-right" className="language--dropdown" style={{position: "fixed", left: "1em", top: "1em", zIndex: "500"}}>
                 <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">Polski (PL)</NavDropdown.Item>
                 <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">English (UK)</NavDropdown.Item>
             </NavDropdown>
-        </Nb.Collapse>
         </Nb>
         <div className="nav--container" style={{zIndex: "500"}}>
             <OverlayTrigger overlay={<Tooltip>{props.t("header.about", { framework: "react-i18next" })}</Tooltip>} placement="right">

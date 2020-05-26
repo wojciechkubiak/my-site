@@ -38,7 +38,7 @@ header {
 
 .dropdown-toggle::after {
   transition: 500ms;
-  transform: rotate(var(--val));
+  /* transform: rotate(var(--val)); */
 }
 
 .text--gold {
