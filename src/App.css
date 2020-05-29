@@ -18,8 +18,9 @@ html {
 
 .background--video {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, .8);
@@ -80,5 +81,11 @@ html {
     height: 1.7em!important;
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
+  .background--video {
+    display: none;
   }
 }

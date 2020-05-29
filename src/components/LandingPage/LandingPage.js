@@ -48,7 +48,7 @@ const LandingPage = props => {
   }, []);
 
   useEffect(() => {
-    const width = window.innerWidth;
+    const width = window.screen.availWidth;
 
     if(width > 1920) {
       setShow4K(true);

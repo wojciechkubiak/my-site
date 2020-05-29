@@ -342,7 +342,7 @@
   }
 
   .projects--technologies-container-alt {
-    background-image: url("./../../img/noise_bg.webp");
+    background-color: #424142;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
@@ -402,13 +402,13 @@
   .projects--subinfo {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    background-image: url("./../../img/noise_bg.webp");
+    background-color: #424142;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .projects--subinfo > h3 {
-    color: #ffffff;
+    color: #88ab64;
   }
 
   .projects--subinfo > p {
