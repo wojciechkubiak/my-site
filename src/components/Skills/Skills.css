@@ -1,7 +1,8 @@
 #skills {
   position: relative;
   height: 100vh;
-  background: url("./../../img/noise_bg.png") no-repeat center center fixed; 
+  background-color: #424142;
+  /* background: url("./../../img/noise_bg.png") no-repeat center center fixed;  */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,7 +21,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 7vh;
-  color: #152534;
+  color: #424142;
   top: 50%;
   right: 0em;
   transform: translate(30%, -50%) rotate(270deg);
@@ -35,7 +36,7 @@
 .tooltip-inner {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  background-color: #152534 !important;
+  background-color: #88ab64 !important;
   color: #ffffff !important;
   font-size: 1.5vh !important;
   text-transform: uppercase;
@@ -64,7 +65,7 @@ div > .arrow {
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #152534;
+  background-color: #424142;
   border-radius: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border: 2px solid #ffffff
@@ -99,7 +100,7 @@ div > .arrow {
   font-weight: 500;
   background-color: #ffffff!important;
   font-size: 2.4vh!important;
-  color: #152534!important;
+  color: #424142!important;
   border-bottom: none!important;
   text-transform: uppercase;
 }
@@ -109,13 +110,13 @@ div > .arrow {
   font-weight: 300;
   color:  #ffffff!important;
   font-size: 2.0vh!important;
-  background-color: #152534!important;
+  background-color: #424142!important;
   border-bottom-left-radius: 0.2em;
   border-bottom-right-radius: 0.2em;
 }
 
 .list-group-item {
-  background-color: #152534!important;
+  background-color: #424142!important;
 }
 
 .popover {
@@ -126,7 +127,7 @@ div > .arrow {
 
 @media only screen and (max-width: 700px) {
   #skills {
-    color: #152534;
+    color: #424142;
     height: 101vh;
     background-image: url("./../../img/noise_bg.webp");
     background-repeat: no-repeat;
@@ -140,7 +141,7 @@ div > .arrow {
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #152534;
+    color: #424142;
   }
 
   .skills--container {
@@ -153,7 +154,7 @@ div > .arrow {
     width: 14vh;
     height: 14vh;
     margin: 1em;
-    background-color: #152534;
+    background-color: #424142;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;

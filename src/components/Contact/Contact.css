@@ -1,32 +1,13 @@
 #contact {
   position: relative;
   height: 100vh;
-  background: url("./../../img/noise_bg.webp") no-repeat center center fixed; 
+  /* background: url("./../../img/noise_bg.webp") no-repeat center center fixed;  */
+  background-color: #424142;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   z-index: 20
-}
-
-#contact > h1 {
-  position: absolute;
-  text-align: center;
-  width: auto;
-  top: 50%;
-  font-size: 7vh;
-  color: #ffffff;
-  transform: translate(-30%, -50%) rotate(90deg);
-  z-index: 5;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  -o-user-select:none;
-  user-select:none;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .contact--container { 
@@ -36,7 +17,7 @@
   text-align: center;
   padding: 0.2em;
   padding-bottom: 1em !important;
-  background-color: #152534;
+  background-color: #424142;
   border: 2px solid #ffffff;
 }
 
@@ -68,7 +49,7 @@
 
 .contact--container > article > h2 {
   padding-top: 2vh;
-  color: #ffffff;
+  color: #88ab64;
   -webkit-user-select:none;
   -khtml-user-select:none;
   -moz-user-select:none;
@@ -162,7 +143,7 @@
     text-align: center;
     padding: 0.2em;
     padding-bottom: 1em !important;
-    background-color: #152534;
+    background-color: #424142;
   }
   
   .contact--main {

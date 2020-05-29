@@ -11,17 +11,17 @@ const SocialMedia = ({ initIconState = false }) => {
   return (
     <>
         <a href={facebookAdress}>
-          <button style={{backgroundColor: "transparent", border: "none", width: "3em", height: "3em"}}>
+          <button style={{backgroundColor: "#424142", border: "none", borderTopLeftRadius: "2em", borderBottomLeftRadius: "2em", width: "3em", height: "3em"}}>
             <FaFacebookF style={{color: "#ffffff"}}/>
           </button>
         </a>
         <a href={linkedinAdress}>
-          <button style={{backgroundColor: "transparent", border: "none", width: "3em", height: "3em"}}>
+          <button style={{backgroundColor: "#424142", border: "none", width: "3em", height: "3em"}}>
             <FaLinkedinIn style={{color: "#ffffff"}}/>
           </button>
         </a>
         <a href={gitAdress}>
-        <button style={{backgroundColor: "transparent", border: "none", width: "3em", height: "3em"}}>
+        <button style={{backgroundColor: "#424142", border: "none", borderTopRightRadius: "2em", borderBottomRightRadius: "2em", width: "3em", height: "3em"}}>
           <FaGit style={{color: "#ffffff"}}/>
         </button>
       </a>

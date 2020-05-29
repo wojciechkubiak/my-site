@@ -1,6 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./LandingPage.css";
-import BackgroundVideo from "./../../media/12528.mp4";
+import BackgroundVideo4k from "./../../media/retro.mp4";
+import BackgroundVideoFullHD from "./../../media/retro_fullhd.mp4";
+import BackgroundVideo169 from "./../../media/retro_169.mp4";
+import BackgroundVideoHDReady from "./../../media/retro_hdready.mp4";
 
 import { gsap } from "gsap";
 
@@ -8,6 +11,11 @@ const LandingPage = props => {
   let sectionItem = useRef(null);
   let nameItem = useRef(null);
   let aboutItem = useRef(null);
+
+  const [show4K, setShow4K] = useState(false);
+  const [showFullHD, setShowFullHD] = useState(false);
+  const [show169, setShow169] = useState(false);
+  const [showHDReady, setShowHDReady] = useState(false);
 
   const t1 = gsap.timeline();
 
@@ -39,11 +47,42 @@ const LandingPage = props => {
     } 
   }, []);
 
+  useEffect(() => {
+    const width = window.innerWidth;
+
+    if(width > 1920) {
+      setShow4K(true);
+    } else if (width <= 1920 && width > 1600) {
+      setShowFullHD(true);
+    } else if (width <= 1600 && width > 1280) {
+      setShow169(true);
+    } else {
+      setShowHDReady(true);
+    }
+  }, []);
+
   return (
     <div className="home" id="landing" data-testid="Home">
-       <video className="background--video" autoPlay loop muted>
-        <source src={BackgroundVideo} type='video/mp4' />
-      </video>
+      {show4K && (
+          <video className="background--video" autoPlay loop muted>
+            <source src={BackgroundVideo4k} type='video/mp4' />
+          </video>
+      )}
+       {showFullHD && (
+          <video className="background--video" autoPlay loop muted>
+            <source src={BackgroundVideoFullHD} type='video/mp4' />
+          </video>
+      )}
+       {show169 && (
+          <video className="background--video" autoPlay loop muted>
+            <source src={BackgroundVideo169} type='video/mp4' />
+          </video>
+      )}
+       {showHDReady && (
+          <video className="background--video" autoPlay loop muted>
+            <source src={BackgroundVideoHDReady} type='video/mp4' />
+          </video>
+      )}
       <section
         className="home--container"
         ref={e => {

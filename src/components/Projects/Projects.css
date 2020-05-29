@@ -1,7 +1,8 @@
 #projects {
   position: relative;
   height: 100%; 
-  background: url("./../../img/noise_bg.webp") no-repeat center center fixed; 
+  /* background: url("./../../img/noise_bg.webp") no-repeat center center fixed;  */
+  background-color: #424142;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -62,7 +63,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #ffffff;
+  color: #88ab64;
   font-size: calc(.8vh + 2vw);
   font-family: 'Lato', sans-serif;
   font-weight: 600;
@@ -123,7 +124,7 @@
 /*.btn-prev:hover,*/
 /*.btn-next:hover {*/
 /*  background-color: #ffffff;*/
-/*  color: #152534;*/
+/*  color: #424142;*/
 /*}*/
 
 .btn-next {
@@ -300,7 +301,7 @@
   .projects--subinfo {
     position: relative;
     box-shadow: none;
-    background-color: #15253400;
+    background-color: #42414200;
     transform: translate(0%, -10%);
     top: 0%;
     left: 50%;
@@ -351,7 +352,7 @@
   .btn-prev:hover,
   .btn-next:hover {
     background-color: #ffffff;
-    color: #152534;
+    color: #424142;
   }
 
   .projects--btn-container {
@@ -383,7 +384,7 @@
   }
 
   .projects--technologies-container-alt {
-    background-color: #152534;
+    background-color: #424142;
     box-shadow: none;
   }
 

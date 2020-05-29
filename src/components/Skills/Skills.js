@@ -2,14 +2,14 @@ import React, {useRef, useEffect} from "react";
 import shortid from "shortid";
 import { gsap } from "gsap";
 import SkillImg from "./../SkillImg/SkillImg";
-import reactLogo from "./../../img/white_empty_react.webp";
-import nodeLogo from "./../../img/white_empty_nodejs.webp";
-import jsLogo from "./../../img/white_empty_js.webp";
-import psqlLogo from "./../../img/white_empty_psql.webp";
-import htmlLogo from "./../../img/white_empty_html.webp";
-import cssLogo from "./../../img/white_empty_css.webp";
-import bootstrapLogo from "./../../img/white_empty_bootstrap.webp";
-import typescriptLogo from "./../../img/white_empty_typescript.webp";
+import reactLogo from "./../../img/green_empty_react.webp";
+import nodeLogo from "./../../img/green_empty_nodejs.webp";
+import jsLogo from "./../../img/green_empty_js.webp";
+import psqlLogo from "./../../img/green_empty_psql.webp";
+import htmlLogo from "./../../img/green_empty_html.webp";
+import cssLogo from "./../../img/green_empty_css.webp";
+import bootstrapLogo from "./../../img/green_empty_bootstrap.webp";
+import typescriptLogo from "./../../img/green_empty_typescript.webp";
 import "./Skills.css";
 
 const Skills = (props) => {

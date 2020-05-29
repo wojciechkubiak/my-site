@@ -13,14 +13,14 @@
   -o-user-select: none;
   user-select: none;
   /* border-bottom: 2px solid rgba(255, 255, 255, .3); */
-  border-top: 2px solid rgba(255, 255, 255, .3);
+  border-top: 5px solid rgba(255, 255, 255, .3);
 }
 
 .home--container {
   position: absolute;
   left: 50%;
   top: 40%;
-  width: 70%;
+  width: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 1vw;
@@ -45,7 +45,7 @@
   border-radius: 10px;
   text-transform: uppercase;
   height: 12vh;
-  text-shadow: #152534;
+  text-shadow: #424142;
 }
 
 .home--container-out {
@@ -70,9 +70,10 @@
   margin-right: 0.5em;
   padding-bottom: 2em;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: initial; 
   color: #ffffff;
+  /* background-color: rgba(255, 255, 255, 0.15); */
   line-height: calc(1.5vh + 1.2vw);
   display: block;
   height: auto;

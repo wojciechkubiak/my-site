@@ -8,6 +8,10 @@
     transform: translate(0%, -50%);
     margin-left: 1em;
     z-index: 500;
+    margin-left: .2em;
+    background-color: #424142;
+    border-radius: 2em;
+    border: 1px solid #ffffff
 }
 
 .nav--rect {
@@ -40,10 +44,30 @@
     border-radius: 50%; 
 }
 
+.dropdown {
+    height: 3em !important;
+}
+
+.dropdown > a {
+    font-size: auto !important;
+}
+
+.dropdown-menu.show {
+    padding: 0 !important;
+    margin-top: 1em;
+    background-color: transparent !important;
+
+}
+.dropdown-menu.show > a {
+    border: 1px solid #ffffff !important;
+    border-radius: 2em !important;
+    background-color: #424142;
+}
+
 @media only screen and (max-width: 700px) {
     .nav--container {  
         margin-left: .2em;
-        background-color: #152534;
+        background-color: #424142;
         border-radius: 2em;
         border: 1px solid #ffffff
     }
