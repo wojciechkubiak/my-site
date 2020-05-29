@@ -5,15 +5,15 @@
 
 
 .landing--about {
-  background-color: rgba(0, 0, 0, .4); 
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  -o-user-select:none;
-  user-select:none;
-  border-bottom: 1px solid rgba(255, 255, 255, .6);
-  border-top: 1px solid rgba(255, 255, 255, .6);
+  /* background-color: rgba(0, 0, 0, .4);  */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  /* border-bottom: 2px solid rgba(255, 255, 255, .3); */
+  border-top: 2px solid rgba(255, 255, 255, .3);
 }
 
 .home--container {
@@ -75,7 +75,8 @@
   color: #ffffff;
   line-height: calc(1.5vh + 1.2vw);
   display: block;
-  height: auto
+  height: auto;
+  letter-spacing: 1px;
 }
 
 

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./LandingPage.css";
-import BackgroundVideo from "./../../media/bg.mp4";
+import BackgroundVideo from "./../../media/12528.mp4";
 
 import { gsap } from "gsap";
 
