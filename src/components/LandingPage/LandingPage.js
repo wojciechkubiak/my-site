@@ -4,6 +4,7 @@ import BackgroundVideo4k from "./../../media/retro.mp4";
 import BackgroundVideoFullHD from "./../../media/retro_fullhd.mp4";
 import BackgroundVideo169 from "./../../media/retro_169.mp4";
 import BackgroundVideoHDReady from "./../../media/retro_hdready.mp4";
+import { FaPause, FaPlay } from "react-icons/fa"
 
 import { gsap } from "gsap";
 
@@ -16,6 +17,7 @@ const LandingPage = props => {
   const [showFullHD, setShowFullHD] = useState(false);
   const [show169, setShow169] = useState(false);
   const [showHDReady, setShowHDReady] = useState(false);
+  const [videoOn, setVideoOn] = useState(false);
 
   const t1 = gsap.timeline();
 
@@ -61,6 +63,17 @@ const LandingPage = props => {
     }
   }, []);
 
+  const videoHandler = () => {
+    const video = document.querySelector(".background--video");
+    if (video.paused) {
+      video.play();
+      setVideoOn(false);
+    } else {
+      video.pause();
+      setVideoOn(true);
+    }
+  }
+
   return (
     <div className="home" id="landing" data-testid="Home">
       {show4K && (
@@ -103,7 +116,16 @@ const LandingPage = props => {
         >
           <p className="landing--about">{props.t("aboutme.content", { framework: "react-i18next" })}</p>
         </article>
+        
       </section>  
+      <button className="video--btn" style={{position: "fixed", outline: "none", right: "50px", bottom: "50px", zIndex: "2000", backgroundColor: "transparent", border: "none"}} onClick={videoHandler}>
+        {!videoOn && (
+          <FaPause size={48} style={{color: "rgba(66, 65, 66, 0.9)"}}/>
+        )}
+        {videoOn && (
+          <FaPlay size={48} style={{color: "#424142"}}/>
+        )}
+      </button>
     </div>
   );
 };

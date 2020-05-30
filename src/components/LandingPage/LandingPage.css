@@ -131,4 +131,8 @@
   .landing--arrow {
     display: none !important;
   }
+
+  .video--btn {
+    display: none;
+  }
 }
