@@ -38,7 +38,7 @@
   font-weight: 500;
   background-color: #88ab64 !important;
   color: #ffffff !important;
-  font-size: 1.5vh !important;
+  font-size: 2.5vh !important;
   text-transform: uppercase;
 }
 
@@ -60,8 +60,8 @@ div > .arrow {
 }
 
 .skills--img-container { 
-  width: calc(9vh + 6vw);
-  height: calc(12vh + 4vw);
+  width: auto;
+  height: auto;
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
@@ -90,6 +90,9 @@ div > .arrow {
   margin-top: 1vh;
 }
 
+.skills--img-container:hover {
+  transform: translateY(-10px);
+}
 
 .popover-header, .popover-body {
   text-align: center;
@@ -150,8 +153,8 @@ div > .arrow {
   }
 
   .skills--img-container {
-    width: 14vh;
-    height: 14vh;
+    width: auto;
+    height: auto;
     margin: 1em;
     background-color: #424142;
     margin-top: 0em!important;

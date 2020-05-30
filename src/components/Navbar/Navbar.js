@@ -71,7 +71,7 @@ const Navbar = props => {
                 </div>
             </OverlayTrigger>  
         </div>
-        <div style={{position: "fixed", left: "1em", bottom: "1.5em", display: "inline-block", zIndex: "500", borderRadius: "2em", border: "1px solid #ffffff"}}>
+        <div style={{position: "fixed", left: "1em", bottom: "1.5em", display: "inline-block", zIndex: "500"}}>
             <SocialMedia/>
         </div>
         </>

@@ -15,30 +15,30 @@ const SocialMedia = ({ initIconState = false }) => {
   return (
     <>
         <button 
-          style={{backgroundColor: "#424142", outline: "none", border: "none", borderRadius: "2em", width: "3em", height: "3em"}}
+          style={{backgroundColor: "#ffffff", outline: "none", borderTopLeftRadius: "2em", border: "none", borderBottomLeftRadius: "2em", borderLeft: "2px solid #ffffff", borderTop: "2px solid #ffffff", borderBottom: "2px solid #ffffff", borderRight: "1px solid #ffffff", width: "3em", height: "3em"}}
           onClick={socialHandler}
         >
           {showSocial && (
-            <IoMdArrowRoundBack style={{color: "#ffffff"}}/>
+            <IoMdArrowRoundBack style={{color: "#424142"}}/>
           )}
           {!showSocial && (
-             <IoMdArrowRoundForward style={{color: "#ffffff"}}/>
+             <IoMdArrowRoundForward style={{color: "#424142"}}/>
           )}
         </button>
         {showSocial && (
          <>
         <a href={facebookAdress}>
-           <button style={{backgroundColor: "#424142", border: "none", borderTopLeftRadius: "2em", borderBottomLeftRadius: "2em", width: "3em", height: "3em"}}>
+           <button style={{backgroundColor: "#424142", border: "none", borderTop: "2px solid #ffffff", borderBottom: "2px solid #ffffff", width: "3em", height: "3em"}}>
              <FaFacebookF style={{color: "#ffffff"}}/>
            </button>
          </a>
          <a href={linkedinAdress}>
-           <button style={{backgroundColor: "#424142", border: "none", width: "3em", height: "3em"}}>
+           <button style={{backgroundColor: "#424142", border: "none", borderTop: "2px solid #ffffff", borderBottom: "2px solid #ffffff", width: "3em", height: "3em"}}>
              <FaLinkedinIn style={{color: "#ffffff"}}/>
            </button>
          </a>
          <a href={gitAdress}>
-         <button style={{backgroundColor: "#424142", border: "none", borderTopRightRadius: "2em", borderBottomRightRadius: "2em", width: "3em", height: "3em"}}>
+         <button style={{backgroundColor: "#424142", border: "none", borderTop: "2px solid #ffffff", borderBottom: "2px solid #ffffff", borderRight: "2px solid #ffffff", borderTopRightRadius: "2em", borderBottomRightRadius: "2em", width: "3em", height: "3em"}}>
            <FaGit style={{color: "#ffffff"}}/>
          </button>
         </a>
