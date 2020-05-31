@@ -30,9 +30,10 @@ const Skills = (props) => {
     if(!props.animComplete) {
       t1.fromTo(
           skillsItem,
-          { opacity: 0, scale: .1 },
+          { opacity: 0 },
           {
-            duration: 1,
+            delay: .3,
+            duration: 1.5,
             ease: "slow (0.7, 0.7, false)",
             opacity: 1,
             scale: 1,

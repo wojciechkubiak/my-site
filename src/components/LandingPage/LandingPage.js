@@ -50,7 +50,9 @@ const LandingPage = props => {
   }, []);
 
   useEffect(() => {
-    const width = window.screen.availWidth;
+    const width = window.innerWidth;
+
+    console.log(width);
 
     if(width > 1920) {
       setShow4K(true);
@@ -76,26 +78,26 @@ const LandingPage = props => {
 
   return (
     <div className="home" id="landing" data-testid="Home">
-      {show4K && (
+      {/* {show4K && (
           <video className="background--video" autoPlay loop muted>
             <source src={BackgroundVideo4k} type='video/mp4' />
           </video>
-      )}
-       {showFullHD && (
+      )} */}
+       {/* {showFullHD && (
           <video className="background--video" autoPlay loop muted>
             <source src={BackgroundVideoFullHD} type='video/mp4' />
           </video>
-      )}
-       {show169 && (
+      )} */}
+       {/* {show169 && ( */}
           <video className="background--video" autoPlay loop muted>
             <source src={BackgroundVideo169} type='video/mp4' />
           </video>
-      )}
-       {showHDReady && (
+      {/* )} */}
+       {/* {showHDReady && (
           <video className="background--video" autoPlay loop muted>
             <source src={BackgroundVideoHDReady} type='video/mp4' />
           </video>
-      )}
+      )} */}
       <section
         className="home--container"
         ref={e => {
