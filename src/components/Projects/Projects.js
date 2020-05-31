@@ -14,12 +14,12 @@ const Projects = (props) => {
     if (!props.animComplete) {
       t1.fromTo(
         projectsItem,
-        { opacity: 0, x: -2000 },
+        { opacity: 0, scale: .1 },
         {
-          duration: 2,
+          duration: 1,
           ease: "slow (0.7, 0.7, false)",
           opacity: 1,
-          x: 0,
+          scale: 1,
           onComplete: () => {
             props.setAnimComplete(true);
           },
