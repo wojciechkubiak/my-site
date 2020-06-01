@@ -61,6 +61,21 @@
   color: #424142;
 }
 
+.social--btn-hide {
+  background-color: #ffffff;
+  outline: none;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border: 2px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  width: 3em;
+  height: 3em
+}
+
+.social--btn-show {
+  border-radius: 2em !important;
+}
+
 @media only screen and (max-width: 700px) {
   .SocialMedia {
     right: 0.2em;
