@@ -3,10 +3,9 @@
     height: auto;
     width: auto;
     text-align: center;
-    left: 0%;
+    left: 1em;
     top: 50%;
     transform: translate(0%, -50%);
-    margin-left: 1em;
     z-index: 500;
     margin-left: .2em;
     background-color: #424142;
