@@ -45,8 +45,8 @@ const Navbar = props => {
         <>
         <Nb style={{top: "0%", padding: "0"}}>
             <NavDropdown title={`${lang} (${langShort})`} id="collasible-nav-dropdown dropdown-menu-align-right" className="language--dropdown" style={{position: "fixed", left: "1em", top: "1em", zIndex: "500",  borderRadius: "2em", border: "1px solid #ffffff", backgroundColor: "#424142"}}>
-                <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")} href="#pl">Polski (PL)</NavDropdown.Item>
-                <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")} href="#eng">English (UK)</NavDropdown.Item>
+                <NavDropdown.Item value="pl" onClick={() => props.languageHandler("pl")}>Polski (PL)</NavDropdown.Item>
+                <NavDropdown.Item value="en" onClick={() => props.languageHandler("en")}>English (UK)</NavDropdown.Item>
             </NavDropdown>
         </Nb>
         <div className="nav--container" style={{zIndex: "500"}}>
