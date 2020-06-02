@@ -21,5 +21,5 @@
 * HTML
 * CSS
 
-## What app is about
+## What this app is about
 The main assumption of the website [wojciechkubiak.com](https://wojciechkubiak.com) is to show you at which level my programming skills are. Additionally you can find there my phone number, resume in both Polish and English version and my personal email adress.
