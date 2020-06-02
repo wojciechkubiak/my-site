@@ -1,16 +1,11 @@
 #skills {
   position: relative;
   height: 100vh;
-  background-color: #424142;
-  /* background: url("./../../img/noise_bg.png") no-repeat center center fixed;  */
+  background-color: #424142;  background: url("./../../img/bg.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background-image: url("./../../img/noise_bg.webp");
-  background-color: rgba(0, 0, 0, .4);
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 
@@ -36,8 +31,8 @@
 .tooltip-inner {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  background-color: #88ab64 !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #424142  !important;
   font-size: 1rem !important;
   text-transform: uppercase;
 }

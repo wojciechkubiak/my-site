@@ -113,29 +113,6 @@ const App = (
 
   return (
     <div className="App">
-      {/* {!isMobile && (
-        <Header
-        headerMode={mode}
-        headerOn={headerOn}
-        headerOff={headerOff}
-        landingOn={landingOn}
-        projectsOn={projectsOn}
-        skillsOn={skillsOn}
-        contactOn={contactOn}
-        arrowHandler={arrowHandler}
-        scrollPos={scroll}
-        lang={lang}
-        languageHandler={langHandler}
-        t={t}
-        show={showHeader}
-
-        showLanding={showLanding}
-        showProjects={showProjects}
-        showSkills={showSkills}
-        showContact={showContact}
-      />
-      )} */}
-      {/* {isMobile && ( */}
         <Navbar t={t}
         landing={landing}
         projects={projects}
@@ -147,15 +124,14 @@ const App = (
         showProjects={showProjects}
         showSkills={showSkills}
         showContact={showContact} />
-      {/* )} */}
       {landing && (
         <LandingPage animComplete={landingAnimComplete} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
       )}
-      {projects && (
-        <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t} />
-      )}
       {skills && (
         <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t} />
+      )}
+      {projects && (
+        <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t} />
       )}
       {contact && (
         <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t} />

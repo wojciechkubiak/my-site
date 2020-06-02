@@ -8,9 +8,7 @@
     transform: translate(0%, -50%);
     z-index: 500;
     margin-left: .2em;
-    background-color: #424142;
-    border-radius: 2em;
-    border: 2px solid #ffffff
+
 }
 
 .nav--rect {
@@ -58,9 +56,13 @@
 }
 
 .dropdown-menu.show > a {
-    border: 1px solid #ffffff !important;
-    border-radius: 2em !important;
-    background-color: #424142;
+    border-bottom: 1px solid #ffffff !important;
+    border-radius: 0 !important;
+    background-color: transparent;
+}
+
+.dropdown-menu.show > a:hover {
+    color: #424242 !important
 }
 
 @media only screen and (max-width: 700px) {
@@ -68,7 +70,8 @@
         margin-left: .2em;
         background-color: #424142;
         border-radius: 2em;
-        border: 1px solid #ffffff
+        border: 1px solid #ffffff;
+        left: 0% !important
     }
 
     .dropdown-menu, .show {

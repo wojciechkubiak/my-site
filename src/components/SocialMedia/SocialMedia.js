@@ -11,23 +11,20 @@ const SocialMedia = () => {
 
   const socialHandler = () => setShowSocial(!showSocial);
 
-  const btnStyle = ["social--btn-hide", showSocial ? " " : "social--btn-show"];
-
   return (
     <>
-      <button className={btnStyle.join(" ")} style={{outline: "none"}} onClick={socialHandler}>
-        {showSocial && <IoMdArrowRoundBack style={{ color: "#424142" }} />}
-        {!showSocial && <IoMdArrowRoundForward style={{ color: "#424142" }} />}
+      <button className="social--btn-hide" style={{outline: "none"}} onClick={socialHandler}>
+        {showSocial && <IoMdArrowRoundBack style={{ color: "#ffffff" }} />}
+        {!showSocial && <IoMdArrowRoundForward style={{ color: "#ffffff" }} />}
       </button>
       {showSocial && (
         <>
           <a href={facebookAdress}>
             <button
+              className="social--btn"
               style={{
-                backgroundColor: "#424142",
+                backgroundColor: "transparent",
                 border: "none",
-                borderTop: "2px solid #ffffff",
-                borderBottom: "2px solid #ffffff",
                 width: "3em",
                 height: "3em",
               }}
@@ -38,10 +35,8 @@ const SocialMedia = () => {
           <a href={linkedinAdress}>
             <button
               style={{
-                backgroundColor: "#424142",
+                backgroundColor: "transparent",
                 border: "none",
-                borderTop: "2px solid #ffffff",
-                borderBottom: "2px solid #ffffff",
                 width: "3em",
                 height: "3em",
               }}
@@ -52,13 +47,8 @@ const SocialMedia = () => {
           <a href={gitAdress}>
             <button
               style={{
-                backgroundColor: "#424142",
+                backgroundColor: "transparent",
                 border: "none",
-                borderTop: "2px solid #ffffff",
-                borderBottom: "2px solid #ffffff",
-                borderRight: "2px solid #ffffff",
-                borderTopRightRadius: "2em",
-                borderBottomRightRadius: "2em",
                 width: "3em",
                 height: "3em",
               }}

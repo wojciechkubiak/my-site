@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./LandingPage.css";
 import BackgroundVideo4k from "./../../media/retro.mp4";
-import BackgroundVideoFullHD from "./../../media/retro_fullhd.mp4";
+import BackgroundVideoFullHD from "./../../media/network_4k.mp4";
 import BackgroundVideo169 from "./../../media/retro_169.mp4";
-import BackgroundVideoHDReady from "./../../media/retro_hdready.mp4";
+import BackgroundVideoHDReady from "./../../media/network_hdready.mp4";
 import { FaPause, FaPlay } from "react-icons/fa"
 
 import { gsap } from "gsap";
@@ -49,55 +49,8 @@ const LandingPage = props => {
     } 
   }, []);
 
-  useEffect(() => {
-    const width = window.innerWidth;
-
-    console.log(width);
-
-    if(width > 1920) {
-      setShow4K(true);
-    } else if (width <= 1920 && width > 1600) {
-      setShowFullHD(true);
-    } else if (width <= 1600 && width > 1280) {
-      setShow169(true);
-    } else {
-      setShowHDReady(true);
-    }
-  }, []);
-
-  const videoHandler = () => {
-    const video = document.querySelector(".background--video");
-    if (video.paused) {
-      video.play();
-      setVideoOn(false);
-    } else {
-      video.pause();
-      setVideoOn(true);
-    }
-  }
-
   return (
     <div className="home" id="landing" data-testid="Home">
-      {show4K && (
-          <video className="background--video" autoPlay loop muted>
-            <source src={BackgroundVideo4k} type='video/mp4' />
-          </video>
-      )}
-       {showFullHD && (
-          <video className="background--video" autoPlay loop muted>
-            <source src={BackgroundVideoFullHD} type='video/mp4' />
-          </video>
-      )}
-       {show169 && (
-          <video className="background--video" autoPlay loop muted>
-            <source src={BackgroundVideo169} type='video/mp4' />
-          </video>
-       )}
-       {showHDReady && (
-          <video className="background--video" autoPlay loop muted>
-            <source src={BackgroundVideoHDReady} type='video/mp4' />
-          </video>
-      )}
       <section
         className="home--container"
         ref={e => {
@@ -120,14 +73,6 @@ const LandingPage = props => {
         </article>
         
       </section>  
-      <button className="video--btn" style={{position: "fixed", outline: "none", right: "50px", bottom: "50px", zIndex: "2000", backgroundColor: "transparent", border: "none"}} onClick={videoHandler}>
-        {!videoOn && (
-          <FaPause size={48} style={{color: "rgba(66, 65, 66, 0.9)"}}/>
-        )}
-        {videoOn && (
-          <FaPlay size={48} style={{color: "#424142"}}/>
-        )}
-      </button>
     </div>
   );
 };

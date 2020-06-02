@@ -36,14 +36,6 @@ const SkillImg = (props) => {
     </Popover>
   );
 
-  // const tooltipHandler = props => {
-  //   if (typeof window.orientation === "undefined") {
-  //     return <Tooltip {...props}>{infoVersion}</Tooltip>;
-  //   } else {
-  //     return <Tooltip style={{ display: "none" }} {...props}></Tooltip>;
-  //   }
-  // };
-
   useState(() => {
     if (
       navigator.userAgent.match(/Android/i) ||
@@ -59,7 +51,6 @@ const SkillImg = (props) => {
   }, []);
 
   return (
-    // <OverlayTrigger overlay={tooltipHandler} placement="right">
     <div className="skills--img-container">
       {!isMobile && (
         <OverlayTrigger placement="bottom" overlay={popover}>
@@ -82,7 +73,6 @@ const SkillImg = (props) => {
         </OverlayTrigger>
       )}
     </div>
-    // </OverlayTrigger>
   );
 };
 

@@ -1,12 +1,6 @@
 #projects {
   position: relative;
   height: 100%; 
-  /* background: url("./../../img/noise_bg.webp") no-repeat center center fixed;  */
-  background-color: #424142;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .projects--adress {
@@ -63,7 +57,7 @@
 
 .projects--subinfo > h3 {
   text-align: center;
-  color: #88ab64;
+  color: #ffffff;
   font-size: calc(.8vh + 2vw);
   font-family: 'Lato', sans-serif;
   font-weight: 600;
@@ -390,7 +384,7 @@
   }
 
   .projects--technologies-container-alt {
-    background-color: #424142;
+    background-color: transparent;
     box-shadow: none;
   }
 
@@ -408,13 +402,13 @@
   .projects--subinfo {
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
-    background-color: #424142;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .projects--subinfo > h3 {
-    color: #88ab64;
+    color: #ffffff;
   }
 
   .projects--subinfo > p {

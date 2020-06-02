@@ -55,13 +55,13 @@ const Navbar = props => {
                     <span className="nav--circle"></span>
                 </div>
             </OverlayTrigger>
-            <OverlayTrigger overlay={<Tooltip>{props.t("header.projects", { framework: "react-i18next" })}</Tooltip>} placement="right">
-                <div className={projects.join(" ")} onClick={props.showProjects}>
+            <OverlayTrigger overlay={<Tooltip>{props.t("header.skills", { framework: "react-i18next" })}</Tooltip>} placement="right">
+                <div className={skills.join(" ")} onClick={props.showSkills}>
                     <span className="nav--circle"></span>
                 </div>
             </OverlayTrigger> 
-            <OverlayTrigger overlay={<Tooltip>{props.t("header.skills", { framework: "react-i18next" })}</Tooltip>} placement="right">
-                <div className={skills.join(" ")} onClick={props.showSkills}>
+            <OverlayTrigger overlay={<Tooltip>{props.t("header.projects", { framework: "react-i18next" })}</Tooltip>} placement="right">
+                <div className={projects.join(" ")} onClick={props.showProjects}>
                     <span className="nav--circle"></span>
                 </div>
             </OverlayTrigger> 
