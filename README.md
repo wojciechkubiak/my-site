@@ -62,3 +62,7 @@ Additionally, on this page you will find all repository addresses and websites f
 <p align="center">
  <img src="https://github.com/wojciechkubiak/my-site/blob/master/contact.png?raw=true"/>
 </p>
+
+## Translation
+
+My website has two language versions, Polish and English, implemented with I18next.
