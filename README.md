@@ -22,15 +22,17 @@ The main assumption of the website [wojciechkubiak.com](https://wojciechkubiak.c
 
 ## Live
 
-The page has been divided into four parts, switched using a vertical menu. 
-
+<p>The page has been divided into four parts, switched using a vertical menu.</p>
 <br />
+
 * Landing page - here you can read everything about me. At which university am I studying, what is my passion and more.
+
 <br />
 
 <p align="center">
  <img src="https://github.com/wojciechkubiak/my-site/blob/master/landing.png?raw=true"/>
 </p>
+
 <br />
 
 * Skills - here you can find everything about my programming skills.
@@ -42,13 +44,16 @@ The page has been divided into four parts, switched using a vertical menu.
 </p>
 <br />
 
-* Projects - if you want to know how my projects looks like without searching over my github, this is the right place. Additionally you can find here links to repositories and websites on which my projects are deployed.
+* Projects - If you want to see what my designs look like without searching over my github, this place was created for that. 
+Additionally, on this page you will find all repository addresses and websites for each project.
 
 <br />
 
 <p align="center">
  <img src="https://github.com/wojciechkubiak/my-site/blob/master/projects.png?raw=true"/>
 </p>
+
+<br />
 
 * Contact - here you can find my phone number, resumes in both english and polish version, and my email adress.
 
