@@ -127,11 +127,11 @@ const App = (
       {landing && (
         <LandingPage animComplete={landingAnimComplete} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
       )}
-      {skills && (
-        <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t} />
-      )}
       {projects && (
         <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t} />
+      )}
+       {skills && (
+        <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t} />
       )}
       {contact && (
         <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t} />

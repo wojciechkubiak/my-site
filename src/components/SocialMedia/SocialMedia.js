@@ -21,37 +21,21 @@ const SocialMedia = () => {
         <>
           <a href={facebookAdress}>
             <button
-              className="social--btn"
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                width: "3em",
-                height: "3em",
-              }}
+              className="social--btn-links"
             >
               <FaFacebookF style={{ color: "#ffffff" }} />
             </button>
           </a>
           <a href={linkedinAdress}>
             <button
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                width: "3em",
-                height: "3em",
-              }}
+             className="social--btn-links"
             >
               <FaLinkedinIn style={{ color: "#ffffff" }} />
             </button>
           </a>
           <a href={gitAdress}>
             <button
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                width: "3em",
-                height: "3em",
-              }}
+             className="social--btn-links"
             >
               <FaGit style={{ color: "#ffffff" }} />
             </button>

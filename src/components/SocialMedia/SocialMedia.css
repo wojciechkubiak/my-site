@@ -55,17 +55,25 @@
   height: 60%;
   width: 60%;
   padding: 0.1em;
-  color: #424142;
+  color: #232323;
 }
 
 .social--btn-hide {
   background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 2px solid #d83e4b;
   width: 3em;
   height: 3em
 }
+
+.social--btn, .social--btn-links {
+  background-color: transparent;
+  border: none;
+  width: 3em;
+  height: 3em
+}
+
 
 @media only screen and (max-width: 700px) {
   .SocialMedia {
@@ -77,21 +85,26 @@
   }
 
   .social--btn-hide {
-    /* background-color: #ffffff; */
+    background-color: #232323;
     outline: none;
-    /* border-top-left-radius: 2em; */
-    /* border-bottom-left-radius: 2em; */
-    /* border: 2px solid #ffffff;
-    border-right: 1px solid #ffffff; */
     width: 3em;
     height: 3em;
     left: 0;
     margin-left: 0;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
   }
 
+  .social--btn, .social--btn-links {
+    background-color: #232323;
+    width: 3em;
+    height: 3em;
+  }
 
   .SocialMediaBtn, .FacebookBtn, .LinkedInBtn, .GitBtn {
     width: 2.5em;
     height: 2.5em;
+    background-color: #232323;
   }
 }

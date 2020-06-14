@@ -78,6 +78,7 @@
         "cv": "CV"
     },
     "tooltip": {
-        "info": "Więcej informacji po kliknięciu"
+        "info": "Więcej informacji po kliknięciu",
+        "copied": "Skopiowano!"
     }
 }

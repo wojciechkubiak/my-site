@@ -1,17 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FiPhoneCall } from "react-icons/fi";
-import Footer from "./../Footer/Footer";
+import { Overlay } from "react-bootstrap";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
 import { gsap } from "gsap";
 
 import "./Contact.css";
+import { Popover, PopoverTitle } from "react-bootstrap";
 
 const Contact = (props) => {
   const t1 = gsap.timeline();
   let sectionItem = useRef(null);
+  const phone = useRef(null);
+
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     if (!props.animComplete) {
@@ -41,6 +45,15 @@ const Contact = (props) => {
       );
     }
   }, []);
+
+  const copy = () => {
+    navigator.clipboard.writeText('726823405');
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 1000)
+  }
 
   return (
     <div id="contact">
@@ -106,9 +119,19 @@ const Contact = (props) => {
             <article>
               <figure>
                 <FiPhoneCall className="contact--icons" />
-                <figcaption className="contact--figcaption">
+                <figcaption onClick={copy} className="contact--figcaption">
                   726823405
                 </figcaption>
+                <Overlay
+                  show={copied}
+                  placement="top"
+                >
+                  <Popover style={{border: "none"}}>
+                    <PopoverTitle>
+                    {props.t("tooltip.copied", { framework: "react-i18next" })}
+                    </PopoverTitle>
+                  </Popover>
+                </Overlay>
               </figure>
             </article>
           </article>

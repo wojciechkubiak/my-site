@@ -1,6 +1,11 @@
 .home {
   position: relative;
   height: 100vh;
+  background: url("./../../img/daniel-lord-iTZDmFew-Z8-unsplash.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home--hide {
@@ -38,6 +43,7 @@
   margin: auto;
   font-size: calc(4vh + 3vw);
   color: #ffffff;
+  background-color: #232323;
   -webkit-user-select:none;
   -khtml-user-select:none;
   -moz-user-select:none;
@@ -45,10 +51,10 @@
   -o-user-select:none;
   user-select:none;
   display: block;
-  border-radius: 10px;
   text-transform: uppercase;
   height: auto;
-  text-shadow: #424142;
+  text-shadow: #232323;
+  border-bottom: 3px solid #d83e4b;
 }
 
 .home--container-out {
@@ -58,10 +64,11 @@
 }
 
 .home--container > article {
+  background-color: #D2D2D2;
   position: relative;
   height: auto;
   margin-top: 1em;
-  border: 1em!important;
+  border: 1em! important;
   top: 5%;
 }
 
@@ -71,11 +78,11 @@
   margin-top: 0.5em;
   margin-left: 0.5vw!important;
   margin-right: 0.5em;
-  padding-bottom: 2em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  padding-bottom: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-style: initial; 
-  color: #ffffff;
+  color: #282930;
   /* background-color: rgba(255, 255, 255, 0.15); */
   line-height: calc(1.5vh + 1.2vw);
   display: block;
@@ -86,7 +93,7 @@
 @media only screen and (max-width: 700px) {
   .home {
     background-attachment: scroll;
-    /* background-color: #424142; */
+    /* background-color: #232323; */
     position: relative;
   }
 
@@ -105,7 +112,7 @@
     font-size: 2.5em;
     height: auto;
     text-align: center;
-    /* background-color: #424142; */
+    /* background-color: #232323; */
     /* border: 1px solid #ffffff !important; */
     /* border-radius: 0 !important; */
   }
@@ -116,7 +123,7 @@
     height: auto;  
     margin: 0em;
     /* border-radius: 0em; */
-    /* background-color: #424142; */
+    /* background-color: #232323; */
     /* border: 1px solid #ffffff !important */
   }
   
@@ -125,9 +132,9 @@
     border-radius: 0em;
     line-height: 2.8vh;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: #282930;
     height: auto;
     text-transform: uppercase;
   }

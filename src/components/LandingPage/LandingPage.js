@@ -1,10 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./LandingPage.css";
-import BackgroundVideo4k from "./../../media/retro.mp4";
-import BackgroundVideoFullHD from "./../../media/network_4k.mp4";
-import BackgroundVideo169 from "./../../media/retro_169.mp4";
-import BackgroundVideoHDReady from "./../../media/network_hdready.mp4";
-import { FaPause, FaPlay } from "react-icons/fa"
 
 import { gsap } from "gsap";
 
@@ -12,12 +7,6 @@ const LandingPage = props => {
   let sectionItem = useRef(null);
   let nameItem = useRef(null);
   let aboutItem = useRef(null);
-
-  const [show4K, setShow4K] = useState(false);
-  const [showFullHD, setShowFullHD] = useState(false);
-  const [show169, setShow169] = useState(false);
-  const [showHDReady, setShowHDReady] = useState(false);
-  const [videoOn, setVideoOn] = useState(false);
 
   const t1 = gsap.timeline();
 

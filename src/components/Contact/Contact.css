@@ -1,11 +1,7 @@
 #contact {
   position: relative;
   height: 100vh;
-  background: url("./../../img/noise.webp") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #232323;
   z-index: 20
 }
 
@@ -16,8 +12,10 @@
   text-align: center;
   padding: 0.2em;
   padding-bottom: 1em !important;
-  background-color: #424142;
+  background-color: #232323;
   border: 2px solid #ffffff;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
+  /* border-bottom: 3px solid #d83e4b; */
 }
 
 .contact--main {
@@ -81,16 +79,21 @@
 .contact--figcaption {
   color: #ffffff;
   margin-top: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: calc(.5vh + .7vw);
+  cursor: pointer;
+}
+
+.contact--figcaption:hover, figcaption > span > a:hover, figcaption > a:hover  {
+  color: #d83e4b !important
 }
 
 @media only screen and (max-width: 700px) {
 
   #contact {
     height: 101vh;
-    background-color: #424142;
+    background-color: #232323;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -142,7 +145,7 @@
     text-align: center;
     padding: 0.2em;
     padding-bottom: 1em !important;
-    background-color: #424142;
+    background-color: #232323;
   }
   
   .contact--main {

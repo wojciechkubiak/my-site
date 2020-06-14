@@ -1,7 +1,7 @@
 #skills {
   position: relative;
   height: 100vh;
-  background-color: #424142;  background: url("./../../img/noise.webp") no-repeat center center fixed; 
+  background: url("./../../img/daniel-lord-iTZDmFew-Z8-unsplash.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,7 +16,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 7vh;
-  color: #424142;
+  color: #232323;
   top: 50%;
   right: 0em;
   transform: translate(30%, -50%) rotate(270deg);
@@ -32,7 +32,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   background-color: #ffffff !important;
-  color: #424142  !important;
+  color: #232323  !important;
   font-size: 1rem !important;
   text-transform: uppercase;
 }
@@ -60,7 +60,7 @@ div > .arrow {
   margin: 2vw;
   padding: 1vw;
   transition: all 500ms;
-  background-color: #424142;
+  background-color: #232323;
   border-radius: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   border: 2px solid #ffffff
@@ -96,25 +96,25 @@ div > .arrow {
 .popover-header {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  background-color: #ffffff!important;
+  background-color: #232323!important;
   font-size: 2.4vh!important;
-  color: #424142!important;
-  border-bottom: none!important;
+  color: #ffffff!important;
+  border-bottom: 2px solid #d83e4b !important;
   text-transform: uppercase;
 }
 
 .popover-body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color:  #ffffff!important;
+  color:  rgba(0, 0, 0, .8) !important;
   font-size: 2.0vh!important;
-  background-color: #424142!important;
+  background-color: #ffffff !important;
   border-bottom-left-radius: 0.2em;
   border-bottom-right-radius: 0.2em;
 }
 
 .list-group-item {
-  background-color: #424142!important;
+  background-color: #ffffff !important;
 }
 
 .popover {
@@ -126,7 +126,7 @@ div > .arrow {
 @media only screen and (max-width: 700px) {
   #skills {
     height: 101vh;
-    background-color: #424142;
+    background-color: #232323;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -138,7 +138,7 @@ div > .arrow {
     top: 1em;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #424142;
+    color: #232323;
   }
 
   .skills--container {
@@ -151,7 +151,7 @@ div > .arrow {
     width: auto;
     height: auto;
     margin: 1em;
-    background-color: #424142;
+    background-color: #232323;
     margin-top: 0em!important;
     padding: 0em;
     transition: 500ms;

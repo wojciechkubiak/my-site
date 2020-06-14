@@ -78,6 +78,7 @@
         "cv": "RESUME"
     },
     "tooltip": {
-        "info": "Click image for more info"
+        "info": "Click image for more info",
+        "copied": "Copied!"
     }
 }
