@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import shortid from "shortid";
 import { gsap } from "gsap";
+import { isMobile } from 'react-device-detect';
 import SkillImg from "./../SkillImg/SkillImg";
 import reactLogo from "./../../img/white_empty_react.webp";
 import nodeLogo from "./../../img/white_empty_nodejs.webp";
@@ -28,7 +29,7 @@ const Skills = (props) => {
   let skillsItem = useRef(null);
   
   useEffect(() => {
-    if(!props.isMobile) {
+    if(!isMobile) {
      gsap.fromTo(
        container,
        {
@@ -44,7 +45,7 @@ const Skills = (props) => {
  
 
   useEffect(() => {
-    if (props.hide && !props.isMobile) {
+    if (props.hide && !isMobile) {
       gsap.fromTo(
         container,
         {

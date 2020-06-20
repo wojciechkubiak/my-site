@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import "./LandingPage.css";
 
 import { gsap } from "gsap";
+import { isMobile } from 'react-device-detect';
 
 const LandingPage = props => {
   let sectionItem = useRef(null);
@@ -40,7 +41,7 @@ const LandingPage = props => {
   }, []);
 
   useEffect(() => {
-    if(!props.isMobile) {
+    if(!isMobile) {
      gsap.fromTo(
        container,
        {
@@ -52,11 +53,11 @@ const LandingPage = props => {
        }
      );
     }
-   }, []);
+  }, []);
  
 
   useEffect(() => {
-   if(props.hide && !props.isMobile) {
+   if(props.hide && !isMobile) {
     gsap.fromTo(
       container,
       {

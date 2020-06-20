@@ -6,6 +6,7 @@ import { Overlay } from "react-bootstrap";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
 import { gsap } from "gsap";
+import { isMobile } from 'react-device-detect';
 
 import "./Contact.css";
 import { Popover, PopoverTitle } from "react-bootstrap";
@@ -17,7 +18,7 @@ const Contact = (props) => {
   let container = useRef(null);
 
   useEffect(() => {
-    if(!props.isMobile) {
+    if(!isMobile) {
      gsap.fromTo(
        container,
        {
@@ -33,7 +34,7 @@ const Contact = (props) => {
  
   
   useEffect(() => {
-    if (props.hide && !props.isMobile) {
+    if (props.hide && !isMobile) {
       gsap.fromTo(
         container,
         {

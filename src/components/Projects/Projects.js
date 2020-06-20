@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { AiFillGithub } from "react-icons/ai";
 import { MdWeb } from "react-icons/md";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { isMobile } from 'react-device-detect';
 
 import "./Projects.css";
 
@@ -11,7 +12,7 @@ const Projects = (props) => {
   let container = useRef(null);
 
   useEffect(() => {
-   if(!props.isMobile) {
+   if(!isMobile) {
     gsap.fromTo(
       container,
       {
@@ -105,7 +106,7 @@ const Projects = (props) => {
   }, []);
 
   useEffect(() => {
-    if (props.hide && !props.isMobile) {
+    if (props.hide && !isMobile) {
       gsap.fromTo(
         container,
         {

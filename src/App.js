@@ -29,7 +29,6 @@ const App = (
   const [showHeader, setShowHeader] = useState(false);
   const { t, i18n } = props;
 
-  const [isMobile, setIsMobile] = useState(false);
   const [landingOn, setLandingOn] = useState(true);
   const [projectsOn, setProjectsOn] = useState(false);
   const [skillsOn, setSkillsOn] = useState(false);
@@ -55,18 +54,6 @@ const App = (
     document.documentElement.lang = lang;
     i18n.changeLanguage(lang);
   }, [lang, i18n])
-
-  useEffect(() => {
-    if( navigator.userAgent.match(/Android/i)
-      || navigator.userAgent.match(/webOS/i)
-      || navigator.userAgent.match(/iPhone/i)
-      || navigator.userAgent.match(/iPad/i)
-      || navigator.userAgent.match(/iPod/i)
-      || navigator.userAgent.match(/BlackBerry/i)
-      || navigator.userAgent.match(/Windows Phone/i)) {     
-          setIsMobile(true);
-      }
-  }, [])
 
   const langHandler = language => {
     setLang(language);
@@ -167,16 +154,16 @@ const App = (
         showSkills={showSkills}
         showContact={showContact} />
       {landing && (
-        <LandingPage animComplete={landingAnimComplete} isMobile={isMobile} hide={hideLandingAnim} setHideAnim={setHideLandingAnim} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
+        <LandingPage animComplete={landingAnimComplete} hide={hideLandingAnim} setHideAnim={setHideLandingAnim} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
       )}
       {projects && (
-        <Projects animComplete={projectsAnimComplete} isMobile={isMobile} hide={hideProjectsAnim} setHideAnim={setHideProjectsAnim} setAnimComplete={projectsAnimCompleteHandler} t={t} />
+        <Projects animComplete={projectsAnimComplete} hide={hideProjectsAnim} setHideAnim={setHideProjectsAnim} setAnimComplete={projectsAnimCompleteHandler} t={t} />
       )}
        {skills && (
-        <Skills animComplete={skillsAnimComplete} isMobile={isMobile} hide={hideSkillsAnim} setHideAnim={setHideSkillsAnim} setAnimComplete={skillsAnimCompleteHandler} t={t} />
+        <Skills animComplete={skillsAnimComplete} hide={hideSkillsAnim} setHideAnim={setHideSkillsAnim} setAnimComplete={skillsAnimCompleteHandler} t={t} />
       )}
       {contact && (
-        <Contact animComplete={contactAnimComplete} isMobile={isMobile} hide={hideContactAnim} setHideAnim={setHideContactAnim} setAnimComplete={contactAnimCompleteHandler} t={t} />
+        <Contact animComplete={contactAnimComplete} hide={hideContactAnim} setHideAnim={setHideContactAnim} setAnimComplete={contactAnimCompleteHandler} t={t} />
       )}
        <Footer t={t} />
     </div>
