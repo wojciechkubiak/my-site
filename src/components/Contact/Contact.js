@@ -33,7 +33,7 @@ const Contact = (props) => {
  
   
   useEffect(() => {
-    if (props.hide) {
+    if (props.hide && !props.isMobile) {
       gsap.fromTo(
         container,
         {
