@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 const LandingPage = props => {
   let sectionItem = useRef(null);
   let nameItem = useRef(null);
+  let container = useRef(null);
   let aboutItem = useRef(null);
 
   const t1 = gsap.timeline();
@@ -38,8 +39,40 @@ const LandingPage = props => {
     } 
   }, []);
 
+  useEffect(() => {
+    if(!props.isMobile) {
+     gsap.fromTo(
+       container,
+       {
+         left: -window.innerWidth,
+       },
+       {
+         duration: 2,
+         left: 0,
+       }
+     );
+    }
+   }, []);
+ 
+
+  useEffect(() => {
+   if(props.hide) {
+    gsap.fromTo(
+      container,
+      {
+        left: 0
+      }, {
+        duration: 1, 
+        left: -(window.innerWidth),
+        onComplete: () => 
+          props.setHideAnim(false)
+      }
+    )
+   }
+  }, [props.hide]);
+
   return (
-    <div className="home" id="landing" data-testid="Home">
+    <div className="home" ref={e => container = e} id="landing" data-testid="Home">
       <section
         className="home--container"
         ref={e => {

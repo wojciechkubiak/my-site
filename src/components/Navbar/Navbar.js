@@ -18,11 +18,9 @@ const Navbar = props => {
         if(props.lang.toUpperCase() === "PL") {
             setLang("Polski");
             setLangShort("PL");
-            console.log(props.lang.toUpperCase())
           } else if(props.lang.toUpperCase() === "EN") {
             setLang("English");
             setLangShort("UK");
-            console.log(props.lang.toUpperCase())
           }
     }, [props.lang])
 

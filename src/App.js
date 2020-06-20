@@ -19,6 +19,12 @@ const App = (
 ) => {
   const [mode, setMode] = useState(initMode);
   const [arrow, setArrow] = useState(initArrow);
+  
+  const [hideLandingAnim, setHideLandingAnim] = useState(false);
+  const [hideProjectsAnim, setHideProjectsAnim] = useState(false);
+  const [hideSkillsAnim, setHideSkillsAnim] = useState(false);
+  const [hideContactAnim, setHideContactAnim] = useState(false);
+
   const [scroll, setScroll] = useState(0);
   const [showHeader, setShowHeader] = useState(false);
   const { t, i18n } = props;
@@ -101,10 +107,46 @@ const App = (
     setShowContact(contact);
   }
 
-  const showLanding = () => show(true, false, false, false);
-  const showProjects = () => show(false, true, false, false);
-  const showSkills = () => show(false, false, true, false);
-  const showContact = () => show(false, false, false, true);
+  const hide = (landing, projects, skills, contact) => {
+    setHideLandingAnim(landing);
+    setHideProjectsAnim(projects);
+    setHideSkillsAnim(skills);
+    setHideContactAnim(contact);
+  }
+
+  const showLanding = () => {
+    
+    hide(false, true, true, true);
+
+    setTimeout(() => {
+      show(true, false, false, false)
+    }, 1000)
+  };
+
+  const showProjects = () => {
+    hide(true, false, true, true);
+
+    setTimeout(() => {
+      show(false, true, false, false)
+    }, 1000);
+  };
+
+  const showSkills = () => {
+    hide(true, true, false, true);
+
+
+    setTimeout(() => {
+      show(false, false, true, false)
+    }, 1000);
+  };
+
+  const showContact = () => {
+    hide(true, true, true, false);
+
+    setTimeout(() => {
+      show(false, false, false, true)
+    }, 1000);
+  };
 
   const landingAnimCompleteHandler = () => setLandingAnimComplete(true);
   const projectsAnimCompleteHandler = () => setProjectsAnimComplete(true);
@@ -125,16 +167,16 @@ const App = (
         showSkills={showSkills}
         showContact={showContact} />
       {landing && (
-        <LandingPage animComplete={landingAnimComplete} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
+        <LandingPage animComplete={landingAnimComplete} isMobile={isMobile} hide={hideLandingAnim} setHideAnim={setHideLandingAnim} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
       )}
       {projects && (
-        <Projects animComplete={projectsAnimComplete} setAnimComplete={projectsAnimCompleteHandler} t={t} />
+        <Projects animComplete={projectsAnimComplete} isMobile={isMobile} hide={hideProjectsAnim} setHideAnim={setHideProjectsAnim} setAnimComplete={projectsAnimCompleteHandler} t={t} />
       )}
        {skills && (
-        <Skills animComplete={skillsAnimComplete} setAnimComplete={skillsAnimCompleteHandler} t={t} />
+        <Skills animComplete={skillsAnimComplete} isMobile={isMobile} hide={hideSkillsAnim} setHideAnim={setHideSkillsAnim} setAnimComplete={skillsAnimCompleteHandler} t={t} />
       )}
       {contact && (
-        <Contact animComplete={contactAnimComplete} setAnimComplete={contactAnimCompleteHandler} t={t} />
+        <Contact animComplete={contactAnimComplete} isMobile={isMobile} hide={hideContactAnim} setHideAnim={setHideContactAnim} setAnimComplete={contactAnimCompleteHandler} t={t} />
       )}
        <Footer t={t} />
     </div>

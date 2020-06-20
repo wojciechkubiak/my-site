@@ -14,37 +14,40 @@ const Contact = (props) => {
   const t1 = gsap.timeline();
   let sectionItem = useRef(null);
   const phone = useRef(null);
-
-  const [copied, setCopied] = useState(false);
+  let container = useRef(null);
 
   useEffect(() => {
-    if (!props.animComplete) {
-      t1.fromTo(
-        sectionItem,
-        { opacity: 0 },
+    if(!props.isMobile) {
+     gsap.fromTo(
+       container,
+       {
+         left: -window.innerWidth,
+       },
+       {
+         duration: 2,
+         left: 0,
+       }
+     );
+    }
+   }, []);
+ 
+  
+  useEffect(() => {
+    if (props.hide) {
+      gsap.fromTo(
+        container,
         {
-          delay: .3,
-          duration: 1.5,
-          ease: "slow (0.7, 0.7, false)",
-          opacity: 1,
-          scale: 1,
-          onComplete: () => {
-            props.setAnimComplete(true);
-          },
-        }
-      );
-    } else {
-      t1.fromTo(
-        sectionItem,
-        {
-          opacity: 0,
+          left: 0,
         },
         {
-          opacity: 1,
+          duration: 1,
+          left: -window.innerWidth,
         }
       );
     }
-  }, []);
+  }, [props.hide]);
+
+  const [copied, setCopied] = useState(false);
 
   const copy = () => {
     navigator.clipboard.writeText('726823405');
@@ -56,10 +59,9 @@ const Contact = (props) => {
   }
 
   return (
-    <div id="contact">
+    <div id="contact" ref={e => container = e}>
       <div
         className="contact--main"
-        style={{ opacity: "0" }}
         ref={(e) => {
           sectionItem = e;
         }}

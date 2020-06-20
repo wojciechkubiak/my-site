@@ -13,7 +13,8 @@ import typescriptLogo from "./../../img/white_empty_typescript.webp";
 import "./Skills.css";
 
 const Skills = (props) => {
-  const t1 = gsap.timeline();
+  let container = useRef(null);
+
   const icons = {
     ReactJS: [reactLogo, "reactjs"],
     NodeJS: [nodeLogo, "nodejs"],
@@ -25,39 +26,41 @@ const Skills = (props) => {
     PostgreSQL: [psqlLogo, "postgres"],
   };
   let skillsItem = useRef(null);
+  
+  useEffect(() => {
+    if(!props.isMobile) {
+     gsap.fromTo(
+       container,
+       {
+         left: -window.innerWidth,
+       },
+       {
+         duration: 2,
+         left: 0,
+       }
+     );
+    }
+   }, []);
+ 
 
   useEffect(() => {
-    if(!props.animComplete) {
-      t1.fromTo(
-          skillsItem,
-          { opacity: 0 },
-          {
-            delay: .3,
-            duration: 1.5,
-            ease: "slow (0.7, 0.7, false)",
-            opacity: 1,
-            scale: 1,
-            onComplete: () => {
-              props.setAnimComplete(true);
-            }
-          }
+    if (props.hide) {
+      gsap.fromTo(
+        container,
+        {
+          left: 0,
+        },
+        {
+          duration: 1,
+          left: -window.innerWidth,
+        }
       );
-    } else {
-      t1.fromTo(
-          skillsItem,
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-          }
-      )
     }
-  }, []);
+  }, [props.hide]);
 
   return (
-    <div id="skills">
-      <div className="skills--container" style={{ opacity: "0" }} ref = {e => skillsItem = e}>
+    <div id="skills"ref={e => container = e} >
+      <div className="skills--container" style={{ opacity: "1" }} ref = {e => skillsItem = e}>
         {Object.keys(icons).map((key) => {
           return (
             <SkillImg

@@ -2,41 +2,27 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { AiFillGithub } from "react-icons/ai";
 import { MdWeb } from "react-icons/md";
-import {OverlayTrigger, Tooltip} from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 import "./Projects.css";
 
 const Projects = (props) => {
-  const t1 = gsap.timeline();
   let projectsItem = useRef(null);
+  let container = useRef(null);
 
   useEffect(() => {
-    if (!props.animComplete) {
-      t1.fromTo(
-        projectsItem,
-        { opacity: 0 },
-        {
-          delay: .3,
-          duration: 1.5,
-          ease: "slow (0.7, 0.7, false)",
-          opacity: 1,
-          scale: 1,
-          onComplete: () => {
-            props.setAnimComplete(true);
-          },
-        }
-      );
-    } else {
-      t1.fromTo(
-        projectsItem,
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-        }
-      );
-    }
+   if(!props.isMobile) {
+    gsap.fromTo(
+      container,
+      {
+        left: -window.innerWidth,
+      },
+      {
+        duration: 2,
+        left: 0,
+      }
+    );
+   }
   }, []);
 
   const [img, setImg] = useState(1);
@@ -118,20 +104,35 @@ const Projects = (props) => {
     });
   }, []);
 
+  useEffect(() => {
+    if (props.hide) {
+      gsap.fromTo(
+        container,
+        {
+          left: 0,
+        },
+        {
+          duration: 1,
+          left: -window.innerWidth,
+        }
+      );
+    }
+  }, [props.hide]);
+
   return (
-    <div id="projects">
+    <div id="projects" ref={(e) => (container = e)}>
       <div
         className="projects--container"
         ref={(e) => (projectsItem = e)}
         data-testid="Projects"
-        style={{ opacity: 0 }}
+        style={{ opacity: 1 }}
       >
         <div
           ref={(e) => {
             subinfoItem = e;
           }}
           className="projects--subinfo"
-          style={{ opacity: "0" }}
+          style={{ opacity: "1" }}
         >
           <h3>{data[img - 1][0]}</h3>
           <p>{data[img - 1][1]}</p>
@@ -147,45 +148,48 @@ const Projects = (props) => {
             transform: "translate(-50%, 0%)",
             display: "inline-block",
             // backgroundColor: "rgba(21, 37, 52,   .8)",
-            borderRadius: "0.2em"
+            borderRadius: "0.2em",
           }}
         >
           <button
-              name="-1"
-              value="backward"
-              onClick={swapImage}
-              className="projects--btn btn-prev"
+            name="-1"
+            value="backward"
+            onClick={swapImage}
+            className="projects--btn btn-prev"
           >
             &larr;
           </button>
 
           <OverlayTrigger placement="top" overlay={<Tooltip>API</Tooltip>}>
-          <a href={gits[img - 1][0]}>
-            <button
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                width: "3em",
-                height: "3em",
-              }}
-            >
-              <AiFillGithub size={32} style={{ color: "#ffffff" }} />
-            </button>
-          </a>
+            <a href={gits[img - 1][0]}>
+              <button
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                  width: "3em",
+                  height: "3em",
+                }}
+              >
+                <AiFillGithub size={32} style={{ color: "#ffffff" }} />
+              </button>
+            </a>
           </OverlayTrigger>
-          <OverlayTrigger placement="top" overlay={<Tooltip>Web/Mobile</Tooltip>}>
-          <a href={gits[img - 1][1]}>
-            <button
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                width: "3em",
-                height: "3em",
-              }}
-            >
-              <AiFillGithub size={32} style={{ color: "#ffffff" }} />
-            </button>
-          </a>
+          <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip>Web/Mobile</Tooltip>}
+          >
+            <a href={gits[img - 1][1]}>
+              <button
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                  width: "3em",
+                  height: "3em",
+                }}
+              >
+                <AiFillGithub size={32} style={{ color: "#ffffff" }} />
+              </button>
+            </a>
           </OverlayTrigger>
           {url[img - 1] && (
             <OverlayTrigger placement="top" overlay={<Tooltip>WWW</Tooltip>}>
@@ -202,14 +206,12 @@ const Projects = (props) => {
                 </button>
               </a>
             </OverlayTrigger>
-
-
           )}
           <button
-              name="1"
-              value="forward"
-              onClick={swapImage}
-              className="projects--btn btn-next"
+            name="1"
+            value="forward"
+            onClick={swapImage}
+            className="projects--btn btn-next"
           >
             &rarr;
           </button>

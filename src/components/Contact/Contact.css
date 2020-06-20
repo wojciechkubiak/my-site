@@ -99,7 +99,7 @@
   }
 
   #contact > h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     padding: 0.1em;
     width: 10em;
@@ -114,18 +114,18 @@
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: calc(4.5vw + 1vh);
+    font-size: calc(4vw + 1vh);
   }
   
 
   .contact--container > article > h3 {
-    font-size: 3vh;
+    font-size: 2.5vh;
     margin-bottom: 5vh;
   }
   
   .contact--container > article > p {
     color: #ffffff;
-    font-size: 2vh !important;
+    font-size: 1.5vh !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
   }
@@ -182,6 +182,6 @@
   .contact--figcaption {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
-    font-size: calc(2vh + .8vw);
+    font-size: calc(1.8vh + .8vw);
   }
 }

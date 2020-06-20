@@ -351,8 +351,8 @@
 
   .btn-prev:hover,
   .btn-next:hover {
-    background-color: #ffffff;
-    color: #232323;
+    background-color: transparent;
+    color: #ffffff;
   }
 
   .projects--btn-container {
