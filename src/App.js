@@ -9,17 +9,12 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import Footer from "./components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { isMobile } from "react-device-detect";
 
-const App = (
-  props,
-  {
-    initMode = false,
-    initArrow = false
-  }
-) => {
+const App = (props, { initMode = false, initArrow = false }) => {
   const [mode, setMode] = useState(initMode);
   const [arrow, setArrow] = useState(initArrow);
-  
+
   const [hideLandingAnim, setHideLandingAnim] = useState(false);
   const [hideProjectsAnim, setHideProjectsAnim] = useState(false);
   const [hideSkillsAnim, setHideSkillsAnim] = useState(false);
@@ -53,28 +48,29 @@ const App = (
   useEffect(() => {
     document.documentElement.lang = lang;
     i18n.changeLanguage(lang);
-  }, [lang, i18n])
+  }, [lang, i18n]);
 
-  const langHandler = language => {
+  const langHandler = (language) => {
     setLang(language);
-  }
+  };
 
   const arrowHandler = (value = false) => {
     setArrow(value);
   };
 
-
   window.addEventListener("scroll", function (event) {
     if (typeof window.orientation === "undefined") {
       if (
         this.scrollY < 3 ||
-        window.pageYOffset || document.documentElement.scrollTop < 3
+        window.pageYOffset ||
+        document.documentElement.scrollTop < 3
       ) {
         setScroll(this.scrollY);
 
         if (
           this.scrollY !== 0 ||
-          window.pageYOffset || document.documentElement.scrollTop !== 0
+          window.pageYOffset ||
+          document.documentElement.scrollTop !== 0
         ) {
           headerOn();
           arrowHandler(true);
@@ -92,47 +88,61 @@ const App = (
     setShowProjects(projects);
     setShowSkills(skills);
     setShowContact(contact);
-  }
+  };
 
   const hide = (landing, projects, skills, contact) => {
     setHideLandingAnim(landing);
     setHideProjectsAnim(projects);
     setHideSkillsAnim(skills);
     setHideContactAnim(contact);
-  }
+  };
 
   const showLanding = () => {
-    
     hide(false, true, true, true);
 
-    setTimeout(() => {
-      show(true, false, false, false)
-    }, 1000)
+    if (isMobile) {
+      show(true, false, false, false);
+    } else {
+      setTimeout(() => {
+        show(true, false, false, false);
+      }, 1000);
+    }
   };
 
   const showProjects = () => {
     hide(true, false, true, true);
 
-    setTimeout(() => {
-      show(false, true, false, false)
-    }, 1000);
+    if (isMobile) {
+      show(false, true, false, false);
+    } else {
+      setTimeout(() => {
+        show(false, true, false, false);
+      }, 1000);
+    }
   };
 
   const showSkills = () => {
     hide(true, true, false, true);
 
-
-    setTimeout(() => {
-      show(false, false, true, false)
-    }, 1000);
+    if (isMobile) {
+      show(false, false, true, false);
+    } else {
+      setTimeout(() => {
+        show(false, false, true, false);
+      }, 1000);
+    }
   };
 
   const showContact = () => {
     hide(true, true, true, false);
 
-    setTimeout(() => {
-      show(false, false, false, true)
-    }, 1000);
+    if (isMobile) {
+      show(false, false, false, true);
+    } else {
+      setTimeout(() => {
+        show(false, false, false, true);
+      }, 1000);
+    }
   };
 
   const landingAnimCompleteHandler = () => setLandingAnimComplete(true);
@@ -142,7 +152,8 @@ const App = (
 
   return (
     <div className="App">
-        <Navbar t={t}
+      <Navbar
+        t={t}
         landing={landing}
         projects={projects}
         skills={skills}
@@ -152,20 +163,46 @@ const App = (
         showLanding={showLanding}
         showProjects={showProjects}
         showSkills={showSkills}
-        showContact={showContact} />
+        showContact={showContact}
+      />
       {landing && (
-        <LandingPage animComplete={landingAnimComplete} hide={hideLandingAnim} setHideAnim={setHideLandingAnim} setAnimComplete={landingAnimCompleteHandler} showHeaderHandler={showHeaderHandler} t={t} />
+        <LandingPage
+          animComplete={landingAnimComplete}
+          hide={hideLandingAnim}
+          setHideAnim={setHideLandingAnim}
+          setAnimComplete={landingAnimCompleteHandler}
+          showHeaderHandler={showHeaderHandler}
+          t={t}
+        />
       )}
       {projects && (
-        <Projects animComplete={projectsAnimComplete} hide={hideProjectsAnim} setHideAnim={setHideProjectsAnim} setAnimComplete={projectsAnimCompleteHandler} t={t} />
+        <Projects
+          animComplete={projectsAnimComplete}
+          hide={hideProjectsAnim}
+          setHideAnim={setHideProjectsAnim}
+          setAnimComplete={projectsAnimCompleteHandler}
+          t={t}
+        />
       )}
-       {skills && (
-        <Skills animComplete={skillsAnimComplete} hide={hideSkillsAnim} setHideAnim={setHideSkillsAnim} setAnimComplete={skillsAnimCompleteHandler} t={t} />
+      {skills && (
+        <Skills
+          animComplete={skillsAnimComplete}
+          hide={hideSkillsAnim}
+          setHideAnim={setHideSkillsAnim}
+          setAnimComplete={skillsAnimCompleteHandler}
+          t={t}
+        />
       )}
       {contact && (
-        <Contact animComplete={contactAnimComplete} hide={hideContactAnim} setHideAnim={setHideContactAnim} setAnimComplete={contactAnimCompleteHandler} t={t} />
+        <Contact
+          animComplete={contactAnimComplete}
+          hide={hideContactAnim}
+          setHideAnim={setHideContactAnim}
+          setAnimComplete={contactAnimCompleteHandler}
+          t={t}
+        />
       )}
-       <Footer t={t} />
+      <Footer t={t} />
     </div>
   );
 };
