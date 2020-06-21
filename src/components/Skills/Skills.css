@@ -1,10 +1,11 @@
 #skills {
   position: relative;
   height: 100vh;
-  background: url("./../../img/daniel-lord-iTZDmFew-Z8-unsplash.webp") no-repeat center center fixed; 
+  /* background: url("./../../img/daniel-lord-iTZDmFew-Z8-unsplash.webp") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
+  background-color: #f5f5f5;
   background-size: cover;
 }
 

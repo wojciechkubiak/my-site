@@ -10,6 +10,8 @@ const Navbar = (props) => {
 
   let landing = ["nav--rect", props.landing ? "nav--rect-active" : ""];
 
+  let mode = ["nav--circle", props.mode ? "nav--circle-dark" : "nav--circle-light"];
+
   useEffect(() => {
     if (props.lang.toUpperCase() === "PL") {
       setLang("Polski");
@@ -67,7 +69,7 @@ const Navbar = (props) => {
           placement="right"
         >
           <div className={landing.join(" ")} onClick={props.showLanding}>
-            <span className="nav--circle"></span>
+            <span className={mode.join(" ")}></span>
           </div>
         </OverlayTrigger>
         <OverlayTrigger
@@ -79,7 +81,7 @@ const Navbar = (props) => {
           placement="right"
         >
           <div className={projects.join(" ")} onClick={props.showProjects}>
-            <span className="nav--circle"></span>
+            <span className={mode.join(" ")}></span>
           </div>
         </OverlayTrigger>
         <OverlayTrigger
@@ -91,7 +93,7 @@ const Navbar = (props) => {
           placement="right"
         >
           <div className={skills.join(" ")} onClick={props.showSkills}>
-            <span className="nav--circle"></span>
+            <span className={mode.join(" ")}></span>
           </div>
         </OverlayTrigger>
         <OverlayTrigger
@@ -103,7 +105,7 @@ const Navbar = (props) => {
           placement="right"
         >
           <div className={contact.join(" ")} onClick={props.showContact}>
-            <span className="nav--circle"></span>
+            <span className={mode.join(" ")}></span>
           </div>
         </OverlayTrigger>
       </div>
