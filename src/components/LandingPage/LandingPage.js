@@ -17,11 +17,11 @@ const LandingPage = props => {
       t1.fromTo(
         container,
         {
-          x: -(2 * window.screen.availWidth),
+          left: -(1.5 * window.innerWidth),
         },
         {
           duration: 1,
-          x: 0
+          left: 0
         }
       );
     }
@@ -33,11 +33,11 @@ const LandingPage = props => {
     t1.fromTo(
       container,
       {
-        x: 0
+        left: 0
       },
       {
         duration: 1,
-        x: -(2 * window.screen.availWidth)
+        left: -(1.5 * window.innerWidth)
       }
     );
    }

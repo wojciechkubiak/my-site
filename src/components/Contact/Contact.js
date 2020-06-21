@@ -20,7 +20,7 @@ const Contact = (props) => {
       gsap.fromTo(
         container,
         {
-          left: -(2 * window.screen.availWidth)
+          left: -(window.innerWidth)
         },
         {
           duration: 1,
@@ -39,7 +39,7 @@ const Contact = (props) => {
         },
         {
           duration: 1,
-          left: -(2 * window.screen.availWidth)
+          left: -(window.innerWidth)
         }
       );
     }

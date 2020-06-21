@@ -16,11 +16,11 @@ const Projects = (props) => {
     gsap.fromTo(
       container,
       {
-        left: -(2 * window.screen.availWidth),
+        x: -(window.innerWidth),
       },
       {
         duration: 1,
-        left: 0,
+        x: 0,
       }
     );
    }
@@ -111,11 +111,11 @@ const Projects = (props) => {
       gsap.fromTo(
         container,
         {
-          left: 0,
+          x: 0,
         },
         {
           duration: 1,
-          left: -(2 * window.screen.availWidth),
+          x: -(window.innerWidth),
         }
       );
     }

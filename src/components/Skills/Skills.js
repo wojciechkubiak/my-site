@@ -34,7 +34,7 @@ const Skills = (props) => {
       gsap.fromTo(
         container,
         {
-          left: -(2 * window.screen.availWidth),
+          left: -(1.5 * window.innerWidth),
         },
         {
           duration: 1,
@@ -53,7 +53,7 @@ const Skills = (props) => {
         },
         {
           duration: 1,
-          left: -(2 * window.screen.availWidth)
+          left: -(1.5 * window.innerWidth)
         }
       );
     }
