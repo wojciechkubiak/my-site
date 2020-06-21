@@ -20,20 +20,16 @@ const Contact = (props) => {
       gsap.fromTo(
         container,
         {
-          left: -window.innerWidth,
+          left: -(2 * window.screen.availWidth)
         },
         {
-          duration: 2,
+          duration: 1,
           left: 0,
         }
       );
     }
   }, []);
-
-  useEffect(() => {
-    props.modeHandler(true);
-  }, []);
-
+  
   useEffect(() => {
     if (props.hide && !isMobile) {
       gsap.fromTo(
@@ -43,7 +39,7 @@ const Contact = (props) => {
         },
         {
           duration: 1,
-          left: -window.innerWidth,
+          left: -(2 * window.screen.availWidth)
         }
       );
     }

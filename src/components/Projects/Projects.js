@@ -16,20 +16,16 @@ const Projects = (props) => {
     gsap.fromTo(
       container,
       {
-        left: -window.innerWidth,
+        left: -(2 * window.screen.availWidth),
       },
       {
-        duration: 2,
+        duration: 1,
         left: 0,
       }
     );
    }
   }, []);
 
-  useEffect(() => {
-    props.modeHandler(true);
-  }, []);
-  
   const [img, setImg] = useState(1);
 
   let subinfoItem = useRef(null);
@@ -119,7 +115,7 @@ const Projects = (props) => {
         },
         {
           duration: 1,
-          left: -window.innerWidth,
+          left: -(2 * window.screen.availWidth),
         }
       );
     }

@@ -27,10 +27,6 @@ const Skills = (props) => {
     PostgreSQL: [psqlLogo, "postgres"],
   };
 
-  useEffect(() => {
-    props.modeHandler(false);
-  }, []);
-
   let skillsItem = useRef(null);
 
   useEffect(() => {
@@ -38,10 +34,10 @@ const Skills = (props) => {
       gsap.fromTo(
         container,
         {
-          left: -window.innerWidth,
+          left: -(2 * window.screen.availWidth),
         },
         {
-          duration: 2,
+          duration: 1,
           left: 0,
         }
       );
@@ -57,7 +53,7 @@ const Skills = (props) => {
         },
         {
           duration: 1,
-          left: -window.innerWidth,
+          left: -(2 * window.screen.availWidth)
         }
       );
     }

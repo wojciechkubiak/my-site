@@ -12,30 +12,16 @@ const LandingPage = props => {
 
   const t1 = gsap.timeline();
 
- 
-  useEffect(() => {
-    props.modeHandler(true);
-  }, []);
-
   useEffect(() => {
     if(!isMobile) {
       t1.fromTo(
-        sectionItem,
-        { opacity: 0 },
-        {
-          duration: .5,
-          ease: "slow (0.7, 0.7, false)",
-          opacity: 1
-        }
-      );
-      t1.fromTo(
         container,
         {
-          backgroundPositionX:  "-4000px",
+          x: -(2 * window.screen.availWidth),
         },
         {
-          duration: 2,
-          backgroundPositionX: "0px"
+          duration: 1,
+          x: 0
         }
       );
     }
@@ -45,22 +31,13 @@ const LandingPage = props => {
   useEffect(() => {
    if(props.hide && !isMobile) {
     t1.fromTo(
-      sectionItem,
-      { opacity: 1 },
-      {
-        duration: .5,
-        ease: "slow (0.7, 0.7, false)",
-        opacity: 0
-      }
-    );
-    t1.fromTo(
       container,
       {
-        backgroundPositionX:  "0px",
+        x: 0
       },
       {
-        duration: 2,
-        backgroundPositionX: "-4000px"
+        duration: 1,
+        x: -(2 * window.screen.availWidth)
       }
     );
    }
@@ -70,7 +47,6 @@ const LandingPage = props => {
     <div className="home" ref={e => container = e} id="landing" data-testid="Home">
       <section
         className="home--container"
-        style={{opacity: "0"}}
         ref={e => {
           sectionItem = e;
         }}     

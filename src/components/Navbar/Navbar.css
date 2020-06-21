@@ -27,14 +27,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.nav--circle-dark {
   background-color: #ffffff;
-}
-
-.nav--circle-light {
-  background-color: #232323;
 }
 
 .nav--rect:hover {

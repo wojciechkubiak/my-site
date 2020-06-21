@@ -25,7 +25,6 @@ const App = (props) => {
   const [projectsAnimComplete, setProjectsAnimComplete] = useState(false);
   const [skillsAnimComplete, setSkillsAnimComplete] = useState(false);
   const [contactAnimComplete, setContactAnimComplete] = useState(false);
-  const [mode, setMode] = useState(true);
   const [lang, setLang] = useState("pl");
 
   useEffect(() => {
@@ -59,7 +58,7 @@ const App = (props) => {
     } else {
       setTimeout(() => {
         show(true, false, false, false);
-      }, 1000);
+      }, 500);
     }
   };
 
@@ -71,7 +70,7 @@ const App = (props) => {
     } else {
       setTimeout(() => {
         show(false, true, false, false);
-      }, 1000);
+      }, 500);
     }
   };
 
@@ -83,7 +82,7 @@ const App = (props) => {
     } else {
       setTimeout(() => {
         show(false, false, true, false);
-      }, 1000);
+      }, 500);
     }
   };
 
@@ -95,7 +94,7 @@ const App = (props) => {
     } else {
       setTimeout(() => {
         show(false, false, false, true);
-      }, 1000);
+      }, 500);
     }
   };
 
@@ -118,7 +117,6 @@ const App = (props) => {
         showProjects={showProjects}
         showSkills={showSkills}
         showContact={showContact}
-        mode={mode}
       />
       {landing && (
         <LandingPage
@@ -127,7 +125,6 @@ const App = (props) => {
           setHideAnim={setHideLandingAnim}
           setAnimComplete={landingAnimCompleteHandler}
           t={t}
-          modeHandler={setMode}
         />
       )}
       {projects && (
@@ -137,7 +134,6 @@ const App = (props) => {
           setHideAnim={setHideProjectsAnim}
           setAnimComplete={projectsAnimCompleteHandler}
           t={t}
-          modeHandler={setMode}
         />
       )}
       {skills && (
@@ -147,7 +143,6 @@ const App = (props) => {
           setHideAnim={setHideSkillsAnim}
           setAnimComplete={skillsAnimCompleteHandler}
           t={t}
-          modeHandler={setMode}
         />
       )}
       {contact && (
@@ -157,7 +152,6 @@ const App = (props) => {
           setHideAnim={setHideContactAnim}
           setAnimComplete={contactAnimCompleteHandler}
           t={t}
-          modeHandler={setMode}
         />
       )}
       <Footer t={t} />
