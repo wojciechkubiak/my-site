@@ -9,11 +9,11 @@ import common_pl from "./translations/pl/common.json";
 import common_en from "./translations/en/common.json";
 
 i18next.init({
-  interpolation: { escapeValue: false }, // React already does escaping
-  lng: "pl", // language to use
+  interpolation: { escapeValue: false },
+  lng: "pl", 
   resources: {
     en: {
-      common: common_en // 'common' is our custom namespace
+      common: common_en
     },
     pl: {
       common: common_pl
@@ -28,7 +28,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

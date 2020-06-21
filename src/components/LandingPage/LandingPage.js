@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import "./LandingPage.css";
 
 import { gsap } from "gsap";
@@ -33,7 +33,6 @@ const LandingPage = props => {
         opacity: 1,
         display: "block",
         onComplete: function() {
-          props.showHeaderHandler(true);
           props.setAnimComplete(true);
         }
       });

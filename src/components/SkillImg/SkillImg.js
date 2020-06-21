@@ -6,7 +6,6 @@ const SkillImg = (props) => {
   const [show, setShow] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   let skillsData = [];
-  let infoVersion = props.t("tooltip.info", { framework: "react-i18next" });
 
   const insertSkills = () => {
     for (let i = 1; i < 10; i++) {

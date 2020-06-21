@@ -30,6 +30,7 @@ const Projects = (props) => {
 
   let subinfoItem = useRef(null);
   let imageItem = useRef(null);
+  
   const data = [
     [
       "Obb-SYS",

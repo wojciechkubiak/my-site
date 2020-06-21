@@ -1,7 +1,7 @@
-import React, {useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import shortid from "shortid";
 import { gsap } from "gsap";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 import SkillImg from "./../SkillImg/SkillImg";
 import reactLogo from "./../../img/white_empty_react.webp";
 import nodeLogo from "./../../img/white_empty_nodejs.webp";
@@ -26,23 +26,23 @@ const Skills = (props) => {
     Bootstrap: [bootstrapLogo, "bootstrap"],
     PostgreSQL: [psqlLogo, "postgres"],
   };
+
   let skillsItem = useRef(null);
-  
+
   useEffect(() => {
-    if(!isMobile) {
-     gsap.fromTo(
-       container,
-       {
-         left: -window.innerWidth,
-       },
-       {
-         duration: 2,
-         left: 0,
-       }
-     );
+    if (!isMobile) {
+      gsap.fromTo(
+        container,
+        {
+          left: -window.innerWidth,
+        },
+        {
+          duration: 2,
+          left: 0,
+        }
+      );
     }
-   }, []);
- 
+  }, []);
 
   useEffect(() => {
     if (props.hide && !isMobile) {
@@ -60,8 +60,12 @@ const Skills = (props) => {
   }, [props.hide]);
 
   return (
-    <div id="skills"ref={e => container = e} >
-      <div className="skills--container" style={{ opacity: "1" }} ref = {e => skillsItem = e}>
+    <div id="skills" ref={(e) => (container = e)}>
+      <div
+        className="skills--container"
+        style={{ opacity: "1" }}
+        ref={(e) => (skillsItem = e)}
+      >
         {Object.keys(icons).map((key) => {
           return (
             <SkillImg

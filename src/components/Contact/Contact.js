@@ -12,9 +12,7 @@ import "./Contact.css";
 import { Popover, PopoverTitle } from "react-bootstrap";
 
 const Contact = (props) => {
-  const t1 = gsap.timeline();
   let sectionItem = useRef(null);
-  const phone = useRef(null);
   let container = useRef(null);
 
   useEffect(() => {
@@ -140,7 +138,6 @@ const Contact = (props) => {
           </article>
         </section>
       </div>
-      {/*<Footer t={props.t} />*/}
     </div>
   );
 };
