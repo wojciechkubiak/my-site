@@ -6,7 +6,7 @@ import { Overlay } from "react-bootstrap";
 import ResumePL from "./../../doc/cv_pl.pdf";
 import ResumeEN from "./../../doc/cv_en.pdf";
 import { gsap } from "gsap";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 
 import "./Contact.css";
 import { Popover, PopoverTitle } from "react-bootstrap";
@@ -16,21 +16,24 @@ const Contact = (props) => {
   let container = useRef(null);
 
   useEffect(() => {
-    if(!isMobile) {
-     gsap.fromTo(
-       container,
-       {
-         left: -window.innerWidth,
-       },
-       {
-         duration: 2,
-         left: 0,
-       }
-     );
+    if (!isMobile) {
+      gsap.fromTo(
+        container,
+        {
+          left: -window.innerWidth,
+        },
+        {
+          duration: 2,
+          left: 0,
+        }
+      );
     }
-   }, []);
- 
-  
+  }, []);
+
+  useEffect(() => {
+    props.modeHandler(true);
+  }, []);
+
   useEffect(() => {
     if (props.hide && !isMobile) {
       gsap.fromTo(
@@ -49,16 +52,16 @@ const Contact = (props) => {
   const [copied, setCopied] = useState(false);
 
   const copy = () => {
-    navigator.clipboard.writeText('726823405');
+    navigator.clipboard.writeText("726823405");
     setCopied(true);
 
     setTimeout(() => {
       setCopied(false);
-    }, 1000)
-  }
+    }, 1000);
+  };
 
   return (
-    <div id="contact" ref={e => container = e}>
+    <div id="contact" ref={(e) => (container = e)}>
       <div
         className="contact--main"
         ref={(e) => {
@@ -123,13 +126,12 @@ const Contact = (props) => {
                 <figcaption onClick={copy} className="contact--figcaption">
                   726823405
                 </figcaption>
-                <Overlay
-                  show={copied}
-                  placement="top"
-                >
-                  <Popover style={{border: "none"}}>
+                <Overlay show={copied} placement="top">
+                  <Popover style={{ border: "none" }}>
                     <PopoverTitle>
-                    {props.t("tooltip.copied", { framework: "react-i18next" })}
+                      {props.t("tooltip.copied", {
+                        framework: "react-i18next",
+                      })}
                     </PopoverTitle>
                   </Popover>
                 </Overlay>

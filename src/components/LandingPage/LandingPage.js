@@ -12,8 +12,13 @@ const LandingPage = props => {
 
   const t1 = gsap.timeline();
 
+ 
   useEffect(() => {
-    if(!props.animComplete) {
+    props.modeHandler(true);
+  }, []);
+
+  useEffect(() => {
+    if(!isMobile) {
       t1.fromTo(
         sectionItem,
         { opacity: 0 },
@@ -23,51 +28,41 @@ const LandingPage = props => {
           opacity: 1
         }
       );
-      t1.to(nameItem, {
-        duration:  .5,
-        opacity: 1,
-        display: "block",
-      });
-      t1.to(aboutItem, {
-        duration:  .5,
-        opacity: 1,
-        display: "block",
-        onComplete: function() {
-          props.setAnimComplete(true);
+      t1.fromTo(
+        container,
+        {
+          backgroundPositionX:  "-4000px",
+        },
+        {
+          duration: 2,
+          backgroundPositionX: "0px"
         }
-      });
-    } 
-  }, []);
-
-  useEffect(() => {
-    if(!isMobile) {
-     gsap.fromTo(
-       container,
-       {
-         left: -window.innerWidth,
-       },
-       {
-         duration: 2,
-         left: 0,
-       }
-     );
+      );
     }
   }, []);
  
 
   useEffect(() => {
    if(props.hide && !isMobile) {
-    gsap.fromTo(
+    t1.fromTo(
+      sectionItem,
+      { opacity: 1 },
+      {
+        duration: .5,
+        ease: "slow (0.7, 0.7, false)",
+        opacity: 0
+      }
+    );
+    t1.fromTo(
       container,
       {
-        left: 0
-      }, {
-        duration: 1, 
-        left: -(window.innerWidth),
-        onComplete: () => 
-          props.setHideAnim(false)
+        backgroundPositionX:  "0px",
+      },
+      {
+        duration: 2,
+        backgroundPositionX: "-4000px"
       }
-    )
+    );
    }
   }, [props.hide]);
 
@@ -75,6 +70,7 @@ const LandingPage = props => {
     <div className="home" ref={e => container = e} id="landing" data-testid="Home">
       <section
         className="home--container"
+        style={{opacity: "0"}}
         ref={e => {
           sectionItem = e;
         }}     

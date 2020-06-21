@@ -26,6 +26,10 @@ const Projects = (props) => {
    }
   }, []);
 
+  useEffect(() => {
+    props.modeHandler(true);
+  }, []);
+  
   const [img, setImg] = useState(1);
 
   let subinfoItem = useRef(null);

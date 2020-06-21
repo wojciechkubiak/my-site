@@ -27,6 +27,10 @@ const Skills = (props) => {
     PostgreSQL: [psqlLogo, "postgres"],
   };
 
+  useEffect(() => {
+    props.modeHandler(false);
+  }, []);
+
   let skillsItem = useRef(null);
 
   useEffect(() => {
